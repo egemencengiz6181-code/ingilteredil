@@ -1,0 +1,29 @@
+---
+import { SITE } from '../config/site';
+interface Props { items: { label: string; href?: string }[] }
+const all = [{ label: 'Ana sayfa', href: '/' }, ...Astro.props.items];
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: all.map((it, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: it.label,
+    ...(it.href ? { item: new URL(it.href, SITE.url).href } : {}),
+  })),
+};
+---
+<nav class="bc" aria-label="Sayfa yolu">
+  <ol>
+    {all.map((it, i) => (
+      <li>{it.href && i < all.length - 1 ? <a href={it.href}>{it.label}</a> : <span aria-current="page">{it.label}</span>}</li>
+    ))}
+  </ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+<style>
+  .bc ol { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-wrap: wrap; gap: 0.3rem; font-size: 0.84rem; color: var(--ink-3); }
+  .bc li + li::before { content: '/'; margin-right: 0.3rem; color: var(--line); }
+  .bc a { color: var(--ink-3); text-decoration: none; }
+  .bc a:hover { color: var(--teal); text-decoration: underline; }
+</style>

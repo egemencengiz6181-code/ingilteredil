@@ -1,0 +1,287 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import LeadForm from '../components/LeadForm.astro';
+import CityCard from '../components/CityCard.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import Photos from '../components/Photos.astro';
+import { cities, cityPath, schools, cityMinPrice, schoolsInCity, gbp } from '../data';
+import { allInclusive, steps, generalFaqs, testimonials } from '../data/content';
+import { SITE, VISA, waLink } from '../config/site';
+
+const guides = (await getCollection('rehber')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
+const londonFrom = cityMinPrice('londra');
+const top = cities.slice(0, 9);
+---
+<Base
+  title="İngiltere Dil Okulları 2027: Fiyatlar, Konaklama ve Vize Rehberi"
+  description={SITE.description}
+  jsonLd={[{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'İngiltere dil okulları', inLanguage: 'tr-TR', about: { '@type': 'Thing', name: 'English language schools in the United Kingdom' } }]}
+>
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div class="hero__copy">
+        <span class="pass">IST <i></i> LHR · MAN · EDI</span>
+        <h1>İngiltere’de dil okulu: <span>fiyatlar, konaklama ve vize</span> tek yerde</h1>
+        <p class="lead">{schools.length ? `${cities.length} şehirde ${schools.length} akredite dil okulunun` : `${cities.length} şehirde akredite dil okullarının`} haftalık kurs ve konaklama ücretlerini karşılaştırın. Okul seçiminden vizeye, havalimanı karşılamadan İngiltere’deki ilk gününüze kadar ücretsiz danışmanlık.</p>
+
+        <form class="finder" action="/sehirler/" onsubmit="var v=this.sehir.value; if(v){location.href=v; return false;}">
+          <label class="sr-only" for="finder-city">Şehir seçin</label>
+          <select id="finder-city" name="sehir">
+            <option value="">Hangi şehirde okumak istiyorsunuz?</option>
+            {cities.map((c) => <option value={cityPath(c)}>{c.name} dil okulları</option>)}
+          </select>
+          <button class="btn btn--coral" type="submit">Okulları gör <Icon name="arrow" /></button>
+        </form>
+
+        <ul class="hero__trust">
+          <li><Icon name="shield" size={18} /> British Council akreditasyonlu okullar</li>
+          <li><Icon name="pound" size={18} /> Okulun resmi fiyatı, ek danışmanlık ücreti yok</li>
+          <li><Icon name="plane" size={18} /> Vize, konaklama ve havalimanı karşılama</li>
+        </ul>
+      </div>
+      <div class="hero__media">
+        <img src="/img/misc/london-package-800.jpg" alt="Londra’da Westminster ve Big Ben" width="800" height="533" fetchpriority="high" />
+        <div class="ticket">
+          <div class="ticket__row"><span>Kalkış</span><span>Varış</span></div>
+          <div class="ticket__row ticket__big"><b>IST</b><Icon name="plane" size={22} /><b>LHR</b></div>
+          <div class="ticket__sep"></div>
+          <div class="ticket__row"><span>Londra · 4 hafta kurs</span><b>{londonFrom ? `${gbp(londonFrom * 4)}’dan` : '£1.000’dan'}</b></div>
+          <div class="ticket__row"><span>Her şey dahil · 2 hafta</span><b>£{allInclusive.prices[0].price.toLocaleString('tr-TR')}’dan</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="wrap stats__in">
+      <div><b>{schools.length || '100+'}</b><span>akredite dil okulu</span></div>
+      <div><b>{cities.length}</b><span>şehir rehberi</span></div>
+      <div><b>{SITE.stats.students}</b><span>öğrenciye danışmanlık</span></div>
+      <div><b>{SITE.stats.years} yıl</b><span>deneyim</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="shead">
+        <span class="eyebrow">Şehirler</span>
+        <h2>İngiltere’de dil okulu için şehir seçin</h2>
+        <p class="lead">Londra’nın büyük şehir enerjisinden Brighton’ın sahiline, Oxford ve Cambridge’in akademik havasından Manchester’ın uygun bütçesine kadar her şehrin okullarını, semtlerini ve yaşam maliyetini ayrı ayrı inceledik.</p>
+      </div>
+      <div class="grid grid--3">{top.map((c) => <CityCard city={c} />)}</div>
+      <div class="more-cities">
+        <span>Diğer şehirler:</span>
+        {cities.slice(9).map((c) => <a href={cityPath(c)}>{c.name}</a>)}
+        <a href="/sehirler/" class="strong">Tüm şehirleri karşılaştır →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap">
+      <div class="shead">
+        <span class="eyebrow">Fiyatlar</span>
+        <h2>İngiltere dil okulu fiyatları: şehir şehir özet</h2>
+        <p class="lead">Genel İngilizce kursunun en uygun haftalık fiyatı, okul sayısı ve kurs hariç aylık yaşam bütçesi. Okul bazında tüm fiyatlar için fiyat listesine göz atın.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="table table--stack">
+          <thead><tr><th>Şehir</th><th class="num">Okul</th><th class="num">Kurs / hafta</th><th>Aylık yaşam (kurs hariç)</th><th>Öne çıkan</th></tr></thead>
+          <tbody>
+            {cities.map((c) => (
+              <tr>
+                <td><a href={cityPath(c)}><b>{c.name}</b></a></td>
+                <td class="num">{schoolsInCity(c.slug).length || '—'}</td>
+                <td class="num">{cityMinPrice(c.slug) ? `${gbp(cityMinPrice(c.slug))}’dan` : '—'}</td>
+                <td>{c.monthlyBudget.match(/£\d[\d.]*–\d[\d.]*\d/)?.[0] ?? '—'}</td>
+                <td><span class="muted small">{c.vibe.slice(0, 3).join(' · ')}</span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="btns" style="margin-top:1.25rem">
+        <a href="/ingiltere-dil-okulu-fiyatlari/" class="btn btn--teal">2027 fiyat listesinin tamamı <Icon name="arrow" /></a>
+        <a href="/fiyat-hesaplama/" class="btn btn--line"><Icon name="calculator" /> Fiyat hesaplayıcı</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="shead shead--center">
+        <span class="eyebrow">Uçtan uca süreç</span>
+        <h2>Okul seçiminden İngiltere’deki ilk gününüze kadar</h2>
+        <p class="lead">Tek bir danışmanla, tek WhatsApp grubu üzerinden: hiçbir adımda yalnız değilsiniz.</p>
+      </div>
+      <ol class="steps">
+        {steps.map((s, i) => (
+          <li class="card">
+            <span class="steps__n">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{s.t}</h3>
+            <p class="small muted mb-0">{s.d}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--dark pkg">
+    <div class="wrap pkg__in">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Her şey dahil</span>
+        <h2>Londra her şey dahil dil eğitimi paketi</h2>
+        <p>Uçak bileti, vize ücreti, sağlık sigortası, özel banyolu yurt odası, VIP havalimanı karşılama, SIM kart ve Londra eğlence paketi. Hepsi tek fiyatta, sürpriz masraf yok.</p>
+        <ul class="checks pkg__list">{allInclusive.included.slice(0, 8).map((i) => <li>{i}</li>)}</ul>
+        <div class="btns" style="margin-top:1.5rem">
+          <a href="/her-sey-dahil-londra-paketi/" class="btn btn--coral btn--lg">Paketi incele <Icon name="arrow" /></a>
+          <a href={waLink('Merhaba, Londra her şey dahil paketi hakkında bilgi almak istiyorum.')} class="btn btn--light btn--lg" target="_blank" rel="noopener" data-track="home-pkg"><Icon name="whatsapp" /> Kontenjan sor</a>
+        </div>
+      </div>
+      <div class="pkg__prices">
+        {allInclusive.prices.map((p) => (
+          <div><span>{p.weeks} hafta</span><b>£{p.price.toLocaleString('tr-TR')}</b></div>
+        ))}
+        <p class="xs" style="grid-column:1/-1;margin:0;color:#a9d2dc">{allInclusive.minAge}+ yaş · {allInclusive.lessons} · {allInclusive.room}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid grid--3">
+        <a href="/konaklama/" class="card card--hover feat">
+          <Icon name="home" size={28} />
+          <h3>Konaklama</h3>
+          <p class="small muted">Aile yanı, öğrenci yurdu, stüdyo: şehir şehir haftalık fiyatlar, avantajlar ve okula uzaklık.</p>
+          <span class="feat__more">Konaklama rehberi →</span>
+        </a>
+        <a href="/ingiltere-dil-okulu-vizesi/" class="card card--hover feat">
+          <Icon name="visa" size={28} />
+          <h3>Vize</h3>
+          <p class="small muted">Standard Visitor (£{VISA.standardVisitorFee}) ve Short-term Study (£{VISA.shortTermStudyFee}) vizeleri, belgeler, banka hesabı ve süreç.</p>
+          <span class="feat__more">Vize rehberi →</span>
+        </a>
+        <a href="/havalimani-karsilama/" class="card card--hover feat">
+          <Icon name="plane" size={28} />
+          <h3>Havalimanı karşılama</h3>
+          <p class="small muted">Heathrow, Gatwick, Manchester ve diğer havalimanlarında isminizle karşılama ve konaklamanıza transfer.</p>
+          <span class="feat__more">Karşılama hizmeti →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sand">
+    <div class="wrap">
+      <div class="shead">
+        <span class="eyebrow">Gidenler anlatıyor</span>
+        <h2>Öğrencilerimizden kareler ve yorumlar</h2>
+      </div>
+      <Photos />
+      <div class="grid grid--3" style="margin-top:1.5rem">
+        {testimonials.map((t) => (
+          <figure class="card quote">
+            <div class="quote__stars" aria-label="5 yıldız">{[1, 2, 3, 4, 5].map(() => <Icon name="star" size={16} />)}</div>
+            <blockquote>“{t.text}”</blockquote>
+            <figcaption><b>{t.name}</b><span>{t.program} · {t.source}</span></figcaption>
+          </figure>
+        ))}
+      </div>
+      <p style="margin-top:1.25rem"><a href="/ogrenci-yorumlari/">Tüm öğrenci yorumları →</a></p>
+    </div>
+  </section>
+
+  {guides.length > 0 && (
+    <section class="section">
+      <div class="wrap">
+        <div class="shead"><span class="eyebrow">Rehber</span><h2>Karar vermeden önce okuyun</h2></div>
+        <div class="grid grid--3">
+          {guides.map((g) => (
+            <article class="card card--hover">
+              <p class="xs muted mb-0">{g.data.category}</p>
+              <h3><a href={`/rehber/${g.id}/`} class="stretched" style="text-decoration:none;color:inherit">{g.data.title}</a></h3>
+              <p class="small muted mb-0">{g.data.description}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section section--mist">
+    <div class="wrap">
+      <div class="layout-aside">
+        <div>
+          <span class="eyebrow">Sık sorulanlar</span>
+          <h2>İngiltere’de dil okulu hakkında merak edilenler</h2>
+          <Faq items={generalFaqs.slice(0, 7)} />
+          <p style="margin-top:1rem"><a href="/sss/">Tüm sorular →</a></p>
+        </div>
+        <aside><LeadForm source="anasayfa" /></aside>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>
+
+<style>
+  .hero { background: radial-gradient(900px 500px at 100% 0%, var(--teal-100), transparent 60%), linear-gradient(180deg, var(--teal-50), var(--paper)); padding: clamp(2.5rem, 1.5rem + 4vw, 5rem) 0 clamp(2.5rem, 2rem + 2vw, 4rem); overflow: hidden; }
+  .hero__in { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2.5rem; align-items: center; }
+  @media (min-width: 1000px) { .hero__in { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 3.5rem; } }
+  .hero h1 { font-size: var(--fs-hero); margin: 1rem 0; max-width: 16ch; }
+  .hero h1 span { color: var(--coral); }
+  .finder { display: flex; gap: 0.5rem; margin: 1.5rem 0 1.25rem; max-width: 560px; flex-wrap: wrap; }
+  .finder select { flex: 1 1 260px; padding: 0.9rem 1rem; border: 1.5px solid var(--line); border-radius: var(--r-pill); background: var(--paper); font-size: 1rem; }
+  .hero__trust { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; font-size: 0.95rem; color: var(--ink-2); }
+  .hero__trust li { display: flex; gap: 0.5rem; align-items: flex-start; }
+  .hero__trust :global(svg) { color: var(--teal); flex: none; margin-top: 0.2em; }
+  .hero__media { position: relative; }
+  .hero__media img { border-radius: var(--r-lg); box-shadow: var(--shadow-2); width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+  .ticket { position: absolute; left: -18px; bottom: -22px; background: var(--paper); border-radius: var(--r-lg); box-shadow: var(--shadow-2); padding: 1rem 1.2rem; min-width: 280px; font-size: 0.85rem; border: 1px solid var(--line); }
+  @media (max-width: 600px) { .ticket { position: static; min-width: 0; margin-top: -40px; margin-inline: 12px; } }
+  .ticket__row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; color: var(--ink-3); }
+  .ticket__row b { color: var(--teal-950); }
+  .ticket__big { font-family: var(--f-mono); font-size: 1.6rem; margin: 0.2rem 0; }
+  .ticket__big :global(svg) { color: var(--coral); }
+  .ticket__sep { border-top: 2px dashed var(--line); margin: 0.6rem -1.2rem; position: relative; }
+  .ticket__row + .ticket__row { margin-top: 0.3rem; }
+
+  .stats { background: var(--teal-900); color: #cfe6eb; }
+  .stats__in { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; padding-block: 1.6rem; text-align: center; }
+  @media (min-width: 720px) { .stats__in { grid-template-columns: repeat(4, 1fr); } }
+  .stats b { display: block; font-family: var(--f-display); font-size: clamp(1.6rem, 1.3rem + 1vw, 2.2rem); color: #fff; }
+  .stats span { font-size: 0.88rem; }
+
+  .more-cities { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; margin-top: 1.5rem; font-size: 0.95rem; }
+  .more-cities span { color: var(--ink-3); }
+  .more-cities .strong { font-weight: 650; }
+
+  .steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); }
+  .steps__n { font-family: var(--f-mono); font-weight: 700; color: var(--coral); font-size: 0.9rem; }
+  .steps h3 { margin-top: 0.4rem; }
+
+  .pkg__in { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2.5rem; align-items: center; }
+  @media (min-width: 980px) { .pkg__in { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } }
+  .pkg__list { grid-template-columns: 1fr; color: #d6e9ee; }
+  @media (min-width: 600px) { .pkg__list { grid-template-columns: 1fr 1fr; } }
+  .pkg__prices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; }
+  @media (max-width: 420px) { .pkg__prices { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pkg__prices div { padding: 0.8rem 0.5rem; } }
+  .pkg__prices div { background: #ffffff12; border: 1px solid #ffffff22; border-radius: var(--r-md); padding: 1rem; text-align: center; }
+  .pkg__prices span { display: block; font-size: 0.8rem; color: #a9d2dc; }
+  .pkg__prices b { font-family: var(--f-display); font-size: 1.4rem; color: #fff; }
+
+  .feat { text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 0.4rem; }
+  .feat :global(svg) { color: var(--coral); }
+  .feat__more { margin-top: auto; font-weight: 600; color: var(--teal); font-size: 0.92rem; }
+
+  .quote { margin: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+  .quote__stars { display: flex; gap: 2px; color: var(--gold); }
+  .quote blockquote { margin: 0; color: var(--ink-2); font-size: 0.95rem; }
+  .quote figcaption { margin-top: auto; display: grid; font-size: 0.85rem; }
+  .quote figcaption span { color: var(--ink-3); }
+</style>

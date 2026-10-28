@@ -1,0 +1,1486 @@
+{
+  "city": "cambridge",
+  "schools": [
+    {
+      "slug": "kaplan-cambridge",
+      "name": "Kaplan International Cambridge",
+      "brand": "Kaplan International Languages (Positively Languages)",
+      "area": "Newnham (Barton Road)",
+      "address": "75 Barton Road, Cambridge CB3 9LG",
+      "nearestStation": "Cambridge tren istasyonu (otobüsle ~20 dk); şehir merkezi bisikletle ~10 dk",
+      "website": "https://positivelylanguages.com/language-schools/united-kingdom/cambridge",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 17,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Kaplan International Cambridge, üniversite kolejlerinin hemen batısındaki sakin Newnham semtinde, Barton Road üzerinde bahçeli bir binada eğitim veriyor. Kaplan International Languages ağına bağlı okul, 2026'da başlayan Positively Languages markalaşma sürecine dahil; British Council akreditasyonu ve English UK üyeliği sürüyor. 16 yaş üstü öğrenciler için Genel İngilizce, yarı yoğun ve yoğun kurslar, IELTS, İş İngilizcesi ve akademik yıl programları sunuluyor.\n\nŞehir merkezine bisikletle yaklaşık 10 dakika ya da kısa bir otobüs yolculuğuyla ulaşılıyor; bu sayede King's College, Cam Nehri ve pazar meydanı günlük rotanın parçası olabiliyor. Konaklamada aile yanı seçeneklerinin yanında stüdyo ve en-suite odalara sahip öğrenci yurtları bulunuyor. Uzun süreli kayıtlarda haftalık ücretin 245 £'a kadar düşmesi, Cambridge'de bir dönem ya da akademik yıl geçirmeyi planlayanlar için cazip.",
+      "highlights": [
+        "British Council akreditasyonlu, English UK üyesi",
+        "Her pazartesi başlangıç",
+        "IELTS ve akademik yıl programları",
+        "20+ haftada 245 £/hafta",
+        "Sakin Newnham semtinde bahçeli bina"
+      ],
+      "facilities": [
+        "Bahçe",
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "K+ çevrimiçi öğrenme platformu"
+      ],
+      "idealFor": [
+        "Akademik yıl planlayanlar",
+        "IELTS ile üniversite hedefleyenler",
+        "Bisikletli öğrenci hayatı isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 330
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 325
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 295
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 245
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yarı Yoğun İngilizce",
+          "nameEn": "Semi-Intensive English",
+          "lessonsPerWeek": 27,
+          "hoursPerWeek": 20.25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 360
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 355
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 315
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 270
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.25,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 415
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 405
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 370
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 315
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS (Supplementary / Intensive)",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.25,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 415
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 405
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 370
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 315
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "Business Supplementary",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.25,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 415
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 405
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 370
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 315
+            }
+          ],
+          "notes": "Kontenjana bağlı."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": "30–45 dk",
+          "perWeek": 245,
+          "minAge": 18,
+          "notes": "16–17 yaş için 265 £/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, özel banyo",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": "30–45 dk",
+          "perWeek": 285,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Öğrenci yurdu – tek kişilik en-suite (Student Castle Cambridge)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Cambridge",
+          "commute": null,
+          "perWeek": 365,
+          "minAge": 18,
+          "notes": "2026 itibarıyla okul The Cam Foundry (Mill Road) yurdunu tanıtıyor; güncel fiyat teyit edilmeli."
+        },
+        {
+          "type": "studio",
+          "name": "Öğrenci yurdu – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Cambridge",
+          "commute": null,
+          "perWeek": 425,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 135,
+        "accommodationPlacement": 35,
+        "transferHeathrow": 280,
+        "transferGatwick": 330,
+        "summerSupplementPerWeek": 20,
+        "summerPeriod": "Ders: 16 Haz–22 Ağu; aile yanı +30 £/hafta (31 May–23 Ağu); yurt +35 £/hafta",
+        "materials": "Dahil",
+        "other": "Fiyatlar Kaplan 2025 resmi fiyat listesinden; 2026 listesi kamuya açık değil. Stansted transferi 160 £."
+      },
+      "priceYear": 2025,
+      "priceStatus": "official",
+      "sources": [
+        "https://ebook.kaplaninternational.com/pricelist/2025-pricelist/row/Kaplan-Pricelist2025--row-en.pdf",
+        "https://www.kaplaninternational.com/learn-english-united-kingdom/cambridge",
+        "https://www.englishuk.com/member-directory?id=187"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "st-giles-cambridge",
+      "name": "St Giles International Cambridge",
+      "brand": "St Giles International",
+      "area": "Botanic Garden yakını (Bateman Street)",
+      "address": "52 Bateman Street, Cambridge CB2 1LR",
+      "nearestStation": "Cambridge tren istasyonu (yürüyerek ~10 dk)",
+      "website": "https://www.stgiles-international.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 50,
+      "founded": null,
+      "description": "St Giles Cambridge, Cambridge Üniversitesi Botanik Bahçesi'nin hemen yanında, Bateman Street üzerindeki tarihi bir binada eğitim veren köklü bir okul. 1955'ten beri faaliyet gösteren St Giles International grubunun parçası olan okul, tren istasyonuna ve şehir merkezine yürüme mesafesinde. Dersler 50 dakika; sabah 20 derslik Genel İngilizce, öğleden sonra 8 seçmeli dersle 28 derslik Yoğun kurs, IELTS ve Cambridge sınav hazırlığı ile daha ekonomik öğleden sonra kursu seçenekleri bulunuyor.\n\n2027 fiyat listesi, konaklama türlerini sezona göre ayrıntılı biçimde veriyor: standart ve özel banyolu aile yanı odaları, şehirdeki özel stüdyo daireler ve The Lensfield otel seçeneği. Yaz döneminde ders ve konaklama için ek ücret uygulanıyor. Global English for Life ve Global English for Work gibi öğleden sonra modülleri, İngilizcesini iş hayatına taşımak isteyenler için ayrıca değer katıyor.",
+      "highlights": [
+        "Botanik Bahçesi yanında, istasyona 10 dk yürüme",
+        "50 dakikalık dersler",
+        "Ekonomik öğleden sonra kursu seçeneği",
+        "İş İngilizcesi odaklı öğleden sonra modülleri",
+        "Şeffaf 2027 fiyat listesi"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Kendi kendine çalışma alanı",
+        "Ücretsiz Wi-Fi",
+        "St Giles e-school platformu"
+      ],
+      "idealFor": [
+        "İstasyona yakın okul isteyenler",
+        "Bütçeye göre ders saati seçmek isteyenler",
+        "Cambridge sınavlarına hazırlananlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Sabah)",
+          "nameEn": "Peak Morning Course 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.7,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 397
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 360
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 338
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 318
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 280
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive Course (20+8)",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 23.3,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 502
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 453
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 426
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 400
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 342
+            }
+          ],
+          "notes": "Global English for Life / for Work modülleri dahil."
+        },
+        {
+          "name": "IELTS Hazırlık (Yoğun)",
+          "nameEn": "IELTS Preparation (20 IELTS + 8 GE)",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 23.3,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 502
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 453
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 426
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 400
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 342
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "Intensive – Global English for Work",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 23.3,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 502
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 453
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 426
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 400
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 342
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Öğleden Sonra Genel İngilizce",
+          "nameEn": "Off-Peak Afternoon Course",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.7,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 318
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 288
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 270
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 255
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 224
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – standart tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": "20–45 dk",
+          "perWeek": 269,
+          "minAge": 18,
+          "notes": "20 Haz–22 Ağu: 294 £/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – superior tek kişilik oda, özel banyo",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": "20–45 dk",
+          "perWeek": 322,
+          "minAge": 18,
+          "notes": "Yazın 348 £/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, sadece kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Cambridge geneli",
+          "commute": "20–45 dk",
+          "perWeek": 214,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "studio",
+          "name": "Özel stüdyo daire (1–2 kişi)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Cambridge",
+          "commute": "10–30 dk yürüme",
+          "perWeek": 356,
+          "minAge": 18,
+          "notes": "Yazın 405 £/hafta."
+        },
+        {
+          "type": "studio",
+          "name": "Cherry Hinton stüdyo daire",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Cherry Hinton",
+          "commute": null,
+          "perWeek": 341,
+          "minAge": 18,
+          "notes": "Yazın 385 £/hafta."
+        }
+      ],
+      "fees": {
+        "registration": 88,
+        "accommodationPlacement": 52,
+        "transferHeathrow": 225,
+        "transferGatwick": 236,
+        "summerSupplementPerWeek": 31,
+        "summerPeriod": "Ders: 21 Haziran–20 Ağustos 2027; konaklama yaz fiyatları 20 Haz–22 Ağu",
+        "materials": "Kitap başına ~35–45 £",
+        "other": "Stansted 133 £, Luton 158 £. Özel diyet +34 £/hafta."
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.stgiles-international.com/wp-content/uploads/2026/10/2027-CDP-16-Oct-2026_compressed.pdf",
+        "https://www.englishuk.com/member-directory?id=341"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "stafford-house-cambridge",
+      "name": "Stafford House Cambridge",
+      "brand": "Stafford House International",
+      "area": "Şehir merkezi (Round Church Street)",
+      "address": "15 Round Church Street, Cambridge CB5 8AD",
+      "nearestStation": "Cambridge tren istasyonu (otobüsle ~15 dk); Drummer Street otobüs terminali yürüyerek ~5 dk",
+      "website": "https://www.staffordhouse.com/locations/cambridge/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Stafford House Cambridge, tarihi Round Church'ün hemen yanında, St John's College'a ve Jesus Green parkına birkaç dakika yürüme mesafesinde, tam şehir merkezinde yer alıyor. 135 öğrenci kapasiteli ve 9 sınıflı okulda ortalama sınıf mevcudu 10, en fazla 15 kişi; dersler 45 dakika. Standart (20), Yoğun (25) ve Süper Yoğun (30 ders) programlar sabah ana dersler ve öğleden sonra modüllerle kurgulanıyor; IELTS ile Cambridge B2 First ve C1 Advanced hazırlığı da sunuluyor.\n\nOkulun öne çıkan seçeneklerinden biri, 18 yaş üstü için tüm şehirlerde ve kurslarda geçerli Unlimited Package; kayıt, materyal ve Cambridge sınav ücretlerini kapsıyor. Konaklamada standart ve özel banyolu superior aile yanı ile en-suite Stafford House yurdu bulunuyor. Merkezi konum, okul sonrası kolejleri, müzeleri ve nehir kenarını gezmeyi kolaylaştırıyor.",
+      "highlights": [
+        "Tam şehir merkezinde, Round Church yanında",
+        "Ortalama 10, en fazla 15 kişilik sınıflar",
+        "20, 25 veya 30 ders seçeneği",
+        "Kayıt ve sınav ücretlerini içeren Unlimited Package",
+        "En-suite okul yurdu"
+      ],
+      "facilities": [
+        "9 sınıf",
+        "Öğrenci ortak alanı",
+        "Ücretsiz Wi-Fi",
+        "Sosyal program"
+      ],
+      "idealFor": [
+        "Merkezde okumak isteyenler",
+        "Cambridge sınavına girecekler",
+        "Esnek yoğunluk arayanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Standart)",
+          "nameEn": "General English – Standard",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 365
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 340
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 320
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 280
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (Yoğun)",
+          "nameEn": "General English – Intensive",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 19,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 420
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 405
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 365
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 315
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (Süper Yoğun)",
+          "nameEn": "General English – Super Intensive",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 23,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 450
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 435
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 390
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 330
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS (Intensive)",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 19,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 420
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 405
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 365
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 315
+            }
+          ],
+          "notes": "30 dersli seçenek: 450/435/390/330 £."
+        },
+        {
+          "name": "Unlimited Package (18+)",
+          "nameEn": "Unlimited Package",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "8",
+              "perWeek": 480
+            },
+            {
+              "weeks": "12",
+              "perWeek": 435
+            },
+            {
+              "weeks": "24",
+              "perWeek": 350
+            },
+            {
+              "weeks": "36",
+              "perWeek": 350
+            }
+          ],
+          "notes": "Paket fiyatı haftalığa çevrilmiştir (8 hf 3.840 £; 12 hf 5.220 £; 24 hf 8.400 £); kayıt, materyal ve Cambridge sınav ücreti dahil."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": null,
+          "perWeek": 250,
+          "minAge": 16,
+          "notes": "18+ B&B: 225 £."
+        },
+        {
+          "type": "homestay",
+          "name": "Superior aile yanı – özel banyolu tek kişilik oda",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": null,
+          "perWeek": 335,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Stafford House yurdu – en-suite",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Cambridge",
+          "commute": null,
+          "perWeek": 270,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Yaz yurdu – en-suite (Temmuz–Ağustos)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Cambridge",
+          "commute": null,
+          "perWeek": 300,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 80,
+        "accommodationPlacement": 70,
+        "transferHeathrow": 265,
+        "transferGatwick": 275,
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "Aile yanı 27 Haz–14 Ağu 2027; yurt 27 Haz–31 Tem 2027",
+        "materials": "1–4 hafta 10 £/hafta; 5+ hafta 12 haftada 50 £",
+        "other": "Stansted 165 £, Luton 180 £. Özel diyet +25 £/hafta, sigorta 9 £/hafta."
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.staffordhouse.com/wp-content/uploads/2026/08/SHI_pricelist_2027.pdf",
+        "https://www.englishuk.com/member-directory?id=5364"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "studio-cambridge",
+      "name": "Studio Cambridge",
+      "brand": "Studio Cambridge",
+      "area": "İstasyon bölgesi (Station Road)",
+      "address": "5 Salisbury Villas, Station Road, Cambridge CB1 2JF",
+      "nearestStation": "Cambridge tren istasyonu (yürüyerek ~3 dk)",
+      "website": "https://www.studiocambridge.co.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "Studio Cambridge, şehrin en köklü bağımsız dil okullarından biri ve Cambridge tren istasyonunun birkaç dakika yakınında, Station Road üzerindeki Viktorya dönemi villalarında eğitim veriyor. Bağımsız olarak yönetilen okul, yetişkin kurslarının yanı sıra yaz kampları ve aile programlarıyla da tanınıyor. Yetişkinler için sabah 20 derslik EFL-20, sabah ve öğleden sonra toplam 28 derslik EFL-28, öğleden sonra birebir derslerle güçlendirilmiş CE-28 ve 40 yaş üstüne özel Discover Cambridge programları sunuluyor.\n\nOkulun dikkat çekici bir özelliği resmi tatillerde de ders yapılması; böylece öğrenciler ders kaybetmiyor. Konaklamada standart ve superior aile yanı ile istasyon yanındaki CB1 öğrenci yurdu bulunuyor. 30 hafta ve üzeri kayıtlarda haftalık ücretin 245 £'a inmesi, uzun dönem eğitim için önemli bir avantaj. 16–17 yaş öğrencilere ek refah önlemleri nedeniyle daha yüksek kayıt ücreti uygulanıyor.",
+      "highlights": [
+        "Tren istasyonuna 3 dakika",
+        "Resmi tatillerde de ders yapılıyor",
+        "40+ yaşa özel Discover Cambridge",
+        "Birebir derslerle CE-28 kombinasyonu",
+        "30+ haftada 245 £/hafta"
+      ],
+      "facilities": [
+        "Viktorya dönemi villa binaları",
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "Sosyal program ve geziler"
+      ],
+      "idealFor": [
+        "Uzun dönem öğrenciler",
+        "40 yaş üstü öğrenciler",
+        "Birebir destek isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (EFL-20)",
+          "nameEn": "EFL-20 Standard English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": null,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 345
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 325
+            },
+            {
+              "weeks": "13-19",
+              "perWeek": 300
+            },
+            {
+              "weeks": "20-29",
+              "perWeek": 270
+            },
+            {
+              "weeks": "30+",
+              "perWeek": 245
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce (EFL-28)",
+          "nameEn": "EFL-28 Intensive English",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": null,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 395
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 375
+            },
+            {
+              "weeks": "13-19",
+              "perWeek": 345
+            }
+          ],
+          "notes": "Uzun süreli kayıtlarda indirimli fiyat için okulun 2027 tarifesine bakın."
+        },
+        {
+          "name": "Kombine İngilizce (CE-28)",
+          "nameEn": "CE-28 Combination English",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": null,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 565
+            },
+            {
+              "weeks": "5+",
+              "perWeek": 530
+            }
+          ],
+          "notes": "20 grup dersi + 8 birebir ders."
+        },
+        {
+          "name": "Discover Cambridge 40+",
+          "nameEn": "Discover Cambridge 40+ (Classic)",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1",
+              "perWeek": 520
+            }
+          ],
+          "notes": "Belirli tarihler; konferans, öğle yemeği ve kültürel etkinlikler dahil."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – standart tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": null,
+          "perWeek": 252,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – standart tek kişilik oda, kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Cambridge geneli",
+          "commute": null,
+          "perWeek": 196,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Superior aile yanı – yarım pansiyon",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": null,
+          "perWeek": 350,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "CB1 öğrenci yurdu",
+          "bathroom": "private",
+          "board": "self",
+          "location": "İstasyon yanı",
+          "commute": "5 dk yürüme",
+          "perWeek": 400,
+          "minAge": 18,
+          "notes": "100 £ iade edilebilir depozito."
+        }
+      ],
+      "fees": {
+        "registration": 95,
+        "accommodationPlacement": null,
+        "transferHeathrow": 230,
+        "transferGatwick": 275,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": null,
+        "other": "16–17 yaş için kayıt ücreti 195 £. Stansted 145 £, Luton 175 £. Yaz ek etkinlik paketi (Cambridge Summer Plus) 2 hafta 155 £."
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.studiocambridge.co.uk/wp-content/uploads/2026/08/Studio-Cambridge-2027-Dates-and-Fees.pdf",
+        "https://www.studiocambridge.co.uk/adult-english-courses/general-intensive-english-courses/",
+        "https://www.englishuk.com/member-directory?id=319"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "central-language-school-cambridge",
+      "name": "Central Language School Cambridge",
+      "brand": "Central Language School",
+      "area": "Şehir merkezi (St Andrew's Street)",
+      "address": "The Stone Yard Centre, 41B St Andrew's Street, Cambridge CB2 3AR",
+      "nearestStation": "Cambridge tren istasyonu (yürüyerek ~15 dk); Drummer Street otobüs terminali ~3 dk",
+      "website": "https://www.centrallanguageschool.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "Central Language School, Cambridge'in tam merkezinde, Emmanuel College ve Grand Arcade alışveriş merkezine birkaç dakika mesafedeki Stone Yard Centre'da faaliyet gösteren, kâr amacı gütmeyen bir dil okulu. British Council akreditasyonuna sahip okul, samimi ve topluluk odaklı yapısıyla tanınıyor. Haftada 15 saatlik Genel İngilizce, 21 saatlik Yoğun İngilizce ve 6 saatlik öğleden sonra kursu sunuluyor; birebir dersler de saatlik olarak alınabiliyor.\n\nŞehrin en uygun fiyatlı akredite seçeneklerinden biri olan okulda, 4 haftadan itibaren kademeli indirimler başlıyor ve 24 hafta ve üzeri kayıtlarda kurs ücretinden %20 düşülüyor. Konaklama, yarım pansiyon, kahvaltılı veya kendi yemeğini yapma seçenekleriyle aile yanında sağlanıyor. Okul materyalleri ücrete dahil; dilbilgisi kitapları ve sınav ücretleri ayrıca ödeniyor. Bütçesini dikkatli planlayan öğrenciler için güçlü bir alternatif.",
+      "highlights": [
+        "Kâr amacı gütmeyen, samimi okul",
+        "Şehrin en uygun fiyatlı akredite seçeneklerinden",
+        "24+ haftada %20 indirim",
+        "Tam şehir merkezinde",
+        "Ekonomik aile yanı seçenekleri"
+      ],
+      "facilities": [
+        "Merkezi konum",
+        "Kendi kendine çalışma kaynakları",
+        "Ücretsiz Wi-Fi",
+        "Haftalık sosyal etkinlikler"
+      ],
+      "idealFor": [
+        "Bütçe odaklı öğrenciler",
+        "Uzun süre kalacaklar",
+        "Samimi ortam arayanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 230
+            },
+            {
+              "weeks": "4-9",
+              "perWeek": 219
+            },
+            {
+              "weeks": "10-15",
+              "perWeek": 207
+            },
+            {
+              "weeks": "16-23",
+              "perWeek": 196
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 184
+            }
+          ],
+          "notes": "Taban fiyat 230 £; süre indirimleri (%5/%10/%15/%20) uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 21,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 295
+            },
+            {
+              "weeks": "4-9",
+              "perWeek": 280
+            },
+            {
+              "weeks": "10-15",
+              "perWeek": 266
+            },
+            {
+              "weeks": "16-23",
+              "perWeek": 251
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 236
+            }
+          ],
+          "notes": "Taban fiyat 295 £; süre indirimleri uygulanmıştır."
+        },
+        {
+          "name": "Öğleden Sonra Kursu",
+          "nameEn": "Afternoon Course",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 6,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 95
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – yarım pansiyon",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": null,
+          "perWeek": 215,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – kahvaltılı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Cambridge geneli",
+          "commute": null,
+          "perWeek": 175,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – kendi yemeğini yapma",
+          "bathroom": "shared",
+          "board": "self",
+          "location": "Cambridge geneli",
+          "commute": null,
+          "perWeek": 160,
+          "minAge": 16,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": null,
+        "accommodationPlacement": 60,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": "Okul materyalleri dahil (dilbilgisi kitabı hariç)",
+        "other": "Birebir ders 60 £/saat. Transfer ücretleri için okula danışın."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.centrallanguageschool.com/fees-and-enrolment/fees/",
+        "https://www.englishuk.com/member-directory?id=66"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "lsi-cambridge",
+      "name": "LSI Cambridge – Language Studies International",
+      "brand": "LSI Language Studies International",
+      "area": "İstasyon bölgesi (Tenison Road)",
+      "address": "41 Tenison Road, Cambridge CB1 2DG",
+      "nearestStation": "Cambridge tren istasyonu (yürüyerek ~5 dk)",
+      "website": "https://www.lsi.edu/en/schools/england/learn-english-in-cambridge",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": 50,
+      "founded": null,
+      "description": "LSI Cambridge, tren istasyonuna yaklaşık 5 dakika yürüme mesafesindeki Tenison Road'da, yeşil bir konut sokağında yer alan uluslararası LSI ağının okulu. 16 yaş üstü öğrencilere yıl boyu General 20, Intensive 24 ve Intensive 30 programları, IELTS, TOEFL, TOEIC ve Cambridge B2 First / C1 Advanced hazırlığı, 30 derslik İş İngilizcesi ve öğretmenlere yönelik kurslar sunuluyor. Dersler genellikle 50 dakika ve ortalama sınıf mevcudu en fazla 15.\n\nKonaklamada aile yanı (kahvaltılı veya yarım pansiyon) ve okulun kendi yurdu The Willows öne çıkıyor; yurt, ortak mutfaklı tek kişilik odalardan stüdyo dairelere kadar seçenek sunuyor. 2026 konaklama broşürüne göre The Willows'ta 4 hafta ve üzeri konaklamalarda %50 indirim kampanyası bulunuyor. Okul ders ücretlerini çevrimiçi teklif sistemiyle paylaştığından, kurs fiyatları emsal okullara göre tahminidir; konaklama fiyatları ise okulun resmi 2026 broşüründen alınmıştır.",
+      "highlights": [
+        "İstasyona 5 dakika yürüme",
+        "20, 24 veya 30 derslik esnek programlar",
+        "IELTS, TOEFL, TOEIC ve Cambridge hazırlığı",
+        "Okulun kendi yurdu The Willows",
+        "Öğretmenlere yönelik kurslar"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "Sosyal program"
+      ],
+      "idealFor": [
+        "Farklı sınav hedefi olanlar",
+        "İş İngilizcesi isteyenler",
+        "Yurtta bağımsız yaşamak isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.7,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 350
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 320
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 290
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive 30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 25,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 435
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 400
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 370
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 25,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 435
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 400
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "Business English 30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 25,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 450
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": "≤30 dk (toplu taşıma)",
+          "perWeek": 255,
+          "minAge": 16,
+          "notes": "B&B 215 £."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – iki kişilik oda (birlikte gelenler)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": "≤30 dk",
+          "perWeek": 220,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "The Willows – tek kişilik oda, ortak banyo",
+          "bathroom": "shared",
+          "board": "self",
+          "location": "94 Milton Road",
+          "commute": "~35 dk yürüme",
+          "perWeek": 280,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "The Willows – tek kişilik en-suite",
+          "bathroom": "private",
+          "board": "self",
+          "location": "94 Milton Road",
+          "commute": "~35 dk yürüme",
+          "perWeek": 330,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "studio",
+          "name": "The Willows – stüdyo daire",
+          "bathroom": "private",
+          "board": "self",
+          "location": "94 Milton Road",
+          "commute": "~35 dk yürüme",
+          "perWeek": 375,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": null,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": 45,
+        "summerPeriod": "Aile yanı: 14 Haziran–23 Ağustos",
+        "materials": null,
+        "other": "Ders fiyatları tahminidir. Özel diyet +40/50 £/hafta, 18 yaş altı aile yanı +20 £/hafta, Noel ek ücreti 60 £."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.lsi.edu/en/schools/england/learn-english-in-cambridge",
+        "https://www.lsi.edu/accommodation/2026/Cambridge.pdf",
+        "https://www.englishuk.com/member-directory?id=205"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ef-cambridge",
+      "name": "EF International Language Campus Cambridge",
+      "brand": "EF Education First",
+      "area": "Hills Road (güney Cambridge)",
+      "address": "221 Hills Road, Cambridge CB2 8RN",
+      "nearestStation": "Cambridge tren istasyonu (otobüsle ~10 dk / bisikletle ~8 dk)",
+      "website": "https://www.ef.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 40,
+      "founded": null,
+      "description": "EF Cambridge, şehrin güneyinde Hills Road üzerinde, geniş yeşil alanlar içinde kendi yurtları bulunan bir kampüste eğitim veriyor. EF'nin İngiltere'deki en bilinen okullarından biri olan kampüs, özellikle 16–25 yaş arası genç yetişkinlerin tercih ettiği, sosyal yaşamı yoğun bir ortam sunuyor. Dersler EF'nin kendi sistemine göre Basic, General ve Intensive yoğunluklarında; IELTS ve Cambridge sınav hazırlığı da mevcut.\n\nKampüsün tren istasyonuna ve Addenbrooke's bölgesine yakınlığı ulaşımı kolaylaştırıyor; şehir merkezine bisikletle kısa sürede varılabiliyor. Konaklamada kampüs yurtları ve aile yanı seçenekleri bulunuyor. EF fiyatlarını yalnızca kişisel teklifle ve çoğu zaman konaklama dahil paketler olarak sunduğundan, aşağıdaki ücretler emsal okullara göre tahminidir; yaz aylarında yüksek sezon ek ücreti uygulanıyor.",
+      "highlights": [
+        "Yeşil alanlar içinde kampüs",
+        "Kampüs içi yurtlar",
+        "Genç ve uluslararası öğrenci profili",
+        "IELTS ve Cambridge hazırlığı",
+        "EF dijital öğrenme platformu"
+      ],
+      "facilities": [
+        "Kampüs yurtları",
+        "Kafeterya",
+        "Bahçe ve spor alanları",
+        "Ücretsiz Wi-Fi"
+      ],
+      "idealFor": [
+        "Kampüs hayatı isteyen genç yetişkinler",
+        "Her şey dahil paket arayanlar",
+        "Sosyal ortam önceliği olanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Basic)",
+          "nameEn": "Basic Course",
+          "lessonsPerWeek": 16,
+          "hoursPerWeek": 10.7,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 340
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 300
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (General)",
+          "nameEn": "General Course",
+          "lessonsPerWeek": 26,
+          "hoursPerWeek": 17.3,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 410
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 360
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive Course",
+          "lessonsPerWeek": 32,
+          "hoursPerWeek": 21.3,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 470
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 420
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": "20–40 dk",
+          "perWeek": 280,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "EF kampüs yurdu – paylaşımlı oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Kampüs içi",
+          "commute": "0–5 dk",
+          "perWeek": 330,
+          "minAge": 16,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 150,
+        "accommodationPlacement": null,
+        "transferHeathrow": 260,
+        "transferGatwick": 300,
+        "summerSupplementPerWeek": 50,
+        "summerPeriod": "Haziran–Ağustos (yüksek sezon)",
+        "materials": null,
+        "other": "Tüm rakamlar tahminidir; EF yalnızca kişisel teklif verir."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.englishuk.com/member-directory?id=113",
+        "https://www.ef.com/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "select-english-cambridge",
+      "name": "Select English Cambridge",
+      "brand": "Select English",
+      "area": "İstasyon bölgesi (Station Road)",
+      "address": "9-15 Station Road, Cambridge CB1 2JB",
+      "nearestStation": "Cambridge tren istasyonu (yürüyerek ~2 dk)",
+      "website": "https://www.selectenglish.co.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "Select English, Cambridge tren istasyonunun hemen karşısındaki Station Road'da yer alan bağımsız bir dil okulu. English UK üyesi olan okul, yıl boyu yetişkin kurslarının yanı sıra yaz aylarında genç öğrencilere yönelik programlar da düzenliyor. Yetişkinler için haftada 15 saatlik Genel İngilizce temel program; yaz döneminde ise ders, konaklama, transfer ve etkinlikleri bir arada sunan iki haftalık paketler bulunuyor.\n\nİstasyona yakınlığı, Londra'ya ve havalimanlarına sık seyahat etmek isteyen öğrenciler için önemli bir kolaylık. Konaklama çoğunlukla yarım pansiyon aile yanı şeklinde sağlanıyor. Okulun resmi fiyat sayfası otomatik erişime kapalı olduğundan aşağıdaki fiyatlar arama sonuçlarında görünen 2026 değerlerine ve emsal okullara dayanan tahmini rakamlardır; kesin fiyat için okuldan teklif alınmalı.",
+      "highlights": [
+        "Tren istasyonuna 2 dakika",
+        "Bağımsız, butik okul",
+        "Yaz için her şey dahil paketler",
+        "Yıl boyu yetişkin kursları",
+        "Küçük ve samimi ortam"
+      ],
+      "facilities": [
+        "Merkezi ulaşım",
+        "Ücretsiz Wi-Fi",
+        "Sosyal program"
+      ],
+      "idealFor": [
+        "Ulaşım kolaylığı isteyenler",
+        "Kısa süreli yaz programı arayanlar",
+        "Butik okul tercih edenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 335
+            },
+            {
+              "weeks": "5-8",
+              "perWeek": 310
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda (yaz)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Cambridge geneli",
+          "commute": null,
+          "perWeek": 255,
+          "minAge": 16,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": null,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": null,
+        "other": "Tahmini; 2026 yazında 2 haftalık 15 dersli paket 1.510 £ (ders, konaklama, transfer ve etkinlikler dahil) olarak görünüyor."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.selectenglish.co.uk/course-fees/",
+        "https://www.englishuk.com/member-directory?id=404"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

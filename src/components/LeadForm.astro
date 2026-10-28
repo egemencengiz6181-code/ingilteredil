@@ -1,0 +1,255 @@
+---
+import Icon from './Icon.astro';
+import { SITE, TRACKING } from '../config/site';
+import { cities } from '../data';
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  city?: string; // önseçili şehir slug'ı
+  school?: string; // okul sayfasında okul adı
+  program?: string;
+  source?: string; // formun yeri (ör. "sehir-sayfasi", "lp-londra")
+  id?: string;
+  dark?: boolean;
+}
+const {
+  title = 'Ücretsiz teklif ve danışmanlık',
+  subtitle = 'Formu doldurun, danışmanımız aynı gün içinde sizi arasın ve size özel karşılaştırmalı fiyat teklifini yazılı olarak iletsin.',
+  city = '',
+  school = '',
+  program = '',
+  source = 'form',
+  id = 'teklif',
+  dark = false,
+} = Astro.props;
+
+const programs = [
+  'Genel İngilizce',
+  'Yoğun İngilizce',
+  'IELTS / Cambridge sınav hazırlık',
+  'İş İngilizcesi',
+  '30 yaş üstü program',
+  'Her şey dahil Londra paketi',
+  'Yaz okulu (7–17 yaş)',
+  'Sadece konaklama',
+  'Henüz bilmiyorum',
+];
+const uid = `f-${id}`;
+---
+<div class:list={['lf', { 'lf--dark': dark }]} id={id}>
+  <div class="lf__head">
+    <p class="lf__badge"><Icon name="shield" size={16} /> Danışmanlık ücretsizdir</p>
+    <h2 class="lf__title">{title}</h2>
+    {subtitle && <p class="lf__sub">{subtitle}</p>}
+  </div>
+
+  <form
+    class="lf__form"
+    data-lead-form
+    data-source={source}
+    data-w3f={TRACKING.web3formsKey}
+    data-hook={TRACKING.leadWebhook}
+    data-wa={SITE.whatsapp}
+    novalidate
+  >
+    <input type="hidden" name="okul" value={school} />
+    <div class="hp" aria-hidden="true"><label>Web siteniz <input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+
+    <div class="lf__row">
+      <label class="fld">
+        <span>Ad soyad *</span>
+        <input name="ad_soyad" type="text" autocomplete="name" required minlength="3" placeholder="Adınız ve soyadınız" />
+      </label>
+      <label class="fld">
+        <span>Telefon *</span>
+        <input name="telefon" type="tel" autocomplete="tel" inputmode="tel" required placeholder="05xx xxx xx xx" pattern="[0-9 +()\-]{10,}" />
+      </label>
+    </div>
+
+    <div class="lf__row">
+      <label class="fld">
+        <span>Şehir tercihi</span>
+        <select name="sehir">
+          <option value="">Henüz karar vermedim</option>
+          {cities.map((c) => <option value={c.name} selected={c.slug === city}>{c.name}</option>)}
+        </select>
+      </label>
+      <label class="fld">
+        <span>Program</span>
+        <select name="program">
+          {programs.map((p) => <option selected={p === program}>{p}</option>)}
+        </select>
+      </label>
+    </div>
+
+    <div class="lf__row">
+      <label class="fld">
+        <span>Ne zaman gitmeyi planlıyorsunuz?</span>
+        <select name="baslangic">
+          <option>1 ay içinde</option>
+          <option selected>1–3 ay içinde</option>
+          <option>3–6 ay içinde</option>
+          <option>6 aydan sonra</option>
+          <option>Tarih belli değil</option>
+        </select>
+      </label>
+      <label class="fld">
+        <span>Süre</span>
+        <select name="sure">
+          <option>1–4 hafta</option>
+          <option selected>5–8 hafta</option>
+          <option>9–12 hafta</option>
+          <option>13–24 hafta</option>
+          <option>24 haftadan uzun</option>
+          <option>Bilmiyorum</option>
+        </select>
+      </label>
+    </div>
+
+    <label class="fld">
+      <span>E-posta <em>(isteğe bağlı)</em></span>
+      <input name="eposta" type="email" autocomplete="email" placeholder="ornek@mail.com" />
+    </label>
+
+    <label class="fld">
+      <span>Eklemek istedikleriniz <em>(isteğe bağlı)</em></span>
+      <textarea name="mesaj" rows="2" placeholder="Yaşınız, İngilizce seviyeniz, konaklama tercihiniz..."></textarea>
+    </label>
+
+    <fieldset class="lf__pref">
+      <legend>Size nasıl ulaşalım?</legend>
+      <label><input type="radio" name="iletisim_tercihi" value="Telefon" checked /> Telefonla arayın</label>
+      <label><input type="radio" name="iletisim_tercihi" value="WhatsApp" /> WhatsApp’tan yazın</label>
+    </fieldset>
+
+    <label class="lf__kvkk">
+      <input type="checkbox" name="kvkk" required />
+      <span><a href="/kvkk/" target="_blank">KVKK aydınlatma metnini</a> okudum; benimle iletişime geçilmesini kabul ediyorum.</span>
+    </label>
+
+    <button type="submit" class="btn btn--coral btn--lg btn--block">
+      Ücretsiz teklif iste <Icon name="arrow" />
+    </button>
+    <p class="lf__msg" role="status" aria-live="polite"></p>
+    <p class="lf__note">Bilgileriniz yalnızca size dönüş yapmak için kullanılır, üçüncü kişilerle paylaşılmaz.</p>
+  </form>
+</div>
+
+<style>
+  .lf { container-type: inline-size; background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-lg); padding: clamp(1.25rem, 1rem + 1vw, 2rem); box-shadow: var(--shadow-1); }
+  .lf--dark { border-color: transparent; }
+  .lf__badge { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.8rem; font-weight: 650; color: var(--green); background: #e7f5ec; padding: 0.25rem 0.65rem; border-radius: var(--r-pill); margin-bottom: 0.7rem; }
+  .lf__title { font-size: clamp(1.35rem, 1.15rem + 0.8vw, 1.75rem); margin-bottom: 0.35rem; }
+  .lf__sub { color: var(--ink-3); font-size: 0.93rem; margin-bottom: 1.1rem; }
+  .lf__form { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.8rem; }
+  .lf__row { display: grid; gap: 0.8rem; grid-template-columns: minmax(0, 1fr); }
+  @container (min-width: 440px) { .lf__row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .fld { display: grid; gap: 0.3rem; font-size: 0.86rem; font-weight: 600; color: var(--ink-2); }
+  .fld em { font-weight: 400; font-style: normal; color: var(--ink-3); }
+  .fld input, .fld select, .fld textarea { width: 100%; padding: 0.72rem 0.85rem; border: 1.5px solid var(--line); border-radius: var(--r-md); background: var(--paper); font-size: 1rem; font-weight: 400; color: var(--ink); transition: border-color 0.15s; }
+  .fld input:focus, .fld select:focus, .fld textarea:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px var(--teal-100); }
+  .fld input.err { border-color: var(--coral); }
+  .lf__pref { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; font-size: 0.9rem; }
+  .lf__pref legend { font-size: 0.86rem; font-weight: 600; color: var(--ink-2); margin-bottom: 0.3rem; padding: 0; }
+  .lf__pref label { display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer; }
+  .lf__kvkk { display: flex; gap: 0.55rem; align-items: flex-start; font-size: 0.84rem; color: var(--ink-3); cursor: pointer; }
+  .lf__kvkk input { margin-top: 0.2rem; width: 18px; height: 18px; flex: none; accent-color: var(--teal-900); }
+  .lf__msg { margin: 0; font-size: 0.9rem; font-weight: 600; min-height: 0; }
+  .lf__msg.err { color: var(--coral-600); }
+  .lf__msg.ok { color: var(--green); }
+  .lf__note { font-size: 0.78rem; color: var(--ink-3); margin: 0; text-align: center; }
+  .hp { position: absolute; left: -9999px; }
+</style>
+
+<script>
+  type Attr = Record<string, string>;
+  const read = (k: string): Attr => {
+    try { return JSON.parse(localStorage.getItem(k) || '{}'); } catch { return {}; }
+  };
+
+  document.querySelectorAll<HTMLFormElement>('[data-lead-form]').forEach((form) => {
+    const msg = form.querySelector<HTMLElement>('.lf__msg')!;
+    const btn = form.querySelector<HTMLButtonElement>('button[type=submit]')!;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      msg.className = 'lf__msg';
+      msg.textContent = '';
+      const fd = new FormData(form);
+      if (fd.get('website')) return; // bot
+
+      const name = String(fd.get('ad_soyad') || '').trim();
+      const phone = String(fd.get('telefon') || '').trim();
+      const digits = phone.replace(/\D/g, '');
+      form.querySelectorAll('.err').forEach((el) => el.classList.remove('err'));
+      if (name.length < 3) { form.querySelector('[name=ad_soyad]')!.classList.add('err'); msg.className = 'lf__msg err'; msg.textContent = 'Lütfen adınızı ve soyadınızı yazın.'; return; }
+      if (digits.length < 10) { form.querySelector('[name=telefon]')!.classList.add('err'); msg.className = 'lf__msg err'; msg.textContent = 'Lütfen geçerli bir telefon numarası yazın.'; return; }
+      if (!fd.get('kvkk')) { msg.className = 'lf__msg err'; msg.textContent = 'Devam etmek için KVKK onay kutusunu işaretleyin.'; return; }
+
+      const first = read('attr_first');
+      const last = read('attr_last');
+      const data: Record<string, string> = {};
+      fd.forEach((v, k) => { if (k !== 'website' && k !== 'kvkk' && String(v)) data[k] = String(v); });
+      Object.assign(data, {
+        form_yeri: form.dataset.source || '',
+        sayfa: location.pathname,
+        sayfa_basligi: document.title,
+        kvkk_onay: 'evet',
+        tarih: new Date().toLocaleString('tr-TR'),
+        ilk_kaynak: [first.utm_source, first.utm_medium, first.utm_campaign].filter(Boolean).join(' / ') || first.referrer || 'doğrudan',
+        ilk_giris_sayfasi: first.landing || '',
+        son_kaynak: [last.utm_source, last.utm_medium, last.utm_campaign].filter(Boolean).join(' / ') || last.referrer || 'doğrudan',
+        utm_term: last.utm_term || first.utm_term || '',
+        gclid: last.gclid || first.gclid || '',
+        gbraid: last.gbraid || first.gbraid || '',
+        wbraid: last.wbraid || first.wbraid || '',
+      });
+
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+      msg.textContent = 'Gönderiliyor…';
+
+      const w3f = form.dataset.w3f;
+      const hook = form.dataset.hook;
+      const subject = `Yeni lead: ${data.ad_soyad} · ${data.sehir || 'Şehir belirsiz'} · ${data.program || ''}`;
+      const jobs: Promise<unknown>[] = [];
+      if (w3f) {
+        jobs.push(
+          fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+            body: JSON.stringify({ access_key: w3f, subject, from_name: 'İngiltere’de Dil Eğitimi', ...data }),
+          }).then((r) => { if (!r.ok) throw new Error('w3f'); }),
+        );
+      }
+      if (hook) {
+        // Google Apps Script CORS başlığı döndürmediği için no-cors + text/plain
+        jobs.push(fetch(hook, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(data) }));
+      }
+
+      const results = jobs.length ? await Promise.allSettled(jobs) : [];
+      const delivered = results.some((r) => r.status === 'fulfilled');
+
+      const w = window as unknown as { dataLayer: object[] };
+      w.dataLayer = w.dataLayer || [];
+      w.dataLayer.push({
+        event: 'generate_lead',
+        form_location: data.form_yeri,
+        lead_city: data.sehir || '',
+        lead_program: data.program || '',
+        // Gelişmiş dönüşümler için E.164: 0530… / 530… / 90530… → +90530…
+        user_data: { phone_number: '+' + (digits.startsWith('90') ? digits : '90' + digits.replace(/^0/, '')), email: data.eposta || undefined },
+      });
+
+      try { sessionStorage.setItem('lead_summary', JSON.stringify({ ad: name.split(' ')[0], sehir: data.sehir || '', program: data.program || '', tercih: data.iletisim_tercihi })); } catch {}
+
+      if (!delivered) {
+        // Form servisi ayarlı değil veya erişilemiyor: lead kaybolmasın diye WhatsApp'a aktar
+        const text = `Merhaba, web sitesinden teklif istiyorum.\nAd: ${data.ad_soyad}\nTelefon: ${data.telefon}\nŞehir: ${data.sehir || '-'}\nProgram: ${data.program || '-'}\nBaşlangıç: ${data.baslangic || '-'}\nSüre: ${data.sure || '-'}${data.okul ? `\nOkul: ${data.okul}` : ''}${data.mesaj ? `\nNot: ${data.mesaj}` : ''}`;
+        window.open(`https://wa.me/${form.dataset.wa}?text=${encodeURIComponent(text)}`, '_blank');
+      }
+      location.href = '/tesekkurler/';
+    });
+  });
+</script>

@@ -1,0 +1,144 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Icon from '../../components/Icon.astro';
+import { cities, cityPath, schoolsInCity, minAccPrice, gbp } from '../../data';
+
+const types = [
+  {
+    t: 'Aile yanı (homestay)', icon: 'home' as const, price: '£180–360 / hafta', age: '16+',
+    d: 'Okulun denetlediği bir İngiliz ailenin evinde tek kişilik oda. Hafta içi kahvaltı ve akşam yemeği, hafta sonu genellikle üç öğün dahil (yarım pansiyon).',
+    pros: ['Günün her anında İngilizce pratiği', 'Yemekler dahil, bütçe öngörülebilir', 'İlk kez yurt dışına çıkanlar için güvenli', 'Kültürü içeriden tanıma'],
+    cons: ['Okula uzaklık 30–60 dk olabilir', 'Ev kurallarına uyum gerekir', 'Özel banyo seçeneği sınırlı'],
+  },
+  {
+    t: 'Öğrenci yurdu (rezidans)', icon: 'school' as const, price: '£160–600 / hafta', age: 'Çoğunlukla 18+',
+    d: 'Kendi banyolu oda veya stüdyo, ortak mutfak ve sosyal alanlar. Faturalar, internet ve 7/24 güvenlik kiraya dahil; İngiltere’de kefil istenmez.',
+    pros: ['Bağımsız yaşam, kendi programınız', 'Merkezi konumlar, kısa yolculuk', 'Uluslararası arkadaş çevresi', 'Spor salonu, çalışma alanı gibi olanaklar'],
+    cons: ['Yemek dahil değil (kendi mutfağı)', 'Londra’da merkezi yurtlar pahalı', 'Yaz aylarında hızlı doluyor'],
+  },
+  {
+    t: 'Stüdyo daire', icon: 'home' as const, price: '£250–650 / hafta', age: '18+',
+    d: 'Kendi mutfağı ve banyosu olan tek kişilik daire. Çoğu öğrenci rezidansının içinde, bir kısmı “serviced apartment” olarak sunulur.',
+    pros: ['Tam mahremiyet', 'Çiftler ve 30 yaş üstü için uygun', 'Kısa ve uzun dönem seçenekleri'],
+    cons: ['En pahalı seçenek', 'Sosyal ortam daha sınırlı'],
+  },
+  {
+    t: 'Paylaşımlı daire', icon: 'users' as const, price: '£200–350 / hafta (Londra’da aylık £900–1.400)', age: '18+',
+    d: 'Diğer öğrenci veya çalışanlarla paylaşılan dairede oda. Uzun programlarda düşünülebilir.',
+    pros: ['Uzun dönemde ekonomik', 'Gerçek yerel yaşam'],
+    cons: ['Depozito, referans ve sözleşme süresi şartları', 'Kısa programlar için uygun değil', 'Uzaktan kiralamada dolandırıcılık riski'],
+  },
+];
+
+const faqs = [
+  { q: 'Aile yanı konaklamada neler dahil?', a: 'Tek kişilik oda, yatak takımı, ısınma, internet (Wi-Fi) ve seçilen pansiyon tipine göre yemekler dahildir. Yarım pansiyonda hafta içi kahvaltı ve akşam yemeği, hafta sonu çoğu ailede üç öğün verilir. Çamaşır genellikle haftada bir kez aile tarafından yıkanır.' },
+  { q: 'Aile yanında okula ne kadar sürede gidilir?', a: 'Londra’da 40–60 dakika, Brighton, Oxford, Cambridge gibi şehirlerde 20–40 dakika normaldir. Okullar aileleri toplu taşıma bağlantısına göre seçer; daha yakın aile talebi için bazı okullar ek ücret alır.' },
+  { q: 'Öğrenci yurduna 18 yaş altı kalabilir mi?', a: 'Rezidansların çoğu 18 yaş ve üzeri içindir. 16–17 yaş öğrenciler için aile yanı veya okulun gözetimli yurtları (genellikle yaz döneminde) önerilir.' },
+  { q: 'Konaklamayı kendim mi ayarlamalıyım?', a: 'Okul üzerinden ayarlanan konaklamalar denetlidir ve vize başvurusunda konaklama belgesi olarak kullanılabilir. Tüm rezervasyonu kurs kaydınızla birlikte biz yapıyoruz; ayrıca ücret almıyoruz.' },
+  { q: 'Helal yemek, vejetaryen beslenme veya alerji durumunda ne olur?', a: 'Kayıt sırasında beslenme tercihinizi belirtirseniz okul size uygun aileyi eşleştirir. Helal ve vejetaryen tercihler çoğu şehirde karşılanabilir; bazı okullar özel diyet için küçük bir ek ücret alır.' },
+  { q: 'Konaklamaya hangi gün giriş yapılır?', a: 'Aile yanı ve okul yurtlarında giriş genellikle kurs başlamadan önceki pazar günü, çıkış kurs bitiminden sonraki cumartesidir. Ek geceler okula göre ücretlendirilir.' },
+];
+---
+<Base
+  title="İngiltere’de Öğrenci Konaklaması: Aile Yanı mı Yurt mu? Fiyatlar 2027"
+  description="İngiltere’de dil okulu öğrencileri için konaklama: aile yanı, öğrenci yurdu, stüdyo ve paylaşımlı daire karşılaştırması, şehir şehir haftalık fiyatlar ve seçim rehberi."
+  waMessage="Merhaba, İngiltere’de öğrenci konaklaması için teklif almak istiyorum."
+>
+  <section class="phero phero--split">
+    <div class="wrap">
+      <div>
+        <Breadcrumbs items={[{ label: 'Konaklama' }]} />
+        <span class="eyebrow">Konaklama rehberi</span>
+        <h1>İngiltere’de öğrenci konaklaması</h1>
+        <p class="lead">Aile yanı mı, öğrenci yurdu mu, stüdyo mu? Dört konaklama tipini fiyat, okula uzaklık, dil pratiği ve bağımsızlık açısından karşılaştırdık; şehir şehir haftalık fiyatları aşağıda bulabilirsiniz.</p>
+        <ul class="checks" style="margin-top:1.25rem">
+          <li>Okulun denetlediği aileler ve güvenilir rezidanslar</li>
+          <li>Faturalar dahil, depozito ve İngiltere’de kefil gerekmez</li>
+          <li>Rezervasyon kurs kaydınızla birlikte, ek ücret yok</li>
+        </ul>
+      </div>
+      <LeadForm source="konaklama" program="Sadece konaklama" title="Konaklama teklifi alın" subtitle="Okulunuzu ve tarihlerinizi paylaşın; bütçenize ve okulunuza en uygun aile veya yurt seçeneklerini karşılaştırıp iletelim." />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Seçenekler</span><h2>Konaklama türleri</h2></div>
+      <div class="grid grid--2">
+        {types.map((x) => (
+          <div class="card">
+            <div class="acc__head"><Icon name={x.icon} size={26} /><div><h3 class="mb-0">{x.t}</h3><p class="small muted mb-0">{x.price} · {x.age}</p></div></div>
+            <p style="margin-top:1rem">{x.d}</p>
+            <div class="grid" style="grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem">
+              <div><p class="xs muted" style="margin-bottom:.4rem">ARTILARI</p><ul class="checks small">{x.pros.map((p) => <li>{p}</li>)}</ul></div>
+              <div><p class="xs muted" style="margin-bottom:.4rem">DİKKAT</p><ul class="checks crosses small">{x.cons.map((p) => <li>{p}</li>)}</ul></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Şehir şehir</span><h2>Konaklama fiyatları (haftalık)</h2><p class="lead">Şehir rehberlerindeki piyasa aralıkları ve okulların listelerindeki en uygun fiyatlar.</p></div>
+      <div class="table-wrap">
+        <table class="table table--stack">
+          <thead><tr><th>Şehir</th><th>Aile yanı (yarım pansiyon)</th><th>Öğrenci yurdu</th><th class="num">Okul listelerinde en uygun</th></tr></thead>
+          <tbody>
+            {cities.map((c) => {
+              const hs = c.costs.find((k) => /aile yanı/i.test(k.item));
+              const rs = c.costs.find((k) => /yurdu/i.test(k.item));
+              const mins = schoolsInCity(c.slug).map((s) => minAccPrice(s.accommodation)).filter((n): n is number => n != null);
+              return (
+                <tr>
+                  <td><a href={`${cityPath(c)}#konaklama`}><b>{c.name}</b></a></td>
+                  <td>{hs?.amount ?? '—'}</td>
+                  <td>{rs?.amount ?? '—'}</td>
+                  <td class="num">{mins.length ? `${gbp(Math.min(...mins))}’dan` : '—'}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:1.25rem"><a href="/konaklama/londra-ogrenci-yurtlari/" class="btn btn--teal">Londra öğrenci yurtları ve fiyatları <Icon name="arrow" /></a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap prose">
+      <span class="eyebrow">Aile yanında yaşam</span>
+      <h2 class="mt-0">Aile yanı konaklamada sizi neler bekliyor?</h2>
+      <p>İngiltere’deki aile yanı (homestay) konaklama, dil okulunun denetlediği ve düzenli olarak ziyaret ettiği evlerde yapılır. “Aile” her zaman çocuklu bir çekirdek aile olmayabilir; emekli bir çift, tek ebeveynli bir aile veya yalnız yaşayan bir ev sahibi de olabilir. Evde başka bir uluslararası öğrenci kalması da yaygındır; okullar mümkün olduğunca aynı dili konuşan öğrencileri aynı eve yerleştirmez.</p>
+      <p>Odanızda yatak, dolap, çalışma masası ve ısınma bulunur; Wi-Fi standarttır. Yarım pansiyonda kahvaltı genellikle kendi hazırladığınız basit bir kahvaltıdır (tahıl, ekmek, çay), akşam yemeği ise aileyle birlikte yenir. Öğle yemeğini okul çevresinde kendiniz karşılarsınız. Banyo çoğunlukla aile ile ortaktır; özel banyolu odalar ek ücretlidir ve sınırlı sayıdadır.</p>
+      <h3>Dikkat edilmesi gereken ev kuralları</h3>
+      <ul>
+        <li>Akşam yemeğine gelmeyecekseniz aileye önceden haber verin.</li>
+        <li>Duş süresi ve gece geç saatte gürültü konusunda ailenin beklentisini ilk gün konuşun.</li>
+        <li>Misafir getirmek genellikle izne tabidir; 18 yaş altı öğrenciler için eve dönüş saati olabilir.</li>
+        <li>Sorun yaşarsanız önce okulun konaklama sorumlusuna, ardından bize ulaşın; aile değişikliği bir hafta içinde yapılabilir.</li>
+      </ul>
+      <h3>Hangisini seçmeliyim?</h3>
+      <p>İlk kez yurt dışına çıkıyorsanız, 18 yaşından küçükseniz veya konuşma pratiğini en üst düzeye çıkarmak istiyorsanız aile yanı; 18 yaş üstü, bağımsız yaşamaya alışkın ve merkezi bir konum istiyorsanız öğrenci yurdu daha uygun olur. Pek çok öğrenci ilk 4 haftayı aile yanında geçirip ardından yurda geçmeyi tercih ediyor.</p>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap wrap--narrow">
+      <div class="shead shead--center"><span class="eyebrow">Sık sorulanlar</span><h2>Konaklama hakkında sorular</h2></div>
+      <Faq items={faqs} />
+    </div>
+  </section>
+
+  <CtaBand title="Konaklamanızı kurs kaydınızla birlikte ayarlayalım" />
+</Base>
+
+<style>
+  .acc__head { display: flex; gap: 0.8rem; align-items: center; }
+  .acc__head :global(svg) { color: var(--coral); flex: none; }
+</style>

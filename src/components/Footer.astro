@@ -1,0 +1,77 @@
+---
+import Icon from './Icon.astro';
+import Logo from './Logo.astro';
+import { SITE, waLink } from '../config/site';
+import { cities, cityPath } from '../data';
+
+interface Props { minimal?: boolean }
+const { minimal = false } = Astro.props;
+const year = new Date().getFullYear();
+---
+<footer class="ftr">
+  {!minimal && (
+    <div class="wrap ftr__grid">
+      <div class="ftr__brand">
+        <Logo light />
+        <p>İngiltere’deki akredite dil okullarını, haftalık kurs ve konaklama fiyatlarını, vize ve yaşam bilgilerini tek yerde toplayan bağımsız rehber. Okul seçiminden havalimanı karşılamaya kadar ücretsiz danışmanlık.</p>
+        <div class="ftr__contact">
+          <a href={`tel:${SITE.phone}`} data-track="footer"><Icon name="phone" size={16} /> {SITE.phoneDisplay}</a>
+          <a href={waLink('Merhaba, İngiltere’de dil okulu hakkında bilgi almak istiyorum.')} target="_blank" rel="noopener" data-track="footer"><Icon name="whatsapp" size={16} /> WhatsApp’tan yazın</a>
+          <a href={`mailto:${SITE.email}`}><Icon name="mail" size={16} /> {SITE.email}</a>
+          <span><Icon name="clock" size={16} /> {SITE.hours}</span>
+        </div>
+      </div>
+      <div>
+        <p class="ftr__h">Şehirlere göre dil okulları</p>
+        <ul class="ftr__list ftr__list--2">
+          {cities.map((c) => <li><a href={cityPath(c)}>{c.name} dil okulları</a></li>)}
+        </ul>
+      </div>
+      <div>
+        <p class="ftr__h">Planlama</p>
+        <ul class="ftr__list">
+          <li><a href="/ingiltere-dil-okulu-fiyatlari/">2027 fiyat listesi</a></li>
+          <li><a href="/fiyat-hesaplama/">Fiyat hesaplama</a></li>
+          <li><a href="/dil-okullari/">Tüm dil okulları</a></li>
+          <li><a href="/sehirler/">Şehir karşılaştırması</a></li>
+          <li><a href="/konaklama/">Konaklama seçenekleri</a></li>
+          <li><a href="/konaklama/londra-ogrenci-yurtlari/">Londra öğrenci yurtları</a></li>
+          <li><a href="/ingiltere-dil-okulu-vizesi/">Vize rehberi</a></li>
+          <li><a href="/havalimani-karsilama/">Havalimanı karşılama</a></li>
+          <li><a href="/her-sey-dahil-londra-paketi/">Her şey dahil Londra</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ftr__h">Bilgi</p>
+        <ul class="ftr__list">
+          <li><a href="/rehber/">Rehber yazıları</a></li>
+          <li><a href="/ogrenci-yorumlari/">Öğrenci yorumları</a></li>
+          <li><a href="/sss/">Sık sorulan sorular</a></li>
+          <li><a href="/nasil-calisiyoruz/">Nasıl çalışıyoruz?</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/kvkk/">KVKK aydınlatma metni</a></li>
+          <li><a href="/cerez-politikasi/">Çerez politikası</a></li>
+        </ul>
+      </div>
+    </div>
+  )}
+  <div class="wrap ftr__bottom">
+    <span>© {year} {SITE.name}. Fiyatlar okulların yayımladığı listelere dayanır, bilgi amaçlıdır; kesin ücret yazılı teklifte bildirilir.</span>
+    {minimal && <span><a href="/kvkk/">KVKK</a> · <a href="/cerez-politikasi/">Çerezler</a></span>}
+  </div>
+</footer>
+
+<style>
+  .ftr { background: var(--teal-950); color: #b9d6dd; font-size: 0.93rem; padding-top: clamp(3rem, 2rem + 3vw, 4.5rem); }
+  .ftr a { color: #e6f2f4; text-decoration: none; }
+  .ftr a:hover { color: #fff; text-decoration: underline; }
+  .ftr__grid { display: grid; gap: 2.5rem; grid-template-columns: minmax(0, 1fr); padding-bottom: 3rem; }
+  @media (min-width: 900px) { .ftr__grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.5fr) minmax(0, 0.9fr) minmax(0, 0.8fr); gap: 2rem; } }
+  .ftr__brand p { margin: 1rem 0 1.25rem; max-width: 42ch; }
+  .ftr__contact { display: grid; gap: 0.5rem; }
+  .ftr__contact a, .ftr__contact span { display: inline-flex; align-items: center; gap: 0.5rem; }
+  .ftr__h { font-family: var(--f-mono); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--teal-200); margin-bottom: 0.9rem; }
+  .ftr__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.45rem; }
+  .ftr__list--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1rem; }
+  .ftr__bottom { border-top: 1px solid #ffffff1a; padding-block: 1.25rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem; font-size: 0.82rem; color: #8fb5be; }
+</style>

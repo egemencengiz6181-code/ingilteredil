@@ -1,0 +1,137 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { VISA } from '../config/site';
+
+const docs = [
+  ['Pasaport', 'Seyahat süresince ve dönüşten sonra en az 6 ay geçerli; eski pasaportlar ve önceki vizeler varsa eklenir.'],
+  ['Okul kabul mektubu', 'Akredite okuldan alınan, kurs tarihleri, ders saati ve ödenen tutarı gösteren belge (Short-term Study için zorunlu).'],
+  ['Ödeme belgesi', 'Kurs ve konaklama ödemesinin yapıldığını gösteren dekont veya okul faturası.'],
+  ['Banka hesap dökümü', 'Son 3–6 ayın hareketli hesap dökümü ve güncel bakiye mektubu; bakiye toplam masrafları karşılamalı.'],
+  ['Sponsor belgeleri', 'Masrafları aile karşılıyorsa sponsor mektubu, sponsorun banka dökümü, gelir belgesi ve akrabalık gösteren nüfus kayıt örneği.'],
+  ['İş / okul belgesi', 'Çalışanlar için işveren yazısı ve izin belgesi, SGK dökümü; öğrenciler için öğrenci belgesi; işverenler için vergi levhası ve faaliyet belgesi.'],
+  ['Konaklama belgesi', 'Aile yanı veya yurt rezervasyon onayı.'],
+  ['Seyahat planı', 'Gidiş-dönüş uçuş rezervasyonu (bilet alınması zorunlu değildir).'],
+  ['Tercüme', 'Türkçe belgelerin yeminli İngilizce tercümeleri.'],
+];
+
+const steps = [
+  ['Vize türünü belirleme', 'Kurs süresine göre Standard Visitor veya Short-term Study kategorisini birlikte belirleriz.'],
+  ['Okul kaydı ve kabul mektubu', 'Okul kaydınızı yapar, vize için gerekli kabul mektubunu ve ödeme belgesini alırız.'],
+  ['Kişiye özel evrak listesi', 'Çalışma durumunuza ve sponsor yapınıza göre belge listenizi hazırlar, her belgeyi kontrol ederiz.'],
+  ['Online başvuru formu', 'gov.uk üzerindeki formu sizinle birlikte, belgelerle tutarlı şekilde doldururuz; vize ücreti online ödenir.'],
+  ['Biyometri randevusu', 'İstanbul, Ankara, İzmir veya diğer TLScontact/VFS merkezlerinde parmak izi ve fotoğraf için randevunuzu planlarız.'],
+  ['Belgelerin yüklenmesi', 'Taranan belgeleri sisteme yükler, dosyanızı kontrol listesine göre son kez gözden geçiririz.'],
+  ['Karar ve pasaport teslimi', 'Standart sürede karar genellikle 3 hafta içinde çıkar; pasaportunuz başvuru merkezinden teslim alınır.'],
+];
+
+const faqs = [
+  { q: 'İngiltere dil okulu için vize ücreti ne kadar?', a: `Nisan 2026 itibarıyla 6 aya kadar Standard Visitor vizesi £${VISA.standardVisitorFee}, 11 aya kadar Short-term Study vizesi £${VISA.shortTermStudyFee}’dir. Short-term Study başvurusunda ayrıca sağlık katkı payı (IHS, yaklaşık £${VISA.shortTermStudyIhs}) ödenir. Ücretler gov.uk’ta yayımlanır ve dönemsel olarak güncellenir.` },
+  { q: 'Vize başvurusu ne kadar sürer?', a: 'Biyometri randevusundan sonra standart süre genellikle 15 iş günüdür (yaklaşık 3 hafta). Yoğun dönemlerde (Haziran–Ağustos) uzayabilir. Öncelikli hizmetle süre kısaltılabilir. Kurs başlangıcından en az 6–8 hafta önce başvurmanızı öneriyoruz.' },
+  { q: 'Bankada ne kadar para olmalı?', a: 'Resmi bir alt sınır yoktur; hesabınızdaki bakiye kurs, konaklama, uçak ve yaşam masraflarını rahatlıkla karşılamalı ve kaynağı açıklanabilir olmalıdır. Başvurudan hemen önce yatırılan açıklanamayan büyük tutarlar ret sebebi olabilir.' },
+  { q: 'Standard Visitor vizesiyle kaç hafta dil okuluna gidebilirim?', a: 'Standard Visitor vizesiyle 6 aya (yaklaşık 26 hafta) kadar dil kursuna katılabilirsiniz. Kurs, ziyaretin ana amacı olabilir. Daha uzun programlar için Short-term Study vizesi gerekir.' },
+  { q: 'Dil okulu vizesiyle çalışabilir miyim?', a: 'Hayır. Standard Visitor ve Short-term Study vizeleri ücretli ya da ücretsiz çalışmaya, staj yapmaya izin vermez. Bu kurala uyulmaması gelecekteki tüm İngiltere başvurularınızı etkileyebilir.' },
+  { q: 'Vize reddedilirse okul ücretini geri alabilir miyim?', a: 'Okulların çoğu vize ret mektubunu ibraz ettiğinizde kayıt ücreti ve küçük bir idari ücret düşülerek ödemeyi iade eder. İade koşulları her okulda farklıdır ve teklifle birlikte yazılı olarak paylaşılır.' },
+  { q: 'Daha önce ret aldım, yine başvurabilir miyim?', a: 'Evet. Önceki ret mektubundaki gerekçeleri inceleyerek eksik noktaları gideren yeni bir dosya hazırlıyoruz. Önceki retler formda mutlaka beyan edilmelidir.' },
+  { q: 'Edinburgh (İskoçya) için ayrı vize gerekir mi?', a: 'Hayır. Vize Birleşik Krallık geneli içindir; İngiltere, İskoçya, Galler ve Kuzey İrlanda’da geçerlidir.' },
+];
+---
+<Base
+  title="İngiltere Dil Okulu Vizesi 2027: Standard Visitor ve Short-term Study"
+  description={`İngiltere dil okulu vizesi rehberi: Standard Visitor (£${VISA.standardVisitorFee}) ve Short-term Study (£${VISA.shortTermStudyFee}) vizeleri, gerekli belgeler, banka hesabı, başvuru adımları, süre ve ret durumları.`}
+  waMessage="Merhaba, İngiltere dil okulu vizesi hakkında bilgi almak istiyorum."
+>
+  <section class="phero phero--split">
+    <div class="wrap">
+      <div>
+        <Breadcrumbs items={[{ label: 'Vize rehberi' }]} />
+        <span class="eyebrow">Vize · Güncelleme: {VISA.updated}</span>
+        <h1>İngiltere dil okulu vizesi</h1>
+        <p class="lead">Türk vatandaşları İngiltere’de dil okuluna gitmek için vize alır. Kurs süresi 6 aya kadarsa <strong>Standard Visitor</strong>, 6–11 ay arasındaysa <strong>Short-term Study</strong> vizesi gerekir. Bu rehberde iki vizenin farkını, belgeleri, ücretleri ve başvuru adımlarını bulacaksınız.</p>
+        <div class="note" style="max-width:620px"><strong>Önemli:</strong> Vize kararı tamamen İngiltere vize makamlarının takdirindedir; hiçbir danışmanlık şirketi vize garantisi veremez. Biz dosyanızı en doğru ve eksiksiz şekilde hazırlayarak riski en aza indiririz.</div>
+      </div>
+      <LeadForm source="vize" title="Vize dosyanızı birlikte hazırlayalım" subtitle="Kurs süreniz ve çalışma durumunuza göre size özel evrak listesini ücretsiz olarak çıkaralım." />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Karşılaştırma</span><h2>Standard Visitor mı, Short-term Study mi?</h2></div>
+      <div class="table-wrap">
+        <table class="table table--stack">
+          <thead><tr><th></th><th>Standard Visitor (Ziyaretçi)</th><th>Short-term Study (Kısa dönem eğitim)</th></tr></thead>
+          <tbody>
+            <tr><td><b>Kurs süresi</b></td><td>6 aya kadar (≈26 hafta)</td><td>6 aydan uzun, 11 aya kadar (yalnızca İngilizce kursu)</td></tr>
+            <tr><td><b>Vize ücreti</b></td><td>£{VISA.standardVisitorFee}</td><td>£{VISA.shortTermStudyFee} + IHS (~£{VISA.shortTermStudyIhs})</td></tr>
+            <tr><td><b>Okul şartı</b></td><td>Akredite kurum (British Council vb.)</td><td>Akredite kurum ve kabul mektubu</td></tr>
+            <tr><td><b>Çalışma hakkı</b></td><td>Yok</td><td>Yok</td></tr>
+            <tr><td><b>Uzatma</b></td><td>İngiltere içinden uzatılamaz</td><td>Uzatılamaz, başka vizeye geçilemez</td></tr>
+            <tr><td><b>Vize süresi</b></td><td>Genellikle 6 ay (bazen çok girişli uzun dönem)</td><td>Kurs süresi + birkaç gün</td></tr>
+            <tr><td><b>Kimler için?</b></td><td>2–24 haftalık programlar, her şey dahil paket</td><td>Akademik yıl, 30–48 haftalık uzun programlar</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="xs muted" style="margin-top:.75rem">Ücretler gov.uk’ta yayımlanan Nisan 2026 tarifesine göredir. <a href={VISA.source} target="_blank" rel="noopener">Güncel resmi ücret tablosu</a>. {VISA.priorityFeeNote}</p>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap">
+      <div class="grid grid--2" style="align-items:start">
+        <div>
+          <span class="eyebrow">Belgeler</span>
+          <h2>Gerekli belgeler</h2>
+          <div class="stack" style="--stack:.6rem">
+            {docs.map(([t, d]) => (
+              <div class="card" style="padding:1rem 1.2rem"><h3 style="font-size:1rem;margin-bottom:.2rem">{t}</h3><p class="small muted mb-0">{d}</p></div>
+            ))}
+          </div>
+        </div>
+        <div>
+          <span class="eyebrow">Süreç</span>
+          <h2>Başvuru adım adım</h2>
+          <ol class="vsteps">
+            {steps.map(([t, d], i) => <li><span>{i + 1}</span><div><h3>{t}</h3><p class="small muted mb-0">{d}</p></div></li>)}
+          </ol>
+          <div class="note note--teal" style="margin-top:1.5rem">
+            <strong>Zamanlama:</strong> Kurs başlangıcından 8–10 hafta önce okul kaydı, 6–8 hafta önce vize başvurusu idealdir. Yaz dönemi için mart–nisan aylarında başlamanızı öneririz.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap prose">
+      <span class="eyebrow">Sık yapılan hatalar</span>
+      <h2 class="mt-0">Vize reddine yol açan başlıca nedenler</h2>
+      <ul>
+        <li><strong>Açıklanamayan para girişleri:</strong> Başvurudan kısa süre önce hesaba yatırılan büyük tutarlar kaynağı belgelenmezse şüpheyle karşılanır.</li>
+        <li><strong>Türkiye’ye dönüş bağlarının zayıf gösterilmesi:</strong> İş, okul, aile ve mülk bağlarının belgelenmemesi en yaygın ret gerekçesidir.</li>
+        <li><strong>Tutarsız bilgiler:</strong> Formdaki gelir, iş ve seyahat bilgilerinin belgelerle uyuşmaması.</li>
+        <li><strong>Amaç belirsizliği:</strong> Kursun gerçekçi olmaması (ör. çok kısa kurs, çok uzun kalış) veya programın kariyer planınızla ilişkisinin açıklanmaması.</li>
+        <li><strong>Önceki retlerin veya ihlallerin beyan edilmemesi:</strong> Geçmişteki retleri gizlemek, kalıcı yasak sebebi olabilir.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap wrap--narrow">
+      <div class="shead shead--center"><span class="eyebrow">Sık sorulanlar</span><h2>Vize hakkında sorular</h2></div>
+      <Faq items={faqs} />
+    </div>
+  </section>
+
+  <CtaBand title="Vize dosyanızı uzman gözüyle hazırlayalım" wa="Merhaba, İngiltere dil okulu vize dosyam için destek almak istiyorum." />
+</Base>
+
+<style>
+  .vsteps { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+  .vsteps li { display: flex; gap: 1rem; }
+  .vsteps li > span { flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--teal-900); color: #fff; display: grid; place-items: center; font-weight: 700; font-family: var(--f-mono); font-size: 0.85rem; }
+  .vsteps h3 { font-size: 1.02rem; margin: 0.2rem 0 0.2rem; }
+</style>

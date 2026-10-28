@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CityCard from '../components/CityCard.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { cities, cityPath, schoolsInCity, cityMinPrice, gbp } from '../data';
+
+const profiles = [
+  { t: 'Kariyer, kültür, büyük şehir', c: ['londra', 'manchester', 'birmingham'] },
+  { t: 'Deniz kenarı ve sosyal hayat', c: ['brighton', 'bournemouth', 'eastbourne'] },
+  { t: 'Akademik atmosfer, sınav hazırlık', c: ['oxford', 'cambridge', 'canterbury'] },
+  { t: 'En uygun bütçe, uzun dönem', c: ['manchester', 'liverpool', 'leeds'] },
+  { t: 'Sakin, güvenli ve tarihi', c: ['york', 'bath', 'eastbourne'] },
+  { t: '30 yaş üstü ve profesyoneller', c: ['york', 'eastbourne', 'londra'] },
+];
+const byS = Object.fromEntries(cities.map((c) => [c.slug, c]));
+const stars = (n: number) => '£'.repeat(n) + '·'.repeat(3 - n);
+---
+<Base
+  title="İngiltere’de Dil Okulu İçin Hangi Şehir? 15 Şehir Karşılaştırması"
+  description="İngiltere’de dil okulu için en iyi şehir hangisi? Londra, Brighton, Oxford, Cambridge, Manchester ve 10 şehri fiyat, yaşam maliyeti, iklim, ulaşım ve öğrenci profiline göre karşılaştırın."
+>
+  <section class="phero">
+    <div class="wrap">
+      <Breadcrumbs items={[{ label: 'Şehirler' }]} />
+      <span class="eyebrow">Şehir karşılaştırması</span>
+      <h1>İngiltere’de dil okulu için hangi şehir?</h1>
+      <p class="lead">Doğru şehir; bütçenizi, sınıfınızdaki öğrenci profilini, konaklama süresini ve ders dışında İngilizceyi ne kadar kullanacağınızı belirler. 15 şehri aynı kriterlerle karşılaştırdık.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Hızlı karar</span><h2>Önceliğinize göre şehir önerileri</h2></div>
+      <div class="grid grid--3">
+        {profiles.map((p) => (
+          <div class="card">
+            <h3>{p.t}</h3>
+            <div class="tags">{p.c.map((s) => <a class="tag" href={cityPath(s)} style="text-decoration:none">{byS[s].name}</a>)}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Tablo</span><h2>15 şehir yan yana</h2></div>
+      <div class="table-wrap">
+        <table class="table table--stack">
+          <thead><tr><th>Şehir</th><th class="num">Okul</th><th class="num">Kurs / hafta</th><th>Bütçe</th><th>Aylık yaşam (kurs hariç)</th><th>Havalimanı</th><th>Londra’ya</th><th>İklim</th></tr></thead>
+          <tbody>
+            {cities.map((c) => (
+              <tr>
+                <td><a href={cityPath(c)}><b>{c.name}</b></a><div class="xs muted">{c.region}</div></td>
+                <td class="num">{schoolsInCity(c.slug).length || '—'}</td>
+                <td class="num">{cityMinPrice(c.slug) ? `${gbp(cityMinPrice(c.slug))}’dan` : '—'}</td>
+                <td><span class="budget" title={['', 'Uygun', 'Orta', 'Yüksek'][c.budgetLevel]}>{stars(c.budgetLevel)}</span></td>
+                <td>{c.monthlyBudget.match(/£\d[\d.]*–\d[\d.]*\d/)?.[0] ?? '—'}</td>
+                <td class="small">{c.airport}</td>
+                <td class="small">{c.fromLondon}</td>
+                <td class="small">{c.climate}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Şehir rehberleri</span><h2>Tüm şehirler</h2></div>
+      <div class="grid grid--3">{cities.map((c) => <CityCard city={c} />)}</div>
+    </div>
+  </section>
+
+  <CtaBand title="Şehir seçiminde kararsız mısınız?" text="Bütçenizi, hedefinizi ve tarihlerinizi paylaşın; size en uygun 2–3 şehri ve okulu toplam maliyetleriyle karşılaştırmalı olarak iletelim." />
+</Base>
+
+<style>
+  .budget { font-family: var(--f-mono); font-weight: 700; color: var(--teal-700); letter-spacing: 0.1em; }
+</style>

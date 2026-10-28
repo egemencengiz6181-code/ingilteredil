@@ -1,0 +1,286 @@
+{
+  "city": "birmingham",
+  "schools": [
+    {
+      "slug": "english-path-birmingham",
+      "name": "English Path Birmingham",
+      "brand": "English Path",
+      "area": "Şehir merkezi – Smallbrook Queensway / Bullring yakını",
+      "address": "Norfolk House, 84-86 Smallbrook Queensway, Birmingham B5 4EG",
+      "nearestStation": "Birmingham New Street (yaklaşık 5 dk yürüme)",
+      "website": "https://www.englishpath.com/destinations/united-kingdom/birmingham/",
+      "accreditations": [
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "English Path Birmingham, İngiltere'nin ikinci büyük şehrinin tam merkezinde, Bullring alışveriş merkezi ve New Street istasyonuna birkaç dakika mesafedeki Norfolk House'ta yer alır. Okul uluslararası English Path ağının parçasıdır ve 2026 itibarıyla grubun Manchester şubesinden gelen öğrencileri de bünyesine katmıştır.\n\nClassic Morning Genel İngilizce kursu haftada 20 ders, yarı yoğun kurs ise beceri modülleriyle 27 derstir; 24 hafta ve üzeri kayıtlarda haftalık ücret 290 sterline iner. Okul ayrıca Birmingham'da yüz yüze CELTA eğitimi ve gönüllülük programı sunar. Konaklamada aile yanı ile merkeze 20 dakika mesafedeki en-suite yurt ve stüdyolar bulunur.",
+      "highlights": [
+        "New Street istasyonuna 5 dk",
+        "Uzun dönemde haftalık £290",
+        "Yüz yüze CELTA merkezi",
+        "Gönüllülük programı",
+        "En fazla 15 kişilik sınıflar"
+      ],
+      "facilities": [
+        "Online ve yüz yüze seviye testi",
+        "12 haftalık Masterclass programı",
+        "EPIC sosyal program",
+        "Ücretsiz Wi‑Fi"
+      ],
+      "idealFor": [
+        "Büyük şehir deneyimi isteyenler",
+        "Uzun dönem öğrenciler",
+        "Öğretmenlik (CELTA) düşünenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Classic Morning)",
+          "nameEn": "General English – Classic Morning",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 380
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 345
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 290
+            }
+          ],
+          "notes": "Ders saatleri 09:00–12:15."
+        },
+        {
+          "name": "Yarı Yoğun Genel İngilizce (beceri dersleriyle)",
+          "nameEn": "Semi-intensive Morning (including Skills)",
+          "lessonsPerWeek": 27,
+          "hoursPerWeek": 20,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 435
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 365
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 330
+            }
+          ],
+          "notes": "Salı ve çarşamba 14:45'e kadar; iletişim, akademik veya kariyer becerileri modülü dahil."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Birmingham banliyöleri",
+          "commute": "60 dk'ya kadar",
+          "perWeek": 240,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, sadece kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Birmingham banliyöleri",
+          "commute": "60 dk'ya kadar",
+          "perWeek": 210,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, mutfak kullanımlı",
+          "bathroom": "shared",
+          "board": "self",
+          "location": "Birmingham banliyöleri",
+          "commute": "60 dk'ya kadar",
+          "perWeek": 210,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Ensuite 1 – en-suite tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Birmingham",
+          "commute": "20 dk",
+          "perWeek": 295,
+          "minAge": 18,
+          "notes": "En az 4 hafta."
+        },
+        {
+          "type": "studio",
+          "name": "Studio 1 – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Birmingham",
+          "commute": "20 dk",
+          "perWeek": 350,
+          "minAge": 18,
+          "notes": "4+ hafta £300."
+        }
+      ],
+      "fees": {
+        "registration": 50,
+        "accommodationPlacement": null,
+        "transferHeathrow": 360,
+        "transferGatwick": 475,
+        "transferLocal": 122,
+        "transferLocalAirport": "Birmingham Airport (BHX)",
+        "summerSupplementPerWeek": 35,
+        "summerPeriod": "30 Mayıs – 29 Ağustos",
+        "materials": "Materyal ücreti: 4 haftaya kadar £45; 5–11 hafta £85; 12–23 hafta £130; 24+ hafta £175",
+        "other": "Manchester Havalimanı transferi tek yön £320. Özel banyo talebi +£55/hafta; özel diyet +£40/hafta; Noel farkı (25 Aralık – 1 Ocak) £70/hafta; 18 yaş altı +£25/hafta; Türkiye'den banka havalesi ücreti £45. 2027'de yapılan konaklama rezervasyonlarına %10 ek ücret uygulanır. Konaklama yerleştirme ücreti fiyat listesinden okunamadı."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.englishpath.com/media/vryonry5/ep_price_list_2026-v9i.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "birmingham-school-of-english",
+      "name": "Birmingham School of English",
+      "brand": "Edskills Ltd",
+      "area": "Digbeth – High Street (şehir merkezinin güneydoğusu)",
+      "address": "162-164 High Street, Digbeth, Birmingham B12 0LD",
+      "nearestStation": "Birmingham Moor Street (yaklaşık 10 dk yürüme), Digbeth otobüs terminali",
+      "website": "https://studybse.com/",
+      "accreditations": [
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 12,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "Birmingham School of English, şehrin yaratıcı semti Digbeth'te faaliyet gösteren küçük ve bağımsız bir dil okuludur; English UK üyesidir. Okul, şehir merkezine ve Bullring'e yürüme mesafesinde olup Birmingham'ın en uygun fiyatlı seçenekleri arasında yer alır.\n\nGenel İngilizce haftada 15, 18 veya 21 saat olarak alınabilir; ayrıca IELTS ve Trinity GESE sınav hazırlık kursları vardır. Sınıflar en fazla 12 kişidir ve kurslar her pazartesi başlar; en az kayıt süresi 2 haftadır. Okul web sitesinde konaklama fiyatı yayımlamadığından aile yanı ücreti tahmini olarak verilmiştir.",
+      "highlights": [
+        "Haftalık £180'den Genel İngilizce",
+        "En fazla 12 kişilik sınıflar",
+        "IELTS ve Trinity GESE hazırlık",
+        "Her pazartesi başlangıç",
+        "Digbeth'in yaratıcı ortamı"
+      ],
+      "facilities": [
+        "Ücretsiz online seviye testi",
+        "Küçük sınıflar",
+        "Kur sonu sertifikası"
+      ],
+      "idealFor": [
+        "Bütçesi kısıtlı öğrenciler",
+        "Küçük sınıf isteyenler",
+        "Trinity / IELTS sınavına girecekler"
+      ],
+      "courses": [
+        {
+          "name": "Standart Genel İngilizce",
+          "nameEn": "Standard General English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "2+",
+              "perWeek": 180
+            }
+          ],
+          "notes": "En az 2 hafta."
+        },
+        {
+          "name": "Yarı Yoğun Genel İngilizce",
+          "nameEn": "Semi-Intensive General English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 18,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "2+",
+              "perWeek": 220
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "Intensive General English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 21,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "2+",
+              "perWeek": 250
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Exam Preparation",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "2+",
+              "perWeek": 200
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Birmingham banliyöleri",
+          "commute": "30–50 dk",
+          "perWeek": 200,
+          "minAge": 16,
+          "notes": "Tahmini fiyat; okul konaklama fiyatı yayımlamıyor."
+        }
+      ],
+      "fees": {
+        "registration": null,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": null,
+        "transferLocalAirport": "Birmingham Airport (BHX)",
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": null,
+        "other": "Kayıt, materyal ve transfer ücretleri yayımlanmıyor; okula sorulmalı."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://studybse.com/course-fees-pricing",
+        "https://studybse.com/general-english-course",
+        "https://www.englishuk.com/member-directory?id=5377"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

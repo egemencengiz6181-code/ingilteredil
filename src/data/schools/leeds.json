@@ -1,0 +1,482 @@
+{
+  "city": "leeds",
+  "schools": [
+    {
+      "slug": "english-path-leeds",
+      "name": "English Path Leeds",
+      "brand": "English Path",
+      "area": "Şehir merkezi – Great George Street / Park Square",
+      "address": "St George House, 40 Great George Street, Leeds LS1 3DL",
+      "nearestStation": "Leeds istasyonu (yaklaşık 10 dk yürüme)",
+      "website": "https://www.englishpath.com/destinations/united-kingdom/leeds/",
+      "accreditations": [
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "English Path Leeds, Londra, Dublin, Berlin, Paris ve Malta'da da okulları bulunan uluslararası English Path grubunun Kuzey İngiltere'deki merkezlerinden biridir. Okul, Leeds'in tam merkezinde, belediye binası ve Park Square'e yakın St George House'ta yer alır; tren istasyonu yaklaşık on dakikalık yürüme mesafesindedir. Manchester şubesi 2026 başında Leeds ve Birmingham okullarıyla birleştirilmiştir.\n\nClassic Morning kursu haftada 20 ders, yarı yoğun kurs ise iletişim, akademik ve kariyer becerileri modülleriyle 27 derstir. Okul 16–29 yaş ve 30 yaş üstü öğrenciler için ayrı sınıflar açar. Konaklamada aile yanı ile 10–15 dakika mesafedeki en-suite yurt ve stüdyolar sunulur.",
+      "highlights": [
+        "Şehir merkezinde, istasyona 10 dk",
+        "30 yaş üstü için ayrı sınıflar",
+        "12 haftalık Masterclass programı",
+        "Gönüllülük programı seçeneği",
+        "En fazla 15 kişilik sınıflar"
+      ],
+      "facilities": [
+        "Online ve yüz yüze seviye testi",
+        "EPIC sosyal ve kültürel program",
+        "Ücretsiz Wi‑Fi",
+        "Kur sonu sertifikası"
+      ],
+      "idealFor": [
+        "Yaşına uygun sınıf isteyen 30+ öğrenciler",
+        "Kuzey İngiltere'de uygun maliyet arayanlar",
+        "Beceri odaklı çalışmak isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Classic Morning)",
+          "nameEn": "General English – Classic Morning",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 380
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 345
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 290
+            }
+          ],
+          "notes": "Ders saatleri 09:00–12:15."
+        },
+        {
+          "name": "Yarı Yoğun Genel İngilizce (beceri dersleriyle)",
+          "nameEn": "Semi-intensive Morning (including Skills)",
+          "lessonsPerWeek": 27,
+          "hoursPerWeek": 20,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 435
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 365
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 330
+            }
+          ],
+          "notes": "Salı ve çarşamba 14:45'e kadar; iletişim, akademik veya kariyer becerileri modülü dahil."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Leeds banliyöleri",
+          "commute": "60 dk'ya kadar",
+          "perWeek": 240,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, sadece kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Leeds banliyöleri",
+          "commute": "60 dk'ya kadar",
+          "perWeek": 210,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, mutfak kullanımlı",
+          "bathroom": "shared",
+          "board": "self",
+          "location": "Leeds banliyöleri",
+          "commute": "60 dk'ya kadar",
+          "perWeek": 210,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Ensuite 1 – en-suite tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10 dk",
+          "perWeek": 325,
+          "minAge": 18,
+          "notes": "5+ hafta £280; en az 4 hafta."
+        },
+        {
+          "type": "studio",
+          "name": "Studio 1 – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "15 dk",
+          "perWeek": 375,
+          "minAge": 18,
+          "notes": "5+ hafta £325."
+        }
+      ],
+      "fees": {
+        "registration": 50,
+        "accommodationPlacement": null,
+        "transferHeathrow": 610,
+        "transferGatwick": 725,
+        "transferLocal": 135,
+        "transferLocalAirport": "Leeds Bradford Airport (LBA)",
+        "summerSupplementPerWeek": 35,
+        "summerPeriod": "30 Mayıs – 29 Ağustos",
+        "materials": "Materyal ücreti: 4 haftaya kadar £45; 5–11 hafta £85; 12–23 hafta £130; 24+ hafta £175",
+        "other": "Manchester Havalimanı transferi tek yön £210. Özel banyo talebi +£55/hafta; özel diyet +£40/hafta; Noel farkı (25 Aralık – 1 Ocak) £70/hafta; 18 yaş altı +£25/hafta; Türkiye'den banka havalesi ücreti £45. 2027'de yapılan konaklama rezervasyonlarına %10 ek ücret uygulanır. Konaklama yerleştirme ücreti fiyat listesinden okunamadı."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.englishpath.com/media/vryonry5/ep_price_list_2026-v9i.pdf",
+        "https://www.englishpath.com/media/tyedynb3/pl-change-request-2026-pl-updates-for-sales-team.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ces-leeds",
+      "name": "CES Leeds (Centre of English Studies)",
+      "brand": "Centre of English Studies (CES)",
+      "area": "Şehir merkezi – Park Place",
+      "address": "9 Park Place, Leeds LS1 2RU",
+      "nearestStation": "Leeds istasyonu (yaklaşık 7 dk yürüme)",
+      "website": "https://ces-schools.com/locations/leeds",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 16,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "CES Leeds, Dublin merkezli Centre of English Studies grubunun İngiltere'deki okullarından biridir ve Leeds şehir merkezinde, Park Place'teki Gürcü dönemi bir binada eğitim verir. Okul resmi IELTS ve OET sınav merkezidir; bu sayede öğrenciler sınava kendi okullarında girebilir. Ayrıca CELTA öğretmen eğitimi merkezidir.\n\nStandart Genel İngilizce sabahları haftada 20 ders, yoğun program ve IELTS hazırlık ise öğleden sonraki ek derslerle haftada 30 derstir. Grup derslerini birebir derslerle birleştiren kombinasyon ve iş İngilizcesi seçenekleri de vardır. Konaklamada yarım pansiyon aile yanı ve 18 yaş üstü için en az 4 haftalık en-suite yurt sunulur.",
+      "highlights": [
+        "Resmi IELTS ve OET sınav merkezi",
+        "Tarihi binada merkezi kampüs",
+        "Haftalık £270'ten Genel İngilizce (2027)",
+        "Birebir destekli kombinasyon kursları",
+        "En-suite yurt haftalık £225"
+      ],
+      "facilities": [
+        "Sınav merkezi",
+        "CELTA eğitim merkezi",
+        "Ücretsiz sosyal etkinlikler",
+        "Ücretsiz Wi‑Fi"
+      ],
+      "idealFor": [
+        "IELTS sınavına girecekler",
+        "Sağlık çalışanları (OET)",
+        "Uzun dönem öğrenciler"
+      ],
+      "courses": [
+        {
+          "name": "Standart Genel İngilizce",
+          "nameEn": "Standard General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 270
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 260
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 255
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 250
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 240
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "Intensive General English",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 395
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 375
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 370
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 360
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 350
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation Course",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 395
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 375
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 370
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 360
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 350
+            }
+          ],
+          "notes": "Sabah Genel İngilizce, salı–perşembe öğleden sonra IELTS."
+        },
+        {
+          "name": "İş İngilizcesi (grup + 5 saat birebir)",
+          "nameEn": "General English with Business",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 27,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 625
+            }
+          ],
+          "notes": "Uzun kayıtlarda £595'e kadar düşer."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Leeds banliyöleri",
+          "commute": "30–45 dk",
+          "perWeek": 252,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – paylaşımlı oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Leeds banliyöleri",
+          "commute": "30–45 dk",
+          "perWeek": 224,
+          "minAge": 16,
+          "notes": "Sadece birlikte seyahat eden 2 kişi için."
+        },
+        {
+          "type": "residence",
+          "name": "Leeds yurdu – en-suite tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Leeds",
+          "commute": "15–25 dk",
+          "perWeek": 225,
+          "minAge": 18,
+          "notes": "Yıl boyu; en az 4 hafta."
+        }
+      ],
+      "fees": {
+        "registration": 75,
+        "accommodationPlacement": 75,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 105,
+        "transferLocalAirport": "Leeds Bradford Airport (LBA)",
+        "summerSupplementPerWeek": 35,
+        "summerPeriod": "Temmuz – Ağustos (aile yanı)",
+        "materials": "Dijital e-kitap £37",
+        "other": "Manchester Havalimanı transferi tek yön £155; özel diyet £35/hafta; Noel dönemi aile yanı £371/hafta; IELTS sınavı £230."
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://ces-schools.com/sites/default/files/2026-09/CES%20Adult%202027%20Pricelist-Online-Sept14.pdf",
+        "https://ces-schools.com/locations/leeds"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "bayswater-leeds",
+      "name": "Bayswater Leeds (eski adıyla Leeds English Language School)",
+      "brand": "Bayswater Education",
+      "area": "Burley – Burley Road (merkezin yaklaşık 2 km batısı)",
+      "address": "Unit Upper C1, Flexspace, Burley Road, Leeds LS4 2PU",
+      "nearestStation": "Burley Road otobüs hatları; şehir merkezi ve Leeds istasyonu otobüsle ~10–15 dk",
+      "website": "https://www.bayswater.ac/en",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": null,
+      "founded": 2001,
+      "description": "Bayswater Leeds, 2001'de kurulan Leeds English Language School'un Bayswater Education grubuna katılmasıyla oluşmuş köklü bir okuldur. Okul, şehir merkezinin batısında, Burley Road üzerindeki Flexspace iş merkezinde yer alır; üniversite bölgesine ve Kirkstall'a yakındır.\n\nGenel İngilizce haftada 20 ders, yoğun program 25 ders ve süper yoğun program 30 ders olarak sunulur; kurslar her pazartesi başlar ve sınıflar en fazla 15 kişidir. Bayswater'ın Londra, Liverpool ve diğer destinasyonlardaki okullarıyla çok şehirli programlar planlanabilir. Fiyatlar okul tarafından açıkça yayımlanmadığı için aşağıdaki rakamlar tahminidir; kayıt öncesi güncel teklif alınmalıdır.",
+      "highlights": [
+        "2001'den beri Leeds'te",
+        "Bayswater grubu güvencesi",
+        "20 / 25 / 30 derslik seçenekler",
+        "En fazla 15 kişilik sınıflar",
+        "Her pazartesi başlangıç"
+      ],
+      "facilities": [
+        "Modern iş merkezinde sınıflar",
+        "Ücretsiz Wi‑Fi",
+        "Sosyal program",
+        "Seviye tespit sınavı"
+      ],
+      "idealFor": [
+        "Daha sakin bir ortam isteyenler",
+        "Uygun fiyat arayanlar",
+        "Çok şehirli program planlayanlar"
+      ],
+      "courses": [
+        {
+          "name": "Standart Genel İngilizce",
+          "nameEn": "Standard General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 245
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 230
+            }
+          ],
+          "notes": "Tahmini fiyat: Bayswater resmi fiyat listesini yayımlamıyor; aracı sitedeki liste fiyatları (Standart ~£243/hafta) esas alınmıştır."
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 18.75,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 270
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 255
+            }
+          ],
+          "notes": "Tahmini fiyat: Bayswater resmi fiyat listesini yayımlamıyor; aracı sitedeki liste fiyatları (Standart ~£243/hafta) esas alınmıştır."
+        },
+        {
+          "name": "Süper Yoğun Genel İngilizce",
+          "nameEn": "Super Intensive English",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 310
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 295
+            }
+          ],
+          "notes": "Tahmini fiyat: Bayswater resmi fiyat listesini yayımlamıyor; aracı sitedeki liste fiyatları (Standart ~£243/hafta) esas alınmıştır."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Leeds banliyöleri",
+          "commute": "30–45 dk",
+          "perWeek": 215,
+          "minAge": 16,
+          "notes": "Tahmini fiyat."
+        }
+      ],
+      "fees": {
+        "registration": 75,
+        "accommodationPlacement": 60,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 110,
+        "transferLocalAirport": "Leeds Bradford Airport (LBA)",
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "Temmuz – Ağustos (tahmini)",
+        "materials": "Tahmini £40",
+        "other": "Tüm ücretler tahminidir."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.englishuk.com/member-directory?id=213",
+        "https://www.languagecourse.net/school-bayswater-leeds.php3"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

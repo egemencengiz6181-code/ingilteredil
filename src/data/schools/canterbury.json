@@ -1,0 +1,81 @@
+{
+  "city": "canterbury",
+  "schools": [
+    {
+      "slug": "concorde-international-canterbury",
+      "name": "Concorde International",
+      "brand": "Concorde International",
+      "area": "Tarihi şehir merkezi (katedral yakını)",
+      "address": "Hawks Lane, Canterbury, Kent CT1 2NU",
+      "nearestStation": "Canterbury West ve Canterbury East istasyonları yürüme mesafesinde",
+      "website": "https://www.concorde-int.com/",
+      "accreditations": ["British Council", "English UK"],
+      "minAge": 16,
+      "maxClassSize": 10,
+      "lessonMinutes": null,
+      "founded": 1972,
+      "description": "Concorde International, 1972'den beri Canterbury'de eğitim veren bağımsız bir dil okuludur. Okul, UNESCO Dünya Mirası listesindeki Canterbury Katedrali'ne birkaç dakika uzaklıkta, tarihi şehir merkezinin içinde, Hawks Lane'de yer alıyor. Okul 2025 yılında British Council denetiminden geçerek akreditasyonunu yeniledi; öğretim kalitesi raporda güçlü yön olarak öne çıkarıldı.\n\nEn dikkat çekici özelliği küçük sınıflardır: yıl boyu kurslarda sınıflar en fazla 8–10 kişi. Sabahları 15 saatlik Genel İngilizce veya IELTS hazırlık, öğleden sonra ise Genel İngilizce, İş İngilizcesi ve akademik İngilizce ile haftalık 21 ya da 25 saate çıkılabiliyor. 21 yaş üstü için en fazla 4 kişilik FAST 4 programı da mevcut. Kayıt ücretine tüm ders materyalleri dahil. Fiyatlar 2026 resmi fiyat listesinden alınmıştır.",
+      "highlights": ["Sınıflar en fazla 8–10 kişi", "Katedral yakınında tarihi merkezde", "1972'den beri faaliyette", "Kayıt ücretine materyaller dahil", "21+ hafta rezervasyonda ücretsiz havalimanı transferi"],
+      "facilities": ["Şehir merkezinde okul binası", "Ücretsiz Wi-Fi", "IELTS ve Cambridge sınav hazırlığı", "Sosyal etkinlikler"],
+      "idealFor": ["Küçük sınıf isteyenler", "Tarihi bir üniversite şehri arayanlar", "İş İngilizcesi ve akademik hedefi olanlar"],
+      "courses": [
+        {"name": "Genel İngilizce / IELTS (sabah)", "nameEn": "General English / IELTS Preparation (AM)", "lessonsPerWeek": null, "hoursPerWeek": 15, "level": "A1–C1",
+         "prices": [{"weeks": "1-4", "perWeek": 297}, {"weeks": "5-11", "perWeek": 284}, {"weeks": "12-23", "perWeek": 270}, {"weeks": "24+", "perWeek": 258}],
+         "notes": "09.00–12.30. IELTS için minimum seviye Elementary."},
+        {"name": "Yoğun Genel İngilizce (21 saat)", "nameEn": "General English 21 hours", "lessonsPerWeek": null, "hoursPerWeek": 21, "level": "A1–C1",
+         "prices": [{"weeks": "1-4", "perWeek": 367}, {"weeks": "5-11", "perWeek": 352}, {"weeks": "12-23", "perWeek": 336}, {"weeks": "24+", "perWeek": 321}],
+         "notes": "Sabah dersleri + öğleden sonra Genel İngilizce, İş İngilizcesi veya akademik İngilizce."},
+        {"name": "Süper Yoğun İngilizce (25 saat)", "nameEn": "General English 25 hours", "lessonsPerWeek": null, "hoursPerWeek": 25, "level": "A1–C1",
+         "prices": [{"weeks": "1-4", "perWeek": 389}, {"weeks": "5-11", "perWeek": 371}, {"weeks": "12-23", "perWeek": 354}, {"weeks": "24+", "perWeek": 336}],
+         "notes": ""},
+        {"name": "İş İngilizcesi", "nameEn": "General English + English for Business (PM)", "lessonsPerWeek": null, "hoursPerWeek": 21, "level": "B1+",
+         "prices": [{"weeks": "1-4", "perWeek": 367}, {"weeks": "5-11", "perWeek": 352}, {"weeks": "12-23", "perWeek": 336}, {"weeks": "24+", "perWeek": 321}],
+         "notes": "Sabah Genel İngilizce + öğleden sonra İş İngilizcesi (Intermediate ve üzeri)."},
+        {"name": "FAST 4 Süper Yoğun (21+)", "nameEn": "FAST 4 Super Intensive", "lessonsPerWeek": null, "hoursPerWeek": 15, "level": "A2–C1",
+         "prices": [{"weeks": "1+", "perWeek": 560}],
+         "notes": "En fazla 4 kişilik grup; 20 saatlik seçenek £745/hafta. Genel veya İş İngilizcesi."}
+      ],
+      "accommodation": [
+        {"type": "homestay", "name": "Aile yanı – standart tek kişilik oda", "bathroom": "shared", "board": "half", "location": "Canterbury", "commute": null, "perWeek": 210, "minAge": 16, "notes": "Yaz (28 Haziran–23 Ağustos) +£21/hafta, Noel +£40/hafta."},
+        {"type": "homestay", "name": "Aile yanı – üst düzey oda", "bathroom": "private", "board": "half", "location": "Canterbury", "commute": null, "perWeek": 343, "minAge": 16, "notes": "Haftalık otobüs kartı dahil."},
+        {"type": "residence", "name": "University Student Village", "bathroom": "private", "board": "self", "location": "Şehir merkezi", "commute": null, "perWeek": 197, "minAge": 18, "notes": "'£197'den başlayan' fiyat; nevresim £30 ve mutfak paketi £35 ayrıca."}
+      ],
+      "fees": {"registration": 98, "accommodationPlacement": null, "transferHeathrow": 208, "transferGatwick": 186, "summerSupplementPerWeek": 21, "summerPeriod": "28 Haziran – 23 Ağustos 2026 (aile yanı)", "materials": "Kayıt ücretine dahil", "other": "21+ haftalık rezervasyonlarda varışta Heathrow, Gatwick veya Stansted'den ücretsiz transfer. Özel diyet £31/hafta."},
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": ["https://www.concorde-int.com/wp-content/uploads/2026/08/Adult-Price-21.08.pdf", "https://www.britishcouncil.org/sites/default/files/concorde_international_full_2025_pub.pdf"],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "canterbury-christ-church-university-english",
+      "name": "Canterbury Christ Church University – Genel İngilizce",
+      "brand": "Canterbury Christ Church University",
+      "area": "Üniversite kampüsü (şehir merkezine yürüme mesafesi)",
+      "address": "North Holmes Road, Canterbury, Kent CT1 1QU",
+      "nearestStation": "Canterbury East ve Canterbury West istasyonları yürüme mesafesinde",
+      "website": "https://www.canterbury.ac.uk/study-here/courses/general-english-course",
+      "accreditations": ["British Council"],
+      "minAge": null,
+      "maxClassSize": null,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "Canterbury Christ Church University (CCCU), Canterbury'nin merkezine yürüme mesafesindeki kampüsünde yıl boyu Genel İngilizce ve yoğun İngilizce programları düzenleyen bir devlet üniversitesidir. Kampüs, Canterbury Katedrali ve St Augustine Manastırı gibi tarihi yapıların hemen yanında bulunuyor. Üniversitenin dil programları British Council tarafından akredite edilmiştir.\n\nBir üniversite kampüsünde okumak, öğrencilere kütüphane, spor tesisleri ve öğrenci birliği gibi olanaklardan yararlanma ve akademik ortamı yakından tanıma fırsatı veriyor. Program özellikle ileride İngiltere'de lisans veya yüksek lisans yapmayı düşünenler için iyi bir başlangıç noktası. Üniversitenin son yayımlanan resmi ücreti 2024/25 için haftalık £395 olduğundan, aşağıdaki 2026 fiyatları tahminidir; güncel ücret için üniversitenin uluslararası ofisiyle iletişime geçilmelidir.",
+      "highlights": ["Gerçek bir üniversite kampüsünde eğitim", "British Council akreditasyonu", "Tarihi merkeze yürüme mesafesi", "Yüksek lisans ve lisans hedefi olanlara uygun"],
+      "facilities": ["Üniversite kütüphanesi", "Spor tesisleri", "Öğrenci birliği", "Kampüs kafeleri"],
+      "idealFor": ["İngiltere'de üniversite okumayı planlayanlar", "Akademik ortam arayanlar"],
+      "courses": [
+        {"name": "Genel İngilizce", "nameEn": "General English Course", "lessonsPerWeek": null, "hoursPerWeek": null, "level": "A2–C1",
+         "prices": [{"weeks": "1+", "perWeek": 405}],
+         "notes": "Tahmini 2026 fiyatı; 2024/25 resmi ücreti tam zamanlı £395/hafta idi."}
+      ],
+      "accommodation": [
+        {"type": "homestay", "name": "Aile yanı – tek kişilik oda", "bathroom": "shared", "board": "half", "location": "Canterbury", "commute": null, "perWeek": 220, "minAge": 18, "notes": "Tahmini fiyat; konaklama seçenekleri üniversiteyle teyit edilmelidir."}
+      ],
+      "fees": {"registration": 50, "accommodationPlacement": null, "transferHeathrow": 210, "transferGatwick": 185, "summerSupplementPerWeek": null, "summerPeriod": null, "materials": null, "other": "Tüm ücretler tahminidir. 2024/25'te geç başvurular için £50 sosyal program ücreti uygulanıyordu."},
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": ["https://www.canterbury.ac.uk/study-here/courses/general-english-course"],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

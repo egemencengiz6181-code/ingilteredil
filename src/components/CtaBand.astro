@@ -1,0 +1,31 @@
+---
+import Icon from './Icon.astro';
+import { SITE, waLink } from '../config/site';
+interface Props { title?: string; text?: string; wa?: string }
+const {
+  title = 'İngiltere’de dil eğitimi planınızı birlikte kuralım',
+  text = 'Ücretsiz ön görüşmede hedefinizi dinleyelim; size uygun şehir, okul ve bütçe seçeneklerini toplam maliyetle birlikte yazılı olarak paylaşalım.',
+  wa = 'Merhaba, İngiltere’de dil okulu için ücretsiz danışmanlık almak istiyorum.',
+} = Astro.props;
+---
+<section class="cta">
+  <div class="wrap cta__in">
+    <div>
+      <span class="pass" style="color:var(--teal-200)">IST <i></i> LHR</span>
+      <h2>{title}</h2>
+      <p>{text}</p>
+    </div>
+    <div class="btns">
+      <a href="/ucretsiz-teklif/" class="btn btn--coral btn--lg">Ücretsiz teklif al <Icon name="arrow" /></a>
+      <a href={waLink(wa)} class="btn btn--wa btn--lg" target="_blank" rel="noopener" data-track="cta-band"><Icon name="whatsapp" /> WhatsApp</a>
+      <a href={`tel:${SITE.phone}`} class="btn btn--light btn--lg" data-track="cta-band"><Icon name="phone" /> {SITE.phoneDisplay}</a>
+    </div>
+  </div>
+</section>
+<style>
+  .cta { background: radial-gradient(1200px 400px at 90% -20%, #1e748b55, transparent), var(--teal-900); color: #d6e9ee; padding: clamp(3rem, 2rem + 3vw, 4.5rem) 0; }
+  .cta__in { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.75rem; align-items: center; }
+  @media (min-width: 980px) { .cta__in { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } .cta .btns { justify-content: flex-end; } }
+  .cta h2 { color: #fff; margin: 0.8rem 0 0.6rem; max-width: 24ch; }
+  .cta p { margin: 0; max-width: 56ch; }
+</style>

@@ -1,0 +1,142 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ContactDock from '../components/ContactDock.astro';
+import CookieBanner from '../components/CookieBanner.astro';
+import { SITE, TRACKING } from '../config/site';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  noindex?: boolean;
+  jsonLd?: object[];
+  waMessage?: string;
+  minimal?: boolean; // Ads landing sayfaları: sade header, footer linksiz
+}
+
+const { title, description, image = SITE.ogImage, noindex = false, jsonLd = [], waMessage, minimal = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const ogImage = new URL(image, SITE.url).href;
+const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
+
+const siteLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${SITE.url}/#org`,
+    name: SITE.name,
+    url: SITE.url,
+    logo: `${SITE.url}/favicon.svg`,
+    email: SITE.email,
+    telephone: SITE.phone,
+    areaServed: 'TR',
+    contactPoint: [{ '@type': 'ContactPoint', telephone: SITE.phone, contactType: 'customer service', availableLanguage: ['Turkish', 'English'] }],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE.url}/#website`,
+    name: SITE.name,
+    url: SITE.url,
+    inLanguage: 'tr-TR',
+    publisher: { '@id': `${SITE.url}/#org` },
+  },
+];
+---
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta name="theme-color" content="#0c3a46" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    {[...siteLd, ...jsonLd].map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
+
+    <!-- Consent Mode v2: KVKK gereği çerez onayı alınana kadar reklam/analitik çerezleri kapalı -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      var c = null; try { c = localStorage.getItem('cookie_consent'); } catch (e) {}
+      var g = c === 'granted' ? 'granted' : 'denied';
+      gtag('consent', 'default', { ad_storage: g, ad_user_data: g, ad_personalization: g, analytics_storage: g, wait_for_update: 500 });
+    </script>
+    {TRACKING.gtmId && (
+      <script is:inline define:vars={{ id: TRACKING.gtmId }}>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',id);
+      </script>
+    )}
+
+    <!-- Reklam kaynağı (UTM, gclid) ilk ve son temas olarak saklanır, formlarla birlikte gönderilir -->
+    <script is:inline>
+      (function () {
+        try {
+          var q = new URLSearchParams(location.search);
+          var keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','fbclid'];
+          var hit = {}; var any = false;
+          keys.forEach(function (k) { var v = q.get(k); if (v) { hit[k] = v; any = true; } });
+          var now = { landing: location.pathname, referrer: document.referrer || '', ts: new Date().toISOString() };
+          if (any) Object.assign(now, hit);
+          if (!localStorage.getItem('attr_first')) localStorage.setItem('attr_first', JSON.stringify(now));
+          if (any || !sessionStorage.getItem('attr_seen')) localStorage.setItem('attr_last', JSON.stringify(now));
+          sessionStorage.setItem('attr_seen', '1');
+        } catch (e) {}
+      })();
+    </script>
+    <slot name="head" />
+  </head>
+  <body>
+    {TRACKING.gtmId && (
+      <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${TRACKING.gtmId}`} height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    )}
+    <a class="skip" href="#main">İçeriğe geç</a>
+    <Header minimal={minimal} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer minimal={minimal} />
+    <ContactDock message={waMessage} />
+    <CookieBanner />
+
+    <script is:inline>
+      // Mobil kart görünümündeki tablolar için sütun başlıklarını hücre etiketine kopyala
+      document.querySelectorAll('table.table--stack').forEach(function (t) {
+        var h = [].map.call(t.querySelectorAll('thead th'), function (th) { return th.textContent.trim(); });
+        t.querySelectorAll('tbody tr').forEach(function (tr) {
+          [].forEach.call(tr.children, function (td, i) { if (h[i]) td.setAttribute('data-label', h[i]); });
+        });
+      });
+    </script>
+    <script is:inline>
+      // Telefon ve WhatsApp tıklamaları Google Ads / GA4 dönüşümü olarak dataLayer'a gider
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href]');
+        if (!a) return;
+        var h = a.getAttribute('href') || '';
+        var where = a.getAttribute('data-track') || 'link';
+        if (h.indexOf('tel:') === 0) dataLayer.push({ event: 'phone_click', click_location: where, page_path: location.pathname });
+        else if (h.indexOf('wa.me') > -1) dataLayer.push({ event: 'whatsapp_click', click_location: where, page_path: location.pathname });
+        else if (h.indexOf('calendly.com') > -1) dataLayer.push({ event: 'calendly_click', click_location: where, page_path: location.pathname });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1397 @@
+{
+  "city": "oxford",
+  "schools": [
+    {
+      "slug": "kaplan-oxford",
+      "name": "Kaplan International Oxford",
+      "brand": "Kaplan International Languages (Positively Languages)",
+      "area": "North Oxford (Banbury Road, Summertown yakını)",
+      "address": "108 Banbury Road, Oxford OX2 6JU",
+      "nearestStation": "Oxford tren istasyonu (otobüsle ~15 dk); şehir merkezi yürüyerek ~20 dk",
+      "website": "https://positivelylanguages.com/language-schools/united-kingdom/oxford",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 17,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Kaplan International Oxford, Kuzey Oxford'un yeşil ve sakin Banbury Road aksında, üniversite kolejlerine ve Summertown'ın kafe ve dükkânlarına yakın bir binada eğitim veriyor. Okul, 2026'da Inspirit Capital'e satılan ve Positively Languages adıyla yeniden markalaşma sürecine giren Kaplan International Languages ağının parçası; British Council akreditasyonu ve English UK üyeliği devam ediyor. 16 yaş ve üzeri öğrencilere Genel İngilizce, yarı yoğun ve yoğun programlar, IELTS, Cambridge sınav hazırlığı ve İş İngilizcesi sunuluyor.\n\nŞehir merkezine yürüyerek yaklaşık 20 dakika uzaklıktaki okul, Bodleian Kütüphanesi, Jericho ve üniversite parkları gibi noktalara kolay erişim sağlıyor. Konaklamada aile yanı seçenekleri ile merkezi konumdaki Student Castle ve The Mews yurtları öne çıkıyor. 12 hafta ve üzeri kayıtlarda haftalık ders ücretinin belirgin şekilde düşmesi, dönemlik ya da akademik yıl planlayan öğrenciler için okulu avantajlı kılıyor.",
+      "highlights": [
+        "British Council akreditasyonlu, English UK üyesi",
+        "Her pazartesi başlangıç, 1–52 hafta esnek süre",
+        "IELTS, Cambridge ve İş İngilizcesi seçenekleri",
+        "Uzun kayıtlarda haftalık ücret 250 £'a kadar düşüyor",
+        "Merkezi Student Castle yurdu seçeneği"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "K+ çevrimiçi öğrenme platformu",
+        "Sosyal etkinlik programı"
+      ],
+      "idealFor": [
+        "Uzun dönem dil eğitimi planlayanlar",
+        "IELTS ile üniversiteye hazırlananlar",
+        "Sakin bir semtte okumak isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 330
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 325
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 290
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 250
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yarı Yoğun İngilizce",
+          "nameEn": "Semi-Intensive English",
+          "lessonsPerWeek": 27,
+          "hoursPerWeek": 20.25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 360
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 350
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 315
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 270
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.25,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 425
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 415
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 370
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 315
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS (Supplementary / Intensive)",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.25,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 425
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 415
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 370
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 315
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "Business Supplementary",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.25,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 425
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 415
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 370
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 315
+            }
+          ],
+          "notes": "Kontenjana bağlı."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "30–45 dk",
+          "perWeek": 245,
+          "minAge": 18,
+          "notes": "16–17 yaş için 265 £/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, özel banyo",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "30–45 dk",
+          "perWeek": 295,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, yemeksiz",
+          "bathroom": "shared",
+          "board": "none",
+          "location": "Oxford geneli",
+          "commute": "30–45 dk",
+          "perWeek": 200,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Student Castle Oxford – tek kişilik en-suite",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "15–20 dk",
+          "perWeek": 370,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "The Mews – tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Oxford",
+          "commute": null,
+          "perWeek": 350,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 135,
+        "accommodationPlacement": 35,
+        "transferHeathrow": 260,
+        "transferGatwick": 270,
+        "summerSupplementPerWeek": 20,
+        "summerPeriod": "Ders: 16 Haz–22 Ağu; aile yanı +30 £/hafta (31 May–23 Ağu); yurt +35 £/hafta",
+        "materials": "Dahil",
+        "other": "Fiyatlar Kaplan 2025 resmi fiyat listesinden; 2026 listesi kamuya açık değil. Kursiyerler 2026'da yaklaşık %3–6 artış beklemeli. Okula yakın aile yanı (45 dk altı) +55 £/hafta."
+      },
+      "priceYear": 2025,
+      "priceStatus": "official",
+      "sources": [
+        "https://ebook.kaplaninternational.com/pricelist/2025-pricelist/row/Kaplan-Pricelist2025--row-en.pdf",
+        "https://www.kaplaninternational.com/learn-english-united-kingdom/oxford",
+        "https://positivelylanguages.com/language-schools/united-kingdom/oxford",
+        "https://thepienews.com/kaplan-international-languages-to-rebrand-as-positively-languages/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "kings-oxford",
+      "name": "Kings Oxford",
+      "brand": "Kings Education",
+      "area": "East Oxford (Cowley / Temple Road)",
+      "address": "St Joseph's Hall, Temple Road, Oxford OX4 2UJ",
+      "nearestStation": "Oxford tren istasyonu (otobüsle ~20–25 dk); Cowley Road otobüs hattı",
+      "website": "https://www.kingseducation.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 14,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Kings Oxford, Doğu Oxford'da geniş bahçeli tarihi bir yapı olan St Joseph's Hall'da faaliyet gösteren, dil kurslarını üniversite hazırlık programlarıyla birlikte sunan köklü bir okul. Kings Education'ın İngiltere ağına bağlı kampüste Genel İngilizce, Yoğun İngilizce, farklı yoğunluklarda IELTS kursları, Cambridge FCE/CAE hazırlığı ve İngilizce + Sanat ve Tasarım gibi özel programlar yer alıyor. Sınıflar en fazla 14 kişi ve dersler 45 dakika.\n\nKampüs, kafeteryası, kütüphanesi ve ortak alanlarıyla kendi içinde bir öğrenci yaşamı sunuyor; şehir merkezine otobüsle kolayca ulaşılıyor. Konaklamada yarım pansiyon aile yanı ve en-suite odalara sahip Wavy Gate öğrenci yurdu seçenekleri bulunuyor. 24 hafta ve üzeri için sunulan Diploma programları, uzun süreli eğitim planlayan öğrenciler için haftalık maliyeti düşürüyor. Akademik İngilizce ile birlikte İngiltere'de üniversite hedefleyenler için güçlü bir seçenek.",
+      "highlights": [
+        "Bahçeli tarihi kampüs, kafeterya ve kütüphane",
+        "Sınıflar en fazla 14 öğrenci",
+        "Super Intensive ve Intensive IELTS seçenekleri",
+        "24+ hafta Diploma programlarında indirimli haftalık ücret",
+        "Üniversite hazırlık programlarıyla aynı kampüs"
+      ],
+      "facilities": [
+        "Kafeterya",
+        "Kütüphane ve çalışma alanları",
+        "Bahçe",
+        "Ücretsiz Wi-Fi",
+        "Sosyal etkinlik programı"
+      ],
+      "idealFor": [
+        "Üniversite hedefleyenler",
+        "Yoğun IELTS hazırlığı yapacaklar",
+        "Kampüs ortamı arayanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "2-11",
+              "perWeek": 355
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 325
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 21,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "2-11",
+              "perWeek": 450
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 390
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce Diploması",
+          "nameEn": "Diploma of General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "24-31",
+              "perWeek": 285
+            },
+            {
+              "weeks": "32-39",
+              "perWeek": 280
+            },
+            {
+              "weeks": "40+",
+              "perWeek": 275
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce Diploması",
+          "nameEn": "Diploma of Intensive English",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 21,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "24-31",
+              "perWeek": 330
+            },
+            {
+              "weeks": "32-39",
+              "perWeek": 325
+            },
+            {
+              "weeks": "40+",
+              "perWeek": 320
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 21,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "2-11",
+              "perWeek": 450
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 390
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun IELTS",
+          "nameEn": "Intensive IELTS",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "2-11",
+              "perWeek": 495
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 450
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda (düşük sezon)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "20–45 dk",
+          "perWeek": 270,
+          "minAge": 16,
+          "notes": "Yüksek sezonda (14 Haz–9 Ağu 2026) 315 £/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – iki kişilik oda (düşük sezon)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "20–45 dk",
+          "perWeek": 215,
+          "minAge": 16,
+          "notes": "Yüksek sezonda 270 £/hafta."
+        },
+        {
+          "type": "residence",
+          "name": "Wavy Gate öğrenci yurdu – tek kişilik en-suite",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Oxford",
+          "commute": null,
+          "perWeek": 425,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 85,
+        "accommodationPlacement": null,
+        "transferHeathrow": 175,
+        "transferGatwick": 215,
+        "summerSupplementPerWeek": 45,
+        "summerPeriod": "Aile yanı yüksek sezon fiyatı: 14 Haziran–9 Ağustos 2026 (tek kişilik oda +45 £/hafta)",
+        "materials": null,
+        "other": "Heathrow paylaşımlı transfer 100 £. Özel diyet +50 £/hafta, Noel aile yanı ek ücreti 85 £/hafta, CAS belgesi 55 £."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.kingseducation.com/learn-english/fees",
+        "https://www.englishuk.com/member-directory?id=196"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "oxford-international-oxford",
+      "name": "Oxford International English School Oxford",
+      "brand": "Oxford International Education Group",
+      "area": "Şehir merkezi (Pembroke Street, Westgate yakını)",
+      "address": "Pembroke House, 36-37 Pembroke Street, Oxford OX1 1BP",
+      "nearestStation": "Oxford tren istasyonu (yürüyerek ~10–12 dk)",
+      "website": "https://www.oxfordinternationalenglish.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Oxford International'ın Oxford okulu, şehrin tam kalbinde, Christ Church Koleji ve Westgate alışveriş merkezine birkaç dakika yürüme mesafesindeki Pembroke House'da yer alıyor. Oxford International Education Group bünyesindeki okul, British Council akreditasyonuna sahip ve 16 yaş üstü yetişkinlere yıl boyu eğitim veriyor. Programlar sabah 20 derslik Genel İngilizce, öğleden sonra seçmeli derslerle zenginleşen 30 derslik Yoğun kurs, B2 seviyesindekiler için 40 derslik Süper Yoğun kurs ve IELTS sınav hazırlığından oluşuyor.\n\nKonum, okul sonrası müzeleri, kütüphaneleri ve nehir kenarını keşfetmeyi kolaylaştırıyor. Konaklamada farklı pansiyon seçenekli aile yanı, Student Castle yurdu ve özel banyolu The Mews seçenekleri sunuluyor. Fiyat listesinin şeffaflığı ve uzun kayıtlarda haftalık ücretin 253 £'a kadar inmesi, bütçesini net planlamak isteyen öğrenciler için önemli bir avantaj.",
+      "highlights": [
+        "Tam şehir merkezinde, tren istasyonuna yürüme mesafesi",
+        "4 süre kademesinde şeffaf 2026 fiyatları",
+        "Seçmeli derslerle Yoğun ve Süper Yoğun kurslar",
+        "IELTS sınav hazırlık kursu",
+        "Aile yanında self-catering, B&B ve yarım pansiyon seçenekleri"
+      ],
+      "facilities": [
+        "Merkezi konum",
+        "Ücretsiz Wi-Fi",
+        "Öğrenci ortak alanı",
+        "Sosyal program"
+      ],
+      "idealFor": [
+        "Şehir merkezinde okumak isteyenler",
+        "Bütçesini net planlamak isteyenler",
+        "B2+ seviyede hızlanmak isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Sabah)",
+          "nameEn": "Morning 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 349
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 319
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 286
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 261
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 253
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive 30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 454
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 405
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 363
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 324
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 311
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Süper Yoğun İngilizce",
+          "nameEn": "Super Intensive 40",
+          "lessonsPerWeek": 40,
+          "hoursPerWeek": 30,
+          "level": "B2+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 539
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 488
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 439
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 412
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 393
+            }
+          ],
+          "notes": "Kontenjana bağlı; minimum B2."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 349
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 319
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 286
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 261
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 253
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "20–40 dk",
+          "perWeek": 275,
+          "minAge": 16,
+          "notes": "B&B 250 £, self-catering 240 £."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – iki kişilik oda (birlikte gelenler)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "20–40 dk",
+          "perWeek": 260,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Student Castle – tek kişilik en-suite",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Oxford",
+          "commute": null,
+          "perWeek": 325,
+          "minAge": 18,
+          "notes": "100 £ iade edilebilir depozito."
+        },
+        {
+          "type": "residence",
+          "name": "The Mews – tek kişilik oda, özel banyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Oxford",
+          "commute": null,
+          "perWeek": 295,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 80,
+        "accommodationPlacement": 60,
+        "transferHeathrow": 170,
+        "transferGatwick": 250,
+        "summerSupplementPerWeek": 35,
+        "summerPeriod": "Aile yanı: Temmuz–Ağustos ve 21 Ara–1 Oca (+35 £/hafta)",
+        "materials": "80 £ (12 haftada bir ek kitap gerekebilir)",
+        "other": "Özel ders 55–65 £/saat. Luton 210 £, Stansted 275 £."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.oxfordinternationalenglish.com/wp-content/uploads/2026/07/Global-EFL-OICC-Global-Price-List-2026-.pdf",
+        "https://www.englishuk.com/member-directory?id=2945"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "st-clares-oxford",
+      "name": "St Clare's, Oxford",
+      "brand": "St Clare's, Oxford",
+      "area": "North Oxford (Banbury Road)",
+      "address": "139 Banbury Road, Oxford OX2 7AL",
+      "nearestStation": "Oxford tren istasyonu (otobüsle ~15 dk); Summertown yürüme mesafesinde",
+      "website": "https://www.stclares.ac.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": null,
+      "founded": 1953,
+      "description": "St Clare's, 1953'te kurulan ve IB programıyla tanınan, Kuzey Oxford'da Banbury Road boyunca uzanan Viktorya dönemi evlerinden oluşan bir uluslararası kolej. Kolejin dil bölümü yıl boyu 16 yaş üstü öğrencilere English for Life (genel ve yoğun İngilizce) ve English for Exams (sınav hazırlığı) programları sunuyor; haftalık ders süresi 21–25 saat arasında ve sınıflar en fazla 15 kişi. Ocak ve Eylül başlangıçlı English plus Academic Subjects programı ise akademik dersleri İngilizceyle birleştiriyor.\n\nAkademik bir kolej ortamında okumak, kütüphane ve kampüs olanaklarından yararlanmak isteyenler için farklı bir deneyim sunuyor. Yazın 18 yaş üstüne yönelik English for Life Plus paketleri konaklama, öğle yemeği ve sosyal programı tek fiyatta topluyor. Başlangıç seviyesindeki öğrenciler kabul edilmiyor. Okul fiyat listesini çevrimiçi yayımlamadığından aşağıdaki ücretler tahminidir.",
+      "highlights": [
+        "1953'ten beri faaliyette, IB okulu olarak tanınan kolej",
+        "Haftada 21–25 saat yoğun program",
+        "Sınıflar en fazla 15 kişi",
+        "Akademik derslerle birleşik İngilizce seçeneği",
+        "Kampüs içi konaklama"
+      ],
+      "facilities": [
+        "Kütüphane",
+        "Kampüs yurtları",
+        "Kafeterya",
+        "Bilgisayar olanakları"
+      ],
+      "idealFor": [
+        "Akademik ortam arayanlar",
+        "B1 ve üzeri seviyedekiler",
+        "Üniversite öncesi hazırlık yapanlar"
+      ],
+      "courses": [
+        {
+          "name": "English for Life (Genel/Yoğun)",
+          "nameEn": "English for Life",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 22,
+          "level": "A2–C2",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 420
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 390
+            }
+          ],
+          "notes": "Haftada 21–25 saat; başlangıç seviyesi kabul edilmez."
+        },
+        {
+          "name": "Sınav Hazırlık (IELTS/Cambridge)",
+          "nameEn": "English for Exams",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 22,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 420
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 390
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "English for Life Plus (yaz paketi, 18+)",
+          "nameEn": "English for Life Plus (Summer)",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "A2–C2",
+          "prices": [
+            {
+              "weeks": "2",
+              "perWeek": 797
+            }
+          ],
+          "notes": "2026 yaz paketi 2 hafta 'from' 1.594 £: konaklama, hafta içi öğle yemeği, sosyal program ve haftalık gezi dahil."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "residence",
+          "name": "Kolej yurdu – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Banbury Road kampüsü",
+          "commute": "0–10 dk yürüme",
+          "perWeek": 330,
+          "minAge": 16,
+          "notes": "Tahmini."
+        }
+      ],
+      "fees": {
+        "registration": 100,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": null,
+        "other": "Fiyatlar tahminidir; resmi teklif için okulla iletişime geçin."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.englishuk.com/member-directory?id=307",
+        "https://www.stclares.ac.uk/summer-english-for-life-plus-adults"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "cie-oxford",
+      "name": "CIE Oxford – College of International Education",
+      "brand": "CIE Oxford",
+      "area": "Şehir merkezi (St Michael's Street)",
+      "address": "24B St Michael's Street, Oxford OX1 2EB",
+      "nearestStation": "Oxford tren istasyonu (yürüyerek ~8 dk)",
+      "website": "https://cie-oxford.com/",
+      "accreditations": [
+        "British Council",
+        "English UK",
+        "British Accreditation Council"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 60,
+      "founded": null,
+      "description": "CIE Oxford (College of International Education), Oxford'un merkezinde, Cornmarket Street ve Oxford Union'a birkaç adım mesafedeki St Michael's Street'te bulunan küçük ve butik bir dil okulu. British Council akreditasyonu ve British Accreditation Council onayına sahip okul, English UK üyesi. Yetişkinlere sabahları haftada 15 saatlik Genel İngilizce, 25 saatlik Yoğun İngilizce ve genel İngilizceyi öğleden sonra IELTS dersleriyle birleştiren program sunuluyor.\n\nKüçük sınıflar ve samimi atmosfer, öğretmenlerle birebir ilgi isteyen öğrenciler için öne çıkıyor. Okulun yayımladığı 2027 fiyatları uzun süreli kayıtlarda haftalık ücretin 210 £'a kadar düştüğünü gösteriyor; bu da onu Oxford'un en uygun fiyatlı akredite seçeneklerinden biri yapıyor. Konaklamada aile yanı (tek kişilik, en-suite veya arkadaşla paylaşımlı) ve yazın üniversite daireleri seçenekleri mevcut.",
+      "highlights": [
+        "Tam şehir merkezinde butik okul",
+        "Uzun kayıtlarda 210 £/hafta'ya kadar düşen ücret",
+        "Genel İngilizce + IELTS kombinasyonu",
+        "Küçük sınıflar",
+        "Yazın üniversite dairesi seçeneği"
+      ],
+      "facilities": [
+        "Merkezi konum",
+        "Ücretsiz Wi-Fi",
+        "Sosyal program ve Cumartesi gezileri (yaz)"
+      ],
+      "idealFor": [
+        "Bütçe dostu akredite okul arayanlar",
+        "Butik ortam tercih edenler",
+        "IELTS hedefleyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-12",
+              "perWeek": 290
+            },
+            {
+              "weeks": "13-47",
+              "perWeek": 250
+            },
+            {
+              "weeks": "48+",
+              "perWeek": 210
+            }
+          ],
+          "notes": "Fiyatlar 1, 13 ve 48 haftalık resmi paket fiyatlarından haftalığa çevrilmiştir. Yazın 320 £/hafta."
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-12",
+              "perWeek": 410
+            },
+            {
+              "weeks": "13-47",
+              "perWeek": 370
+            },
+            {
+              "weeks": "48+",
+              "perWeek": 330
+            }
+          ],
+          "notes": "Yazın 440 £/hafta."
+        },
+        {
+          "name": "Genel İngilizce + IELTS",
+          "nameEn": "General English + IELTS",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 25,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-25",
+              "perWeek": 410
+            },
+            {
+              "weeks": "26-47",
+              "perWeek": 350
+            },
+            {
+              "weeks": "48+",
+              "perWeek": 330
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "20–40 dk",
+          "perWeek": 290,
+          "minAge": 16,
+          "notes": "Yazın 310 £/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – en-suite oda",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "20–40 dk",
+          "perWeek": 350,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Üniversite dairesi – tek kişilik (yalnızca yaz)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Oxford",
+          "commute": null,
+          "perWeek": 480,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 90,
+        "accommodationPlacement": 90,
+        "transferHeathrow": 180,
+        "transferGatwick": 240,
+        "summerSupplementPerWeek": 20,
+        "summerPeriod": "Yaz: aile yanı 290 £ yerine 310 £/hafta",
+        "materials": null,
+        "other": "Özel diyet +35 £/hafta, uluslararası banka ücreti 12 £. Fiyatlar okulun 2027 tarifesidir."
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://cie-oxford.com/fees/",
+        "https://www.englishuk.com/member-directory?id=85"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "oxford-ils-oxford",
+      "name": "Oxford International Language School (Oxford ILS)",
+      "brand": "Oxford ILS",
+      "area": "East Oxford (Cowley Road)",
+      "address": "The Old Music Hall, 106-108 Cowley Road, Oxford OX4 1JE",
+      "nearestStation": "Oxford tren istasyonu (otobüsle ~15 dk); şehir merkezi yürüyerek ~15 dk",
+      "website": "https://www.oxford-school.co.uk/",
+      "accreditations": [
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 10,
+      "lessonMinutes": 60,
+      "founded": null,
+      "description": "Oxford ILS, Doğu Oxford'un çok kültürlü ve canlı caddesi Cowley Road üzerinde, tarihi Old Music Hall binasında eğitim veren bağımsız bir dil okulu. English UK üyesi olan okulun en belirgin özelliği, sınıfların en fazla 10 öğrenciyle sınırlı tutulması ve derslerin tam 60 dakika sürmesi. Programlar haftada 15 saatlik Standart, 22,5 saatlik Yoğun ve 27,5 saatlik Süper Yoğun Genel İngilizce ile 22,5 saatlik IELTS Academic hazırlığından oluşuyor; tüm kurslar her pazartesi başlayabiliyor.\n\nKafeler, restoranlar ve uygun fiyatlı dükkânlarla dolu Cowley Road, öğrenci hayatı için hareketli bir çevre sunarken şehir merkezine yürüme mesafesi korunuyor. Konaklama, okulun kendi seçtiği yarım pansiyon aile yanı seçenekleriyle sağlanıyor. Ders materyallerinin fiyata dahil olması ve kademeli indirimler, toplam maliyeti öngörülebilir kılıyor.",
+      "highlights": [
+        "Sınıflar en fazla 10 öğrenci",
+        "Dersler tam 60 dakika",
+        "Her pazartesi başlangıç",
+        "Ders materyalleri fiyata dahil",
+        "Canlı Cowley Road semtinde"
+      ],
+      "facilities": [
+        "Tarihi Old Music Hall binası",
+        "Ücretsiz Wi-Fi",
+        "Sosyal etkinlik programı"
+      ],
+      "idealFor": [
+        "Küçük sınıf isteyenler",
+        "IELTS Academic hedefleyenler",
+        "Canlı semt ortamı sevenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Standart)",
+          "nameEn": "General English Standard (AM)",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 275
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 265
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 245
+            },
+            {
+              "weeks": "25+",
+              "perWeek": 225
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (Yoğun)",
+          "nameEn": "General English Intensive",
+          "lessonsPerWeek": 22.5,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 390
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 375
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 355
+            },
+            {
+              "weeks": "25+",
+              "perWeek": 335
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (Süper Yoğun)",
+          "nameEn": "General English Super Intensive",
+          "lessonsPerWeek": 27.5,
+          "hoursPerWeek": 27.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 465
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Academic Hazırlık",
+          "nameEn": "IELTS Academic",
+          "lessonsPerWeek": 22.5,
+          "hoursPerWeek": 22.5,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 415
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 395
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 380
+            }
+          ],
+          "notes": "Öğleden sonra dersleri için ek kitap ~70 £."
+        },
+        {
+          "name": "İş İngilizcesi (birebir)",
+          "nameEn": "Business English (one-to-one)",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": null
+            }
+          ],
+          "notes": "Birebir dersler saatlik ücretlendirilir: ders başına yaklaşık £65. Haftalık ücret alınan ders sayısına göre hesaplanır. Saatlik ücret (60 dk)."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "15–40 dk",
+          "perWeek": 280,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – iki kişilik oda (paylaşımlı)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "15–40 dk",
+          "perWeek": 225,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – executive en-suite oda",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "15–40 dk",
+          "perWeek": 330,
+          "minAge": 16,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 85,
+        "accommodationPlacement": 50,
+        "transferHeathrow": 180,
+        "transferGatwick": 205,
+        "summerSupplementPerWeek": 40,
+        "summerPeriod": "13 Haziran–22 Ağustos (konaklama)",
+        "materials": "Dahil",
+        "other": "Özel diyet +40 £/hafta, Noel ek ücreti 60 £/hafta. Ekim–Aralık 2026 grup derslerinde %20 indirim kampanyası."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.oxford-school.co.uk/pages/pv.asp?p=oxfordils92",
+        "https://www.oxford-school.co.uk/pages/pv.asp?p=oxfordils97",
+        "https://www.oxford-school.co.uk/pages/pv.asp?p=oxfordils169",
+        "https://www.englishuk.com/member-directory?id=5367"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ces-oxford",
+      "name": "CES Oxford – Centre of English Studies",
+      "brand": "Centre of English Studies (CES)",
+      "area": "Wheatley (Oxford'un ~8 km doğusu)",
+      "address": "Oxford House, 65-67 High Street, Wheatley, Oxford OX33 1XT",
+      "nearestStation": "Oxford tren istasyonu (otobüsle ~30 dk); Oxford merkezine otobüsle ~20 dk",
+      "website": "https://ces-schools.com/english-schools/oxford",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 9,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "CES Oxford, İrlanda merkezli Centre of English Studies grubunun İngiltere'deki okullarından biri ve Oxford şehir merkezine otobüsle yaklaşık 20 dakika uzaklıktaki Wheatley köyünde yer alıyor. Okulun en dikkat çekici özelliği sınıf mevcudu: ortalama 6, en fazla 9 öğrenci. Yetişkinler için haftada 20 derslik Standart ve 30 derslik Yoğun Genel İngilizce programları sunuluyor; ayrıca 50 yaş üstüne yönelik İngilizce ve kültür programı da bulunuyor.\n\nKöy ortamı, büyük şehir kalabalığından uzak, güvenli ve sakin bir öğrenim isteyenler için ideal; Oxford'un kolejleri ve müzeleri ise düzenli otobüs seferleriyle kolayca ulaşılabilir durumda. Konaklama ağırlıklı olarak yarım pansiyon aile yanı şeklinde. Okul fiyatlarını yalnızca teklif sistemiyle paylaştığından aşağıdaki rakamlar, CES 2027 yetişkin fiyat listesine atıf yapan bir acente kaynağından derlenmiş tahmini değerlerdir.",
+      "highlights": [
+        "Sınıflar ortalama 6, en fazla 9 öğrenci",
+        "Sakin ve güvenli köy ortamı",
+        "Oxford merkezine düzenli otobüs",
+        "50+ yaş programı",
+        "Uluslararası CES ağı"
+      ],
+      "facilities": [
+        "Ücretsiz Wi-Fi",
+        "Öğrenci ortak alanı",
+        "Sosyal program"
+      ],
+      "idealFor": [
+        "Çok küçük sınıf isteyenler",
+        "Sakin ortam tercih edenler",
+        "Olgun yaştaki öğrenciler"
+      ],
+      "courses": [
+        {
+          "name": "Standart Genel İngilizce",
+          "nameEn": "Standard General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 290
+            },
+            {
+              "weeks": "5-8",
+              "perWeek": 280
+            },
+            {
+              "weeks": "9-12",
+              "perWeek": 275
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 270
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "Intensive General English",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 410
+            },
+            {
+              "weeks": "5-8",
+              "perWeek": 390
+            },
+            {
+              "weeks": "9-12",
+              "perWeek": 385
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 375
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Wheatley ve Oxford çevresi",
+          "commute": "10–40 dk",
+          "perWeek": 294,
+          "minAge": 16,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 75,
+        "accommodationPlacement": 75,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": null,
+        "other": "Tahmini; transfer ücretleri için okuldan teklif alınmalı."
+      },
+      "priceYear": 2027,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://ces-schools.com/english-schools/oxford",
+        "https://lemonacademy.co.uk/ces-dil-okulu",
+        "https://www.englishuk.com/member-directory?id=260"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ef-oxford",
+      "name": "EF International Language Campus Oxford",
+      "brand": "EF Education First",
+      "area": "Headington (Pullens Lane)",
+      "address": "Pullens Lane, Headington, Oxford OX3 0DT",
+      "nearestStation": "Oxford tren istasyonu (otobüsle ~25 dk); Headington merkezi yürüyerek ~10 dk",
+      "website": "https://www.ef.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 40,
+      "founded": null,
+      "description": "EF Oxford, Headington'ın yeşil ve sakin Pullens Lane sokağında, bahçeler içindeki tarihi binalardan oluşan bir kampüste faaliyet gösteriyor. Dünyanın en büyük özel eğitim şirketlerinden EF'nin bu okulu, özellikle kampüs içinde yaşamak ve okumak isteyen genç yetişkinlere hitap ediyor. Programlar EF'nin kendi ders sistemine göre Basic, General ve Intensive yoğunluklarında sunuluyor; IELTS ve Cambridge sınav hazırlığı da mevcut.\n\nKampüs yurtları, yemekhane ve spor alanları sayesinde öğrenciler günlük hayatın büyük kısmını okul çevresinde geçirebiliyor; şehir merkezine ise otobüsle yaklaşık 15–20 dakikada ulaşılıyor. Hafta sonları EF ağı üzerinden Londra, Bath ve Cotswolds gibi rotalara geziler düzenleniyor; farklı ülkelerden gelen geniş öğrenci profili, sınıf dışında da İngilizce konuşma fırsatını artırıyor. EF fiyatlarını yalnızca kişisel teklifle ve çoğunlukla konaklama dahil paketler halinde paylaştığından aşağıdaki ücretler emsal okullara göre tahminidir.",
+      "highlights": [
+        "Bahçeli tarihi kampüs",
+        "Kampüs içi yurt ve yemekhane",
+        "EF'nin dijital öğrenme platformu",
+        "IELTS ve Cambridge hazırlık",
+        "Uluslararası geniş öğrenci profili"
+      ],
+      "facilities": [
+        "Kampüs yurtları",
+        "Yemekhane",
+        "Bahçe ve spor alanları",
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi"
+      ],
+      "idealFor": [
+        "Kampüs hayatı isteyen genç yetişkinler",
+        "Her şey dahil paket arayanlar",
+        "İlk kez yurt dışına çıkanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Basic)",
+          "nameEn": "Basic Course",
+          "lessonsPerWeek": 16,
+          "hoursPerWeek": 10.7,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 340
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 300
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (General)",
+          "nameEn": "General Course",
+          "lessonsPerWeek": 26,
+          "hoursPerWeek": 17.3,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 410
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 360
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive Course",
+          "lessonsPerWeek": 32,
+          "hoursPerWeek": 21.3,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 470
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 420
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Oxford geneli",
+          "commute": "20–45 dk",
+          "perWeek": 280,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "EF kampüs yurdu – paylaşımlı oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Kampüs içi",
+          "commute": "0–5 dk",
+          "perWeek": 330,
+          "minAge": 16,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 150,
+        "accommodationPlacement": null,
+        "transferHeathrow": 240,
+        "transferGatwick": 280,
+        "summerSupplementPerWeek": 55,
+        "summerPeriod": "Haziran–Ağustos (yüksek sezon)",
+        "materials": null,
+        "other": "Tüm rakamlar tahminidir; EF yalnızca kişisel teklif verir."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.englishuk.com/member-directory?id=116",
+        "https://www.ef.com/"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

@@ -1,0 +1,856 @@
+{
+  "city": "liverpool",
+  "schools": [
+    {
+      "slug": "kaplan-liverpool",
+      "name": "Kaplan International Liverpool",
+      "brand": "Kaplan International Languages",
+      "area": "Şehir merkezi – Ticaret bölgesi (Old Hall Street)",
+      "address": "2nd Floor, Cotton House, Old Hall Street, Liverpool L3 9TX",
+      "nearestStation": "Moorfields (yaklaşık 5 dk yürüme); Royal Liver Building ve Cavern Club yakınında",
+      "website": "https://www.kaplaninternational.com/learn-english-united-kingdom/liverpool",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 17,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Kaplan International Liverpool, şehrin ticaret bölgesindeki Cotton House binasında yer alır; Royal Liver Building, Mersey kıyısı ve Beatles'ın sahne aldığı Cavern Club kısa bir yürüyüş mesafesindedir. Liverpool, Londra ve Manchester'a kıyasla daha uygun yaşam maliyetiyle öne çıkar ve bu durum hem kurs hem de konaklama fiyatlarına yansır.\n\nOkulda genel, yarı yoğun ve yoğun İngilizce programlarının yanı sıra IELTS, iş İngilizcesi ve Cambridge sınav hazırlık kursları bulunur. Aynı binada 30 yaş ve üzeri öğrencilere ayrılmış ayrı sınıflar (Kaplan 30+) da sunulur. Konaklamada aile yanı ile Glassworks, Great Newton House ve Vita Liverpool gibi merkezi öğrenci yurtları seçilebilir.",
+      "highlights": [
+        "Uygun yaşam maliyeti",
+        "30 yaş üstüne özel sınıflar (Kaplan 30+)",
+        "Cambridge B2/C1 sınav kursları",
+        "Merkezi öğrenci yurtları",
+        "Her pazartesi başlangıç"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi‑Fi",
+        "K+ dijital öğrenme platformu",
+        "Sosyal aktivite programı"
+      ],
+      "idealFor": [
+        "Bütçesini korumak isteyenler",
+        "30 yaş üstü profesyoneller",
+        "Cambridge sınavına hazırlananlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 300
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 295
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 260
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 230
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "Yarı Yoğun İngilizce",
+          "nameEn": "Semi-Intensive English",
+          "lessonsPerWeek": 27,
+          "hoursPerWeek": 20,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 330
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 320
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 290
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 250
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 380
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 370
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 340
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 290
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS (Supplementary, Intensive)",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 380
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 370
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 340
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 290
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "Business (Supplementary, Intensive)",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 380
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 370
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 340
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 290
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Liverpool banliyöleri",
+          "commute": "30–50 dk",
+          "perWeek": 210,
+          "minAge": 18,
+          "notes": "30+ öğrenciler için ayrı (daha yüksek) fiyat uygulanır."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, özel banyo",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Liverpool banliyöleri",
+          "commute": "30–50 dk",
+          "perWeek": 270,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Great Newton House – tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "15–20 dk",
+          "perWeek": 235,
+          "minAge": 18,
+          "notes": "En az 2 hafta."
+        },
+        {
+          "type": "residence",
+          "name": "Glassworks Liverpool – tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Lime Street yakını",
+          "commute": "15–20 dk",
+          "perWeek": 270,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "studio",
+          "name": "Glassworks Liverpool – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Lime Street yakını",
+          "commute": "15–20 dk",
+          "perWeek": 300,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Vita Liverpool – Bronze oda",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–15 dk",
+          "perWeek": 275,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 135,
+        "accommodationPlacement": 35,
+        "transferHeathrow": 600,
+        "transferGatwick": null,
+        "transferLocal": 150,
+        "transferLocalAirport": "Liverpool John Lennon Airport (LPL)",
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "31 Mayıs – 23 Ağustos (aile yanı/yurt); ders ücretine 16 Haziran – 22 Ağustos arası haftalık +£20",
+        "materials": "Dahil (K+ dijital materyal)",
+        "other": "Manchester Havalimanı transferi tek yön £230; yurt yaz farkı £35/hafta."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.kaplaninternational.com/learn-english-united-kingdom/liverpool",
+        "https://ebook.kaplaninternational.com/pricelist/2025-pricelist/eu/Kaplan-Pricelist2025--eu-en.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ncg-liverpool",
+      "name": "NCG Liverpool (New College Group)",
+      "brand": "New College Group",
+      "area": "Şehir merkezi – Derby Square",
+      "address": "Merchants Court, Derby Square, Liverpool city centre (L2)",
+      "nearestStation": "James Street (1 dk yürüme), Moorfields (7 dk), Liverpool Central (10 dk)",
+      "website": "https://newcollegegroup.com/locations/liverpool/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "NCG Liverpool, New College Group'un Liverpool şubesidir ve şehir merkezinde Derby Square'in tam karşısındaki Merchants Court binasında yer alır. James Street istasyonu yalnızca bir dakika uzaklıktadır; Albert Dock, Liverpool ONE alışveriş bölgesi ve nehir kıyısı yürüme mesafesindedir.\n\nKurs yapısı ve fiyatlar Manchester şubesiyle aynıdır: haftada 15 saatlik Genel İngilizce veya IELTS, 21 saatlik yoğun ve 25 saatlik süper yoğun program seçilebilir; ortalama sınıf 12 kişidir. Liverpool'un avantajı konaklamadadır: şehir merkezindeki Silver yurt odası haftalık 180 sterlinden başlar. Aile yanı, en-suite yurt ve stüdyo seçenekleri mevcuttur.",
+      "highlights": [
+        "James Street istasyonuna 1 dk",
+        "Ortalama 12, en fazla 15 kişilik sınıflar",
+        "Haftalık £180'den başlayan merkezi yurt",
+        "Uzun dönemde haftalık £225'e inen ders ücreti",
+        "Liverpool Havalimanı transferi £80"
+      ],
+      "facilities": [
+        "NCG öğrenci uygulaması",
+        "Seviye tespit sınavı",
+        "Kur sonu raporu ve sertifika",
+        "Sosyal program"
+      ],
+      "idealFor": [
+        "Uygun fiyatlı konaklama arayanlar",
+        "Uzun dönem öğrenciler",
+        "IELTS hazırlığı yapanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce / IELTS Hazırlık",
+          "nameEn": "General English or IELTS Preparation",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "A1–C1 (IELTS B1+)",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 285
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 270
+            },
+            {
+              "weeks": "16-23",
+              "perWeek": 255
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 240
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 225
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce / IELTS Hazırlık",
+          "nameEn": "Intensive English or IELTS Preparation",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 21,
+          "level": "A1–C1 (IELTS B1+)",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 340
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 325
+            },
+            {
+              "weeks": "16-23",
+              "perWeek": 310
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 295
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 280
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Süper Yoğun İngilizce",
+          "nameEn": "Super Intensive English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 370
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 355
+            },
+            {
+              "weeks": "16-23",
+              "perWeek": 340
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 325
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 310
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Liverpool banliyöleri",
+          "commute": "30–45 dk",
+          "perWeek": 240,
+          "minAge": 16,
+          "notes": "Hafta içi yarım pansiyon, hafta sonu tam pansiyon."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – iki kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Liverpool banliyöleri",
+          "commute": "30–45 dk",
+          "perWeek": 210,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Şehir merkezi yurdu – Gold en-suite",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–20 dk",
+          "perWeek": 245,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Şehir merkezi yurdu – Silver en-suite",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–20 dk",
+          "perWeek": 180,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "studio",
+          "name": "Stüdyo – mutfaklı",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–20 dk",
+          "perWeek": 280,
+          "minAge": 18,
+          "notes": "Fiyat listesinde stüdyo seçenekleri £250–280 aralığında."
+        }
+      ],
+      "fees": {
+        "registration": 75,
+        "accommodationPlacement": 75,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 80,
+        "transferLocalAirport": "Liverpool John Lennon Airport (LPL)",
+        "summerSupplementPerWeek": 35,
+        "summerPeriod": "31 Mayıs – 30 Ağustos (aile yanı)",
+        "materials": "1–7 hafta £40; 8–15 hafta £70; 16–23 hafta £100; 24–35 hafta £130; 36+ hafta £160",
+        "other": "Manchester Havalimanı transferi tek yön £160; Noel farkı £60; 18 yaş altı +£35/hafta."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://newcollegegroup.com/wp-content/uploads/2026/01/NCG_Standard_Pricelist_Liverpool_2026.pdf",
+        "https://newcollegegroup.com/locations/liverpool/getting-here/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "lila-liverpool",
+      "name": "LILA* College Liverpool",
+      "brand": "LILA* (Liverpool International Language Academy)",
+      "area": "Şehir merkezi – North John Street / ticaret bölgesi",
+      "address": "New Barratt House, 47 North John Street, Liverpool L2 6SG",
+      "nearestStation": "Moorfields (yaklaşık 3 dk yürüme), Liverpool Central (~8 dk)",
+      "website": "https://lilalovetolearn.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "LILA*, Liverpool'un merkezinde North John Street üzerinde yer alan, dil kurslarının yanında A-Level ve üniversite hazırlık programları da sunan bir kolejdir. Cambridge sınav merkezi ve OET merkezi olması, sınav odaklı öğrenciler için önemli bir avantajdır; ayrıca CELTA öğretmen eğitimi de verilir.\n\nTam zamanlı Genel İngilizce haftada 15 saattir (20+ ders); Genel İngilizce Plus, IELTS, OET veya Cambridge FCE/CAE kombinasyonlarıyla yoğun programlar haftada 21 saate çıkar. Futbol tutkunları için Steven Gerrard Academy iş birliğiyle İngilizce + futbol programı da mevcuttur. Konaklamada uygun fiyatlı aile yanı ve en-suite yurt seçenekleri bulunur; fiyatlar Liverpool ortalamasının altındadır.",
+      "highlights": [
+        "Cambridge ve OET sınav merkezi",
+        "Steven Gerrard Academy ile İngilizce + futbol",
+        "Haftalık £255'ten Genel İngilizce",
+        "Aile yanı haftalık £195'ten",
+        "Kayıt ücreti yalnızca £45"
+      ],
+      "facilities": [
+        "Sınav merkezi",
+        "Kariyer ve iş becerileri atölyeleri",
+        "CV yazım hizmeti",
+        "Sosyal etkinlik programı"
+      ],
+      "idealFor": [
+        "Cambridge / OET sınavına girecekler",
+        "Futbolla İngilizceyi birleştirmek isteyenler",
+        "Üniversite hazırlığı düşünenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 255
+            },
+            {
+              "weeks": "5-10",
+              "perWeek": 250
+            },
+            {
+              "weeks": "11-19",
+              "perWeek": 245
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 240
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce Plus (Yoğun)",
+          "nameEn": "General English Plus",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 21,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 340
+            },
+            {
+              "weeks": "5-10",
+              "perWeek": 335
+            },
+            {
+              "weeks": "11-19",
+              "perWeek": 330
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 325
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce + IELTS",
+          "nameEn": "General English + IELTS",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 21,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 350
+            },
+            {
+              "weeks": "5-10",
+              "perWeek": 345
+            },
+            {
+              "weeks": "11-19",
+              "perWeek": 340
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 335
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Cambridge FCE Hazırlık",
+          "nameEn": "Cambridge FCE",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 265
+            },
+            {
+              "weeks": "5-10",
+              "perWeek": 260
+            },
+            {
+              "weeks": "11-19",
+              "perWeek": 255
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 250
+            }
+          ],
+          "notes": "FCE/CAE + Plus Six (21 saat) £350'den."
+        },
+        {
+          "name": "İngilizce + Futbol",
+          "nameEn": "General English + Football",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 605
+            },
+            {
+              "weeks": "5-10",
+              "perWeek": 600
+            },
+            {
+              "weeks": "11-19",
+              "perWeek": 590
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 595
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Liverpool banliyöleri",
+          "commute": "25–45 dk",
+          "perWeek": 195,
+          "minAge": 16,
+          "notes": "Pazar günü tam pansiyon."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, tam pansiyon",
+          "bathroom": "shared",
+          "board": "full",
+          "location": "Liverpool banliyöleri",
+          "commute": "25–45 dk",
+          "perWeek": 215,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Yurt – en-suite tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–20 dk",
+          "perWeek": 195,
+          "minAge": 18,
+          "notes": "En az 2 hafta."
+        },
+        {
+          "type": "shared-flat",
+          "name": "Yurt – özel daire (tek kişilik)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–20 dk",
+          "perWeek": 240,
+          "minAge": 18,
+          "notes": "£240–275 aralığında; talep üzerine."
+        }
+      ],
+      "fees": {
+        "registration": 45,
+        "accommodationPlacement": 45,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 70,
+        "transferLocalAirport": "Liverpool John Lennon Airport (LPL)",
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "29 Haziran – 21 Ağustos (aile yanı)",
+        "materials": "Ders kitabı £40",
+        "other": "Manchester Havalimanı transferi tek yön £100; genç yetişkin (16–17) farkı £25/hafta; Cambridge sınav ücreti £195."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://lilalovetolearn.com/admissions/fees/",
+        "https://lilalovetolearn.com/wp-content/uploads/2025/09/LILA_EFL_Accommodation-Pricelist-2026.pdf",
+        "https://lilalovetolearn.com/wp-content/uploads/2026/04/LILA_Tuition-Pricelist-2026.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "liverpool-school-of-english",
+      "name": "The Liverpool School of English",
+      "brand": "The Liverpool School of English",
+      "area": "Gürcü Mahallesi (Georgian Quarter) – Rodney Street",
+      "address": "33 Rodney Street, Liverpool L1 9JF",
+      "nearestStation": "Liverpool Central (yaklaşık 10 dk yürüme), Liverpool Lime Street (~12 dk)",
+      "website": "https://lse.uk.net/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": null,
+      "founded": 1999,
+      "description": "The Liverpool School of English, 1999'dan beri faaliyet gösteren bağımsız ve aile işletmesi niteliğinde bir okuldur. Liverpool'un tarihi Georgian Quarter bölgesinde, Rodney Street'teki klasik bir binada yer alır; iki katedral ve şehir merkezi yürüme mesafesindedir.\n\nGenel İngilizce haftada 15, 21 veya 25 saat olarak alınabilir; ayrıca IELTS, OET (sağlık profesyonelleri için), akademik beceriler ve 50 yaş üstüne yönelik dil ve kültür programları bulunur. Okul Trinity CertTESOL ve öğretmen gelişim kursları da düzenler. English UK dizinine göre okul aile yanı konaklama sunmaz; öğrenciler yurt veya otel seçeneklerine yönlendirilir.",
+      "highlights": [
+        "1999'dan beri bağımsız okul",
+        "Tarihi Georgian Quarter'da",
+        "OET ve IELTS hazırlık",
+        "50+ dil ve kültür programı",
+        "En fazla 15 kişilik sınıflar"
+      ],
+      "facilities": [
+        "Tarihi binada sınıflar",
+        "Ücretsiz Wi‑Fi",
+        "Öğretmen eğitimi (Trinity CertTESOL)",
+        "Sosyal program"
+      ],
+      "idealFor": [
+        "Sağlık çalışanları (OET)",
+        "50 yaş üstü öğrenciler",
+        "Butik okul arayanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce 15",
+          "nameEn": "General English 15",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 250
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 235
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 220
+            }
+          ],
+          "notes": "Tahmini fiyat: okul güncel fiyat listesini yayımlamıyor; English UK dizinindeki fiyat bandı ve benzer Liverpool okulları esas alınmıştır."
+        },
+        {
+          "name": "Genel İngilizce 21",
+          "nameEn": "General English 21",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 21,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 295
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 280
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 265
+            }
+          ],
+          "notes": "Tahmini fiyat: okul güncel fiyat listesini yayımlamıyor; English UK dizinindeki fiyat bandı ve benzer Liverpool okulları esas alınmıştır."
+        },
+        {
+          "name": "Genel İngilizce 25 (Yoğun)",
+          "nameEn": "General English 25",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 340
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 325
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 310
+            }
+          ],
+          "notes": "Tahmini fiyat: okul güncel fiyat listesini yayımlamıyor; English UK dizinindeki fiyat bandı ve benzer Liverpool okulları esas alınmıştır."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 260
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 245
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 230
+            }
+          ],
+          "notes": "Tahmini fiyat: okul güncel fiyat listesini yayımlamıyor; English UK dizinindeki fiyat bandı ve benzer Liverpool okulları esas alınmıştır."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "residence",
+          "name": "Öğrenci yurdu – en-suite tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–20 dk",
+          "perWeek": 220,
+          "minAge": 18,
+          "notes": "Tahmini fiyat; okul aile yanı sunmuyor."
+        }
+      ],
+      "fees": {
+        "registration": 60,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 70,
+        "transferLocalAirport": "Liverpool John Lennon Airport (LPL)",
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": "Tahmini £30–40",
+        "other": "Tüm ücretler tahminidir; kesin teklif için okulla iletişime geçilmeli."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.englishuk.com/member-directory?id=339",
+        "https://lse.uk.net/"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

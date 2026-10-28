@@ -1,0 +1,3581 @@
+{
+  "city": "londra",
+  "schools": [
+    {
+      "slug": "es-london",
+      "name": "ES London",
+      "brand": "ES World",
+      "area": "Bloomsbury / Russell Square (Zone 1)",
+      "address": "27-28 Woburn Square, London WC1H 0AA",
+      "nearestStation": "Russell Square (Piccadilly), Euston Square ve Goodge Street yürüme mesafesinde",
+      "website": "https://eslondon.co.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 16,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "ES London, Dubai merkezli ES World grubunun Londra okulu olup Bloomsbury'nin sakin meydanlarından Woburn Square'de, British Museum ve University College London kampüsüne birkaç dakika uzaklıkta yer alır. King's Cross St Pancras ve Euston istasyonlarına yakınlığı, şehrin her noktasına kolay ulaşım sağlar.\n\nOkul; Genel İngilizce, IELTS hazırlık, konuşma (Speaking) ve İş İngilizcesi derslerini haftada 20 ders (yarı yoğun) ya da Genel İngilizceyi bir seçmeli dersle birleştiren 40 derslik yoğun program olarak sunar. Uzun süreli kayıtlarda haftalık ücretin kademeli olarak düştüğü şeffaf bir fiyat yapısı vardır. Aile yanı, paylaşımlı öğrenci evi ve öğrenci yurdu seçenekleri okul tarafından ayarlanır; çok dilli öğrenci destek ekibi Türkçe dahil 20'den fazla dilde yardımcı olur.",
+      "highlights": [
+        "Bloomsbury'de, British Museum'a yürüme mesafesinde merkezi konum",
+        "Uzun kayıtta haftalık £257'ye kadar düşen rekabetçi fiyatlar",
+        "Haftada 40 derslik yoğun program seçeneği",
+        "IELTS, İş İngilizcesi ve konuşma odaklı seçmeli dersler",
+        "Her 12 haftada bir haftalık tatil hakkı",
+        "Türkçe dahil çok dilli öğrenci desteği"
+      ],
+      "facilities": [
+        "Modern sınıflar",
+        "Öğrenci salonu ve çalışma alanları",
+        "Öğrenci portalı",
+        "Ücretsiz Wi-Fi",
+        "Sosyal etkinlik programı"
+      ],
+      "idealFor": [
+        "Bütçesini kontrol etmek isteyen uzun süreli öğrenciler",
+        "IELTS'e hazırlananlar",
+        "Merkezi Londra'da okumak isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Yarı Yoğun)",
+          "nameEn": "General English (Semi-Intensive)",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 404
+            },
+            {
+              "weeks": "4-8",
+              "perWeek": 383
+            },
+            {
+              "weeks": "9-12",
+              "perWeek": 362
+            },
+            {
+              "weeks": "13-16",
+              "perWeek": 341
+            },
+            {
+              "weeks": "17-20",
+              "perWeek": 320
+            },
+            {
+              "weeks": "21-24",
+              "perWeek": 299
+            },
+            {
+              "weeks": "25-30",
+              "perWeek": 278
+            },
+            {
+              "weeks": "31-44",
+              "perWeek": 257
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce (Genel + seçmeli)",
+          "nameEn": "Intensive (General English + elective)",
+          "lessonsPerWeek": 40,
+          "hoursPerWeek": 30,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 604
+            },
+            {
+              "weeks": "4-8",
+              "perWeek": 578
+            },
+            {
+              "weeks": "9-12",
+              "perWeek": 546
+            },
+            {
+              "weeks": "13-16",
+              "perWeek": 515
+            },
+            {
+              "weeks": "17-20",
+              "perWeek": 483
+            },
+            {
+              "weeks": "21-24",
+              "perWeek": 452
+            },
+            {
+              "weeks": "25-30",
+              "perWeek": 420
+            },
+            {
+              "weeks": "31-44",
+              "perWeek": 389
+            }
+          ],
+          "notes": "Genel İngilizce + IELTS / Konuşma / İş İngilizcesi seçmelilerinden biri veya ikisi"
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 404
+            },
+            {
+              "weeks": "4-8",
+              "perWeek": 383
+            },
+            {
+              "weeks": "9-12",
+              "perWeek": 362
+            }
+          ],
+          "notes": "En fazla 12 hafta"
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "English for Business",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 404
+            },
+            {
+              "weeks": "4-8",
+              "perWeek": 383
+            },
+            {
+              "weeks": "9-12",
+              "perWeek": 362
+            }
+          ],
+          "notes": "En fazla 12 hafta"
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda (Zone 2)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 2",
+          "commute": "30–45 dk",
+          "perWeek": 345,
+          "minAge": 16,
+          "notes": "Oda fiyatı £300 + yarım pansiyon eki £45; özel banyo +£55 (Zone 4)"
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda (Zone 3)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 3",
+          "commute": "40–50 dk",
+          "perWeek": 310,
+          "minAge": 16,
+          "notes": "Oda fiyatı £265 + yarım pansiyon eki £45"
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda (Zone 4)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 4",
+          "commute": "45–60 dk",
+          "perWeek": 275,
+          "minAge": 16,
+          "notes": "Oda fiyatı £230 + yarım pansiyon eki £45"
+        },
+        {
+          "type": "shared-flat",
+          "name": "ES House (Camberwell) – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "self",
+          "location": "Camberwell (Zone 2)",
+          "commute": "30–40 dk",
+          "perWeek": 320,
+          "minAge": 18,
+          "notes": "Paylaşımlı oda £236; nevresim/mutfak seti £50 (tek sefer)"
+        },
+        {
+          "type": "residence",
+          "name": "Öğrenci yurdu – tek kişilik oda (Zone 3)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Zone 3 (ör. Canvas Walthamstow)",
+          "commute": "30–40 dk",
+          "perWeek": 315,
+          "minAge": 18,
+          "notes": "£100 depozito + £50 nevresim/mutfak seti"
+        },
+        {
+          "type": "residence",
+          "name": "Öğrenci yurdu – özel banyolu tek kişilik oda (Zone 4)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Zone 4",
+          "commute": "40–50 dk",
+          "perWeek": 372,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 50,
+        "accommodationPlacement": 50,
+        "transferHeathrow": 155,
+        "transferGatwick": 165,
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "1 Haz – 31 Ağu (yalnızca aile yanı)",
+        "materials": "£50",
+        "other": "£100 iade edilebilir konaklama depozitosu; banka masrafı £50; kredi kartı %3,5; Noel eki (aile yanı) £45/hafta"
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://eslondon.co.uk/wp-content/uploads/2026/10/London-Price-List-2027_compressed.pdf",
+        "https://eslondon.co.uk/",
+        "https://www.englishuk.com/member-directory?id=8392"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "kaplan-london-covent-garden",
+      "name": "Kaplan International Languages London (Covent Garden)",
+      "brand": "Kaplan International Languages",
+      "area": "Holborn / Covent Garden (Zone 1)",
+      "address": "3-4 Southampton Place, London WC1A 2DA",
+      "nearestStation": "Holborn (Central, Piccadilly)",
+      "website": "https://www.kaplaninternational.com/london",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 17,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Kaplan'ın Londra okulu, Holborn ile Covent Garden arasında, Southampton Place'teki altı katlı tarihi bir binada eğitim verir. 15 sınıf, interaktif tahtalar, kendi kendine çalışma merkezi, avlu bahçesi ve öğrenci salonu bulunur. Markanın eskiden ayrı çalışan Leicester Square şubesi artık aktif değildir; Londra'daki yetişkin eğitimi bu binada toplanmıştır. Kaplan International Languages, Inspirit Capital'e satılmış olsa da marka adıyla faaliyetini sürdürmektedir.\n\nProgramlar haftada 20 derslik Genel İngilizceden 27 derslik yarı yoğun ve 35 derslik yoğun kurslara, IELTS ve Cambridge hazırlığa ve İş, Medya-Teknoloji gibi alanlarda Profesyonel Sertifikalara kadar uzanır. Konaklamada aile yanının yanı sıra Scape Canada Water, IQ Shoreditch ve IQ Aldgate gibi 18 yaş üstüne yönelik modern stüdyo yurtları sunulur.",
+      "highlights": [
+        "Holborn'da, Covent Garden ve West End'e yürüme mesafesinde",
+        "27 ve 35 derslik yoğun programlar",
+        "İş, Medya ve İletişim alanlarında Profesyonel Sertifika kursları",
+        "Uzun süreli Academic Year Abroad seçeneği",
+        "Scape ve IQ markalı modern öğrenci yurtları"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Kendi kendine çalışma merkezi",
+        "Avlu bahçesi",
+        "Ücretsiz Wi-Fi",
+        "İnteraktif tahtalar",
+        "Klima ve asansör"
+      ],
+      "idealFor": [
+        "Kariyer odaklı öğrenciler",
+        "Uzun dönem (6–11 ay) dil yılı planlayanlar",
+        "Yurtta bağımsız yaşamak isteyen 18+ öğrenciler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 370
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 355
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 335
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yarı Yoğun İngilizce",
+          "nameEn": "Semi-Intensive English",
+          "lessonsPerWeek": 27,
+          "hoursPerWeek": 20.2,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 425
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 405
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 385
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.2,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 485
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 460
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 435
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Exam Preparation",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.2,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 485
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 460
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi Profesyonel Sertifikası",
+          "nameEn": "Professional Certificate – Business",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.2,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "4-12",
+              "perWeek": 495
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 1–4",
+          "commute": "40–60 dk",
+          "perWeek": 320,
+          "minAge": 16,
+          "notes": "Tahmini fiyat"
+        },
+        {
+          "type": "residence",
+          "name": "Scape Canada Water – özel banyolu oda",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Canada Water (Zone 2)",
+          "commute": "25–30 dk",
+          "perWeek": 430,
+          "minAge": 18,
+          "notes": "5–6 Kaplan öğrencisiyle ortak daire; tahmini fiyat"
+        },
+        {
+          "type": "studio",
+          "name": "IQ Shoreditch – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Shoreditch (Zone 1)",
+          "commute": "20–25 dk",
+          "perWeek": 520,
+          "minAge": 18,
+          "notes": "Min. 2 hafta; tahmini fiyat"
+        },
+        {
+          "type": "studio",
+          "name": "Scape Wembley – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Wembley (Zone 4)",
+          "commute": "35–45 dk",
+          "perWeek": 450,
+          "minAge": 18,
+          "notes": "Tahmini fiyat"
+        }
+      ],
+      "fees": {
+        "registration": 175,
+        "accommodationPlacement": 95,
+        "transferHeathrow": 165,
+        "transferGatwick": 185,
+        "summerSupplementPerWeek": 20,
+        "summerPeriod": "15 Haz – 21 Ağu 2026",
+        "materials": "Ayrıca ücretli (yaklaşık £60–80)",
+        "other": "Tahmini ek ücretler; kesin tutarlar için teklif alınmalı"
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.kaplaninternational.com/london",
+        "https://online.flippingbook.com/view/320532174/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "st-giles-london-central",
+      "name": "St Giles London Central",
+      "brand": "St Giles International",
+      "area": "Bloomsbury / Holborn (Zone 1)",
+      "address": "154 Southampton Row, London WC1B 5JX",
+      "nearestStation": "Russell Square (Piccadilly), Holborn (Central, Piccadilly)",
+      "website": "https://www.stgiles-international.com/",
+      "accreditations": [
+        "British Council",
+        "English UK",
+        "Eaquals"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 50,
+      "founded": 1955,
+      "description": "St Giles London Central, 1955'ten bu yana dil eğitimi veren St Giles grubunun amiral gemisidir. Russell Square'e birkaç adım uzaklıktaki binanın üst katlarında okulun kendi yurdu bulunur; bu sayede öğrenciler sınıfa asansörle inebilir. British Museum, Covent Garden ve West End yürüme mesafesindedir.\n\nOkul, sabah 20 derslik Genel İngilizceyi temel alır ve öğleden sonra 'Global English for Life', 'Global English for Work' veya IELTS seçmelileriyle 28 derslik yoğun programa dönüştürür. 30 yaş üstü için ayrı sınıflar, en fazla 5 kişilik Platinum mini grupları, 50+ İngilizce ve Kültür programı ile CELTA öğretmen eğitimi de sunulur. Bütçe dostu öğleden sonra kursları da mevcuttur.",
+      "highlights": [
+        "Okul binası içinde kahvaltılı yurt odaları",
+        "1955'ten beri faaliyette olan köklü marka",
+        "30 yaş üstü Genel İngilizce sınıfları",
+        "En fazla 5 kişilik Platinum premium gruplar",
+        "Öğleden sonra daha ekonomik kurs seçeneği",
+        "Resmi CELTA merkezi"
+      ],
+      "facilities": [
+        "Okul içi yurt",
+        "St Giles Café",
+        "Öğrenci salonu",
+        "Kendi kendine çalışma alanı",
+        "Ücretsiz Wi-Fi"
+      ],
+      "idealFor": [
+        "Okul binasında kalmak isteyenler",
+        "30 yaş üstü profesyoneller",
+        "Yoğun program arayan öğrenciler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Sabah)",
+          "nameEn": "General English – Peak Morning",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.7,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 441
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 399
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 376
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 354
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 311
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun Kurs (20 Genel + 8 seçmeli)",
+          "nameEn": "Intensive Course",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 23.3,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 558
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 503
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 473
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 445
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 380
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık (20 IELTS + 8 Genel)",
+          "nameEn": "IELTS Preparation (Intensive)",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 23.3,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 558
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 503
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 473
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 445
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 380
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi (Global English for Work)",
+          "nameEn": "Global English for Work",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 23.3,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 558
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 503
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 473
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 445
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 380
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "30+ Genel İngilizce",
+          "nameEn": "General English for Over 30s",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.7,
+          "level": "A2+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 441
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 399
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 376
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 354
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 311
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Öğleden Sonra Genel İngilizce",
+          "nameEn": "Off-Peak Afternoon Course",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.7,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 353
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 319
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 301
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 283
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 249
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – standart tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 2–4",
+          "commute": "45–60 dk",
+          "perWeek": 285,
+          "minAge": 18,
+          "notes": "Yaz (20 Haz–22 Ağu) £323; 16–17 yaş £300"
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – superior, özel banyolu",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Zone 2–3",
+          "commute": "45–60 dk",
+          "perWeek": 492,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "St Giles okul içi yurt – özel banyolu tek kişilik",
+          "bathroom": "private",
+          "board": "bb",
+          "location": "Okul binası",
+          "commute": "0 dk",
+          "perWeek": 500,
+          "minAge": 18,
+          "notes": "Yaz £523; ortak banyolu tek kişilik £455"
+        },
+        {
+          "type": "residence",
+          "name": "IQ London City – özel banyolu tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Aldgate (Zone 1)",
+          "commute": "15 dk yürüme",
+          "perWeek": 467,
+          "minAge": 18,
+          "notes": "Yaz £488"
+        },
+        {
+          "type": "studio",
+          "name": "IQ London City – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Aldgate (Zone 1)",
+          "commute": "15 dk yürüme",
+          "perWeek": 501,
+          "minAge": 18,
+          "notes": "Yaz £521"
+        }
+      ],
+      "fees": {
+        "registration": 88,
+        "accommodationPlacement": 52,
+        "transferHeathrow": 116,
+        "transferGatwick": 154,
+        "summerSupplementPerWeek": 31,
+        "summerPeriod": "21 Haz – 20 Ağu 2027 (ders ücreti eki)",
+        "materials": "Kitap başına yaklaşık £35–50",
+        "other": "Özel diyet £34/hafta"
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.stgiles-international.com/wp-content/uploads/2026/08/2027-CDP-excl.-Juniors_compressed.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "st-giles-london-highgate",
+      "name": "St Giles London Highgate",
+      "brand": "St Giles International",
+      "area": "Highgate (Zone 3)",
+      "address": "51 Shepherd's Hill, Highgate, London N6 5QP",
+      "nearestStation": "Highgate (Northern)",
+      "website": "https://www.stgiles-international.com/",
+      "accreditations": [
+        "British Council",
+        "English UK",
+        "Eaquals"
+      ],
+      "minAge": 14,
+      "maxClassSize": null,
+      "lessonMinutes": 50,
+      "founded": null,
+      "description": "St Giles London Highgate, kuzey Londra'nın yeşil ve köy havasındaki Highgate semtinde, bahçeli bir Viktorya dönemi binasında yer alır. Hampstead Heath ve Highgate Wood'a yakınlığıyla şehrin kalabalığından uzak, sakin bir öğrenme ortamı sunar; Northern hattı ile merkeze yaklaşık 20 dakikada ulaşılır.\n\nProgram yapısı London Central ile benzerdir: sabah 20 derslik Genel İngilizce, öğleden sonra seçmelilerle 28 derslik yoğun kurs ve IELTS hazırlık. Fiyatlar merkez şubeye göre biraz daha uygundur. 14 yaşından itibaren öğrenci kabul edilir; 16 yaş altı öğrenciler ayrı sınıflarda okur. Yetişkinler için aile yanı ve IQ London City yurdu seçenekleri mevcuttur.",
+      "highlights": [
+        "Yeşil ve sakin Highgate semtinde bahçeli kampüs",
+        "London Central'a göre daha uygun haftalık ücretler",
+        "28 derslik yoğun kurs ve IELTS hazırlık",
+        "14 yaşından itibaren kabul (gençler için ayrı sınıflar)",
+        "Merkeze Northern hattıyla kolay ulaşım"
+      ],
+      "facilities": [
+        "Bahçe",
+        "Öğrenci salonu",
+        "Kantin",
+        "Kendi kendine çalışma alanı",
+        "Ücretsiz Wi-Fi"
+      ],
+      "idealFor": [
+        "Sakin bir ortam tercih edenler",
+        "Bütçe dostu St Giles kalitesi arayanlar",
+        "Genç yetişkinler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Sabah)",
+          "nameEn": "General English – Peak Morning",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.7,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 410
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 371
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 350
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 329
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 289
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun Kurs (20 Genel + 8 seçmeli)",
+          "nameEn": "Intensive Course",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 23.3,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 518
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 467
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 440
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 414
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 353
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 23.3,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 518
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 467
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 440
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 414
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 353
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi (Global English for Work)",
+          "nameEn": "Global English for Work",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 23.3,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 518
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 467
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 440
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 414
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 353
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Öğleden Sonra Genel İngilizce",
+          "nameEn": "Off-Peak Afternoon Course",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.7,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 328
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 297
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 280
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 263
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 231
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – standart tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 2–4",
+          "commute": "45–60 dk",
+          "perWeek": 279,
+          "minAge": 18,
+          "notes": "Yaz £316; 14–17 yaş £294"
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Zone 2–4",
+          "commute": "45–60 dk",
+          "perWeek": 223,
+          "minAge": 18,
+          "notes": "Yaz £258"
+        },
+        {
+          "type": "residence",
+          "name": "IQ London City – özel banyolu tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Aldgate (Zone 1)",
+          "commute": "40 dk",
+          "perWeek": 467,
+          "minAge": 18,
+          "notes": "Yaz £488"
+        },
+        {
+          "type": "studio",
+          "name": "IQ London City – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Aldgate (Zone 1)",
+          "commute": "40 dk",
+          "perWeek": 501,
+          "minAge": 18,
+          "notes": "Yaz £521"
+        }
+      ],
+      "fees": {
+        "registration": 88,
+        "accommodationPlacement": 52,
+        "transferHeathrow": 110,
+        "transferGatwick": 145,
+        "summerSupplementPerWeek": 31,
+        "summerPeriod": "21 Haz – 20 Ağu 2027 (ders ücreti eki)",
+        "materials": "Kitap başına yaklaşık £35–55",
+        "other": "Aile yanı hafta içi öğle yemeği eki £48/hafta"
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.stgiles-international.com/wp-content/uploads/2026/08/2027-CDP-excl.-Juniors_compressed.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ih-london",
+      "name": "International House London",
+      "brand": "International House World Organisation",
+      "area": "Covent Garden (Zone 1)",
+      "address": "16 Stukeley Street, London WC2B 5LQ",
+      "nearestStation": "Holborn (Central, Piccadilly), Covent Garden (Piccadilly)",
+      "website": "https://www.ihlondon.com/",
+      "accreditations": [
+        "British Council",
+        "English UK",
+        "Eaquals"
+      ],
+      "minAge": 16,
+      "maxClassSize": 12,
+      "lessonMinutes": 55,
+      "founded": 1953,
+      "description": "International House London, 1953'te kurulan ve bugün dünya çapında yüzlerce okulu kapsayan IH ağının çıkış noktasıdır. Covent Garden'daki okul, aynı zamanda İngiltere'nin en büyük öğretmen yetiştirme merkezlerinden biridir; CELTA ve DELTA programları burada verilir. Bu öğretmen eğitimi geleneği, dil sınıflarındaki ders kalitesine doğrudan yansır.\n\nYetişkinler için 'Learn English' kursları haftada 15, 20 veya 24–25 ders olarak sunulur ve dersler 55 dakikadır; yani aynı ders sayısında diğer okullara göre daha fazla öğretim saati alırsınız. IELTS tam zamanlı ve akşam kursları, 40+ İngilizce deneyimi ve profesyonel İngilizce seçenekleri mevcuttur. Konaklamada standart, superior ve executive aile yanı ile Chapter markalı merkezi yurtlar yer alır.",
+      "highlights": [
+        "1953'ten beri faaliyette, IH ağının kurucu okulu",
+        "55 dakikalık dersler – daha fazla gerçek ders saati",
+        "Dünyaca tanınmış CELTA/DELTA öğretmen eğitimi merkezi",
+        "IELTS tam zamanlı ve akşam kursları",
+        "40 yaş üstü için özel İngilizce deneyimi",
+        "Düşük yaz ek ücreti (£15/hafta)"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Kafe",
+        "Kütüphane ve kendi kendine çalışma merkezi",
+        "Ücretsiz Wi-Fi",
+        "Modern sınıflar"
+      ],
+      "idealFor": [
+        "Akademik kaliteye önem verenler",
+        "40 yaş üstü öğrenciler",
+        "Öğretmenler ve öğretmen adayları"
+      ],
+      "courses": [
+        {
+          "name": "Learn English 15",
+          "nameEn": "Learn English 15",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": 13.8,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-5",
+              "perWeek": 381
+            },
+            {
+              "weeks": "6-11",
+              "perWeek": 362
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 341
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 324
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (Learn English 20)",
+          "nameEn": "Learn English 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 18.3,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-5",
+              "perWeek": 445
+            },
+            {
+              "weeks": "6-11",
+              "perWeek": 427
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 402
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 378
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce (Learn English 25)",
+          "nameEn": "Learn English 25",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 22.9,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-5",
+              "perWeek": 555
+            },
+            {
+              "weeks": "6-11",
+              "perWeek": 534
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 503
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 472
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık 20",
+          "nameEn": "IELTS Preparation 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 18.3,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "4-7",
+              "perWeek": 445
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 427
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 402
+            },
+            {
+              "weeks": "20-24",
+              "perWeek": 378
+            }
+          ],
+          "notes": "4 haftalık bloklar halinde; ör. 4 hafta toplam £1.780, 12 hafta £4.824"
+        },
+        {
+          "name": "40+ İngilizce Deneyimi",
+          "nameEn": "40+ English Experience",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": 13.8,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-2",
+              "perWeek": 487
+            },
+            {
+              "weeks": "3-5",
+              "perWeek": 459
+            },
+            {
+              "weeks": "6+",
+              "perWeek": 433
+            }
+          ],
+          "notes": "Belirli dönemlerde başlar"
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – standart tek kişilik, kahvaltı + 7 akşam yemeği",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 2–5",
+          "commute": "40–60 dk",
+          "perWeek": 343,
+          "minAge": 16,
+          "notes": "Kahvaltı + 4 akşam £313; sadece kahvaltı £263"
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – superior tek kişilik, kahvaltı + 7 akşam yemeği",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 2–4",
+          "commute": "35–50 dk",
+          "perWeek": 405,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – executive tek kişilik, kahvaltı + 7 akşam yemeği",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Zone 1–3",
+          "commute": "30–45 dk",
+          "perWeek": 463,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Tufnell Park – özel banyolu oda",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Tufnell Park (Zone 2)",
+          "commute": "25–30 dk",
+          "perWeek": 448,
+          "minAge": 18,
+          "notes": "Ortak mutfak"
+        },
+        {
+          "type": "residence",
+          "name": "Chapter Islington – özel banyolu oda",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Islington (Zone 1)",
+          "commute": "20–25 dk",
+          "perWeek": 507,
+          "minAge": 18,
+          "notes": "Min. 2 hafta"
+        },
+        {
+          "type": "studio",
+          "name": "Chapter Kings Cross – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "King's Cross (Zone 1)",
+          "commute": "15–20 dk",
+          "perWeek": 647,
+          "minAge": 18,
+          "notes": "1 haftalık konaklamada £722"
+        }
+      ],
+      "fees": {
+        "registration": 98,
+        "accommodationPlacement": 59,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": 15,
+        "summerPeriod": "15 Haz – 28 Ağu 2026 (kurs); aile yanı yaz eki £37/hafta (14 Haz – 30 Ağu)",
+        "materials": "Dahil (2027'de £10)",
+        "other": "Yurt yaz eki £51/hafta; 18 yaş altı aile yanı eki £22/hafta; 2027 kayıt ücreti £100"
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.ihlondon.com/price-list",
+        "https://www.ihlondon.com/new-price-list/accommodation/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "stafford-house-london",
+      "name": "Stafford House London",
+      "brand": "Stafford House International",
+      "area": "Holborn / Bloomsbury (Zone 1)",
+      "address": "2 Southampton Place, London WC1A 2DA",
+      "nearestStation": "Holborn (Central, Piccadilly)",
+      "website": "https://www.staffordhouse.com/locations/london/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Stafford House London, Holborn istasyonuna birkaç dakika mesafede, Bloomsbury'nin Gürcü mimarisiyle bilinen Southampton Place sokağındadır. 300 öğrenci kapasiteli, 20 sınıflı okulda interaktif ekranlar, BT salonu, kütüphane ve öğrenci dinlenme alanı bulunur.\n\nSabahları temel dersler, öğleden sonraları ise dönüşümlü modüller (akademik İngilizce, sosyal medya, yapay zekâ ile dil öğrenimi gibi) veya profesyonel sertifikalar yer alır; Londra'da üçüncü bir modül saati de sunulur. 20, 25 ve 30 derslik seçenekler, IELTS, İş İngilizcesi, Cambridge hazırlık ve 50+ Explore programı mevcuttur. Herhangi bir şehirde istediğiniz kursa katılmanızı sağlayan 'Unlimited Package' uzun dönem öğrenciler için dikkat çekicidir.",
+      "highlights": [
+        "Holborn'da merkezi konum, ortalama sınıf 12 kişi",
+        "Pazarlama, Proje Yönetimi, İK gibi Profesyonel Sertifikalar",
+        "Öğleden sonra dönüşümlü modüller (yapay zekâ, akademik İngilizce)",
+        "Kayıt, materyal ve Cambridge sınav ücretini içeren Unlimited Package",
+        "Camden'da premium stüdyo seçeneği"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "BT salonu",
+        "Kütüphane",
+        "İnteraktif ekranlı sınıflar",
+        "Ücretsiz Wi-Fi"
+      ],
+      "idealFor": [
+        "Kariyer odaklı öğrenciler",
+        "IELTS ve Cambridge sınavına hazırlananlar",
+        "50 yaş üstü kültür meraklıları"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Standart)",
+          "nameEn": "General English – Standard",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 395
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 385
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 360
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 305
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (Yoğun)",
+          "nameEn": "General English – Intensive",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 18.8,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 465
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 450
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 405
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 340
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (Süper Yoğun)",
+          "nameEn": "General English – Super Intensive",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 490
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 480
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 435
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 350
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık (Yoğun)",
+          "nameEn": "IELTS – Intensive",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 18.8,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 465
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 450
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 405
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 340
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi (Yoğun)",
+          "nameEn": "Business English – Intensive",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 18.8,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 465
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 450
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 405
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 340
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Explore Programı (50+)",
+          "nameEn": "Explore Programme 50+",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A2+",
+          "prices": [
+            {
+              "weeks": "1-2",
+              "perWeek": 765
+            }
+          ],
+          "notes": "7 etkinlik ve materyaller dahil"
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 3–4",
+          "commute": "45–60 dk",
+          "perWeek": 275,
+          "minAge": 16,
+          "notes": "Zone 2 eki +£30 (18+)"
+        },
+        {
+          "type": "homestay",
+          "name": "Superior aile yanı – özel banyolu",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Zone 3–4",
+          "commute": "45–60 dk",
+          "perWeek": 330,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Standart yurt (ör. Blithehale Court) – özel banyolu",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Doğu Londra",
+          "commute": "30–40 dk",
+          "perWeek": 380,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "studio",
+          "name": "Premium stüdyo – The Stay Club Camden",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Camden (Zone 2)",
+          "commute": "20–25 dk",
+          "perWeek": 480,
+          "minAge": 18,
+          "notes": "İki kişi paylaşımda kişi başı £325"
+        },
+        {
+          "type": "residence",
+          "name": "Yaz yurdu (Premier House) – özel banyolu",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Londra",
+          "commute": "30–40 dk",
+          "perWeek": 425,
+          "minAge": 18,
+          "notes": "Sadece yaz döneminde"
+        }
+      ],
+      "fees": {
+        "registration": 80,
+        "accommodationPlacement": 70,
+        "transferHeathrow": 180,
+        "transferGatwick": 200,
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "27 Haz – 14 Ağu 2027 (aile yanı), 27 Haz – 31 Tem 2027 (yurt)",
+        "materials": "1–4 hafta £10/hafta; 5+ hafta 12 haftada £50",
+        "other": "Banka masrafı £12; sigorta £9/hafta; özel diyet £25/hafta"
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.staffordhouse.com/wp-content/uploads/2026/08/SHI_pricelist_2027.pdf",
+        "https://www.staffordhouse.com/locations/london/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "oxford-international-london-greenwich",
+      "name": "Oxford International English Schools – London Greenwich",
+      "brand": "Oxford International Education Group",
+      "area": "Greenwich (Zone 2)",
+      "address": "259 Greenwich High Road, London SE10 8NB",
+      "nearestStation": "Greenwich (DLR, National Rail), Cutty Sark (DLR)",
+      "website": "https://www.oxfordinternationalenglish.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Oxford International'ın Londra okulu, UNESCO Dünya Mirası listesindeki Greenwich'te, Thames kıyısına ve Greenwich Park'a yakın konumdadır. Kraliyet Gözlemevi, Cutty Sark ve Greenwich Market gibi simgelere yürüyerek ulaşılabilir; DLR ve tren bağlantılarıyla merkeze ulaşım kolaydır.\n\nOkul; haftada 20 derslik sabah Genel İngilizce, 10 seçmeli dersin eklendiği 30 derslik yoğun program ve B2 seviyesi üstü için 40 derslik süper yoğun kurs sunar. IELTS hazırlığı da haftada 20 ders olarak verilir. Merkez Londra okullarına göre daha uygun fiyatlı olması ve öğrenci yurdunun (VITA) makul ücretleri bütçe planlamasında avantaj sağlar.",
+      "highlights": [
+        "Tarihi Greenwich'te, park ve nehir kıyısına yakın kampüs",
+        "Merkezi okullara göre daha uygun haftalık ücretler",
+        "30 ve 40 derslik yoğun program seçenekleri",
+        "VITA Student modern öğrenci yurdu",
+        "Uzun kayıtta haftalık £280'e kadar inen fiyat"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "Modern sınıflar",
+        "Sosyal etkinlik programı"
+      ],
+      "idealFor": [
+        "Bütçe bilinçli öğrenciler",
+        "Sakin semtte yaşamak isteyenler",
+        "IELTS'e hazırlananlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Sabah 20)",
+          "nameEn": "Morning 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 383
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 351
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 316
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 298
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 280
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce 30",
+          "nameEn": "Intensive 30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 492
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 447
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 393
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 373
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 342
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Süper Yoğun 40",
+          "nameEn": "Super Intensive 40",
+          "lessonsPerWeek": 40,
+          "hoursPerWeek": 30,
+          "level": "B2+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 571
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 525
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 478
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 470
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 439
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık 20",
+          "nameEn": "IELTS 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 383
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 351
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 316
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 298
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 280
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, yarım pansiyon",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Güneydoğu Londra (Zone 2–4)",
+          "commute": "30–50 dk",
+          "perWeek": 280,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Güneydoğu Londra (Zone 2–4)",
+          "commute": "30–50 dk",
+          "perWeek": 255,
+          "minAge": 16,
+          "notes": "Kendi yemeğini yapan seçenek £245"
+        },
+        {
+          "type": "residence",
+          "name": "VITA Student – özel banyolu tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Londra",
+          "commute": "20–40 dk",
+          "perWeek": 365,
+          "minAge": 18,
+          "notes": "£100 depozito"
+        },
+        {
+          "type": "studio",
+          "name": "VITA Student – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Londra",
+          "commute": "20–40 dk",
+          "perWeek": 425,
+          "minAge": 18,
+          "notes": "£100 depozito"
+        }
+      ],
+      "fees": {
+        "registration": 80,
+        "accommodationPlacement": 70,
+        "transferHeathrow": 160,
+        "transferGatwick": 160,
+        "summerSupplementPerWeek": 35,
+        "summerPeriod": "Temmuz – Ağustos (aile yanı); Noel 21 Ara – 1 Oca",
+        "materials": "£80",
+        "other": "Transfer ücretleri taksi başınadır (3 kişiye kadar)"
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.oxfordinternationalenglish.com/wp-content/uploads/2026/07/Global-EFL-OICC-Global-Price-List-2026-.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "london-school-of-english",
+      "name": "The London School of English",
+      "brand": "The London School of English",
+      "area": "Holland Park (Zone 2)",
+      "address": "15 Holland Park Gardens, London W14 8DZ",
+      "nearestStation": "Holland Park (Central), Shepherd's Bush (Central, Overground)",
+      "website": "https://www.londonschool.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 20,
+      "maxClassSize": 10,
+      "lessonMinutes": 60,
+      "founded": 1913,
+      "description": "1913'te kurulan The London School of English, dünyanın en eski İngilizce dil okulu olarak bilinir. Batı Londra'nın zarif Holland Park semtindeki Viktorya dönemi konaklarında eğitim verir ve özellikle yetişkin profesyonellere odaklanır. Sınıflar en fazla 10 kişiliktir; iş ve hukuk alanlarındaki programlarda bu sayı 6'ya düşer.\n\nGenel İngilizce tam zamanlı programı haftada 24 saat sürer ve 20 yaş üstü katılımcılara yöneliktir. 25 yaş üstü için İş ve Profesyonel İngilizce, Hukuk, Finans ve İK İngilizcesi gibi uzmanlık kursları ile birebir eğitimler öne çıkar. Ücretler Londra ortalamasının üzerindedir; ancak küçük sınıflar, okulda servis edilen öğle yemekleri ve okula yürüme mesafesindeki Vincent House konaklaması premium bir deneyim sunar.",
+      "highlights": [
+        "1913'ten beri faaliyette – dünyanın en eski İngilizce okulu",
+        "En fazla 10 kişilik sınıflar (iş kurslarında 6)",
+        "Haftada 24 saatlik yoğun Genel İngilizce",
+        "Hukuk, finans ve İK için uzmanlık kursları",
+        "Okula yakın Vincent House konaklaması"
+      ],
+      "facilities": [
+        "Bahçeli tarihi binalar",
+        "Okulda öğle yemeği servisi",
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "Çevrim içi öğrenme platformu (3 ay)"
+      ],
+      "idealFor": [
+        "Yönetici ve profesyoneller",
+        "Küçük sınıf arayan 20+ yetişkinler",
+        "Hukuk ve finans sektörü çalışanları"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce 20+ (Tam zamanlı)",
+          "nameEn": "General English 20+ Full Time",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 24,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 695
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 650
+            },
+            {
+              "weeks": "13+",
+              "perWeek": 620
+            }
+          ],
+          "notes": "Haftada 24 saat"
+        },
+        {
+          "name": "Genel İngilizce 20+ (Yarı zamanlı, sabah)",
+          "nameEn": "General English 20+ Part Time (am)",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 12,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 460
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 420
+            },
+            {
+              "weeks": "13+",
+              "perWeek": 390
+            }
+          ],
+          "notes": "Haftada 12 saat"
+        },
+        {
+          "name": "İş ve Profesyonel İngilizce 25+",
+          "nameEn": "Business & Professional English 25+",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 30,
+          "level": "B1–C1",
+          "prices": [
+            {
+              "weeks": "1-8",
+              "perWeek": 1430
+            }
+          ],
+          "notes": "Haftada 30 saat; en fazla 6 kişi"
+        },
+        {
+          "name": "IELTS Akademik Sınav Hazırlık",
+          "nameEn": "IELTS Academic Exam Preparation",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 24,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "4",
+              "perWeek": 715
+            }
+          ],
+          "notes": "4 haftalık paket £2.860"
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – Silver (ortak banyo), kahvaltı + 3 akşam",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Batı Londra",
+          "commute": "20–45 dk",
+          "perWeek": 305,
+          "minAge": 18,
+          "notes": "Sadece kahvaltı £250"
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – Gold (özel banyo), kahvaltı + 3 akşam",
+          "bathroom": "private",
+          "board": "bb",
+          "location": "Batı Londra",
+          "commute": "20–45 dk",
+          "perWeek": 375,
+          "minAge": 18,
+          "notes": "Sadece kahvaltı £320"
+        },
+        {
+          "type": "residence",
+          "name": "Vincent House – standart tek kişilik (5+ hafta)",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Notting Hill / Pembridge",
+          "commute": "15–20 dk",
+          "perWeek": 448,
+          "minAge": 18,
+          "notes": "5 haftadan uzun konaklamalarda kahvaltı + akşam yemeği dahil"
+        },
+        {
+          "type": "studio",
+          "name": "Prince Consort Village – Bronze stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Acton",
+          "commute": "20–30 dk",
+          "perWeek": 455,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 95,
+        "accommodationPlacement": 80,
+        "transferHeathrow": 145,
+        "transferGatwick": 210,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": "Dahil",
+        "other": "E-posta ile kayıtta £125; okulda öğle yemeği £60/hafta; sigorta £12,50/hafta"
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.londonschool.com/media/filer_public/06/94/0694d156-faa2-4523-9337-38a55d5f5dbc/london_school_of_english_2026_fees.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "wimbledon-school-of-english",
+      "name": "Wimbledon School of English",
+      "brand": "Wimbledon School of English",
+      "area": "Wimbledon (Zone 3)",
+      "address": "41 Worple Road, Wimbledon, London SW19 4JZ",
+      "nearestStation": "Wimbledon (District, National Rail, Tramlink)",
+      "website": "https://wimbledon-school.ac.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": null,
+      "founded": 1964,
+      "description": "Wimbledon School of English, 1964'ten bu yana güneybatı Londra'nın yeşil ve güvenli semti Wimbledon'da eğitim veren bağımsız bir aile okuludur. Okul, Wimbledon istasyonuna birkaç dakika yürüme mesafesindedir; merkezi Londra'ya trenle yaklaşık 20 dakikada ulaşılır. Tüm sınıflar klimalıdır ve sınıf mevcudu genellikle 15 kişiyle sınırlıdır.\n\nStandart program haftada 21 saat, yoğun program ise 24,5 saattir; bu süreler Londra'daki birçok okulun üzerindedir. Genel İngilizce, İş İngilizcesi ve Profesyonel Beceriler, IELTS ve Cambridge hazırlık programları sunulur; tenis dersleri gibi Wimbledon'a özgü ekstralar da mevcuttur. Okulun kendi öğrenci evleri (Kings Lodge, Queens Lodge, Beverley Lodge) ve yakın aile yanı seçenekleri bulunur.",
+      "highlights": [
+        "1964'ten beri aile okulu, köklü itibar",
+        "Haftada 21 saat standart, 24,5 saat yoğun program",
+        "En fazla 15 kişilik klimalı sınıflar",
+        "Okula yürüme mesafesinde öğrenci evleri ve aile yanı",
+        "Güvenli ve yeşil Wimbledon semti"
+      ],
+      "facilities": [
+        "Klimalı sınıflar",
+        "Öğrenci salonu",
+        "Kütüphane",
+        "Ücretsiz Wi-Fi",
+        "Tenis dersi imkânı"
+      ],
+      "idealFor": [
+        "Sakin ve güvenli ortam arayanlar",
+        "Daha fazla ders saati isteyenler",
+        "Cambridge ve IELTS adayları"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Standart)",
+          "nameEn": "General English – Standard",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 21,
+          "level": "A2–C2",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 455
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 430
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 377
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 326
+            }
+          ],
+          "notes": "Haftada 21 saat"
+        },
+        {
+          "name": "Genel İngilizce (Yoğun)",
+          "nameEn": "General English – Intensive",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 24.5,
+          "level": "A2–C2",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 513
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 486
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 408
+            }
+          ],
+          "notes": "Haftada 24,5 saat"
+        },
+        {
+          "name": "Essential (Temel) Kurs",
+          "nameEn": "Essential Course",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 17.5,
+          "level": "A2–C2",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 397
+            }
+          ],
+          "notes": "Haftada 17,5 saat"
+        },
+        {
+          "name": "İş İngilizcesi ve Profesyonel Beceriler",
+          "nameEn": "Business English & Professional Skills",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 21,
+          "level": "B2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 455
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 430
+            },
+            {
+              "weeks": "12",
+              "perWeek": 377
+            }
+          ],
+          "notes": "Haftada 21 saat; min. 18 yaş"
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 21,
+          "level": "B1+–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 455
+            },
+            {
+              "weeks": "5-10",
+              "perWeek": 430
+            }
+          ],
+          "notes": "Haftada 21 saat"
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – standart tek kişilik, yarım pansiyon",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Wimbledon çevresi",
+          "commute": "10–40 dk",
+          "perWeek": 280,
+          "minAge": 16,
+          "notes": "Zone 5–6 standart £260"
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – standard plus, özel banyolu, yarım pansiyon",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Wimbledon çevresi",
+          "commute": "15–30 dk",
+          "perWeek": 330,
+          "minAge": 16,
+          "notes": "Superior (yürüme mesafesi) £375"
+        },
+        {
+          "type": "shared-flat",
+          "name": "WSE öğrenci evi – Beverley Lodge (özel banyolu tek kişilik)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Wimbledon",
+          "commute": "Yürüme mesafesi",
+          "perWeek": 305,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "shared-flat",
+          "name": "WSE öğrenci evi – Kings / Queens Lodge (özel banyolu)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Wimbledon",
+          "commute": "Yürüme mesafesi",
+          "perWeek": 405,
+          "minAge": 18,
+          "notes": "Superior oda £430"
+        },
+        {
+          "type": "residence",
+          "name": "Signal House – superior özel banyolu tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Merton Park",
+          "commute": "14 dk yürüme",
+          "perWeek": 465,
+          "minAge": 18,
+          "notes": "Eylül 2027'den itibaren £495"
+        }
+      ],
+      "fees": {
+        "registration": 65,
+        "accommodationPlacement": 60,
+        "transferHeathrow": 180,
+        "transferGatwick": 210,
+        "summerSupplementPerWeek": 20,
+        "summerPeriod": "26 Haz – 1 Ağu 2027 (aile yanı)",
+        "materials": "1–3 hafta £45; 4–8 hafta £55; uzun kurslarda kademeli",
+        "other": "Konaklamada ilk hafta £60 ek ücret; esnek iptal £10/hafta (en fazla £100)"
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://wimbledon-school.ac.uk/img/ckeditor_uploads/files/2027-WSE-Adults-Course-Dates-and-Fees.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ces-london",
+      "name": "Centre of English Studies (CES) London",
+      "brand": "Centre of English Studies (CES)",
+      "area": "Wimbledon (Zone 3–4)",
+      "address": "271 Kingston Road, Wimbledon, London SW19 3NW",
+      "nearestStation": "Wimbledon Chase (National Rail), South Wimbledon (Northern)",
+      "website": "https://www.ces-schools.com/locations/london",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 16,
+      "lessonMinutes": 45,
+      "founded": 1979,
+      "description": "CES, 1979'da Dublin'de kurulan ve İrlanda ile Birleşik Krallık'ta okulları bulunan aile şirketi bir dil okulu grubudur. Londra şubesi, Wimbledon'ın sakin bir bölgesinde, Kingston Road üzerinde yer alır ve Wimbledon istasyonuna yaklaşık 10 dakika yürüme mesafesindedir.\n\nOkul, haftada 20 derslik standart ve 30 derslik yoğun Genel İngilizce ile 30 derslik IELTS hazırlık kursları sunar; birebir derslerle zenginleştirilmiş kombinasyon programları da mevcuttur. Fiyatları Londra genelindeki en uygun seçenekler arasındadır ve uzun kayıtlarda indirim sınırlı olsa da başlangıç fiyatı düşüktür. Konaklamada Furzedown Student Village ve Cedar Hall yurtları ile yarım pansiyon aile yanı seçenekleri öne çıkar.",
+      "highlights": [
+        "Londra'nın en uygun fiyatlı akredite okullarından biri",
+        "IELTS hazırlık haftada 30 ders",
+        "Uygun fiyatlı Furzedown ve Cedar Hall yurtları",
+        "İrlanda ve İngiltere arasında çok destinasyonlu uzun dönem programı",
+        "Sakin Wimbledon çevresinde aile yanı"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "Bahçe",
+        "Sosyal etkinlik programı"
+      ],
+      "idealFor": [
+        "Bütçe odaklı öğrenciler",
+        "IELTS adayları",
+        "Uzun dönem dil eğitimi planlayanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Standart)",
+          "nameEn": "Standard General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 290
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 280
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 275
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 270
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 260
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (Yoğun)",
+          "nameEn": "Intensive General English",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 410
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 390
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 385
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 375
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 365
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation Course",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 410
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 390
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 385
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 375
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 365
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi ile Genel İngilizce",
+          "nameEn": "General English with Business",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1",
+              "perWeek": 645
+            },
+            {
+              "weeks": "2",
+              "perWeek": 635
+            },
+            {
+              "weeks": "3+",
+              "perWeek": 625
+            }
+          ],
+          "notes": "20 grup dersi + haftada 5 saat birebir İş İngilizcesi"
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, yarım pansiyon",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Güneybatı Londra",
+          "commute": "20–45 dk",
+          "perWeek": 294,
+          "minAge": 16,
+          "notes": "Premium £350"
+        },
+        {
+          "type": "residence",
+          "name": "Cedar Hall – standart tek kişilik",
+          "bathroom": "shared",
+          "board": "self",
+          "location": "Londra",
+          "commute": "30–45 dk",
+          "perWeek": 260,
+          "minAge": 18,
+          "notes": "Özel banyolu £290; nevresim paketi £80"
+        },
+        {
+          "type": "residence",
+          "name": "Furzedown Student Village – özel banyolu tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Tooting (Zone 3)",
+          "commute": "25–35 dk",
+          "perWeek": 290,
+          "minAge": 18,
+          "notes": "Nevresim paketi £80"
+        },
+        {
+          "type": "studio",
+          "name": "Furzedown Student Village – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Tooting (Zone 3)",
+          "commute": "25–35 dk",
+          "perWeek": 315,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 75,
+        "accommodationPlacement": 75,
+        "transferHeathrow": 150,
+        "transferGatwick": 150,
+        "summerSupplementPerWeek": 35,
+        "summerPeriod": "Temmuz – Ağustos (aile yanı)",
+        "materials": "Kitap + e-kitap £37",
+        "other": "Özel diyet £35/hafta; Noel dönemi aile yanı £371/hafta"
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://ces-schools.com/sites/default/files/2026-09/CES%20Adult%202027%20Pricelist-Online-Sept14.pdf",
+        "https://www.ces-schools.com/help-info/brochures-pricelists"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "frances-king-london",
+      "name": "Frances King School of English",
+      "brand": "Frances King School of English",
+      "area": "South Kensington / Gloucester Road (Zone 1)",
+      "address": "77 Gloucester Road, London SW7 4SS",
+      "nearestStation": "Gloucester Road (District, Circle, Piccadilly)",
+      "website": "https://francesking.com/",
+      "accreditations": [
+        "British Council",
+        "English UK",
+        "IALC"
+      ],
+      "minAge": 16,
+      "maxClassSize": 14,
+      "lessonMinutes": null,
+      "founded": 1973,
+      "description": "Frances King School of English, 1973'te kurulmuş bağımsız bir Londra okuludur ve Kensington'da, Gloucester Road metro istasyonunun tam karşısında eğitim verir. Natural History Museum, Victoria & Albert Museum ve Hyde Park gibi noktalar yürüme mesafesindedir. Tüm programlarda sınıf mevcudu en fazla 14 kişidir.\n\nGenel İngilizce haftada 20 (standart) veya 30 ders (yoğun) olarak sunulur; İş İngilizcesi ve telaffuz ağırlıklı yoğun seçenekler de mevcuttur. 30 yaş üstü ve 50 yaş üstü için ayrı programlar, IELTS hazırlık, aile programı ve Noel–Yılbaşı kursu okulun öne çıkan ürünleridir. Konaklama yelpazesi geniştir: Zone 2–3'te ekonomik aile yanından Paddington ve London Bridge'deki premium yurtlara kadar seçenek bulunur.",
+      "highlights": [
+        "Gloucester Road metrosunun karşısında, Kensington'da konum",
+        "Tüm sınıflarda en fazla 14 öğrenci",
+        "30+ ve 50+ yaş grupları için özel programlar",
+        "Aile programı ile ebeveyn ve çocuk aynı anda öğrenebilir",
+        "IALC üyesi bağımsız okul"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "Etkinlik programı",
+        "Modern sınıflar"
+      ],
+      "idealFor": [
+        "30 yaş üstü yetişkinler",
+        "Aileler",
+        "Merkezi ve şık bir semtte okumak isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Standart, sabah)",
+          "nameEn": "Standard General English Morning",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": null,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 447
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 402
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 379
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 335
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "Intensive General English",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": null,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 555
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 500
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 472
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 416
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi ile Yoğun Kurs",
+          "nameEn": "Intensive with Business English",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": null,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 555
+            },
+            {
+              "weeks": "4-8",
+              "perWeek": 500
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun IELTS Hazırlık",
+          "nameEn": "Intensive IELTS",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": null,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "2-3",
+              "perWeek": 555
+            },
+            {
+              "weeks": "4-8",
+              "perWeek": 500
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "30+ Genel İngilizce",
+          "nameEn": "30+ General English Morning",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": null,
+          "level": "A2+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 447
+            },
+            {
+              "weeks": "4-10",
+              "perWeek": 402
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "50+ İngilizce ve Kültür",
+          "nameEn": "50+ English and Culture",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": null,
+          "level": "A2+",
+          "prices": [
+            {
+              "weeks": "1-2",
+              "perWeek": 927
+            }
+          ],
+          "notes": "Kültürel etkinlikler dahil"
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Standart aile yanı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Zone 2–3",
+          "commute": "30–50 dk",
+          "perWeek": 189,
+          "minAge": 16,
+          "notes": "Başlangıç fiyatı; yemek seçeneğine göre artar"
+        },
+        {
+          "type": "homestay",
+          "name": "Premium aile yanı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Zone 1–3",
+          "commute": "25–45 dk",
+          "perWeek": 220,
+          "minAge": 16,
+          "notes": "Başlangıç fiyatı"
+        },
+        {
+          "type": "homestay",
+          "name": "Deluxe aile yanı",
+          "bathroom": "private",
+          "board": "bb",
+          "location": "Zone 1–2",
+          "commute": "15–30 dk",
+          "perWeek": 342,
+          "minAge": 18,
+          "notes": "Başlangıç fiyatı"
+        },
+        {
+          "type": "residence",
+          "name": "The Costume Store – North Acton",
+          "bathroom": "private",
+          "board": "self",
+          "location": "North Acton (Zone 2–3)",
+          "commute": "30–40 dk",
+          "perWeek": 330,
+          "minAge": 18,
+          "notes": "Başlangıç fiyatı"
+        },
+        {
+          "type": "residence",
+          "name": "Louise House – St James's Park",
+          "bathroom": "shared",
+          "board": "self",
+          "location": "Westminster (Zone 1)",
+          "commute": "15–20 dk",
+          "perWeek": 348,
+          "minAge": 18,
+          "notes": "Başlangıç fiyatı"
+        },
+        {
+          "type": "residence",
+          "name": "Citi View Paddington",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Paddington (Zone 1)",
+          "commute": "15–20 dk",
+          "perWeek": 671,
+          "minAge": 18,
+          "notes": "Başlangıç fiyatı"
+        }
+      ],
+      "fees": {
+        "registration": 105,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": "Çalışma rehberi dahil",
+        "other": "2027 başlangıçlı kurslar 31 Ara 2026'ya kadar ödenirse 2026 fiyatı geçerli"
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://francesking.com/school-of-english-london/course-prices/",
+        "https://francesking.com/school-of-english-london/accommodation/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "rose-of-york-london",
+      "name": "Rose of York Language School",
+      "brand": "Rose of York",
+      "area": "Oxford Street / Marble Arch (Zone 1)",
+      "address": "277-281 Oxford Street, London W1C 2DL",
+      "nearestStation": "Bond Street (Central, Jubilee, Elizabeth), Marble Arch (Central)",
+      "website": "https://www.roseofyork.com/",
+      "accreditations": [
+        "British Council"
+      ],
+      "minAge": 16,
+      "maxClassSize": 16,
+      "lessonMinutes": 60,
+      "founded": null,
+      "description": "Rose of York, Londra'nın en ünlü alışveriş caddesi Oxford Street üzerinde, Bond Street istasyonuna birkaç dakika mesafede bulunan butik bir dil okuludur. Merkezi konumuna rağmen fiyatları Londra ortalamasının belirgin şekilde altındadır; bu da onu bütçesini korumak isteyen öğrenciler için cazip kılar.\n\nOkul, haftada 15 saatlik standart kursun yanında 'booster' adı verilen konuşma, dilbilgisi, telaffuz, yazma ve sınav becerisi derslerini ekleyerek 20 ve 35 saatlik programlar oluşturmanıza olanak tanır. IELTS hazırlığı Genel İngilizce ile aynı fiyat yapısındadır; havacılık, hukuk, finans ve tıp İngilizcesi gibi özel amaçlı kurslar da sunulur. Konaklama, okulun iş birliği yaptığı aile yanı ve öğrenci yurtları üzerinden ayarlanır.",
+      "highlights": [
+        "Oxford Street üzerinde, Bond Street'e birkaç dakika",
+        "Merkezi Londra'da en uygun fiyatlı okullardan biri",
+        "Esnek 'booster' dersleriyle kişiselleştirilebilir program",
+        "Havacılık, hukuk, finans ve tıp İngilizcesi kursları",
+        "Kış dönemi promosyon fiyatları"
+      ],
+      "facilities": [
+        "Ücretsiz Wi-Fi",
+        "Öğrenci salonu",
+        "Modern sınıflar"
+      ],
+      "idealFor": [
+        "Bütçe odaklı öğrenciler",
+        "Merkezde okumak isteyenler",
+        "Mesleki İngilizce arayan profesyoneller"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce / IELTS (Standart)",
+          "nameEn": "General English / IELTS – Standard",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 270
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 245
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 225
+            },
+            {
+              "weeks": "25-36",
+              "perWeek": 205
+            },
+            {
+              "weeks": "37+",
+              "perWeek": 185
+            }
+          ],
+          "notes": "Haftada 15 saat"
+        },
+        {
+          "name": "Genel İngilizce / IELTS (Yarı Yoğun)",
+          "nameEn": "General English / IELTS – Semi Intensive",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 20,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 340
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 315
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 290
+            },
+            {
+              "weeks": "25-36",
+              "perWeek": 270
+            },
+            {
+              "weeks": "37+",
+              "perWeek": 250
+            }
+          ],
+          "notes": "Haftada 20 saat (sabah + booster)"
+        },
+        {
+          "name": "Genel İngilizce / IELTS (Süper Yoğun)",
+          "nameEn": "General English / IELTS – Super Intensive",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 35,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 525
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 515
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 480
+            },
+            {
+              "weeks": "25-36",
+              "perWeek": 455
+            },
+            {
+              "weeks": "37+",
+              "perWeek": 440
+            }
+          ],
+          "notes": "Haftada 35 saat"
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, yarım pansiyon",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 2–4",
+          "commute": "40–60 dk",
+          "perWeek": 290,
+          "minAge": 16,
+          "notes": "Tahmini fiyat; okul fiyat hesaplayıcısı üzerinden teyit edilmeli"
+        },
+        {
+          "type": "residence",
+          "name": "Partner öğrenci yurdu – özel banyolu tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Londra",
+          "commute": "30–45 dk",
+          "perWeek": 400,
+          "minAge": 18,
+          "notes": "Tahmini fiyat"
+        }
+      ],
+      "fees": {
+        "registration": 50,
+        "accommodationPlacement": 60,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": "Kitap başına £45",
+        "other": "Konaklama ve transfer ücretleri okulun fiyat hesaplayıcısından alınmalı"
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.roseofyork.com/wp-content/uploads/2026/01/Rose-of-York-Price-list-2026-1.pdf",
+        "https://www.roseofyork.com/accommodation/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "lsi-london-central",
+      "name": "LSI London Central",
+      "brand": "LSI – Language Studies International",
+      "area": "Fitzrovia / Bloomsbury (Zone 1)",
+      "address": "19-21 Ridgmount Street, London WC1E 7AH",
+      "nearestStation": "Goodge Street (Northern), Tottenham Court Road",
+      "website": "https://www.lsi.edu/en/schools/england/learn-english-in-london",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 50,
+      "founded": 1965,
+      "description": "LSI London Central, 1965'ten bu yana faaliyet gösteren LSI grubunun en eski okuludur ve aynı binada grubun genel merkezi de bulunur. British Museum, Oxford Street ve Soho'ya kısa yürüme mesafesindeki Ridgmount Street'tedir. Grubun eski Hampstead şubesi artık ayrı bir okul olarak tanıtılmamakta; Londra'daki eğitim bu merkezde toplanmıştır.\n\nGenel 20 (20 ders), Yoğun 24 ve Yoğun 30 programları; IELTS/TOEFL, Cambridge hazırlık, İş İngilizcesi ile tıp, hukuk ve mühendislik İngilizcesi gibi uzmanlık kursları sunulur. 50 dakikalık dersler sayesinde Genel 20 kursu haftada yaklaşık 16 saat 40 dakika sürer. Kütüphane, öğrenci salonu ve 'Job Club' gibi destek dersleri okulun artılarıdır.",
+      "highlights": [
+        "British Museum ve Oxford Street'e yürüme mesafesi",
+        "50 dakikalık dersler",
+        "Tıp, hukuk ve mühendislik İngilizcesi kursları",
+        "19 yaş üstü için en fazla 5 kişilik mini gruplar",
+        "Canvas Walthamstow öğrenci yurdu"
+      ],
+      "facilities": [
+        "Kütüphane",
+        "Öğrenci salonu",
+        "Job Club ve Grammar Doctor destek dersleri",
+        "E-LSI çevrim içi platform",
+        "Ücretsiz Wi-Fi"
+      ],
+      "idealFor": [
+        "Mesleki İngilizce ihtiyacı olanlar",
+        "Sınav hazırlığı yapanlar",
+        "Merkezi Londra'da okumak isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce 20",
+          "nameEn": "General 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.7,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 365
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 350
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 335
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 315
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun 24",
+          "nameEn": "Intensive 24",
+          "lessonsPerWeek": 24,
+          "hoursPerWeek": 20,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 420
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 400
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 380
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 345
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun 30 (IELTS/TOEFL dahil)",
+          "nameEn": "Intensive 30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 25,
+          "level": "A2–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 480
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 460
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 435
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 400
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi 30",
+          "nameEn": "Business English 30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 25,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 480
+            },
+            {
+              "weeks": "4-11",
+              "perWeek": 460
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, yarım pansiyon",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 2–6",
+          "commute": "60 dk'ya kadar",
+          "perWeek": 265,
+          "minAge": 16,
+          "notes": "Kahvaltılı £225; 45 dk içi konum +£40"
+        },
+        {
+          "type": "homestay",
+          "name": "Executive aile yanı – özel banyolu, yarım pansiyon",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Zone 2–3",
+          "commute": "30–50 dk",
+          "perWeek": 355,
+          "minAge": 16,
+          "notes": "Kahvaltılı £315"
+        },
+        {
+          "type": "residence",
+          "name": "Canvas Walthamstow – özel banyolu tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Walthamstow (Zone 3)",
+          "commute": "30 dk",
+          "perWeek": 410,
+          "minAge": 18,
+          "notes": "Min. 2 hafta; çıkış temizliği £75"
+        }
+      ],
+      "fees": {
+        "registration": null,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": 45,
+        "summerPeriod": "14 Haz – 23 Ağu 2026 (aile yanı)",
+        "materials": null,
+        "other": "Kurs ücretleri tahmini; konaklama fiyatları resmi 2026 broşüründen"
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.lsi.edu/en/schools/england/learn-english-in-london",
+        "https://www.lsi.edu/accommodation/2026/London.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ef-london",
+      "name": "EF International Language Campus London",
+      "brand": "EF Education First",
+      "area": "Waterloo / South Bank (Zone 1)",
+      "address": "74 Roupell Street, London SE1 8SS",
+      "nearestStation": "Waterloo (Bakerloo, Northern, Jubilee), Southwark (Jubilee)",
+      "website": "https://www.ef.com/wwen/ils/destinations/united-kingdom/london/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 40,
+      "founded": null,
+      "description": "EF'in Londra kampüsü, London Eye'a ve South Bank'e yakın, Waterloo'nun tarihi Roupell Street sokağında Viktorya dönemi bir binada yer alır. Thames kıyısı, Shakespeare's Globe ve Tate Modern yürüme mesafesindedir. Dünyanın en büyük özel eğitim şirketlerinden EF, kendi dijital öğrenme platformu ve kapsamlı etkinlik programıyla tanınır.\n\nÖğrenciler haftada 20, 26 veya 32 derslik programlardan birini seçer; dersler 40 dakikadır ve EF'in kendi müfredatı ile dijital uygulaması destekler. Fiyatlar paket şeklinde, kişiye özel teklif ile verilir. Konaklama için kahvaltı ve akşam yemeği dahil EF aile yanı veya EF yurtları sunulur. Yaz aylarında yoğunluk yüksektir; erken kayıt önerilir.",
+      "highlights": [
+        "London Eye ve South Bank'e yürüme mesafesinde kampüs",
+        "Haftada 20, 26 veya 32 ders seçeneği",
+        "EF dijital öğrenme platformu",
+        "Zengin sosyal etkinlik programı",
+        "Dünya çapında tanınan marka"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Dijital öğrenme platformu",
+        "Ücretsiz Wi-Fi",
+        "Etkinlik programı"
+      ],
+      "idealFor": [
+        "Sosyal ortam arayan genç öğrenciler",
+        "Paket program tercih edenler",
+        "İlk kez yurt dışına çıkanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (General)",
+          "nameEn": "General Course",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 13.3,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 395
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 365
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 335
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce (Intensive)",
+          "nameEn": "Intensive Course",
+          "lessonsPerWeek": 26,
+          "hoursPerWeek": 17.3,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 470
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 430
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 395
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Süper Yoğun / Sınav Hazırlık",
+          "nameEn": "Intensive Plus / Exam Prep",
+          "lessonsPerWeek": 32,
+          "hoursPerWeek": 21.3,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 530
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 490
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "EF aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 2–4",
+          "commute": "40–60 dk",
+          "perWeek": 330,
+          "minAge": 16,
+          "notes": "Hafta içi kahvaltı + akşam, hafta sonu tüm öğünler; tahmini"
+        },
+        {
+          "type": "residence",
+          "name": "EF yurdu – özel banyolu oda",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Londra",
+          "commute": "20–40 dk",
+          "perWeek": 450,
+          "minAge": 18,
+          "notes": "Tahmini fiyat"
+        }
+      ],
+      "fees": {
+        "registration": 150,
+        "accommodationPlacement": 95,
+        "transferHeathrow": 170,
+        "transferGatwick": 190,
+        "summerSupplementPerWeek": 25,
+        "summerPeriod": "Haziran – Ağustos",
+        "materials": "Dijital materyal (yaklaşık £15/hafta)",
+        "other": "Fiyatlar EF'in kişiye özel teklif sistemiyle verilir"
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.ef.com/wwen/ils/destinations/united-kingdom/london/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "bayswater-london",
+      "name": "Bayswater London",
+      "brand": "Bayswater Education",
+      "area": "Bayswater / Queensway (Zone 1)",
+      "address": "167 Queensway, London W2 4SB",
+      "nearestStation": "Bayswater (District, Circle), Queensway (Central)",
+      "website": "https://www.bayswater.ac/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 18,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Bayswater London, Hyde Park ve Kensington Gardens'a birkaç dakika uzaklıktaki Queensway caddesinde yer alır. Çok kültürlü restoranları, kafeleri ve iki metro istasyonuyla bölge, hem yaşamak hem de okumak için pratik bir semttir. Okul, Kanada, Kıbrıs ve Güney Afrika'da da okulları olan Bayswater Education grubuna bağlıdır.\n\nGenel İngilizce haftada 20 derslik standart, 25 derslik yoğun ve 30 derslik süper yoğun seçeneklerle sunulur; IELTS hazırlık ve Cambridge sınavları da programdadır. Fiyatlar merkez Londra okulları arasında orta seviyededir ve 12 ile 24 haftalık eşiklerde belirgin şekilde düşer. Öğrenci yaş ortalaması genç olup sosyal program canlıdır.",
+      "highlights": [
+        "Hyde Park'a yürüme mesafesinde, iki metro hattına yakın",
+        "20, 25 ve 30 derslik esnek program seçenekleri",
+        "Uzun kayıtlarda belirgin indirimli haftalık ücret",
+        "Yetkili Cambridge sınav merkezi",
+        "Canlı sosyal etkinlik programı"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "Sosyal etkinlik programı"
+      ],
+      "idealFor": [
+        "Genç ve sosyal öğrenciler",
+        "Orta bütçeli uzun dönem öğrenciler",
+        "Cambridge sınav adayları"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Standart)",
+          "nameEn": "General English – Standard",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 375
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 340
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 300
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (Yoğun)",
+          "nameEn": "General English – Intensive",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 18.8,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 420
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 375
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 330
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce (Süper Yoğun)",
+          "nameEn": "General English – Super Intensive",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 470
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 420
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 375
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 18.8,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 420
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 375
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, yarım pansiyon",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 2–4",
+          "commute": "40–60 dk",
+          "perWeek": 300,
+          "minAge": 16,
+          "notes": "Tahmini fiyat"
+        },
+        {
+          "type": "residence",
+          "name": "Öğrenci yurdu – özel banyolu tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Londra",
+          "commute": "30–45 dk",
+          "perWeek": 420,
+          "minAge": 18,
+          "notes": "Tahmini fiyat"
+        }
+      ],
+      "fees": {
+        "registration": 100,
+        "accommodationPlacement": 80,
+        "transferHeathrow": 150,
+        "transferGatwick": 170,
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "Haziran – Ağustos",
+        "materials": "Ayrıca ücretli",
+        "other": "Fiyatlar 2025 resmi listesinden (£360/20 ders) tahmini olarak güncellendi"
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.englishuk.com/member-directory?id=223",
+        "https://www.bayswater.ac/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "st-george-international-london",
+      "name": "St George International School of English",
+      "brand": "St George International",
+      "area": "Holborn (Zone 1)",
+      "address": null,
+      "nearestStation": "Holborn (Central, Piccadilly)",
+      "website": "https://www.stgeorges.co.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "St George International, altı on yıla yakın deneyime sahip bağımsız bir Londra dil okuludur ve bugün Holborn istasyonuna kısa yürüme mesafesinde merkezi Londra'da eğitim verir. Okul özellikle küçük sınıfları, iş İngilizcesi alanındaki uzmanlığı ve birebir derslerle zenginleştirilmiş kombinasyon kurslarıyla bilinir.\n\nStandart Genel İngilizce kursu haftada 20 derstir ve merkezi Londra için oldukça rekabetçi bir fiyatla başlar. Haftada 30 derslik yoğun mini grup, 20 derslik İş İngilizcesi mini grubu, IELTS ve Cambridge hazırlık ile akşam kursları da sunulur. Konaklamada Zone 1–2 ve Zone 3–4'te aile yanı ile okulun da kullandığı Vincent House seçenekleri bulunur.",
+      "highlights": [
+        "Holborn yakınında merkezi konum",
+        "Merkezi Londra'da uygun başlangıç fiyatı",
+        "Küçük gruplarla İş İngilizcesi uzmanlığı",
+        "Birebir dersli kombinasyon kursları",
+        "Akşam kursu seçenekleri"
+      ],
+      "facilities": [
+        "Ücretsiz Wi-Fi",
+        "Öğrenci salonu",
+        "Modern sınıflar"
+      ],
+      "idealFor": [
+        "İş İngilizcesi isteyen profesyoneller",
+        "Küçük sınıf tercih edenler",
+        "Bütçe bilinçli öğrenciler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Standart)",
+          "nameEn": "Standard Course",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": null,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 299
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 285
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 268
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 247
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 227
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun Mini Grup",
+          "nameEn": "Intensive Course Mini-Group",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": null,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 422
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 396
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 366
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 345
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 320
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi Mini Grup",
+          "nameEn": "Business English Mini-Group",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": null,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 350
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 340
+            },
+            {
+              "weeks": "8+",
+              "perWeek": 330
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi Mini Grup Plus",
+          "nameEn": "Business Mini Group Plus",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": null,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 474
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 453
+            },
+            {
+              "weeks": "8+",
+              "perWeek": 427
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – Zone 1–2, kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Zone 1–2",
+          "commute": "20–35 dk",
+          "perWeek": 220,
+          "minAge": 16,
+          "notes": "7 akşam yemeği +£25; özel banyo +£20"
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – Zone 3–4, kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Zone 3–4",
+          "commute": "40–60 dk",
+          "perWeek": 180,
+          "minAge": 16,
+          "notes": "7 akşam yemeği +£20; özel banyo +£20"
+        },
+        {
+          "type": "residence",
+          "name": "Vincent House – özel banyolu tek kişilik, kahvaltı",
+          "bathroom": "private",
+          "board": "bb",
+          "location": "Notting Hill / Pembridge",
+          "commute": "25–35 dk",
+          "perWeek": 301,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": null,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": null,
+        "other": "Kayıt ve transfer ücretleri okuldan teyit edilmeli"
+      },
+      "priceYear": null,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.stgeorges.co.uk/booking/prices/",
+        "https://www.stgeorges.co.uk/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "oxford-house-college-london",
+      "name": "Oxford House College London",
+      "brand": "Oxford House College",
+      "area": "Soho / Oxford Street (Zone 1)",
+      "address": "24 Great Chapel Street, London W1F 8FS",
+      "nearestStation": "Tottenham Court Road (Central, Northern, Elizabeth), Oxford Circus",
+      "website": "https://www.ohcenglish.com/",
+      "accreditations": [
+        "British Council"
+      ],
+      "minAge": 16,
+      "maxClassSize": 16,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "Oxford House College, Soho'nun kalbinde, Oxford Street ve Tottenham Court Road'a birkaç dakika uzaklıkta bulunan, British Council akreditasyonlu bir dil okuludur. West End tiyatroları, mağazalar ve restoranlarla çevrili konumu, ders sonrası şehri keşfetmek isteyenler için idealdir. Okul ayrıca CELTA ve DELTA öğretmen eğitimleriyle tanınan bir Cambridge English merkezidir.\n\nGenel İngilizce, IELTS hazırlık, Cambridge sınav hazırlık, İş İngilizcesi, konuşma ve telaffuz kursları sunulur; daha yoğun bir program isteyenler için 'General English Plus' seçeneği vardır. Fiyatlar merkezi Londra için uygun seviyededir. Konaklama, Londra'nın farklı bölgelerindeki aile yanı ve partner yurtlar aracılığıyla ayarlanır.",
+      "highlights": [
+        "Soho'da, Oxford Street'e birkaç dakika",
+        "Merkezi Londra için uygun ücretler",
+        "CELTA/DELTA veren Cambridge English merkezi",
+        "Konuşma ve telaffuz odaklı kurslar",
+        "Trinity GESE ve Cambridge sınav hazırlığı"
+      ],
+      "facilities": [
+        "Ücretsiz Wi-Fi",
+        "Öğrenci salonu",
+        "Kendi kendine çalışma alanı"
+      ],
+      "idealFor": [
+        "Merkezi konum ve uygun fiyat arayanlar",
+        "Sınav hazırlığı yapanlar",
+        "Öğretmen adayları"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 240
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 220
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 200
+            }
+          ],
+          "notes": "Haftada yaklaşık 15 saat"
+        },
+        {
+          "name": "Genel İngilizce Plus",
+          "nameEn": "General English Plus",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 340
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 310
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 285
+            }
+          ],
+          "notes": "Haftada yaklaşık 25 saat"
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Examination Preparation",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 260
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 240
+            }
+          ],
+          "notes": "Haftada yaklaşık 15 saat"
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "Business English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 260
+            }
+          ],
+          "notes": "Haftada yaklaşık 15 saat"
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, yarım pansiyon",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Zone 2–4",
+          "commute": "40–60 dk",
+          "perWeek": 290,
+          "minAge": 16,
+          "notes": "Tahmini fiyat"
+        },
+        {
+          "type": "residence",
+          "name": "Partner öğrenci yurdu – özel banyolu",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Londra",
+          "commute": "30–45 dk",
+          "perWeek": 400,
+          "minAge": 18,
+          "notes": "Tahmini fiyat"
+        }
+      ],
+      "fees": {
+        "registration": 75,
+        "accommodationPlacement": 60,
+        "transferHeathrow": 150,
+        "transferGatwick": 170,
+        "summerSupplementPerWeek": 25,
+        "summerPeriod": "Haziran – Ağustos",
+        "materials": "Ayrıca ücretli",
+        "other": "Tahmini ek ücretler"
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.englishuk.com/en/course-finder/course-finder-results?id=257",
+        "https://www.ohcenglish.com/"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

@@ -1,0 +1,942 @@
+{
+  "city": "bournemouth",
+  "schools": [
+    {
+      "slug": "kings-bournemouth",
+      "name": "Kings Bournemouth",
+      "brand": "Kings Education",
+      "area": "Şehir merkezinin kuzeyi (Braidley Road)",
+      "address": "51 Braidley Road, Bournemouth BH2 6JY",
+      "nearestStation": "Şehir merkezine 10 dk, plaja 20 dk yürüme",
+      "website": "https://www.kingseducation.com/learn-english/kings-bournemouth/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Kings Bournemouth, bahçelerle çevrili geniş bir kampüste dil kursları ve akademik programlar sunan Kings Education okuludur. Okul, Bournemouth şehir merkezine yaklaşık 10 dakika, ünlü kumsala ise 20 dakika yürüme mesafesinde. Kampüste iki bilgisayar merkezi, kütüphane, restoran-kafeterya, açık spor sahası ve etkinlik salonu gibi olanaklar bulunuyor.\n\nGenel İngilizce haftada 20 ders olarak veriliyor; daha hızlı ilerlemek isteyenler için Yoğun İngilizce ve IELTS hazırlık programları mevcut. Konaklamada aile yanı, özel banyolu Homestay Extra, Madeira Hall rezidansı ve 18 yaş üstü için Belaton House seçenekleri var. Yaz aylarında Heathrow'dan pazar günleri uygun fiyatlı servis düzenleniyor. Fiyatlar Kings'in 2026 resmi ücret sayfasından alınmıştır; ücretlere KDV dahil değildir.",
+      "highlights": [
+        "Geniş, bahçeli kampüs",
+        "Okul içinde restoran ve spor alanları",
+        "Yoğun İngilizce ve IELTS seçenekleri",
+        "Yazın Heathrow servis seçeneği",
+        "Uzun dönemde indirimli haftalık ücret"
+      ],
+      "facilities": [
+        "Kütüphane",
+        "İki bilgisayar merkezi",
+        "Restoran ve kafeterya",
+        "Açık spor sahası",
+        "Etkinlik salonu",
+        "Wi-Fi"
+      ],
+      "idealFor": [
+        "Kampüs ortamı isteyenler",
+        "Uzun dönem öğrenciler",
+        "Üniversiteye hazırlananlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "2-11",
+              "perWeek": 300
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 275
+            }
+          ],
+          "notes": "Minimum 2 hafta. 24+ haftalık diploma programlarında daha düşük ücret."
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "2-11",
+              "perWeek": 370
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 340
+            }
+          ],
+          "notes": "Genel İngilizceye ek öğleden sonra dersleri."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "2-11",
+              "perWeek": 370
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 340
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Bournemouth",
+          "commute": null,
+          "perWeek": 215,
+          "minAge": 16,
+          "notes": "Yüksek sezon (14 Haziran–9 Ağustos 2026): £245."
+        },
+        {
+          "type": "homestay",
+          "name": "Homestay Extra – özel banyolu oda",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Bournemouth",
+          "commute": null,
+          "perWeek": 320,
+          "minAge": 16,
+          "notes": "Yüksek sezon: £355."
+        },
+        {
+          "type": "residence",
+          "name": "Madeira Hall",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Bournemouth",
+          "commute": null,
+          "perWeek": 445,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Belaton House",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Bournemouth",
+          "commute": null,
+          "perWeek": 330,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 85,
+        "accommodationPlacement": null,
+        "transferHeathrow": 225,
+        "transferGatwick": 265,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": "Genel yaz ek ücreti yok; aile yanında 14 Haziran – 9 Ağustos 2026 yüksek sezon fiyatı",
+        "materials": null,
+        "other": "Heathrow servis (pazar günleri, 14 Haziran–16 Ağustos): £110. Aile yanı Noel ek ücreti £85/hafta, özel diyet £50/hafta. Ücretlere KDV dahil değildir."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.kingseducation.com/learn-english/fees",
+        "https://www.kingseducation.com/learn-english/kings-bournemouth/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "anglo-continental-bournemouth",
+      "name": "Anglo-Continental",
+      "brand": "Anglo-Continental",
+      "area": "Şehir merkezi (Wimborne Road)",
+      "address": "29–35 Wimborne Road, Bournemouth BH2 6NA",
+      "nearestStation": "Bournemouth tren ve otobüs terminali (yaklaşık 10 dk yürüme)",
+      "website": "https://www.anglo-continental.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": 45,
+      "founded": 1950,
+      "description": "1950'de kurulan Anglo-Continental, Bournemouth'un en köklü ve en büyük dil okullarından biridir. Wimborne Road üzerindeki kampüs, tren ve otobüs terminaline yaklaşık 10 dakika yürüme mesafesinde. Okulun kendi öğrenci merkezi, multimedya öğrenme merkezi ve üst düzey katılımcılar için ayrı bir Executive Centre'ı bulunuyor.\n\nYoğun Genel İngilizce haftada 20 veya 30 ders olarak sunuluyor; sınıflarda ortalama 10, en fazla 15 öğrenci var. IELTS ve Cambridge sınav programları, iş İngilizcesi, 21 yaş üstü yöneticiler için Executive kurslar ve 50 yaş üstüne özel Club 50+ programı da mevcut. Kayıt ücreti, giriş sınavı ve kitaplar kurs ücretine dahil. Okul ilk iki hafta için paket fiyat, sonraki her hafta için ayrı fiyat uyguluyor. Fiyatlar 2026 resmi broşüründen alınmıştır.",
+      "highlights": [
+        "1950'den beri faaliyette",
+        "Kayıt ücreti ve kitaplar kurs ücretine dahil",
+        "Ortalama 10 kişilik sınıflar",
+        "50 yaş üstü için Club 50+",
+        "Yöneticilere özel Executive Centre"
+      ],
+      "facilities": [
+        "Öğrenci merkezi ve kafeterya",
+        "Multimedya öğrenme merkezi",
+        "Executive Centre",
+        "Ücretsiz Wi-Fi",
+        "Öğrenci destek ekibi"
+      ],
+      "idealFor": [
+        "Köklü ve büyük okul isteyenler",
+        "Yöneticiler ve profesyoneller",
+        "50 yaş üstü öğrenciler",
+        "Sınav adayları"
+      ],
+      "courses": [
+        {
+          "name": "Yoğun Genel İngilizce (20 ders)",
+          "nameEn": "Intensive Course G-1.20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-2",
+              "perWeek": 390
+            },
+            {
+              "weeks": "3-5",
+              "perWeek": 345
+            },
+            {
+              "weeks": "6-11",
+              "perWeek": 323
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 315
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 269
+            }
+          ],
+          "notes": "Okul, ilk haftalar için toplam ve sonraki her hafta için ayrı ücret uygular; tablodaki rakamlar o süredeki ortalama haftalık ücrettir. İlk 2 hafta toplam £780, sonraki her hafta £300. 20+ hafta: ilk 20 hafta £5.380, sonraki her hafta £260."
+        },
+        {
+          "name": "Yoğun Genel İngilizce (30 ders)",
+          "nameEn": "Intensive Course G-1.30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-2",
+              "perWeek": 510
+            },
+            {
+              "weeks": "3-5",
+              "perWeek": 465
+            },
+            {
+              "weeks": "6-11",
+              "perWeek": 443
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 435
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 369
+            }
+          ],
+          "notes": "Okul, ilk haftalar için toplam ve sonraki her hafta için ayrı ücret uygular; tablodaki rakamlar o süredeki ortalama haftalık ücrettir. 20 ders Genel İngilizce + 10 ders English for Success. İlk 2 hafta toplam £1.020."
+        },
+        {
+          "name": "IELTS Hazırlık + Yoğun",
+          "nameEn": "IELTS Examination Practice + Intensive X-2.30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A2+",
+          "prices": [
+            {
+              "weeks": "2",
+              "perWeek": 530
+            },
+            {
+              "weeks": "4",
+              "perWeek": 475
+            },
+            {
+              "weeks": "8",
+              "perWeek": 448
+            },
+            {
+              "weeks": "12",
+              "perWeek": 438
+            }
+          ],
+          "notes": "10 IELTS + 20 Genel İngilizce dersi. Ek haftalar £420."
+        },
+        {
+          "name": "Genel + İş İngilizcesi",
+          "nameEn": "Business and Specialised Subjects",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-2",
+              "perWeek": 710
+            },
+            {
+              "weeks": "3-5",
+              "perWeek": 650
+            },
+            {
+              "weeks": "6-11",
+              "perWeek": 620
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 610
+            }
+          ],
+          "notes": "Okul, ilk haftalar için toplam ve sonraki her hafta için ayrı ücret uygular; tablodaki rakamlar o süredeki ortalama haftalık ücrettir. 20 Genel İngilizce + 10 iş/uzmanlık dersi."
+        },
+        {
+          "name": "Yönetici Kursu (21+)",
+          "nameEn": "Executive Course E-1.20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1",
+              "perWeek": 1095
+            },
+            {
+              "weeks": "2-3",
+              "perWeek": 988
+            },
+            {
+              "weeks": "4+",
+              "perWeek": 934
+            }
+          ],
+          "notes": "Okul, ilk haftalar için toplam ve sonraki her hafta için ayrı ücret uygular; tablodaki rakamlar o süredeki ortalama haftalık ücrettir. 21 yaş üstü; küçük gruplar. 30 derslik E-1.30: £1.435 / £1.220."
+        },
+        {
+          "name": "50+ Kulübü",
+          "nameEn": "Club 50+ F-1.20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-2",
+              "perWeek": 620
+            },
+            {
+              "weeks": "3-7",
+              "perWeek": 578
+            },
+            {
+              "weeks": "8+",
+              "perWeek": 556
+            }
+          ],
+          "notes": "Okul, ilk haftalar için toplam ve sonraki her hafta için ayrı ücret uygular; tablodaki rakamlar o süredeki ortalama haftalık ücrettir. Kültürel etkinlik programı dahil."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – standart tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Bournemouth",
+          "commute": null,
+          "perWeek": 205,
+          "minAge": 18,
+          "notes": "İlk hafta £285, sonraki her hafta £205. Hafta sonu hafif öğle yemeği dahil. 21 Haziran–8 Ağustos +£75/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – özel banyolu tek kişilik oda",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Bournemouth",
+          "commute": null,
+          "perWeek": 260,
+          "minAge": 18,
+          "notes": "İlk hafta £340."
+        },
+        {
+          "type": "residence",
+          "name": "Skyline / Oxford Point",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Okula yürüme mesafesi",
+          "commute": "Yürüme mesafesi",
+          "perWeek": null,
+          "minAge": 18,
+          "notes": "Banyolu tek kişilik odalar, ortak mutfaklı daireler; fiyat okuldan alınmalı. Rezervasyonda %5 (min. £25) idari ücret."
+        }
+      ],
+      "fees": {
+        "registration": 0,
+        "accommodationPlacement": null,
+        "transferHeathrow": 240,
+        "transferGatwick": 270,
+        "summerSupplementPerWeek": 75,
+        "summerPeriod": "21 Haziran – 8 Ağustos 2026 (aile yanı)",
+        "materials": "Dahil",
+        "other": "Kayıt ücreti kurs ücretine dahildir. Aile yanında ilk hafta daha yüksek ücretlendirilir. Yazın Heathrow'dan pazar günleri otobüs transferi £80."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.anglo-continental.com/wp-content/uploads/2026/07/Anglo-Continental-Prospectus-2026.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "southbourne-school-of-english-bournemouth",
+      "name": "Southbourne School of English",
+      "brand": "Southbourne School of English",
+      "area": "Southbourne (Bournemouth doğusu, sahile yakın)",
+      "address": "30 Beaufort Road, Southbourne, Bournemouth BH6 5AL",
+      "nearestStation": "Pokesdown istasyonu yakını; Southbourne sahili yürüme mesafesinde",
+      "website": "https://southbourneschool.co.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK",
+        "IALC",
+        "Quality English"
+      ],
+      "minAge": 15,
+      "maxClassSize": null,
+      "lessonMinutes": 60,
+      "founded": 1966,
+      "description": "Southbourne School of English, 1966'dan bu yana aynı aile tarafından yönetilen ve Bournemouth'un en eski dil okullarından biri olan bağımsız bir okuldur. Bournemouth'un doğusundaki sakin Southbourne semtinde, kumsala kısa bir yürüyüş mesafesinde yer alıyor. Aile işletmesi olması, öğrencilere sıcak ve kişisel bir ortam sağlıyor.\n\nGenel İngilizce haftada 15 saat, Yoğun İngilizce ise 21 saat olarak veriliyor; dersler 60 dakika sürüyor. Cambridge B2 First ve C1 Advanced sınav kursları, üniversiteye hazırlık programı, 30 yaş üstü için en fazla 5 kişilik Executive English ve içerik üreticilerine yönelik özel bir İngilizce kursu da sunuluyor. Aile yanı konaklamada evler okula yürüme veya kısa otobüs mesafesinde. Fiyatlar 2027 resmi fiyat listesinden alınmıştır.",
+      "highlights": [
+        "1966'dan beri aile işletmesi",
+        "60 dakikalık dersler",
+        "30 yaş üstü için en fazla 5 kişilik Executive English",
+        "Uzun dönemde haftalık £245'e inen ücret",
+        "Sahile yakın sakin semt"
+      ],
+      "facilities": [
+        "Ücretsiz Wi-Fi",
+        "Okul kafeteryası",
+        "Yaz etkinlik programı",
+        "Düzenli öğretmen görüşmeleri"
+      ],
+      "idealFor": [
+        "Samimi aile okulu arayanlar",
+        "Bütçe odaklı uzun dönem öğrenciler",
+        "30 yaş üstü profesyoneller",
+        "Cambridge sınavı adayları"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": 15,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 325
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 295
+            },
+            {
+              "weeks": "24-39",
+              "perWeek": 255
+            },
+            {
+              "weeks": "40+",
+              "perWeek": 245
+            }
+          ],
+          "notes": "27 Haziran–22 Ağustos arası 10 haftadan kısa kurslarda +£55/hafta."
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 21,
+          "hoursPerWeek": 21,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 375
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 345
+            },
+            {
+              "weeks": "24-39",
+              "perWeek": 300
+            },
+            {
+              "weeks": "40+",
+              "perWeek": 290
+            }
+          ],
+          "notes": "Yaz ek ücreti Genel İngilizce ile aynı."
+        },
+        {
+          "name": "Cambridge Sınav Hazırlık (B2 First / C1 Advanced)",
+          "nameEn": "Cambridge Exam Course",
+          "lessonsPerWeek": 21,
+          "hoursPerWeek": 21,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "4",
+              "perWeek": 424
+            }
+          ],
+          "notes": "Sabit tarihli 4 haftalık kurs, toplam £1.695. Sınav ücreti ayrı (£255–260)."
+        },
+        {
+          "name": "30 Yaş Üstü Executive English",
+          "nameEn": "Over 30s Executive English",
+          "lessonsPerWeek": 23,
+          "hoursPerWeek": 23,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 935
+            }
+          ],
+          "notes": "21 saat sınıf + 2 saat birebir; en fazla 5 kişi; hafta içi sıcak öğle yemeği dahil."
+        },
+        {
+          "name": "Üniversiteye Hazırlık İngilizcesi",
+          "nameEn": "English to Prepare for University",
+          "lessonsPerWeek": 21,
+          "hoursPerWeek": 21,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "4",
+              "perWeek": 399
+            }
+          ],
+          "notes": "Sabit 4 haftalık kurs, toplam £1.595; en fazla 10 kişi."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – kısmi pansiyon",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Southbourne / Bournemouth",
+          "commute": "Yürüme mesafesi veya kısa otobüs",
+          "perWeek": 185,
+          "minAge": 16,
+          "notes": "Hafta içi kahvaltı ve akşam yemeği, hafta sonu tam pansiyon. Yaz (27 Haziran–22 Ağustos): £220. 18 yaş üstüne tek kişilik oda garantili."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tam pansiyon",
+          "bathroom": "shared",
+          "board": "full",
+          "location": "Southbourne / Bournemouth",
+          "commute": "Yürüme mesafesi veya kısa otobüs",
+          "perWeek": 225,
+          "minAge": 15,
+          "notes": "Hafta içi okuldan paket öğle yemeği dahil."
+        },
+        {
+          "type": "residence",
+          "name": "Üniversite kampüsü rezidansı",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Bournemouth",
+          "commute": null,
+          "perWeek": 305,
+          "minAge": 18,
+          "notes": "Banyolu tek kişilik oda, ortak mutfak; minimum 4 hafta. Yaz: £335."
+        }
+      ],
+      "fees": {
+        "registration": 120,
+        "accommodationPlacement": null,
+        "transferHeathrow": 230,
+        "transferGatwick": 260,
+        "summerSupplementPerWeek": 55,
+        "summerPeriod": "27 Haziran – 22 Ağustos 2027 (10 haftadan kısa kurslar)",
+        "materials": "2+ haftalık kurslarda dahil; 1 haftalık kurslarda £50",
+        "other": "Transfer fiyatları 1–3 kişilik özel taksi içindir. Yazın Heathrow ortak transfer £155. Yaz etkinlik paketi £135/hafta."
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://southbourneschool.co.uk/assets/price-lists/southbourne-price-list-2027.pdf",
+        "https://southbourneschool.co.uk/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "beet-language-centre-bournemouth",
+      "name": "Beet Language Centre",
+      "brand": "Beet Language Centre",
+      "area": "Charminster",
+      "address": "Nortoft Road, Charminster, Bournemouth BH8 8PY",
+      "nearestStation": "Charminster; Bournemouth merkezine otobüsle kısa mesafe",
+      "website": "https://www.beet.co.uk/",
+      "accreditations": [
+        "British Council",
+        "Quality English"
+      ],
+      "minAge": 16,
+      "maxClassSize": 14,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Beet Language Centre, Bournemouth'un Charminster semtinde, bağımsız okullardan oluşan TEN ağının kurucu üyelerinden biri olan bağımsız bir dil okuludur. Okul, yerel kafe ve restoranlarla dolu canlı bir mahallede bulunuyor; şehir merkezine ve sahile otobüsle kolayca ulaşılıyor. Sınıflar en fazla 14 kişi ve öğrencilerin büyük çoğunluğu 18 yaş üstü.\n\nAna program haftada 20 ders (Genel İngilizce, IELTS veya Cambridge hazırlık) olup 4 veya 8 derslik seçmeli derslerle yoğunlaştırılabiliyor. 24, 34 ve 44 haftalık Uluslararası Akademik Yıl paketleri de mevcut; 22 hafta ve üzeri kurslarda tek yön havalimanı transferi ücretsiz. Okul aile yanı yerleştirme ücreti almıyor. Kurs kitapları ana programlarda ücrete dahil. Fiyatlar 2027 resmi fiyat listesinden alınmıştır.",
+      "highlights": [
+        "Sınıf başına en fazla 14 öğrenci",
+        "Konaklama yerleştirme ücreti yok",
+        "22+ haftalık kurslarda ücretsiz transfer",
+        "Ana programlarda kitaplar dahil",
+        "Esnek seçmeli ders sistemi"
+      ],
+      "facilities": [
+        "Bilgisayar odası ve kütüphane",
+        "Ücretsiz Wi-Fi",
+        "Okul içi sosyal program",
+        "Beet Online platformu (12 ay)"
+      ],
+      "idealFor": [
+        "Akademik yıl planlayanlar",
+        "Cambridge/IELTS adayları",
+        "Bağımsız okul tercih edenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce / IELTS (ana program)",
+          "nameEn": "Main Course (General English or IELTS)",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 366
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 359
+            },
+            {
+              "weeks": "12-21",
+              "perWeek": 346
+            },
+            {
+              "weeks": "22-29",
+              "perWeek": 315
+            },
+            {
+              "weeks": "30-39",
+              "perWeek": 298
+            },
+            {
+              "weeks": "40+",
+              "perWeek": 279
+            }
+          ],
+          "notes": "Minimum seviye: Elementary."
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive Course (+1 Option)",
+          "lessonsPerWeek": 24,
+          "hoursPerWeek": 18,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 413
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 408
+            },
+            {
+              "weeks": "12-21",
+              "perWeek": 390
+            },
+            {
+              "weeks": "22-29",
+              "perWeek": 354
+            },
+            {
+              "weeks": "30-39",
+              "perWeek": 337
+            },
+            {
+              "weeks": "40+",
+              "perWeek": 319
+            }
+          ],
+          "notes": "20 ders ana program + 4 ders seçmeli."
+        },
+        {
+          "name": "Ekstra Yoğun İngilizce",
+          "nameEn": "Extra Intensive Course (+2 Options)",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 21,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 446
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 438
+            },
+            {
+              "weeks": "12-21",
+              "perWeek": 419
+            },
+            {
+              "weeks": "22-29",
+              "perWeek": 372
+            },
+            {
+              "weeks": "30-39",
+              "perWeek": 355
+            },
+            {
+              "weeks": "40+",
+              "perWeek": 338
+            }
+          ],
+          "notes": "20 ders ana program + 8 ders seçmeli."
+        },
+        {
+          "name": "Uluslararası Akademik Yıl",
+          "nameEn": "International Academic Year (Main Course)",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "24",
+              "perWeek": 289
+            },
+            {
+              "weeks": "34",
+              "perWeek": 263
+            },
+            {
+              "weeks": "44",
+              "perWeek": 254
+            }
+          ],
+          "notes": "Toplam: 24 hafta £6.930, 34 hafta £8.940, 44 hafta £11.160 (tatil haftaları dahil). Ücretsiz tek yön transfer."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – standart tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Bournemouth",
+          "commute": null,
+          "perWeek": 206,
+          "minAge": 16,
+          "notes": "Hafta içi yarım pansiyon, hafta sonu tam pansiyon. 26 Haziran–28 Ağustos: £263. 18 yaş altı +£20/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – oda kahvaltı, tek kişilik",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Bournemouth",
+          "commute": null,
+          "perWeek": 170,
+          "minAge": 16,
+          "notes": "Düşük sezon fiyatı."
+        }
+      ],
+      "fees": {
+        "registration": 122,
+        "accommodationPlacement": 0,
+        "transferHeathrow": 280,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": 57,
+        "summerPeriod": "26 Haziran – 28 Ağustos 2027 (aile yanı sezon farkı)",
+        "materials": "Ana programlarda dahil",
+        "other": "Okul yerleştirme ücreti almaz. 22+ haftalık kurslarda Heathrow, Gatwick, Southampton veya Bournemouth'tan tek yön transfer ücretsiz. Özel diyet £32/hafta, Noel ek ücreti £86."
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.beet.co.uk/wp-content/uploads/2026/09/2027-Course-Dates-and-Fees-2027-Updated-8-September-2026.pdf",
+        "https://www.beet.co.uk/course-dates-fees/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "kaplan-bournemouth",
+      "name": "Kaplan International Bournemouth",
+      "brand": "Kaplan International Languages",
+      "area": "Westbourne",
+      "address": "130–136 Poole Road, Bournemouth BH4 9EF",
+      "nearestStation": "Westbourne merkezi; Branksome istasyonu yakın",
+      "website": "https://www.kaplaninternational.com/learn-english-united-kingdom/bournemouth",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 17,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Kaplan International Bournemouth, dünya genelinde okulları bulunan Kaplan International Languages'in Westbourne semtindeki okuludur. Westbourne, butik dükkânları ve kafeleriyle bilinen, Bournemouth merkezine ve Alum Chine sahiline yakın, şık bir semt. Okul, 2026 itibarıyla markayı geçiş lisansıyla kullanan yeni sahibi Inspirit Capital bünyesinde faaliyetine devam ediyor.\n\nGenel İngilizce, yarı yoğun ve yoğun programlar, IELTS ve akademik yollara hazırlık kursları ile 30 yaş üstüne özel programlar sunuluyor. Sınıflarda ortalama 16, en fazla 17 öğrenci bulunuyor. Konaklamada aile yanı, Lansdowne Point rezidansı ve yazın genç yetişkin rezidansı seçenekleri var. Kaplan fiyatlarını yalnızca kişisel teklif aracıyla paylaştığından aşağıdaki fiyatlar tahminidir.",
+      "highlights": [
+        "Uluslararası Kaplan ağı",
+        "30 yaş üstü programları",
+        "Westbourne'un şık semtinde",
+        "Lansdowne Point rezidansı",
+        "Yazın 16–20 yaş genç yetişkin programı"
+      ],
+      "facilities": [
+        "Öğrenci dinlenme alanı",
+        "Ücretsiz Wi-Fi",
+        "Kaplan çevrim içi öğrenme platformu",
+        "Sosyal etkinlik programı"
+      ],
+      "idealFor": [
+        "Büyük marka güvencesi arayanlar",
+        "30 yaş üstü öğrenciler",
+        "IELTS ve akademik hedefi olanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 305
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 280
+            }
+          ],
+          "notes": "Tahmini fiyat."
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 380
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 350
+            }
+          ],
+          "notes": "Tahmini fiyat."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 380
+            }
+          ],
+          "notes": "Tahmini fiyat."
+        },
+        {
+          "name": "30 Yaş Üstü Yoğun İngilizce",
+          "nameEn": "Over 30s Intensive",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 400
+            }
+          ],
+          "notes": "Tahmini fiyat; belirli başlangıç tarihleri (2026: 5 Ocak, 30 Mart, 22 Haziran, 21 Eylül, 9 Kasım)."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Bournemouth & Poole",
+          "commute": null,
+          "perWeek": 230,
+          "minAge": 16,
+          "notes": "Tahmini fiyat."
+        },
+        {
+          "type": "residence",
+          "name": "Lansdowne Point",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Bournemouth merkez (Lansdowne)",
+          "commute": null,
+          "perWeek": 330,
+          "minAge": 18,
+          "notes": "Tahmini fiyat."
+        }
+      ],
+      "fees": {
+        "registration": 150,
+        "accommodationPlacement": 80,
+        "transferHeathrow": 230,
+        "transferGatwick": 260,
+        "summerSupplementPerWeek": 40,
+        "summerPeriod": "Haziran sonu – Ağustos (tahmini)",
+        "materials": null,
+        "other": "Tüm ücretler tahminidir; Kaplan fiyatları çevrim içi teklif aracıyla verilmektedir."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.kaplaninternational.com/learn-english-united-kingdom/bournemouth",
+        "https://www.languagecourse.net/school-kaplan-international-english-bournemouth.php3"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

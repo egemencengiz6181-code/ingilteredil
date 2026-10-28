@@ -1,0 +1,90 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchoolCard from '../../components/SchoolCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { cities, schools, schoolPath } from '../../data';
+import { SITE } from '../../config/site';
+
+const used = cities.filter((c) => schools.some((s) => s.city === c.slug));
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'İngiltere dil okulları',
+  numberOfItems: schools.length,
+  itemListElement: schools.map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(schoolPath(s), SITE.url).href, name: s.name })),
+}];
+---
+<Base
+  title="İngiltere Dil Okulları Listesi 2027: Tüm Akredite Okullar"
+  description={`İngiltere’deki ${schools.length} akredite dil okulu tek listede: şehre ve fiyata göre filtreleyin, haftalık kurs, aile yanı ve yurt fiyatlarını karşılaştırın.`}
+  jsonLd={jsonLd}
+>
+  <section class="phero">
+    <div class="wrap">
+      <Breadcrumbs items={[{ label: 'Dil okulları' }]} />
+      <span class="eyebrow">Okul rehberi</span>
+      <h1>İngiltere dil okulları listesi</h1>
+      <p class="lead">{used.length} şehirde {schools.length} dil okulu. British Council akreditasyonlu ve English UK üyesi okulları şehre ve haftalık fiyata göre filtreleyin; her okulun sayfasında kurs türleri, konaklama ve ek ücretler yer alıyor.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="filters" role="group" aria-label="Filtreler">
+        <div class="filters__cities">
+          <button class="fbtn on" data-f="all">Tümü <small>{schools.length}</small></button>
+          {used.map((c) => <button class="fbtn" data-f={c.slug}>{c.name} <small>{schools.filter((s) => s.city === c.slug).length}</small></button>)}
+        </div>
+        <label class="filters__sort">Sırala
+          <select data-sort>
+            <option value="city">Şehre göre</option>
+            <option value="price">Fiyat (düşükten yükseğe)</option>
+          </select>
+        </label>
+      </div>
+      <div class="grid grid--3" data-list>
+        {schools.map((s) => <SchoolCard school={s} showCity />)}
+      </div>
+      <p class="muted small" data-empty hidden>Bu filtrede okul bulunamadı.</p>
+    </div>
+  </section>
+
+  <CtaBand title="Hangi okulun size uygun olduğundan emin değil misiniz?" text="Hedefinizi, bütçenizi ve tarihlerinizi paylaşın; size en uygun 3 okulu gerekçeleri ve toplam maliyetiyle birlikte önerelim." />
+</Base>
+
+<style>
+  .filters { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; align-items: center; }
+  .filters__cities { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .fbtn { border: 1px solid var(--line); background: var(--paper); border-radius: var(--r-pill); padding: 0.45rem 0.85rem; font-size: 0.88rem; font-weight: 600; color: var(--teal-900); cursor: pointer; }
+  .fbtn small { color: var(--ink-3); font-weight: 500; }
+  .fbtn.on { background: var(--teal-900); color: #fff; border-color: var(--teal-900); }
+  .fbtn.on small { color: var(--teal-200); }
+  .filters__sort { display: flex; gap: 0.5rem; align-items: center; font-size: 0.9rem; color: var(--ink-3); }
+  .filters__sort select { padding: 0.45rem 0.7rem; border: 1px solid var(--line); border-radius: var(--r-md); }
+</style>
+
+<script>
+  const list = document.querySelector<HTMLElement>('[data-list]')!;
+  const cards = [...list.children] as HTMLElement[];
+  const original = [...cards];
+  let city = 'all';
+  const apply = () => {
+    let shown = 0;
+    cards.forEach((c) => { const ok = city === 'all' || c.dataset.city === city; c.hidden = !ok; if (ok) shown++; });
+    document.querySelector<HTMLElement>('[data-empty]')!.hidden = shown > 0;
+  };
+  document.querySelectorAll<HTMLButtonElement>('.fbtn').forEach((b) => b.addEventListener('click', () => {
+    document.querySelectorAll('.fbtn').forEach((x) => x.classList.remove('on'));
+    b.classList.add('on');
+    city = b.dataset.f!;
+    apply();
+  }));
+  document.querySelector<HTMLSelectElement>('[data-sort]')!.addEventListener('change', (e) => {
+    const v = (e.target as HTMLSelectElement).value;
+    const sorted = v === 'price' ? [...cards].sort((a, b) => +a.dataset.price! - +b.dataset.price!) : original;
+    sorted.forEach((c) => list.appendChild(c));
+  });
+  const q = new URLSearchParams(location.search).get('sehir');
+  if (q) document.querySelector<HTMLButtonElement>(`.fbtn[data-f="${CSS.escape(q)}"]`)?.click();
+</script>

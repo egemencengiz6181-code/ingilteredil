@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Icon from '../components/Icon.astro';
+import { SITE, waLink } from '../config/site';
+---
+<Base title="İletişim: Ücretsiz Dil Okulu Danışmanlığı" description={`İngiltere’de dil okulu için ücretsiz danışmanlık: ${SITE.phoneDisplay}, WhatsApp, e-posta ve online görüşme. İzmir ve Aydın ofisleri.`}>
+  <section class="phero">
+    <div class="wrap">
+      <Breadcrumbs items={[{ label: 'İletişim' }]} />
+      <span class="eyebrow">İletişim</span>
+      <h1>Bize ulaşın</h1>
+      <p class="lead">Telefon, WhatsApp, e-posta veya online görüşme: size en uygun kanaldan ulaşın, aynı gün dönüş yapalım. {SITE.hours}.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap layout-aside">
+      <div class="stack">
+        <div class="grid grid--2">
+          <a class="card card--hover ct" href={waLink('Merhaba, İngiltere’de dil okulu hakkında bilgi almak istiyorum.')} target="_blank" rel="noopener" data-track="contact-page"><Icon name="whatsapp" size={28} /><h3>WhatsApp</h3><p class="muted mb-0">Hızlı yanıt için en pratik kanal</p></a>
+          <a class="card card--hover ct" href={`tel:${SITE.phone}`} data-track="contact-page"><Icon name="phone" size={28} /><h3>{SITE.phoneDisplay}</h3><p class="muted mb-0">Hafta içi 10:00–18:00</p></a>
+          <a class="card card--hover ct" href={`mailto:${SITE.email}`}><Icon name="mail" size={28} /><h3>E-posta</h3><p class="muted mb-0">{SITE.email}</p></a>
+          <a class="card card--hover ct" href={SITE.calendly} target="_blank" rel="noopener" data-track="contact-page"><Icon name="calendar" size={28} /><h3>Online görüşme</h3><p class="muted mb-0">30 dakikalık ücretsiz görüntülü görüşme planlayın</p></a>
+        </div>
+        <h2 style="margin-top:2rem">Ofisler</h2>
+        <div class="grid grid--2">
+          {SITE.offices.map((o) => (
+            <div class="card"><h3>{o.city}</h3><p class="small muted">{o.address}</p><a href={`tel:${o.phone}`} data-track="office">{o.phoneDisplay}</a></div>
+          ))}
+        </div>
+      </div>
+      <aside><LeadForm source="iletisim" /></aside>
+    </div>
+  </section>
+</Base>
+<style>
+  .ct { text-decoration: none; color: inherit; display: grid; gap: 0.3rem; }
+  .ct :global(svg) { color: var(--coral); }
+  .ct h3 { margin: 0.4rem 0 0; }
+</style>

@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { steps } from '../data/content';
+import { SITE } from '../config/site';
+---
+<Base title="Nasıl Çalışıyoruz? Ücretsiz Dil Okulu Danışmanlığı" description="Okul seçimi, karşılaştırmalı teklif, kayıt, konaklama, vize ve havalimanı karşılama: İngiltere dil okulu danışmanlık sürecimiz ve neden ücretsiz olduğu.">
+  <section class="phero">
+    <div class="wrap">
+      <Breadcrumbs items={[{ label: 'Nasıl çalışıyoruz?' }]} />
+      <span class="eyebrow">Hakkımızda</span>
+      <h1>Nasıl çalışıyoruz?</h1>
+      <p class="lead">{SITE.name}, İngiltere’deki dil okulu seçeneklerini tarafsız şekilde karşılaştırmanız için hazırlanmış bir rehber ve danışmanlık hizmetidir. {SITE.stats.years} yıldır yurt dışı eğitim alanında çalışan, İzmir ve Aydın’da ofisleri bulunan deneyimli bir ekip tarafından yürütülür.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap prose">
+      <h2 class="mt-0">Danışmanlık neden ücretsiz?</h2>
+      <p>Çalıştığımız dil okulları, öğrenci yönlendiren temsilcilerine okul ücretinden bir komisyon öder. Bu nedenle öğrenciden ayrıca danışmanlık ücreti almıyoruz ve okul fiyatları, okulun resmi listesindeki fiyatlarla aynıdır. Çoğu zaman okulların temsilcilere özel kampanyaları sayesinde doğrudan başvurudan daha avantajlı fiyat sunabiliyoruz.</p>
+      <h2>Okulları nasıl seçiyoruz?</h2>
+      <ul>
+        <li>British Council akreditasyonu (Accreditation UK) ve English UK üyeliği</li>
+        <li>Sınıf mevcudu, öğretmen niteliği, öğrenci milliyet dağılımı</li>
+        <li>Konaklama kalitesi ve öğrencilerimizden gelen geri bildirimler</li>
+        <li>Fiyat şeffaflığı ve iade politikaları</li>
+      </ul>
+      <p>Sitede yer alan fiyatlar okulların yayımladığı listelere dayanır. Fiyatını resmi olarak yayımlamayan okullarda “tahmini” etiketi kullanırız. Kesin fiyat her zaman yazılı teklifte belirtilir.</p>
+      <h2>Süreç</h2>
+      <ol>{steps.map((s) => <li><strong>{s.t}:</strong> {s.d}</li>)}</ol>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

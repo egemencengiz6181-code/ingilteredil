@@ -1,0 +1,966 @@
+{
+  "city": "edinburgh",
+  "schools": [
+    {
+      "slug": "kaplan-edinburgh",
+      "name": "Kaplan International Edinburgh",
+      "brand": "Kaplan International Languages",
+      "area": "New Town – St Andrew Square",
+      "address": "26 St Andrew Square, Edinburgh EH2 1AF",
+      "nearestStation": "Edinburgh Waverley (yaklaşık 5 dk yürüme), St Andrew Square tramvay durağı",
+      "website": "https://www.kaplaninternational.com/learn-english-united-kingdom/edinburgh",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 17,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Kaplan International Edinburgh, UNESCO Dünya Mirası listesindeki New Town bölgesinde, St Andrew Square meydanında yer alır. Princes Street, Waverley tren istasyonu ve havalimanına giden tramvay hattı birkaç dakikalık mesafededir; Edinburgh Kalesi ve Royal Mile ise kısa bir yürüyüşle ulaşılabilir.\n\nOkulda genel, yarı yoğun ve yoğun İngilizce ile IELTS ve iş İngilizcesi programları bulunur; ağustos ayında Edinburgh Festivali'ne özel bir kurs da düzenlenir. Konaklamada aile yanının yanı sıra Arran House, Fountainbridge ve Haymarket stüdyoları gibi şehir merkezine yakın öğrenci yurtları seçilebilir. İskoçya'nın başkenti, güvenli ve yürünebilir yapısıyla özellikle ilk kez yurt dışına çıkan öğrenciler için caziptir.",
+      "highlights": [
+        "St Andrew Square'de, Waverley'e 5 dk",
+        "Ağustos'ta Edinburgh Festivali kursu",
+        "IELTS ve iş İngilizcesi",
+        "Merkezi öğrenci yurtları ve stüdyolar",
+        "Havalimanına doğrudan tramvay"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi‑Fi",
+        "K+ dijital öğrenme platformu",
+        "Sosyal aktivite programı"
+      ],
+      "idealFor": [
+        "Tarih ve kültür meraklıları",
+        "IELTS hazırlığı yapanlar",
+        "İlk kez yurt dışına çıkanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 330
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 320
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 285
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 245
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "Yarı Yoğun İngilizce",
+          "nameEn": "Semi-Intensive English",
+          "lessonsPerWeek": 27,
+          "hoursPerWeek": 20,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 355
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 350
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 310
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 265
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 415
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 405
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 365
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 310
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS (Supplementary, Intensive)",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 415
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 405
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 365
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 310
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "Business Supplementary",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 415
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 405
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 365
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 310
+            }
+          ],
+          "notes": "Müsaitliğe bağlıdır. 2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Edinburgh banliyöleri",
+          "commute": "30–45 dk",
+          "perWeek": 240,
+          "minAge": 18,
+          "notes": "Okula 45 dk içinde aile yanı için +£55/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, özel banyo",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Edinburgh banliyöleri",
+          "commute": "30–45 dk",
+          "perWeek": 290,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Arran House – tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Edinburgh",
+          "commute": "15–25 dk",
+          "perWeek": 355,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Fountainbridge – tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Fountainbridge",
+          "commute": "15–20 dk",
+          "perWeek": 380,
+          "minAge": 18,
+          "notes": "En az 2 hafta."
+        },
+        {
+          "type": "studio",
+          "name": "Haymarket – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Haymarket",
+          "commute": "10–15 dk",
+          "perWeek": 415,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 135,
+        "accommodationPlacement": 35,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 130,
+        "transferLocalAirport": "Edinburgh Airport (EDI)",
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "31 Mayıs – 23 Ağustos (aile yanı/yurt); ders ücretine 16 Haziran – 22 Ağustos arası haftalık +£20",
+        "materials": "Dahil (K+ dijital materyal)",
+        "other": "Glasgow Havalimanı transferi £360; yurt yaz farkı £35/hafta; Noel haftası aile yanı farkı £65."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.kaplaninternational.com/learn-english-united-kingdom/edinburgh",
+        "https://ebook.kaplaninternational.com/pricelist/2025-pricelist/eu/Kaplan-Pricelist2025--eu-en.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "oxford-international-edinburgh",
+      "name": "Oxford International Edinburgh",
+      "brand": "Oxford International Education Group",
+      "area": "West End – Shandwick Place",
+      "address": "3rd Floor, 40 Shandwick Place, West End, Edinburgh EH2 4RT",
+      "nearestStation": "Haymarket istasyonu (yaklaşık 7 dk yürüme), West End – Princes Street tramvay durağı",
+      "website": "https://www.oxfordinternationalenglish.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Oxford International Edinburgh, Londra, Oxford ve Brighton'da da okulları bulunan Oxford International Education Group'un İskoçya'daki okuludur. Shandwick Place'teki okul, Princes Street'in batı ucunda, Edinburgh Kalesi'nin hemen altındaki West End bölgesindedir; Haymarket istasyonu ve havalimanı tramvayı yakındır.\n\nSabah Genel İngilizce kursu haftada 20 ders, yoğun kurs seçmeli derslerle 30 ders, süper yoğun kurs ise 40 derstir (B2 ve üzeri). Haftada 20 derslik IELTS hazırlık kursu da sunulur. Fiyatlar 1–3 haftalık kayıtlardan 24 hafta ve üzerine doğru belirgin şekilde düşer. Konaklamada farklı pansiyon seçenekli aile yanı bulunur; yaz aylarında ve Noel döneminde haftalık 35 sterlin ek ücret uygulanır.",
+      "highlights": [
+        "Edinburgh Kalesi'nin dibinde, West End'de",
+        "20 / 30 / 40 derslik programlar",
+        "IELTS hazırlık kursu",
+        "24+ haftada haftalık £246",
+        "Havalimanı transferi £120"
+      ],
+      "facilities": [
+        "Seçmeli dersler",
+        "Sosyal program",
+        "Ücretsiz Wi‑Fi",
+        "Öğrenci salonu"
+      ],
+      "idealFor": [
+        "Yoğun program isteyenler",
+        "İleri seviye öğrenciler (Süper Yoğun 40)",
+        "IELTS adayları"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Sabah)",
+          "nameEn": "Morning 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 341
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 310
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 277
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 254
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 246
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive 30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 441
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 392
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 350
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 316
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 297
+            }
+          ],
+          "notes": "20 Genel İngilizce + 10 seçmeli ders."
+        },
+        {
+          "name": "Süper Yoğun İngilizce",
+          "nameEn": "Super Intensive 40",
+          "lessonsPerWeek": 40,
+          "hoursPerWeek": 30,
+          "level": "B2+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 525
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 473
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 427
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 401
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 384
+            }
+          ],
+          "notes": "Müsaitliğe bağlıdır."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS 20",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 341
+            },
+            {
+              "weeks": "4-7",
+              "perWeek": 310
+            },
+            {
+              "weeks": "8-11",
+              "perWeek": 277
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 254
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 246
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Edinburgh",
+          "commute": "30–45 dk",
+          "perWeek": 275,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Edinburgh",
+          "commute": "30–45 dk",
+          "perWeek": 250,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, mutfak kullanımlı",
+          "bathroom": "shared",
+          "board": "self",
+          "location": "Edinburgh",
+          "commute": "30–45 dk",
+          "perWeek": 240,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – iki kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Edinburgh",
+          "commute": "30–45 dk",
+          "perWeek": 260,
+          "minAge": 16,
+          "notes": "Sadece birlikte seyahat edenler için."
+        }
+      ],
+      "fees": {
+        "registration": 80,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 120,
+        "transferLocalAirport": "Edinburgh Airport (EDI)",
+        "summerSupplementPerWeek": 35,
+        "summerPeriod": "Temmuz – Ağustos (aile yanı); Noel 21 Aralık – 1 Ocak aynı ek ücret",
+        "materials": "£80",
+        "other": "Glasgow Havalimanı transferi £250, Prestwick £350 (taksi başına, 3 kişiye kadar)."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.oxfordinternationalenglish.com/wp-content/uploads/2026/07/Global-EFL-OICC-Global-Price-List-2026-.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ces-edinburgh",
+      "name": "CES Edinburgh (Centre of English Studies)",
+      "brand": "Centre of English Studies (CES)",
+      "area": "West End – Manor Place",
+      "address": "54 Manor Place, Edinburgh EH3 7EH",
+      "nearestStation": "Haymarket istasyonu (yaklaşık 10 dk yürüme); Waverley ~30 dk",
+      "website": "https://ces-schools.com/locations/edinburgh",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 16,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "CES Edinburgh, İrlanda, İngiltere ve Kanada'da okulları bulunan Centre of English Studies grubunun İskoçya şubesidir. Okul, West End'in sakin ve şık sokaklarından Manor Place'te, klasik bir Edinburgh binasında yer alır; Haymarket istasyonu on dakika, Princes Street ise kısa bir yürüyüş uzaklığındadır.\n\nStandart Genel İngilizce haftada 20 ders, yoğun program ve IELTS hazırlık ise haftada 30 derstir. Birebir derslerle güçlendirilmiş kombinasyon, Cambridge sınav ve iş İngilizcesi kursları da vardır. Okul CELTA öğretmen eğitimi merkezidir ve 50 yaş üstüne yönelik İngilizce ve kültür programı düzenler. Konaklamada yarım pansiyon aile yanı ile yıl boyu açık IQ Student Accommodation en-suite odaları sunulur.",
+      "highlights": [
+        "West End'de sakin konum",
+        "CELTA eğitim merkezi",
+        "50+ İngilizce ve kültür programı",
+        "Birebir destekli kombinasyon kursları",
+        "Havalimanı transferi £85"
+      ],
+      "facilities": [
+        "Ücretsiz sosyal etkinlikler",
+        "Ücretsiz Wi‑Fi",
+        "Öğrenci salonu",
+        "Kur sonu sertifikası"
+      ],
+      "idealFor": [
+        "Sakin bölge tercih edenler",
+        "Cambridge / IELTS adayları",
+        "50 yaş üstü öğrenciler"
+      ],
+      "courses": [
+        {
+          "name": "Standart Genel İngilizce",
+          "nameEn": "Standard General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 290
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 280
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 275
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 270
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 260
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "Intensive General English",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 410
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 390
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 385
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 375
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 365
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation Course",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 410
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 390
+            },
+            {
+              "weeks": "12-23",
+              "perWeek": 385
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 375
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 365
+            }
+          ],
+          "notes": "Sabah Genel İngilizce, salı–perşembe öğleden sonra IELTS."
+        },
+        {
+          "name": "İş İngilizcesi (grup + 5 saat birebir)",
+          "nameEn": "General English with Business",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 20,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 645
+            }
+          ],
+          "notes": "Uzun kayıtlarda £625'e kadar düşer."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Edinburgh",
+          "commute": "30–45 dk",
+          "perWeek": 294,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – paylaşımlı oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Edinburgh",
+          "commute": "30–45 dk",
+          "perWeek": 245,
+          "minAge": 16,
+          "notes": "Sadece birlikte seyahat eden 2 kişi için."
+        },
+        {
+          "type": "residence",
+          "name": "IQ Student Accommodation – en-suite tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Edinburgh",
+          "commute": "15–25 dk",
+          "perWeek": 420,
+          "minAge": 18,
+          "notes": "Yıl boyu."
+        }
+      ],
+      "fees": {
+        "registration": 75,
+        "accommodationPlacement": 75,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 85,
+        "transferLocalAirport": "Edinburgh Airport (EDI)",
+        "summerSupplementPerWeek": 35,
+        "summerPeriod": "Temmuz – Ağustos (aile yanı)",
+        "materials": "Ders kitabı + dijital e-kitap £37",
+        "other": "Glasgow Havalimanı transferi £285; özel diyet £35/hafta; Noel dönemi aile yanı £371/hafta."
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://ces-schools.com/sites/default/files/2026-09/CES%20Adult%202027%20Pricelist-Online-Sept14.pdf",
+        "https://ces-schools.com/locations/edinburgh"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "bsc-edinburgh",
+      "name": "BSC Edinburgh (British Study Centres)",
+      "brand": "BSC Education",
+      "area": "West End – Palmerston Place",
+      "address": "26 Palmerston Place, Edinburgh EH12 5AL",
+      "nearestStation": "Haymarket istasyonu (6 dk yürüme)",
+      "website": "https://www.bsceducation.com/destinations/edinburgh/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 14,
+      "lessonMinutes": 50,
+      "founded": null,
+      "description": "BSC Edinburgh, British Study Centres grubunun İskoçya'daki okuludur ve West End'deki tarihi Palmerston Place caddesinde yer alır. Haymarket istasyonu altı dakika, İskoçya Ulusal Galerileri on iki, Edinburgh Kalesi ise yaklaşık yirmi dakikalık yürüme mesafesindedir.\n\nGenel İngilizce haftada 20, 25 veya 30 ders (50 dakikalık) olarak sunulur; sınıflar en fazla 14 kişidir ve IELTS hazırlık kursu da vardır. BSC'nin Londra, Manchester ve York okullarıyla birlikte çok şehirli programlar oluşturulabilir. Konaklamada farklı pansiyon seçenekli aile yanı ve otobüsle yaklaşık 25 dakika uzaklıktaki en-suite odalı öğrenci yurdu bulunur.",
+      "highlights": [
+        "Haymarket istasyonuna 6 dk",
+        "50 dakikalık dersler, en fazla 14 kişi",
+        "20 / 25 / 30 ders seçenekleri",
+        "Çok şehirli BSC programları",
+        "Esnek pansiyon seçenekli aile yanı"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi‑Fi",
+        "Sosyal program",
+        "Seviye tespit sınavı"
+      ],
+      "idealFor": [
+        "Birden fazla şehirde okumak isteyenler",
+        "Sınav hazırlığı yapanlar",
+        "16–17 yaş öğrenciler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.6,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 295
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 270
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        },
+        {
+          "name": "Yarı Yoğun Genel İngilizce",
+          "nameEn": "General English 25",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 20.8,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 335
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 310
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "General English 30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 375
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 350
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Exam Preparation",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 20.8,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 335
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 310
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Edinburgh",
+          "commute": "30–60 dk",
+          "perWeek": 257,
+          "minAge": 16,
+          "notes": "Özel banyo +£35/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Edinburgh",
+          "commute": "30–60 dk",
+          "perWeek": 221,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, tam pansiyon",
+          "bathroom": "shared",
+          "board": "full",
+          "location": "Edinburgh",
+          "commute": "30–60 dk",
+          "perWeek": 278,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Öğrenci yurdu – en-suite tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Edinburgh",
+          "commute": "25 dk (otobüs)",
+          "perWeek": 320,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 80,
+        "accommodationPlacement": 60,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 95,
+        "transferLocalAirport": "Edinburgh Airport (EDI)",
+        "summerSupplementPerWeek": 20,
+        "summerPeriod": "13 Haziran – 4 Eylül (aile yanı)",
+        "materials": "Tahmini £40 (okula sorulmalı)",
+        "other": "Kayıt, yerleştirme ve transfer ücretleri tahminidir; konaklama fiyatları resmidir."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.bsceducation.com/destinations/edinburgh/",
+        "https://www.bsceducation.com/accommodation/edinburgh/",
+        "https://www.bsceducation.com/course/general-english/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "basil-paterson-edinburgh",
+      "name": "Basil Paterson Edinburgh (Edinburgh School of English)",
+      "brand": "Basil Paterson",
+      "area": "New Town – Queen Street",
+      "address": "66 Queen Street, Edinburgh EH2 4NA",
+      "nearestStation": "Edinburgh Waverley (yaklaşık 10 dk yürüme), St Andrew Square tramvay durağı",
+      "website": "https://www.basilpaterson.co.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 5,
+      "lessonMinutes": 60,
+      "founded": 1929,
+      "description": "Basil Paterson, 1929'da kurulan ve Edinburgh'un New Town bölgesinde Queen Street'teki tarihi binasında eğitim veren köklü bir kolejdir. Uzun yıllardır şehirde faaliyet gösteren Edinburgh School of English de bugün Basil Paterson çatısı altında kurslarını sürdürmektedir.\n\nOkulu farklı kılan en önemli özellik en fazla 5 kişilik sınıflardır ve her ders 60 dakikadır. Haftada 15 saatlik Impact English programı her pazartesi başlar; IELTS ve Cambridge (FCE, CAE, CPE) hazırlık kursları ise belirli tarihlerde 4 haftalık bloklar halinde düzenlenir. Okul aynı zamanda IELTS ve Cambridge sınav merkezi, CELTA eğitim merkezidir. Fiyatlar premium seviyededir; konaklama yarım pansiyon aile yanı olarak sunulur.",
+      "highlights": [
+        "1929'dan beri faaliyette",
+        "En fazla 5 kişilik mini sınıflar",
+        "60 dakikalık dersler",
+        "IELTS ve Cambridge sınav merkezi",
+        "Tarihi New Town binası"
+      ],
+      "facilities": [
+        "Sınav merkezi",
+        "CELTA öğretmen eğitimi",
+        "Birebir ders imkânı",
+        "Tarihi binada sınıflar"
+      ],
+      "idealFor": [
+        "Hızlı ilerlemek isteyenler",
+        "Cambridge / IELTS adayları",
+        "Premium ve butik eğitim arayanlar"
+      ],
+      "courses": [
+        {
+          "name": "Impact English (Genel İngilizce)",
+          "nameEn": "The Impact English Programme",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": 15,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 744
+            }
+          ],
+          "notes": "Her pazartesi başlar."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Examination Preparation",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "4",
+              "perWeek": 744
+            }
+          ],
+          "notes": "4 haftalık kurs toplam £2.976; haftada 10 saat ek bireysel çalışma. Belirli başlangıç tarihleri."
+        },
+        {
+          "name": "Cambridge Sınav Hazırlık (FCE/CAE/CPE)",
+          "nameEn": "Cambridge Examination Preparation",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": 15,
+          "level": "B2–C2",
+          "prices": [
+            {
+              "weeks": "4",
+              "perWeek": 744
+            }
+          ],
+          "notes": "4 haftalık kurs toplam £2.976; sınav kurs bitiminden sonraki hafta yapılır."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Edinburgh",
+          "commute": "20–40 dk",
+          "perWeek": 320,
+          "minAge": 16,
+          "notes": "Her gün kahvaltı ve akşam yemeği."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – en-suite tek kişilik oda",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Edinburgh",
+          "commute": "20–40 dk",
+          "perWeek": 440,
+          "minAge": 16,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": null,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 105,
+        "transferLocalAirport": "Edinburgh Airport (EDI)",
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": null,
+        "other": "Birebir ders saatlik £124. Cambridge sınav ücreti £210–220, IELTS £245. Yurt/otel için okul öneri listesi sunar."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.basilpaterson.co.uk/wp-content/uploads/2025/11/2026-basil-paterson-price-list-.pdf",
+        "https://www.basilpaterson.co.uk/"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

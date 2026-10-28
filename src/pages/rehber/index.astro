@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CtaBand from '../../components/CtaBand.astro';
+
+const posts = (await getCollection('rehber')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<Base title="İngiltere Dil Okulu Rehberi: Fiyat, Vize, Konaklama Yazıları" description="İngiltere’de dil okulu planlayanlar için rehber yazıları: bütçe, şehir seçimi, okul seçimi, konaklama, vize, çalışma hakkı ve ilk hafta.">
+  <section class="phero">
+    <div class="wrap">
+      <Breadcrumbs items={[{ label: 'Rehber' }]} />
+      <span class="eyebrow">Rehber</span>
+      <h1>İngiltere dil okulu rehberi</h1>
+      <p class="lead">Karar vermeden önce bilmeniz gerekenler: bütçe, şehir ve okul seçimi, konaklama, vize ve İngiltere’deki ilk haftanız.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap grid grid--3">
+      {posts.map((p) => (
+        <article class="card card--hover">
+          <p class="xs muted mb-0">{p.data.category} · {p.data.date.toLocaleDateString('tr-TR', { month: 'long', year: 'numeric' })}</p>
+          <h2 style="font-size:1.2rem;margin-top:.5rem"><a href={`/rehber/${p.id}/`} class="stretched" style="text-decoration:none;color:inherit">{p.data.title}</a></h2>
+          <p class="small muted mb-0">{p.data.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+  <CtaBand />
+</Base>

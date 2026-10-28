@@ -1,0 +1,95 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { cities, cityPath, schoolsInCity, schoolPath, shortCoursePrice, minCoursePrice, minAccPrice, sampleTotal, cityMinPrice, gbp, schools } from '../data';
+
+const groups = cities.map((c) => ({ c, list: schoolsInCity(c.slug) })).filter((g) => g.list.length);
+const mins = schools.map(minCoursePrice).filter((n): n is number => n != null);
+const overallMin = mins.length ? Math.min(...mins) : 230;
+
+const faqs = [
+  { q: 'İngiltere’de dil okulu 1 aylık ne kadar?', a: `4 haftalık Genel İngilizce kursu şehir ve okula göre yaklaşık £1.000–1.800 arasındadır. Aile yanı konaklama 4 hafta için £720–1.440, kayıt ve yerleştirme ücretleri £100–250 eklenir. Yani kurs + konaklama toplamı Manchester gibi şehirlerde yaklaşık £1.900’den, Londra’da £2.500’den başlar.` },
+  { q: 'İngiltere’nin en ucuz dil okulu şehri hangisi?', a: 'Manchester, Liverpool, Leeds ve Birmingham kurs ve yaşam maliyeti açısından en uygun şehirlerdir. Sahil şehirlerinden Bournemouth ve Eastbourne da Londra’ya göre belirgin şekilde daha ekonomiktir.' },
+  { q: 'Uzun süre gidersem fiyat düşer mi?', a: 'Evet. Okulların çoğu 12, 24 ve 36 hafta gibi kademelerde haftalık ücreti düşürür. 24 haftalık bir programda haftalık kurs ücreti, 4 haftalık programa göre %15–30 daha düşük olabilir.' },
+  { q: 'Fiyatlara neler dahil değil?', a: 'Uçak bileti, vize ücreti, seyahat ve sağlık sigortası, havalimanı transferi, yaz dönemi ek ücretleri, toplu taşıma ve kişisel harcamalar genellikle kurs fiyatına dahil değildir. Her şey dahil Londra paketinde bu kalemlerin çoğu fiyata dahildir.' },
+  { q: 'Danışmanlık üzerinden kayıt olmak daha mı pahalı?', a: 'Hayır. Okul ücretleri okulun resmi fiyat listesiyle aynıdır, danışmanlık hizmeti ücretsizdir. Okulların dönemsel kampanyalarını ve erken kayıt indirimlerini teklifinize yansıtırız.' },
+];
+---
+<Base
+  title="İngiltere Dil Okulu Fiyatları 2027: Şehir ve Okul Bazında Liste"
+  description={`İngiltere dil okulu fiyatları 2027: ${schools.length} okulun haftalık kurs, aile yanı ve yurt ücretleri, kayıt ücretleri ve 4 haftalık örnek toplam. Kurs ${gbp(overallMin)}/hafta’dan başlıyor.`}
+  waMessage="Merhaba, İngiltere dil okulu fiyat listesini ve size özel teklif almak istiyorum."
+>
+  <section class="phero phero--split">
+    <div class="wrap">
+      <div>
+        <Breadcrumbs items={[{ label: 'Fiyat listesi' }]} />
+        <span class="eyebrow">Güncel fiyat listesi</span>
+        <h1>İngiltere Dil Okulu Fiyatları 2027</h1>
+        <p class="lead">{cities.length} şehirdeki {schools.length} akredite dil okulunun Genel İngilizce haftalık kurs ücretleri, aile yanı ve yurt fiyatları, kayıt ücreti ve 4 haftalık örnek toplamı tek sayfada. Bir okula tıklayarak tüm kurs türlerini ve fiyat kademelerini görebilirsiniz.</p>
+        <div class="note note--teal" style="max-width:640px">
+          <strong>Fiyatları neler belirler?</strong> Haftalık ders saati (15–30), program süresi (uzun programda haftalık ücret düşer), konaklama tipi, sezon (yazın ek ücret) ve okulun kampanyaları.
+        </div>
+        <div class="jump">
+          {groups.map(({ c }) => <a href={`#${c.slug}`}>{c.name} <small>{gbp(cityMinPrice(c.slug))}+</small></a>)}
+        </div>
+        <a href="/fiyat-hesaplama/" class="btn btn--teal" style="margin-top:1rem"><Icon name="calculator" /> Toplam maliyetimi hesapla</a>
+      </div>
+      <LeadForm source="fiyat-listesi" title="Size özel fiyat teklifi" subtitle="Tarihinize ve sürenize göre 2–3 okulun güncel fiyatını, kampanyalarla birlikte toplam maliyet olarak iletelim." />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap stack" style="--stack:3rem">
+      {groups.map(({ c, list }) => (
+        <div id={c.slug}>
+          <div class="ghead">
+            <h2><span class="code">{c.code}</span> {c.name} dil okulu fiyatları</h2>
+            <a href={cityPath(c)}>{c.name} rehberi →</a>
+          </div>
+          <div class="table-wrap">
+            <table class="table table--stack">
+              <thead><tr><th>Okul</th><th class="num">Kurs / hafta (1–11 hf)</th><th class="num">En düşük kurs</th><th class="num">Aile yanı</th><th class="num">Yurt / stüdyo</th><th class="num">Kayıt</th><th class="num">4 hafta örnek*</th></tr></thead>
+              <tbody>
+                {list.map((s) => (
+                  <tr>
+                    <td><a href={schoolPath(s)}>{s.name}</a>{s.priceStatus === 'estimated' && <span class="tag tag--sand" style="margin-left:.4rem">tahmini</span>}</td>
+                    <td class="num">{gbp(shortCoursePrice(s))}</td>
+                    <td class="num">{gbp(minCoursePrice(s))}</td>
+                    <td class="num">{gbp(minAccPrice(s.accommodation, 'homestay'))}</td>
+                    <td class="num">{gbp(minAccPrice(s.accommodation, 'residence') ?? minAccPrice(s.accommodation, 'studio'))}</td>
+                    <td class="num">{gbp(s.fees.registration)}</td>
+                    <td class="num"><b>{gbp(sampleTotal(s).total || null)}</b></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ))}
+      <p class="xs muted">* 4 haftalık örnek toplam: Genel İngilizce kurs + en uygun aile yanı (yoksa en uygun konaklama) + kayıt ve konaklama yerleştirme ücretleri. Uçak, vize, sigorta, transfer ve yaz ek ücretleri hariçtir. “Tahmini” etiketli okullarda resmi liste yayımlanmadığı için benzer okullara göre tahmin verilmiştir. Kesin ücreti yazılı teklifte bildiriyoruz.</p>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap wrap--narrow">
+      <div class="shead shead--center"><span class="eyebrow">Sık sorulanlar</span><h2>Dil okulu fiyatları hakkında sorular</h2></div>
+      <Faq items={faqs} />
+    </div>
+  </section>
+
+  <CtaBand title="Fiyatları karşılaştırmak için zaman harcamayın" text="Bütçenizi ve tarihlerinizi söyleyin; size en uygun 3 okulun güncel fiyatını toplam maliyetle birlikte aynı gün iletelim." />
+</Base>
+
+<style>
+  .jump { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.25rem; }
+  .jump a { padding: 0.4rem 0.75rem; border: 1px solid var(--line); border-radius: var(--r-pill); text-decoration: none; font-size: 0.88rem; font-weight: 600; color: var(--teal-900); background: var(--paper); }
+  .jump small { color: var(--ink-3); font-weight: 500; }
+  .ghead { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.9rem; }
+  .ghead h2 { margin: 0; font-size: clamp(1.3rem, 1.1rem + 0.8vw, 1.7rem); display: flex; gap: 0.6rem; align-items: center; }
+  .code { font-family: var(--f-mono); font-size: 0.75rem; background: var(--teal-900); color: #fff; padding: 0.25rem 0.45rem; border-radius: 6px; letter-spacing: 0.06em; }
+</style>

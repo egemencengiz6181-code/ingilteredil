@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Faq from '../components/Faq.astro';
+import LeadForm from '../components/LeadForm.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { generalFaqs } from '../data/content';
+---
+<Base title="İngiltere Dil Okulu Sık Sorulan Sorular" description="İngiltere’de dil okulu fiyatları, vize, çalışma hakkı, konaklama, süre, yaş ve ödeme hakkında en sık sorulan sorular ve cevapları.">
+  <section class="phero">
+    <div class="wrap">
+      <Breadcrumbs items={[{ label: 'Sık sorulan sorular' }]} />
+      <span class="eyebrow">SSS</span>
+      <h1>Sık sorulan sorular</h1>
+      <p class="lead">İngiltere’de dil okulu planlarken en çok merak edilenler. Sorunuzun cevabını bulamazsanız WhatsApp’tan yazın; aynı gün dönüş yapıyoruz.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="layout-aside">
+        <Faq items={generalFaqs} />
+        <aside><LeadForm source="sss" title="Sorunuzu bize sorun" subtitle="Bilgilerinizi bırakın, danışmanımız sizi arayıp tüm sorularınızı cevaplasın." /></aside>
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

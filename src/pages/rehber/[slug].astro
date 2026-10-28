@@ -1,0 +1,63 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { cities, cityPath } from '../../data';
+import { SITE } from '../../config/site';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('rehber');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+const { Content } = await render(post);
+const d = post.data;
+const others = (await getCollection('rehber')).filter((p) => p.id !== post.id).slice(0, 3);
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: d.title,
+  description: d.description,
+  datePublished: d.date.toISOString(),
+  dateModified: (d.updated ?? d.date).toISOString(),
+  inLanguage: 'tr-TR',
+  author: { '@type': 'Organization', name: SITE.name },
+  publisher: { '@id': `${SITE.url}/#org` },
+  mainEntityOfPage: new URL(`/rehber/${post.id}/`, SITE.url).href,
+}];
+---
+<Base title={d.title} description={d.description} jsonLd={jsonLd}>
+  <section class="phero">
+    <div class="wrap wrap--narrow">
+      <Breadcrumbs items={[{ label: 'Rehber', href: '/rehber/' }, { label: d.title }]} />
+      <span class="eyebrow">{d.category}</span>
+      <h1 style="max-width:none">{d.title}</h1>
+      <p class="lead">{d.description}</p>
+      <p class="xs muted mb-0">Güncelleme: {(d.updated ?? d.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap layout-aside">
+      <article class="prose"><Content /></article>
+      <aside><LeadForm source={`rehber-${post.id}`} city={d.city} /></aside>
+    </div>
+  </section>
+  {d.faqs && (
+    <section class="section section--mist">
+      <div class="wrap wrap--narrow"><h2>Sık sorulanlar</h2><Faq items={d.faqs} /></div>
+    </section>
+  )}
+  <section class="section section--tight">
+    <div class="wrap">
+      <h2 style="font-size:1.35rem">Diğer rehberler</h2>
+      <div class="grid grid--3">
+        {others.map((p) => <a class="card card--hover" href={`/rehber/${p.id}/`} style="text-decoration:none;color:inherit"><p class="xs muted mb-0">{p.data.category}</p><h3 style="font-size:1.05rem;margin-top:.4rem">{p.data.title}</h3></a>)}
+      </div>
+      <div class="tags" style="margin-top:1.5rem">{cities.map((c) => <a class="tag" href={cityPath(c)} style="text-decoration:none">{c.name} dil okulları</a>)}</div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

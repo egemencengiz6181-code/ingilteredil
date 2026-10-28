@@ -1,0 +1,156 @@
+---
+import Icon from './Icon.astro';
+import Logo from './Logo.astro';
+import { SITE, waLink } from '../config/site';
+import { cities, cityPath } from '../data';
+
+interface Props { minimal?: boolean }
+const { minimal = false } = Astro.props;
+const path = Astro.url.pathname;
+
+const nav = [
+  { href: '/dil-okullari/', label: 'Dil Okulları' },
+  { href: '/ingiltere-dil-okulu-fiyatlari/', label: 'Fiyatlar' },
+  { href: '/konaklama/', label: 'Konaklama' },
+  { href: '/ingiltere-dil-okulu-vizesi/', label: 'Vize' },
+  { href: '/her-sey-dahil-londra-paketi/', label: 'Her Şey Dahil' },
+  { href: '/rehber/', label: 'Rehber' },
+];
+const active = (h: string) => path.startsWith(h);
+---
+<div class="topbar hide-sm">
+  <div class="wrap topbar__in">
+    <span>Danışmanlık ücretsiz · Akredite okullar · Vize ve havalimanı karşılama dahil süreç</span>
+    <span class="topbar__links">
+      <a href={`tel:${SITE.phone}`} data-track="topbar"><Icon name="phone" size={14} /> {SITE.phoneDisplay}</a>
+      <a href={`mailto:${SITE.email}`}><Icon name="mail" size={14} /> {SITE.email}</a>
+    </span>
+  </div>
+</div>
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a href="/" class="hdr__logo" aria-label={`${SITE.name} ana sayfa`}><Logo /></a>
+
+    {!minimal && (
+      <nav class="hdr__nav" aria-label="Ana menü">
+        <div class="mega">
+          <button class:list={['hdr__link', { on: /-dil-okullari\/$/.test(path) }]} aria-expanded="false" aria-controls="mega-cities" data-mega>
+            Şehirler <Icon name="chevron" size={16} />
+          </button>
+          <div class="mega__panel" id="mega-cities">
+            <div class="mega__grid">
+              {cities.map((c) => (
+                <a href={cityPath(c)} class="mega__item">
+                  <span class="mega__code">{c.code}</span>
+                  <span><b>{c.name}</b><small>{c.vibe.slice(0, 2).join(' · ')}</small></span>
+                </a>
+              ))}
+            </div>
+            <a href="/sehirler/" class="mega__all">Şehir karşılaştırması <Icon name="arrow" size={16} /></a>
+          </div>
+        </div>
+        {nav.map((n) => <a href={n.href} class:list={['hdr__link', { on: active(n.href) }]}>{n.label}</a>)}
+      </nav>
+    )}
+
+    <div class="hdr__cta">
+      <a href={waLink('Merhaba, İngiltere’de dil okulu hakkında bilgi almak istiyorum.')} class="btn btn--wa hide-sm" data-track="header" target="_blank" rel="noopener"><Icon name="whatsapp" /> WhatsApp</a>
+      <a href={minimal ? '#teklif' : '/ucretsiz-teklif/'} class="btn btn--coral"><span><span class="xs-hide">Ücretsiz </span>Teklif<span class="xs-only"> Al</span></span></a>
+      {!minimal && (
+        <button class="hdr__burger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="drawer" data-burger><Icon name="menu" size={24} /></button>
+      )}
+    </div>
+  </div>
+
+  {!minimal && (
+    <div class="drawer" id="drawer" hidden>
+      <div class="drawer__in">
+        <p class="drawer__h">Şehirler</p>
+        <div class="drawer__cities">
+          {cities.map((c) => <a href={cityPath(c)}>{c.name}</a>)}
+        </div>
+        <p class="drawer__h">Sayfalar</p>
+        {nav.map((n) => <a href={n.href} class="drawer__link">{n.label}</a>)}
+        <a href="/havalimani-karsilama/" class="drawer__link">Havalimanı Karşılama</a>
+        <a href="/ogrenci-yorumlari/" class="drawer__link">Öğrenci Yorumları</a>
+        <a href="/sss/" class="drawer__link">Sık Sorulan Sorular</a>
+        <a href="/iletisim/" class="drawer__link">İletişim</a>
+        <div class="btns" style="margin-top:1.25rem">
+          <a href={`tel:${SITE.phone}`} class="btn btn--line btn--block" data-track="drawer"><Icon name="phone" /> {SITE.phoneDisplay}</a>
+        </div>
+      </div>
+    </div>
+  )}
+</header>
+
+<style>
+  .topbar { background: var(--teal-950); color: #b9d6dd; font-size: 0.82rem; }
+  .topbar__in { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 0.45rem; }
+  .topbar__in > span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  @media (max-width: 1100px) { .topbar__in > span:first-child { display: none; } .topbar__in { justify-content: flex-end; } }
+  .topbar a { color: #e6f2f4; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
+  .topbar__links { display: flex; gap: 1.25rem; flex: none; }
+  .hdr { position: sticky; top: 0; z-index: 50; background: #fffffff2; backdrop-filter: blur(10px); border-bottom: 1px solid var(--line-2); }
+  .hdr__in { display: flex; align-items: center; gap: 1rem; height: 68px; }
+  .hdr__logo { flex: none; text-decoration: none; }
+  .hdr__nav { display: none; align-items: center; gap: 0.1rem; margin-left: auto; }
+  .hdr__link { background: none; border: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 0.2rem; padding: 0.5rem 0.7rem; border-radius: var(--r-pill); color: var(--ink-2); text-decoration: none; font-weight: 550; font-size: 0.95rem; }
+  .hdr__link:hover, .hdr__link.on { color: var(--teal-900); background: var(--teal-50); }
+  .hdr__cta { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
+  .hdr__cta .btn { padding: 0.6rem 1rem; font-size: 0.92rem; white-space: nowrap; }
+  .xs-only { display: none; }
+  @media (max-width: 400px) {
+    .hdr__in { gap: 0.5rem; }
+    .hdr__cta { gap: 0.25rem; }
+    .hdr__cta .btn { padding: 0.55rem 0.85rem; font-size: 0.88rem; }
+    .xs-hide { display: none; }
+    .xs-only { display: inline; }
+  }
+  .hdr__burger { background: none; border: 0; padding: 0.4rem; cursor: pointer; color: var(--teal-900); }
+  @media (min-width: 1180px) {
+    .hdr__nav { display: flex; }
+    .hdr__cta { margin-left: 0.75rem; }
+    .hdr__burger { display: none; }
+  }
+
+  .mega { position: relative; }
+  .mega__panel { display: none; position: absolute; top: calc(100% + 10px); left: -120px; width: 640px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow-2); padding: 1rem; }
+  .mega.open .mega__panel { display: block; }
+  .mega__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.25rem; }
+  .mega__item { display: flex; gap: 0.6rem; align-items: center; padding: 0.55rem; border-radius: var(--r-md); text-decoration: none; color: var(--ink); }
+  .mega__item:hover { background: var(--teal-50); }
+  .mega__item b { display: block; font-size: 0.95rem; color: var(--teal-950); }
+  .mega__item small { color: var(--ink-3); font-size: 0.76rem; }
+  .mega__code { font-family: var(--f-mono); font-size: 0.7rem; font-weight: 700; background: var(--teal-900); color: #fff; border-radius: 6px; padding: 0.3rem 0.4rem; letter-spacing: 0.06em; }
+  .mega__all { display: flex; align-items: center; justify-content: center; gap: 0.4rem; margin-top: 0.6rem; padding: 0.6rem; border-top: 1px solid var(--line-2); font-weight: 600; text-decoration: none; }
+
+  .drawer { border-top: 1px solid var(--line-2); max-height: calc(100vh - 68px); overflow-y: auto; background: var(--paper); }
+  .drawer__in { padding: 1rem var(--gutter) 2rem; }
+  .drawer__h { font-family: var(--f-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-3); margin: 1rem 0 0.5rem; }
+  .drawer__cities { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 0.4rem; }
+  .drawer__cities a { padding: 0.55rem 0.7rem; border: 1px solid var(--line); border-radius: var(--r-md); text-decoration: none; color: var(--teal-900); font-weight: 600; font-size: 0.92rem; }
+  .drawer__link { display: block; padding: 0.7rem 0; border-bottom: 1px solid var(--line-2); text-decoration: none; color: var(--ink); font-weight: 550; }
+</style>
+
+<script>
+  const mega = document.querySelector<HTMLElement>('.mega');
+  const megaBtn = document.querySelector<HTMLButtonElement>('[data-mega]');
+  megaBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = mega!.classList.toggle('open');
+    megaBtn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', (e) => {
+    if (mega && !mega.contains(e.target as Node)) { mega.classList.remove('open'); megaBtn?.setAttribute('aria-expanded', 'false'); }
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { mega?.classList.remove('open'); megaBtn?.setAttribute('aria-expanded', 'false'); } });
+
+  const burger = document.querySelector<HTMLButtonElement>('[data-burger]');
+  const drawer = document.getElementById('drawer');
+  burger?.addEventListener('click', () => {
+    const open = drawer!.hidden;
+    drawer!.hidden = !open;
+    burger.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+</script>

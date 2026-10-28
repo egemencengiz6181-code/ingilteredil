@@ -1,0 +1,361 @@
+{
+  "city": "bath",
+  "schools": [
+    {
+      "slug": "kaplan-bath",
+      "name": "Kaplan International Bath",
+      "brand": "Kaplan International Languages (Positively Languages)",
+      "area": "Şehir merkezi (Trim Street, Queen Square yakını)",
+      "address": "5 Trim Street, Bath BA1 1HB",
+      "nearestStation": "Bath Spa tren istasyonu (yürüyerek ~10 dk)",
+      "website": "https://positivelylanguages.com/language-schools/united-kingdom/bath",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 17,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Kaplan International Bath, UNESCO Dünya Mirası listesindeki Bath'ın tam merkezinde, Queen Square ile Milsom Street arasındaki tarihi Trim Street'te yer alıyor. Roma Hamamları ve Bath Abbey'e birkaç dakika yürüme mesafesindeki okul, Kaplan International Languages ağının parçası ve 2026'da başlayan Positively Languages markalaşma sürecine dahil; British Council akreditasyonu ve English UK üyeliği sürüyor. 16 yaş üstüne Genel İngilizce, yarı yoğun ve yoğun programlar, IELTS ve İş İngilizcesi kursları sunuluyor.\n\nBath, Londra'ya göre daha sakin, güvenli ve yürünebilir bir şehir; Gürcü mimarisi, parkları ve kafeleriyle öğrenciler için huzurlu bir ortam yaratıyor. Konaklamada yarım pansiyon aile yanı ve özel mutfaklı stüdyolardan oluşan Avon Studios yurdu öne çıkıyor. 40 yaş üstüne özel Classic programı ve 20+ haftada 235 £'a düşen haftalık ücret, farklı profillere hitap ediyor.",
+      "highlights": [
+        "Roma Hamamları ve Bath Abbey'e yürüme mesafesi",
+        "Sakin, güvenli ve yürünebilir şehir",
+        "40+ yaşa özel Classic programı",
+        "20+ haftada 235 £/hafta",
+        "Stüdyo daireli Avon Studios yurdu"
+      ],
+      "facilities": [
+        "Tarihi şehir merkezi binası",
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "K+ çevrimiçi öğrenme platformu"
+      ],
+      "idealFor": [
+        "Sakin şehir tercih edenler",
+        "40 yaş üstü öğrenciler",
+        "Kültür ve tarih meraklıları"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 315
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 310
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 280
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 235
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yarı Yoğun İngilizce",
+          "nameEn": "Semi-Intensive English",
+          "lessonsPerWeek": 27,
+          "hoursPerWeek": 20.25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 340
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 335
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 300
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 260
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.25,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 400
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 390
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 350
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 300
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Supplementary",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.25,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 400
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 390
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 350
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 300
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "Business Supplementary",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26.25,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 400
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 390
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 350
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 300
+            }
+          ],
+          "notes": "Kontenjana bağlı."
+        },
+        {
+          "name": "40+ Classic Programı",
+          "nameEn": "Classic programme for 40+",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "A2+",
+          "prices": [
+            {
+              "weeks": "2",
+              "perWeek": 400
+            }
+          ],
+          "notes": "Belirli başlangıç tarihleri; 2 haftalık program."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Bath geneli",
+          "commute": "20–40 dk",
+          "perWeek": 225,
+          "minAge": 18,
+          "notes": "16–17 yaş için 245 £/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, özel banyo",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Bath geneli",
+          "commute": "20–40 dk",
+          "perWeek": 285,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – iki kişilik oda (birlikte gelenler)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Bath geneli",
+          "commute": "20–40 dk",
+          "perWeek": 205,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "studio",
+          "name": "Avon Studios / Student Castle – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Midland Road",
+          "commute": "~16 dk yürüme",
+          "perWeek": 490,
+          "minAge": 18,
+          "notes": "2025 listesinde Student Castle stüdyo olarak geçiyor; 2026'da okul Avon Studios'u tanıtıyor."
+        }
+      ],
+      "fees": {
+        "registration": 135,
+        "accommodationPlacement": 35,
+        "transferHeathrow": 335,
+        "transferGatwick": 390,
+        "summerSupplementPerWeek": 20,
+        "summerPeriod": "Ders: 16 Haz–22 Ağu; aile yanı +30 £/hafta (31 May–23 Ağu); yurt +35 £/hafta",
+        "materials": "Dahil",
+        "other": "Fiyatlar Kaplan 2025 resmi fiyat listesinden; 2026 listesi kamuya açık değil. Bristol Havalimanı transferi 125 £."
+      },
+      "priceYear": 2025,
+      "priceStatus": "official",
+      "sources": [
+        "https://ebook.kaplaninternational.com/pricelist/2025-pricelist/row/Kaplan-Pricelist2025--row-en.pdf",
+        "https://www.kaplaninternational.com/learn-english-united-kingdom/bath",
+        "https://www.englishuk.com/member-directory?id=171"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "languages-united-bath",
+      "name": "Languages United Bath",
+      "brand": "Languages United",
+      "area": "Walcot (sanatçı mahallesi), şehir merkezi",
+      "address": "66 Walcot Street, Bath BA1 5BD",
+      "nearestStation": "Bath Spa tren istasyonu (yürüyerek ~15 dk)",
+      "website": "https://www.languagesunited.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 18,
+      "maxClassSize": 6,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "Languages United, Bath'ın bağımsız dükkânları ve sanat galerileriyle bilinen Walcot Street'inde faaliyet gösteren butik bir dil okulu. British Council akreditasyonuna sahip ve English UK üyesi olan okul, yetişkinler ve gençler için yıl boyu kurslar, birebir dersler, şirket ekiplerine ve öğretmenlere özel programlar sunuyor. En dikkat çekici özelliği, en fazla 6 kişilik mini grup sınıfları; bu sayede her öğrenciye bireysel ilgi gösterilebiliyor.\n\nYetişkin programları arasında 25 yaş üstüne yönelik, 25 derslik ve şehir aktiviteleriyle zenginleştirilmiş Confident English ile yaz aylarında 18–30 yaş için hazırlanan genç yetişkin kursu öne çıkıyor. Kurslar dil öğrenimini Bath'ın kültürel yaşamıyla birleştiriyor; Roma Hamamları, Royal Crescent ve Jane Austen mirası ders dışı programın doğal parçası. Okul fiyat listesini otomatik erişime kapattığından aşağıdaki ücretler acente listelerine dayanan tahmini rakamlardır.",
+      "highlights": [
+        "En fazla 6 kişilik mini gruplar",
+        "Kültür ve aktivite odaklı Confident English",
+        "Birebir ve kurumsal programlar",
+        "Walcot'ta butik okul atmosferi",
+        "Yaz için 18–30 yaş programı"
+      ],
+      "facilities": [
+        "Butik okul binası",
+        "Ücretsiz Wi-Fi",
+        "Kültürel etkinlik programı"
+      ],
+      "idealFor": [
+        "Olgun yetişkinler ve profesyoneller",
+        "Çok küçük sınıf isteyenler",
+        "Kısa süreli kültür + dil tatili arayanlar"
+      ],
+      "courses": [
+        {
+          "name": "Confident English (25+)",
+          "nameEn": "Confident English",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": null,
+          "level": "B1–C1",
+          "prices": [
+            {
+              "weeks": "1-2",
+              "perWeek": 595
+            }
+          ],
+          "notes": "Belirli başlangıç tarihleri; ders ve şehir aktiviteleri birlikte."
+        },
+        {
+          "name": "Mini Grup Genel İngilizce",
+          "nameEn": "Mini Group English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 345
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genç Yetişkin Yaz Kursu (18–30)",
+          "nameEn": "Summer course for young adults",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": null,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 350
+            }
+          ],
+          "notes": "Temmuz başlangıçlı."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Bath geneli",
+          "commute": "15–35 dk",
+          "perWeek": 250,
+          "minAge": 18,
+          "notes": "Tahmini."
+        }
+      ],
+      "fees": {
+        "registration": null,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": null,
+        "other": "Tüm fiyatlar tahminidir; okuldan teklif alınmalı. Bristol Havalimanı Bath'a en yakın havalimanıdır."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.languagesunited.com/english-courses-adults",
+        "https://www.quality-english.com/school/languages-united/",
+        "https://www.englishuk.com/member-directory?id=212"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

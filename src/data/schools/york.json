@@ -1,0 +1,317 @@
+{
+  "city": "york",
+  "schools": [
+    {
+      "slug": "york-associates-york",
+      "name": "York Associates (English in York)",
+      "brand": "York Associates / Claret Group",
+      "area": "Tarihi şehir merkezi – Peasholme Green",
+      "address": "Peasholme House, St Saviours Place, York YO1 7PJ",
+      "nearestStation": "York istasyonu (yaklaşık 15–20 dk yürüme); Shambles ve York Minster yakınında",
+      "website": "https://york-associates.co.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 21,
+      "maxClassSize": 6,
+      "lessonMinutes": 60,
+      "founded": 1980,
+      "description": "York Associates, 1980'den beri York'ta profesyonellere ve yetişkinlere İngilizce ile uluslararası iletişim eğitimi veren köklü bir kurumdur; bünyesine English in York okulunu da katmıştır. Tarihi surların içindeki Peasholme House'ta eğitim verir ve British Council tarafından Nisan 2026'da yeniden denetlenip akreditasyonu sürdürülmüştür.\n\nEn belirgin özelliği en fazla 6 kişilik mini gruplardır. 'Fluent English' Genel İngilizce kursu haftada 15 grup saatidir ve isteğe göre birebir derslerle güçlendirilebilir; iş iletişimi, 50+ İngilizce ve kültür ile öğretmen eğitimi kursları da sunulur. Katılımcılar genellikle 21 yaş üstü profesyonellerdir; bu nedenle fiyatlar standart dil okullarından yüksektir. Konaklama ağırlıklı olarak 'executive' aile yanıdır.",
+      "highlights": [
+        "En fazla 6 kişilik mini gruplar",
+        "1980'den beri faaliyette",
+        "Profesyonellere yönelik iş İngilizcesi",
+        "Tarihi York surları içinde",
+        "Birebir ders eklenebilen esnek programlar"
+      ],
+      "facilities": [
+        "Butik eğitim merkezi",
+        "Ders materyalleri dahil",
+        "Kültürel geziler (50+ programı)",
+        "Öğretmen eğitimi kursları"
+      ],
+      "idealFor": [
+        "Yöneticiler ve profesyoneller",
+        "Küçük grup / birebir isteyenler",
+        "Sakin ve tarihi şehir sevenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Fluent English)",
+          "nameEn": "Fluent English – General English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "B1–C2",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 535
+            }
+          ],
+          "notes": "Haftada 5 saat birebir eklenirse £935."
+        },
+        {
+          "name": "İş İletişimi (Business Communication)",
+          "nameEn": "Business Communication",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "B1–C2",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 695
+            }
+          ],
+          "notes": "Haftada 5 saat birebir eklenirse £1.095."
+        },
+        {
+          "name": "50+ İngilizce ve Kültür",
+          "nameEn": "English and Culture for 50+",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": null,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1",
+              "perWeek": 900
+            }
+          ],
+          "notes": "Hafta sonu gezisi dahil paket; 2 hafta £1.750. 2027 tarihleri: 8 Şubat, 10 Mayıs, 20 Eylül."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Executive aile yanı – özel banyolu",
+          "bathroom": "private",
+          "board": "half",
+          "location": "York",
+          "commute": "30 dk'ya kadar otobüs/araç",
+          "perWeek": 427,
+          "minAge": 18,
+          "notes": "7 gece fiyatı (£61/gece)."
+        },
+        {
+          "type": "homestay",
+          "name": "Executive aile yanı – ortak banyo, yürüme mesafesi",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "York merkezi",
+          "commute": "30 dk'ya kadar yürüme",
+          "perWeek": 462,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Executive aile yanı – özel banyo, yürüme mesafesi",
+          "bathroom": "private",
+          "board": "half",
+          "location": "York merkezi",
+          "commute": "30 dk'ya kadar yürüme",
+          "perWeek": 504,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 70,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": null,
+        "transferLocalAirport": "Leeds Bradford Airport (LBA)",
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": "Dahil",
+        "other": "Rezervasyon ücreti £70. Otel seçenekleri: Roomzzz York (~£88/gece), DoubleTree by Hilton (~£105/gece)."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://york-associates.co.uk/course-dates-prices/",
+        "https://york-associates.co.uk/accommodation-options/",
+        "https://york-associates.co.uk/courses/fluent-english/",
+        "https://www.britishcouncil.org/sites/default/files/eng_in_york_full_2026_pub.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "bsc-york",
+      "name": "BSC York (British Study Centres)",
+      "brand": "BSC Education",
+      "area": "Tarihi şehir merkezi – New Street",
+      "address": "7 New Street, York YO1 8RA",
+      "nearestStation": "York istasyonu (14 dk yürüme); Shambles 4 dk, York Minster 6 dk",
+      "website": "https://www.bsceducation.com/destinations/york/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 14,
+      "lessonMinutes": 50,
+      "founded": null,
+      "description": "BSC York, British Study Centres grubunun York şubesidir ve şehrin tarihi merkezinde, New Street üzerinde yer alır. Ünlü Shambles sokağı dört, York Minster altı, tren istasyonu ise on dört dakikalık yürüme mesafesindedir; bu da York'u güvenli ve yürünebilir bir öğrenci şehri yapar.\n\nGenel İngilizce haftada 20, 25 veya 30 ders (50 dakikalık) olarak sunulur ve sınıflar en fazla 14 kişidir; IELTS hazırlık kursu da mevcuttur. 16–17 yaşındaki öğrenciler ek güvenlik önlemleriyle yetişkin sınıflarına katılabilir. Konaklamada farklı pansiyon seçenekli aile yanı ve okula 16 dakika yürüme mesafesindeki stüdyo yurt bulunur.",
+      "highlights": [
+        "Tarihi merkezde, Shambles'a 4 dk",
+        "50 dakikalık dersler, en fazla 14 kişi",
+        "Okula yürüme mesafesinde stüdyo yurt",
+        "IELTS hazırlık",
+        "Güvenli ve sakin öğrenci şehri"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi‑Fi",
+        "Sosyal program",
+        "Seviye tespit sınavı"
+      ],
+      "idealFor": [
+        "Sakin ve tarihi şehir isteyenler",
+        "İlk kez yurt dışına çıkanlar",
+        "16–17 yaş öğrenciler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.6,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 285
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 260
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        },
+        {
+          "name": "Yarı Yoğun Genel İngilizce",
+          "nameEn": "General English 25",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 20.8,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 325
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 300
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "General English 30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 365
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 340
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Exam Preparation",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 20.8,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 325
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 300
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "York çevresi",
+          "commute": "30–60 dk",
+          "perWeek": 278,
+          "minAge": 16,
+          "notes": "Özel banyo +£35/hafta."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "York çevresi",
+          "commute": "30–60 dk",
+          "perWeek": 236,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, tam pansiyon",
+          "bathroom": "shared",
+          "board": "full",
+          "location": "York çevresi",
+          "commute": "30–60 dk",
+          "perWeek": 299,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "studio",
+          "name": "Öğrenci yurdu – en-suite stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "York merkezi",
+          "commute": "16 dk yürüme",
+          "perWeek": 345,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 80,
+        "accommodationPlacement": 60,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 120,
+        "transferLocalAirport": "Leeds Bradford Airport (LBA)",
+        "summerSupplementPerWeek": 20,
+        "summerPeriod": "13 Haziran – 4 Eylül (aile yanı)",
+        "materials": "Tahmini £40 (okula sorulmalı)",
+        "other": "18 yaş altı +£30/hafta. Kayıt, yerleştirme ve transfer ücretleri tahminidir; konaklama fiyatları resmidir."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.bsceducation.com/destinations/york/",
+        "https://www.bsceducation.com/accommodation/york/",
+        "https://www.bsceducation.com/course/general-english/"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

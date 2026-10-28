@@ -1,0 +1,106 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Photos from '../components/Photos.astro';
+import { allInclusive, steps } from '../data/content';
+import { cityMinPrice, gbp } from '../data';
+import { SITE } from '../config/site';
+
+const p = allInclusive;
+const from = p.prices[0].price;
+const faqs = [
+  { q: 'Paketler kimler için uygun?', a: `Her şey dahil Londra paketi ${p.minAge} yaş ve üzeri katılımcılar içindir. 7–17 yaş için yaz okulu programlarımız ayrıca sunulur.` },
+  { q: 'Paket süresini sonradan uzatabilir miyim?', a: 'Okul ve konaklama uygunluğuna bağlı olarak uzatma mümkündür; talebinizi olabildiğince erken iletmenizi öneriyoruz. Toplam süre 6 ayı geçmediği sürece Standard Visitor vizesi yeterlidir.' },
+  { q: 'Fiyatlar neden sterlin (GBP)?', a: 'Okul, konaklama ve hizmet bedelleri İngiltere’de sterlin üzerinden belirlendiği için paket fiyatı GBP’dir. Ödeme günündeki kur üzerinden TL olarak da ödeme yapılabilir.' },
+  { q: 'Tek kişilik oda standart mı?', a: 'Evet. Londra paketinde tek kişilik, özel banyolu (en-suite) yurt odası standarttır; kimseyle oda paylaşmazsınız.' },
+  { q: 'Vize reddedilirse ne olur?', a: 'Vize reddi durumunda ret mektubu ile birlikte okul, konaklama ve hizmet bedellerinin iade koşulları sözleşmede yazılı olarak belirtilir. Uçak bileti vize onayından sonra kesilir.' },
+  { q: 'Dönüş uçak bileti neden dahil değil?', a: 'Dönüş tarihini esnek bırakabilmeniz için pakete yalnızca gidiş bileti dahildir. Dönüş biletinizi uygun fiyatla birlikte ayarlayabiliriz.' },
+];
+const ld = [{
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: p.name,
+  description: `${p.lessons}, ${p.room}, uçak bileti, vize ücreti, sağlık sigortası ve VIP karşılama dahil Londra dil eğitimi paketi.`,
+  brand: { '@type': 'Brand', name: SITE.name },
+  offers: { '@type': 'AggregateOffer', priceCurrency: 'GBP', lowPrice: from, highPrice: p.prices[p.prices.length - 1].price, offerCount: p.prices.length, availability: 'https://schema.org/InStock' },
+}];
+const londonFrom = cityMinPrice('londra');
+---
+<Base
+  title={`Her Şey Dahil Londra Dil Okulu Paketi: 2 Hafta £${from.toLocaleString('tr-TR')}’dan`}
+  description={`Londra her şey dahil dil eğitimi paketi: ${p.lessons}, özel banyolu yurt odası, uçak bileti, vize, sigorta, VIP karşılama ve Londra eğlence paketi tek fiyatta. 2 hafta £${from.toLocaleString('tr-TR')}’dan.`}
+  jsonLd={ld}
+  waMessage="Merhaba, her şey dahil Londra paketi için tarih ve kontenjan bilgisi almak istiyorum."
+>
+  <section class="phero phero--split">
+    <div class="wrap">
+      <div>
+        <Breadcrumbs items={[{ label: 'Her şey dahil Londra paketi' }]} />
+        <span class="pass">IST <i></i> LHR</span>
+        <h1>Her şey dahil Londra dil eğitimi paketi</h1>
+        <p class="lead">İngilizceyi Londra’da öğrenin; uçak biletinden vizeye, özel banyolu odanızdan London Eye biletinize kadar her şey tek fiyatta. Sürpriz masraf yok, tek bir danışman, tek bir ödeme planı.</p>
+        <ul class="facts">
+          <li><b>Başlangıç</b><span>£{from.toLocaleString('tr-TR')} / 2 hafta</span></li>
+          <li><b>Süre</b><span>2–10 hafta</span></li>
+          <li><b>Ders</b><span>{p.lessons}</span></li>
+          <li><b>Konaklama</b><span>{p.room}</span></li>
+          <li><b>Yaş</b><span>{p.minAge}+</span></li>
+        </ul>
+      </div>
+      <LeadForm city="londra" program="Her şey dahil Londra paketi" source="paket-londra" title="Yerinizi ayırtın" subtitle="Uygun başlangıç tarihlerini ve kontenjan durumunu aynı gün içinde paylaşalım." />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid grid--2" style="align-items:start">
+        <div>
+          <span class="eyebrow">Fiyatlar</span>
+          <h2>Paket fiyatları</h2>
+          <div class="table-wrap">
+            <table class="table" style="min-width:0">
+              <thead><tr><th>Süre</th><th class="num">Paket fiyatı</th><th class="num">Haftalık ortalama</th></tr></thead>
+              <tbody>{p.prices.map((x) => <tr><td><b>{x.weeks} hafta</b></td><td class="num"><span class="price">£{x.price.toLocaleString('tr-TR')}</span></td><td class="num">{gbp(x.price / x.weeks)}</td></tr>)}</tbody>
+            </table>
+          </div>
+          {londonFrom && <p class="small muted" style="margin-top:.75rem">Karşılaştırma: Londra’da yalnızca Genel İngilizce kursu haftalık {gbp(londonFrom)}’dan başlar; özel banyolu yurt odası £300–600/hafta, uçak, vize ve sigorta ayrıca ödenir.</p>}
+        </div>
+        <div>
+          <span class="eyebrow">Neler dahil?</span>
+          <h2>Pakete dahil olanlar</h2>
+          <ul class="checks">{p.included.map((i) => <li>{i}</li>)}</ul>
+          <h3 style="margin-top:1.5rem">Dahil olmayanlar</h3>
+          <ul class="checks crosses">{p.notIncluded.map((i) => <li>{i}</li>)}</ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sand">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Paket öğrencilerimiz</span><h2>Londra’dan kareler</h2></div>
+      <Photos />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Süreç</span><h2>Kayıttan dönüşe kadar</h2></div>
+      <ol class="grid grid--3" style="list-style:none;padding:0">
+        {steps.map((s, i) => <li class="card"><span class="eyebrow">{String(i + 1).padStart(2, '0')}</span><h3>{s.t}</h3><p class="small muted mb-0">{s.d}</p></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap wrap--narrow">
+      <div class="shead shead--center"><span class="eyebrow">Sık sorulanlar</span><h2>Paket hakkında sorular</h2></div>
+      <Faq items={faqs} />
+    </div>
+  </section>
+
+  <CtaBand title="Londra paketinde yerinizi ayırtın" wa="Merhaba, her şey dahil Londra paketi için tarih ve kontenjan bilgisi almak istiyorum." />
+</Base>

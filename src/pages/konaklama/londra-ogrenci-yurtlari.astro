@@ -1,0 +1,75 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Icon from '../../components/Icon.astro';
+import { residences, RESIDENCES_UPDATED } from '../../data/content';
+import { gbp } from '../../data';
+import { waLink } from '../../config/site';
+
+const london = residences.filter((r) => r.city === 'londra').sort((a, b) => (a.perWeek ?? 9999) - (b.perWeek ?? 9999));
+const faqs = [
+  { q: 'Londra’da öğrenci yurdu haftalık ne kadar?', a: `Partner yurtlarımızda kendi banyolu odalar haftalık ${gbp(london[0]?.perWeek)}’dan başlıyor; Zone 1’deki merkezi stüdyolar £550–600 bandında. Fiyata faturalar, internet ve 7/24 güvenlik dahildir.` },
+  { q: 'Minimum kalış süresi ne kadar?', a: 'Dil okulu öğrencileri için 2 haftadan başlayan kısa dönem kalışlar mümkündür. Akademik yıl (40–51 hafta) rezervasyonlarında haftalık fiyat daha düşüktür.' },
+  { q: 'Yurtta kalmak için kefil veya depozito gerekir mi?', a: 'Hayır, İngiltere’de kefil (UK guarantor) gerekmez. Rezervasyon sırasında yurda göre bir ön ödeme alınır; vize reddi durumunda iade koşulları teklifle birlikte bildirilir.' },
+  { q: 'Hangi yurt okuluma yakın?', a: 'Okulunuz hangi metro hattı üzerindeyse o hat üzerindeki bir yurt yolculuk süresini kısaltır. Örneğin Holborn veya King’s Cross’taki okullar için King’s Cross ve Islington; London Bridge çevresi için Westminster ve Southwark yurtları uygundur.' },
+];
+---
+<Base
+  title="Londra Öğrenci Yurtları ve Haftalık Fiyatlar 2027"
+  description={`Londra öğrenci yurtları: faturalar dahil, kendi banyolu oda ve stüdyolar haftalık ${gbp(london[0]?.perWeek)}’dan. Wembley, King’s Cross, Islington, Greenwich ve daha fazlası; dil okulu öğrencileri için 2 haftadan başlayan kalış.`}
+  waMessage="Merhaba, Londra’da öğrenci yurdu için teklif almak istiyorum."
+>
+  <section class="phero phero--split">
+    <div class="wrap">
+      <div>
+        <Breadcrumbs items={[{ label: 'Konaklama', href: '/konaklama/' }, { label: 'Londra öğrenci yurtları' }]} />
+        <span class="eyebrow">Londra · Faturalar dahil</span>
+        <h1>Londra öğrenci yurtları ve fiyatları</h1>
+        <p class="lead">Faturaların, internetin ve güvenliğin dahil olduğu öğrenci yurtları. Dil okulu öğrencileri için 2 haftadan başlayan kalışlar; rezervasyonu sizin adınıza biz yapıyoruz.</p>
+        <ul class="checks" style="margin-top:1rem">
+          <li>Elektrik, su, ısınma ve internet kiraya dahil</li>
+          <li>Depozito ve İngiltere’de kefil gerekmez</li>
+          <li>7/24 güvenlik ve resepsiyon, spor salonu ve çalışma alanları</li>
+        </ul>
+      </div>
+      <LeadForm city="londra" program="Sadece konaklama" source="londra-yurtlari" title="Yurt teklifi alın" subtitle="Okulunuzu ve tarihlerinizi paylaşın; okulunuza en yakın ve bütçenize uygun yurtları karşılaştırıp rezervasyonu yapalım." />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Yurtlar</span><h2>Londra yurtları ve haftalık başlangıç fiyatları</h2><p class="lead">Fiyatlar kişi başı haftalık “başlayan” fiyatlardır; oda tipine, kalış süresine ve döneme göre değişir. Son güncelleme: {RESIDENCES_UPDATED}.</p></div>
+      <div class="grid grid--3">
+        {london.map((r) => (
+          <article class="card">
+            <p class="xs muted mb-0"><Icon name="pin" size={13} class="inline-ic" /> {r.area}</p>
+            <h3 style="margin-top:.3rem">{r.name}</h3>
+            <p class="small muted">{r.text}</p>
+            <p class="xs muted">{r.address}</p>
+            <div class="res__foot">
+              {r.perWeek ? <span><span class="price" style="font-size:1.3rem">{gbp(r.perWeek)}</span> <small class="muted">/hafta’dan</small></span> : <span class="muted small">Fiyat için sorun</span>}
+              <a href={waLink(`Merhaba, Londra’da ${r.name} yurdu için müsaitlik ve fiyat öğrenmek istiyorum.`)} target="_blank" rel="noopener" class="btn btn--line" style="padding:.45rem .8rem;font-size:.85rem" data-track="residence"><Icon name="whatsapp" size={16} /> Sor</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap wrap--narrow">
+      <div class="shead shead--center"><span class="eyebrow">Sık sorulanlar</span><h2>Londra yurtları hakkında sorular</h2></div>
+      <Faq items={faqs} />
+    </div>
+  </section>
+
+  <CtaBand title="Okulunuza en yakın yurdu birlikte seçelim" />
+</Base>
+
+<style>
+  .res__foot { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; padding-top: 0.8rem; border-top: 1px dashed var(--line); margin-top: 0.5rem; }
+  :global(.inline-ic) { display: inline-block; vertical-align: -2px; color: var(--coral); }
+</style>

@@ -1,0 +1,645 @@
+{
+  "city": "bristol",
+  "schools": [
+    {
+      "slug": "elc-bristol",
+      "name": "ELC Bristol – The English Language Centre",
+      "brand": "ELC Bristol",
+      "area": "Clifton",
+      "address": "1 The Avenue, Clifton, Bristol BS8 3HG",
+      "nearestStation": "Clifton Down tren istasyonu (yürüyerek ~10 dk); Bristol Temple Meads otobüsle ~25 dk",
+      "website": "https://elcbristol.co.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK",
+        "IALC",
+        "Quality English"
+      ],
+      "minAge": 18,
+      "maxClassSize": 14,
+      "lessonMinutes": 90,
+      "founded": 1969,
+      "description": "ELC Bristol, 1969'dan beri Bristol'ün en zarif semti Clifton'da eğitim veren, aile işletmesi bağımsız bir dil okulu. British Council, English UK, IALC ve Quality English üyeliklerine sahip okul, EL Gazette'nin British Council denetim raporlarına dayalı İngiltere sıralamalarında üst sıralarda yer almasıyla biliniyor. Genel İngilizce kursu haftada 21 tam saatlik ders içeriyor; ortalama sınıf mevcudu 10, en fazla 14 öğrenci. IELTS ve Cambridge FCE, CAE, CPE hazırlığı da sunuluyor.\n\nAkademik yıl boyunca yalnızca 18 yaş üstü öğrenci kabul eden okul, yazın 16–17 yaş için ayrı programlar düzenliyor. Düzenli testler, öğretmenle birebir görüşmeler ve ilerleme raporları, öğrencinin gelişimini yakından takip ediyor. Konaklamada yarım pansiyon aile yanı, yıl boyu açık öğrenci evleri ve yazın üniversite yurtları bulunuyor. Clifton Suspension Bridge ve The Downs parkı okulun hemen yakınında.",
+      "highlights": [
+        "1969'dan beri faaliyette, aile işletmesi",
+        "EL Gazette sıralamalarında üst sıralarda",
+        "Haftada 21 tam saat ders",
+        "Sınıflar ortalama 10, en fazla 14 kişi",
+        "Düzenli test ve birebir ilerleme görüşmeleri"
+      ],
+      "facilities": [
+        "Çalışma merkezi (17:20'ye kadar açık)",
+        "E-öğrenme platformu",
+        "Ücretsiz konuşma kulübü",
+        "Sosyal program"
+      ],
+      "idealFor": [
+        "Ciddi ve hızlı ilerleme isteyenler",
+        "Sınav hazırlığı yapanlar",
+        "Yeşil ve prestijli semt isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English Course",
+          "lessonsPerWeek": 14,
+          "hoursPerWeek": 21,
+          "level": "A2–C2",
+          "prices": [
+            {
+              "weeks": "1-3",
+              "perWeek": 365
+            },
+            {
+              "weeks": "4-10",
+              "perWeek": 355
+            },
+            {
+              "weeks": "11-19",
+              "perWeek": 345
+            },
+            {
+              "weeks": "20-29",
+              "perWeek": 330
+            },
+            {
+              "weeks": "30+",
+              "perWeek": 320
+            }
+          ],
+          "notes": "Minimum 2 hafta."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation",
+          "lessonsPerWeek": 14,
+          "hoursPerWeek": 21,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "4-10",
+              "perWeek": 355
+            },
+            {
+              "weeks": "11-19",
+              "perWeek": 345
+            },
+            {
+              "weeks": "20-29",
+              "perWeek": 330
+            },
+            {
+              "weeks": "30+",
+              "perWeek": 320
+            }
+          ],
+          "notes": "Minimum 4 hafta."
+        },
+        {
+          "name": "Cambridge Sınav Hazırlığı (FCE/CAE/CPE)",
+          "nameEn": "Cambridge Exam Preparation",
+          "lessonsPerWeek": 14,
+          "hoursPerWeek": 21,
+          "level": "B2+",
+          "prices": [
+            {
+              "weeks": "4-10",
+              "perWeek": 355
+            },
+            {
+              "weeks": "11-19",
+              "perWeek": 345
+            }
+          ],
+          "notes": "Minimum 4 hafta."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Clifton ve çevresi",
+          "commute": "15–35 dk",
+          "perWeek": 245,
+          "minAge": 18,
+          "notes": "18 yaş altı: 270 £/hafta (sınırlı)."
+        },
+        {
+          "type": "shared-flat",
+          "name": "Öğrenci evleri ve daireler (yıl boyu)",
+          "bathroom": "shared",
+          "board": "self",
+          "location": "Bristol",
+          "commute": null,
+          "perWeek": 265,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Üniversite yurdu – en-suite (yaz, 11 Tem–22 Ağu)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Bristol",
+          "commute": null,
+          "perWeek": 265,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 60,
+        "accommodationPlacement": 60,
+        "transferHeathrow": 260,
+        "transferGatwick": 300,
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "22 Haziran–11 Eylül 2026 (10+ haftalık kurslarda uygulanmaz)",
+        "materials": "60 £ (e-öğrenme ve 12 haftada bir kitap)",
+        "other": "Bristol Havalimanı transferi 68 £. Özel diyet +30 £/hafta, özel ders 75 £/saat."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://elcbristol.co.uk/enrolment-procedure/dates-and-fees-2026/",
+        "https://elcbristol.co.uk/courses/general-english-course/",
+        "https://www.ialc.org/find-a-school/elc-bristol/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ih-bristol",
+      "name": "International House Bristol",
+      "brand": "International House World Organisation",
+      "area": "Clifton (Queens Avenue, Park Street yakını)",
+      "address": "2 Queens Avenue, Bristol BS8 1SE",
+      "nearestStation": "Bristol Temple Meads (otobüsle ~15 dk); Clifton Down ~15 dk yürüme",
+      "website": "https://www.ihbristol.com/",
+      "accreditations": [
+        "British Council",
+        "English UK",
+        "IALC",
+        "International House"
+      ],
+      "minAge": 16,
+      "maxClassSize": 12,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "International House Bristol, 1987'den beri Clifton'da, üniversite binaları ve Park Street'in kafe ve dükkânlarına birkaç dakika mesafedeki Queens Avenue'da eğitim veriyor. Dünya çapındaki International House ağının üyesi olan okul, British Council akreditasyonuna ve IALC üyeliğine sahip; yetişkin sınıfları en fazla 12 kişi. 2026 programında haftada 20 derslik Genel İngilizce, 30 derslik Yoğun İngilizce, Genel İngilizce + IELTS ve Cambridge First, Advanced, Proficiency hazırlık paketleri yer alıyor.\n\nOkul aynı zamanda CELTA ve yabancı İngilizce öğretmenlerine yönelik kurslarıyla bilinen bir öğretmen eğitim merkezi. 45 yaş üstüne özel Best of Bristol programı ile IH Malta'yla birleşik kombinasyon kursları da farklı seçenekler sunuyor. Konaklamada yarım pansiyon ya da kendi yemeğini yapma seçenekli aile yanı ve özel banyolu yurt odaları bulunuyor. Fiyatların dört süre kademesinde düşmesi uzun kayıtları avantajlı kılıyor.",
+      "highlights": [
+        "1987'den beri Clifton'da",
+        "Yetişkin sınıfları en fazla 12 kişi",
+        "CELTA veren öğretmen eğitim merkezi",
+        "45+ yaşa özel Best of Bristol",
+        "IH Malta ile kombine kurs seçeneği"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi-Fi",
+        "Sosyal program ve etkinlikler",
+        "Ücretsiz çevrimiçi alıştırmalar"
+      ],
+      "idealFor": [
+        "Küçük sınıf isteyenler",
+        "Cambridge sınavı hedefleyenler",
+        "İngilizce öğretmenleri"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A2–C2",
+          "prices": [
+            {
+              "weeks": "1-6",
+              "perWeek": 307
+            },
+            {
+              "weeks": "7-12",
+              "perWeek": 293
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 279
+            },
+            {
+              "weeks": "25+",
+              "perWeek": 254
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A2–C2",
+          "prices": [
+            {
+              "weeks": "1-6",
+              "perWeek": 349
+            },
+            {
+              "weeks": "7-12",
+              "perWeek": 335
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 321
+            },
+            {
+              "weeks": "25+",
+              "perWeek": 296
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce + IELTS",
+          "nameEn": "General English + IELTS Preparation",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-6",
+              "perWeek": 349
+            },
+            {
+              "weeks": "7-12",
+              "perWeek": 335
+            },
+            {
+              "weeks": "13-24",
+              "perWeek": 321
+            },
+            {
+              "weeks": "25+",
+              "perWeek": 296
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Best of Bristol 45+",
+          "nameEn": "Best of Bristol 45+",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A2–C1",
+          "prices": [
+            {
+              "weeks": "2",
+              "perWeek": 2013
+            }
+          ],
+          "notes": "2 haftalık paket 4.026 £; 9 aktivite dahil, haftalığa çevrilmiştir."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda (18+)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Bristol geneli",
+          "commute": null,
+          "perWeek": 239,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda (16–17)",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Bristol geneli",
+          "commute": null,
+          "perWeek": 252,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, kendi yemeğini yapma",
+          "bathroom": "shared",
+          "board": "self",
+          "location": "Bristol geneli",
+          "commute": null,
+          "perWeek": 189,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Okul yurdu – tek kişilik oda, özel banyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Okula yürüme mesafesi",
+          "commute": "5–15 dk yürüme",
+          "perWeek": 275,
+          "minAge": 18,
+          "notes": "200 £ iade edilebilir depozito."
+        }
+      ],
+      "fees": {
+        "registration": 75,
+        "accommodationPlacement": 62,
+        "transferHeathrow": 298,
+        "transferGatwick": 348,
+        "summerSupplementPerWeek": 21,
+        "summerPeriod": "Ders yüksek sezonu (Haziran–Ağustos); konaklama yaz ek ücreti 21 £/hafta",
+        "materials": "1–12 hafta 43 £; 13+ hafta 62 £",
+        "other": "Bristol Havalimanı 79 £ (18 yaş altı 91 £). Özel ders 90 £/saat. Fiyat listesindeki ücret satırları PDF düzeninden ayrıştırılmıştır; kayıt ve materyal kalemleri teyit edilmelidir."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.ihbristol.com/sites/default/files/documents/2025-09/Adult%20-%20IH%20Bristol%20-%20Pricelist%20-%202026.pdf",
+        "https://www.ihbristol.com/",
+        "https://www.englishuk.com/member-directory?id=338"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ilc-bristol",
+      "name": "ILC Bristol – International Language Centres",
+      "brand": "ILC International Language Centres",
+      "area": "Şehir merkezi (Portland Square / Cabot Circus yakını)",
+      "address": "2 Portland Place, Pritchard Street, Bristol BS2 8RH",
+      "nearestStation": "Bristol Temple Meads (yürüyerek ~20 dk / otobüsle ~10 dk)",
+      "website": "https://ilcentres.com/location/bristol",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": null,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "ILC Bristol, İngiltere'nin birçok şehrinde okulu bulunan International Language Centres grubunun Bristol şubesi ve şehrin merkezinde, Cabot Circus alışveriş bölgesine yürüme mesafesindeki Portland Square çevresinde yer alıyor. English UK üyesi olan okul, yedi sınıfta yetişkinlere English Main Course, yoğun program, IELTS ve Cambridge sınav hazırlığı, birebir dersler ile çalışan öğrenciler için akşam İngilizce ve akşam IELTS kursları sunuyor.\n\nAkşam kursları, gündüz çalışan ya da İngiltere'de yaşayan öğrenciler için önemli bir esneklik sağlıyor. Konaklamada aile yanı ve okula yakın The Port on the Square öğrenci yurdu seçenekleri mevcut. Bristol'ün canlı müzik sahnesi, liman bölgesi Harbourside ve sokak sanatı, okul sonrası yaşamı renklendiriyor. Okul fiyatlarını kamuya açık bir listede yayımlamadığından aşağıdaki ücretler acente listeleri ve emsal okullara dayanan tahmini değerlerdir.",
+      "highlights": [
+        "Şehir merkezinde, Cabot Circus'a yakın",
+        "Akşam İngilizce ve akşam IELTS kursları",
+        "Okula yakın öğrenci yurdu",
+        "Birebir ders seçeneği",
+        "İngiltere geneli ILC ağı"
+      ],
+      "facilities": [
+        "7 sınıf",
+        "Ücretsiz Wi-Fi",
+        "Öğrenci ortak alanı"
+      ],
+      "idealFor": [
+        "Çalışırken İngilizce öğrenmek isteyenler",
+        "Bütçe dostu seçenek arayanlar",
+        "Şehir merkezinde yaşamak isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce (Main Course)",
+          "nameEn": "English Main Course",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 290
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 270
+            },
+            {
+              "weeks": "13+",
+              "perWeek": 240
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "English Main Course Intensive",
+          "lessonsPerWeek": 28,
+          "hoursPerWeek": 21,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 360
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 335
+            },
+            {
+              "weeks": "13+",
+              "perWeek": 300
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Exam Preparation",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 310
+            },
+            {
+              "weeks": "5-12",
+              "perWeek": 290
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Bristol geneli",
+          "commute": "20–40 dk",
+          "perWeek": 240,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "The Port on the Square – tek kişilik en-suite",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Okul yakını",
+          "commute": "5 dk yürüme",
+          "perWeek": 300,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 80,
+        "accommodationPlacement": 60,
+        "transferHeathrow": 290,
+        "transferGatwick": 340,
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "Temmuz–Ağustos",
+        "materials": null,
+        "other": "Tüm rakamlar tahminidir; okuldan teklif alınmalı."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://ilcentres.com/location/bristol",
+        "https://www.englishuk.com/member-directory?id=4745"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "living-learning-english-bristol",
+      "name": "Living Learning English (öğretmen evinde birebir eğitim)",
+      "brand": "Living Learning English",
+      "area": "Bristol ve Güneybatı İngiltere (öğretmenin evi)",
+      "address": "7 Soundwell Road, Bristol BS16 4QG (merkez ofis)",
+      "nearestStation": "Öğretmenin evine göre değişir; Bristol Temple Meads ana istasyon",
+      "website": "https://www.livingenglish.com/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 18,
+      "maxClassSize": 3,
+      "lessonMinutes": 60,
+      "founded": null,
+      "description": "Living Learning English, klasik okul modelinden farklı olarak öğrencinin öğretmeninin evinde kalıp birebir ders aldığı “homestay tuition” yöntemini uygulayan, Bristol merkezli bir kurum. English UK üyesi olan kurum, Bristol ve çevresindeki deneyimli öğretmen ailelerle çalışıyor. Öğrenci haftada 15–30 saat arasında birebir ya da iki-üç kişilik mini grup dersi alıyor; günlük yaşamın tamamı da İngilizce geçtiği için ders dışında da sürekli pratik yapılıyor.\n\nGenel İngilizcenin yanı sıra İş İngilizcesi, sınav hazırlığı ve Akademik İngilizce programları sunuluyor; programlar haftada iki öğleden sonra gezisi ve iki hafta ve üzeri kayıtlarda tam günlük bir hafta sonu gezisi içeriyor (yetişkinler giriş ücretlerini kendisi ve öğretmeni için öder). Haftalık ücret yüksek görünse de tam pansiyon konaklama ve birebir dersi bir arada içeriyor. Yoğun ve kişiye özel bir program isteyen profesyoneller ve kısa sürede hızlı ilerleme hedefleyenler için güçlü bir alternatif.",
+      "highlights": [
+        "Öğretmenin evinde kalarak birebir ders",
+        "Haftada 15–30 saat esnek program",
+        "Konaklama ve dersler aynı pakette",
+        "İş İngilizcesi ve sınav hazırlığı",
+        "Haftada 2 öğretmenli öğleden sonra gezisi"
+      ],
+      "facilities": [
+        "Tamamen kişiye özel program",
+        "Öğretmen ailesinin evi",
+        "Yerel geziler"
+      ],
+      "idealFor": [
+        "Profesyoneller ve yöneticiler",
+        "Hızlı ilerleme hedefleyenler",
+        "Grup sınıfını sevmeyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce – birebir (15 saat)",
+          "nameEn": "General English 1:1 – 15 hours",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": 15,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 1360
+            }
+          ],
+          "notes": "Öğretmen evinde konaklama dahil paket fiyat."
+        },
+        {
+          "name": "Genel İngilizce – birebir (20 saat)",
+          "nameEn": "General English 1:1 – 20 hours",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 20,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 1595
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce – birebir (30 saat)",
+          "nameEn": "General English 1:1 – 30 hours",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 30,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 2065
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "İş İngilizcesi / Sınav – birebir (15 saat)",
+          "nameEn": "Business English / Exams 1:1 – 15 hours",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": 15,
+          "level": "A2–C2",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 1630
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Genel İngilizce – 2 kişilik (15 saat, kişi başı)",
+          "nameEn": "General English 2:1 – 15 hours",
+          "lessonsPerWeek": 15,
+          "hoursPerWeek": 15,
+          "level": "A1–C2",
+          "prices": [
+            {
+              "weeks": "1+",
+              "perWeek": 1085
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Öğretmenin evinde tek kişilik oda (ders paketine dahil)",
+          "bathroom": "shared",
+          "board": "full",
+          "location": "Bristol ve çevresi",
+          "commute": "0 dk (ders evde)",
+          "perWeek": null,
+          "minAge": 18,
+          "notes": "Konaklama kurs ücretine dahildir; özel banyo +225 £/hafta."
+        }
+      ],
+      "fees": {
+        "registration": null,
+        "accommodationPlacement": null,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": null,
+        "other": "Havalimanı transferi talebe göre fiyatlandırılır. Noel ve Yılbaşı ek ücreti 235 £/hafta. Fiyatlar 1 Ekim 2026 sonrası rezervasyonlar için geçerlidir."
+      },
+      "priceYear": 2027,
+      "priceStatus": "official",
+      "sources": [
+        "https://www.livingenglish.com/booking-info/course-fees",
+        "https://www.englishuk.com/member-directory?id=431"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

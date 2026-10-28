@@ -1,0 +1,1053 @@
+{
+  "city": "manchester",
+  "schools": [
+    {
+      "slug": "kaplan-manchester",
+      "name": "Kaplan International Manchester",
+      "brand": "Kaplan International Languages",
+      "area": "Şehir merkezi – Piccadilly / Northern Quarter",
+      "address": "6th Floor, 1 Portland Street, Manchester M1 3BE",
+      "nearestStation": "Manchester Piccadilly (yaklaşık 7 dk yürüme), Piccadilly Gardens tramvay durağı",
+      "website": "https://www.kaplaninternational.com/learn-english-united-kingdom/manchester",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 17,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Kaplan International Manchester, Portland Street üzerindeki modern bir ofis binasının altıncı katında yer alır. Piccadilly Gardens, Northern Quarter'ın kafeleri ve Manchester Piccadilly tren istasyonu birkaç dakikalık yürüme mesafesindedir. Okul, dünyanın en büyük dil okulu ağlarından birinin parçası olduğu için çok uluslu bir öğrenci profiline ve standart bir müfredata sahiptir.\n\nGenel İngilizce, yarı yoğun ve yoğun programların yanı sıra IELTS hazırlık ve iş İngilizcesi seçenekleri sunulur; dersler her pazartesi başlar ve 1 ile 52 hafta arasında esnek süre seçilebilir. Konaklamada aile yanı seçeneğinin yanında şehir merkezindeki Vita Student stüdyoları ve öğrenci yurtları bulunur. K+ dijital öğrenme platformu, kulüp dersleri ve akademik yıl programları uzun süreli kalmak isteyenler için ek avantaj sağlar.",
+      "highlights": [
+        "Şehir merkezinde, Piccadilly'ye yürüme mesafesi",
+        "Her pazartesi başlangıç, 1–52 hafta",
+        "IELTS ve iş İngilizcesi seçenekleri",
+        "Vita Student stüdyo konaklama",
+        "K+ dijital öğrenme platformu"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi‑Fi",
+        "Etkileşimli tahtalı sınıflar",
+        "Kendi kendine çalışma alanı",
+        "Sosyal aktivite programı"
+      ],
+      "idealFor": [
+        "Büyük şehirde yaşamak isteyenler",
+        "IELTS hedefi olanlar",
+        "Uzun dönem / akademik yıl planlayanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 345
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 340
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 300
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 260
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "Yarı Yoğun İngilizce",
+          "nameEn": "Semi-Intensive English",
+          "lessonsPerWeek": 27,
+          "hoursPerWeek": 20,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 370
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 360
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 330
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 280
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "Yoğun İngilizce",
+          "nameEn": "Intensive English",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 435
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 425
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 380
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 330
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS (Supplementary, Intensive)",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 435
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 425
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 380
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 330
+            }
+          ],
+          "notes": "2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "Business Supplementary",
+          "lessonsPerWeek": 35,
+          "hoursPerWeek": 26,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-4",
+              "perWeek": 435
+            },
+            {
+              "weeks": "5-11",
+              "perWeek": 425
+            },
+            {
+              "weeks": "12-19",
+              "perWeek": 380
+            },
+            {
+              "weeks": "20+",
+              "perWeek": 330
+            }
+          ],
+          "notes": "Müsaitliğe bağlıdır. 2026 tahmini fiyat: Kaplan'ın resmi 2025 fiyat listesine yaklaşık %4 artış uygulanarak hesaplanmıştır."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Manchester banliyöleri",
+          "commute": "30–50 dk",
+          "perWeek": 230,
+          "minAge": 18,
+          "notes": "16–17 yaş için ayrı fiyat uygulanır."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, özel banyo",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Manchester banliyöleri",
+          "commute": "30–50 dk",
+          "perWeek": 275,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda, yemeksiz",
+          "bathroom": "shared",
+          "board": "none",
+          "location": "Manchester banliyöleri",
+          "commute": "30–50 dk",
+          "perWeek": 180,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Lambert & Fairfield – standart tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–20 dk",
+          "perWeek": 310,
+          "minAge": 18,
+          "notes": "En az 2 hafta."
+        },
+        {
+          "type": "residence",
+          "name": "Wilmslow Park – en-suite oda",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Oxford Road / üniversite bölgesi",
+          "commute": "20–30 dk",
+          "perWeek": 300,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "studio",
+          "name": "Vita Student Manchester – stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–15 dk",
+          "perWeek": 385,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 135,
+        "accommodationPlacement": 35,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 80,
+        "transferLocalAirport": "Manchester Airport (MAN)",
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "31 Mayıs – 23 Ağustos (aile yanı/yurt); ders ücretine 16 Haziran – 22 Ağustos arası haftalık +£20",
+        "materials": "Dahil (K+ dijital materyal)",
+        "other": "Yurt yaz farkı haftalık £35; Noel haftası aile yanı farkı £65."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.kaplaninternational.com/learn-english-united-kingdom/manchester",
+        "https://ebook.kaplaninternational.com/pricelist/2025-pricelist/eu/Kaplan-Pricelist2025--eu-en.pdf"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ncg-manchester",
+      "name": "NCG Manchester (New College Group)",
+      "brand": "New College Group",
+      "area": "Şehir merkezi – Portland Street / Piccadilly",
+      "address": "Portland Street, Manchester city centre (M1)",
+      "nearestStation": "Manchester Piccadilly (5 dk yürüme), Piccadilly Gardens tramvay durağı (2 dk)",
+      "website": "https://newcollegegroup.com/locations/manchester/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 15,
+      "lessonMinutes": null,
+      "founded": null,
+      "description": "NCG Manchester, Manchester ve Liverpool'da okulları bulunan New College Group'un ana kampüsüdür ve Portland Street üzerinde, Piccadilly Gardens'a iki dakikalık mesafededir. British Council denetiminde 12 alanda güçlü yön tescili almış olması, okulun öğretim kalitesine dair önemli bir göstergedir.\n\nProgramlar haftada 15, 21 ve 25 saatlik seçeneklerle Genel İngilizce, IELTS hazırlık ve süper yoğun İngilizce olarak düzenlenir; ortalama sınıf mevcudu 12 kişidir. Fiyatlar uzun kayıtlarda belirgin biçimde düşer: 36 hafta ve üzeri kayıtlarda Genel İngilizce haftalık 225 sterline iner. Konaklama tarafında aile yanı ve şehir merkezindeki yurt seçenekleri vardır; en az kalış süresi 2 haftadır.",
+      "highlights": [
+        "Piccadilly Gardens'a 2 dk",
+        "Ortalama 12, en fazla 15 kişilik sınıflar",
+        "15 / 21 / 25 saatlik program seçenekleri",
+        "Uzun dönemde haftalık £225'e kadar düşen fiyatlar",
+        "British Council'den 12 güçlü yön"
+      ],
+      "facilities": [
+        "NCG öğrenci uygulaması",
+        "Seviye tespit sınavı",
+        "Kur sonu raporu ve sertifika",
+        "Sosyal program"
+      ],
+      "idealFor": [
+        "Bütçe odaklı uzun dönem öğrenciler",
+        "IELTS hazırlığı yapanlar",
+        "Merkezi konum isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce / IELTS Hazırlık",
+          "nameEn": "General English or IELTS Preparation",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "A1–C1 (IELTS B1+)",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 285
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 270
+            },
+            {
+              "weeks": "16-23",
+              "perWeek": 255
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 240
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 225
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun İngilizce / IELTS Hazırlık",
+          "nameEn": "Intensive English or IELTS Preparation",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 21,
+          "level": "A1–C1 (IELTS B1+)",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 340
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 325
+            },
+            {
+              "weeks": "16-23",
+              "perWeek": 310
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 295
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 280
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Süper Yoğun İngilizce",
+          "nameEn": "Super Intensive English",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 370
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 355
+            },
+            {
+              "weeks": "16-23",
+              "perWeek": 340
+            },
+            {
+              "weeks": "24-35",
+              "perWeek": 325
+            },
+            {
+              "weeks": "36+",
+              "perWeek": 310
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Manchester banliyöleri",
+          "commute": "30–45 dk",
+          "perWeek": 240,
+          "minAge": 16,
+          "notes": "Hafta içi yarım pansiyon, hafta sonu tam pansiyon."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – iki kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Manchester banliyöleri",
+          "commute": "30–45 dk",
+          "perWeek": 210,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Şehir merkezinde aile yanı – tek kişilik",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Şehir merkezi",
+          "commute": "10–20 dk",
+          "perWeek": 280,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Öğrenci yurdu – en-suite tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–20 dk",
+          "perWeek": 290,
+          "minAge": 18,
+          "notes": "Ortak mutfak."
+        }
+      ],
+      "fees": {
+        "registration": 75,
+        "accommodationPlacement": 75,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 110,
+        "transferLocalAirport": "Manchester Airport (MAN)",
+        "summerSupplementPerWeek": 35,
+        "summerPeriod": "31 Mayıs – 30 Ağustos (aile yanı)",
+        "materials": "1–7 hafta £40; 8–15 hafta £70; 16–23 hafta £100; 24–35 hafta £130; 36+ hafta £160",
+        "other": "Noel haftası aile yanı farkı £60; 18 yaş altı haftalık +£35; IELTS sınav ücreti £250 (isteğe bağlı)."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://newcollegegroup.com/wp-content/uploads/2026/01/NCG_Standard_Pricelist_Manchester_2026.pdf",
+        "https://newcollegegroup.com/locations/manchester/getting-here/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "ih-manchester",
+      "name": "International House Manchester",
+      "brand": "International House World Organisation",
+      "area": "Şehir merkezi – Chorlton Street / Gay Village",
+      "address": "5th Floor, Arthur House, 13-15 Chorlton Street, Manchester M1 3FH",
+      "nearestStation": "Piccadilly Gardens (2 dk yürüme), Manchester Piccadilly istasyonu (~7 dk)",
+      "website": "https://ihmanchester.com/",
+      "accreditations": [
+        "British Council",
+        "English UK",
+        "IALC",
+        "IH World"
+      ],
+      "minAge": 18,
+      "maxClassSize": 15,
+      "lessonMinutes": null,
+      "founded": 2006,
+      "description": "IH Manchester, 2006'dan beri Manchester'da yalnızca yetişkinlere (18+) İngilizce öğreten bağımsız bir okuldur ve dünya çapındaki International House ağının üyesidir. Okul Chorlton Street'teki Arthur House binasının beşinci katında, Piccadilly Gardens'a iki dakikalık mesafededir. 2026'da IALC (Uluslararası Dil Okulları Birliği) üyeliğine kabul edilmesi kalite açısından dikkat çekicidir.\n\nGenel İngilizce ve IELTS kursları haftada 15, 20 veya 25 saat olarak alınabilir; iş İngilizcesi grup derslerini birebir derslerle birleştirir. Konaklamada standart ve 'executive' aile yanı, Manchester Student Village yurdu ve stüdyo daireler bulunur. Okul ayrıca CELTA öğretmen eğitimi ve OET (tıp İngilizcesi) kursları da verir.",
+      "highlights": [
+        "Sadece 18+ yetişkin öğrenciler",
+        "2006'dan beri faaliyette, IALC üyesi",
+        "15 / 20 / 25 saatlik esnek programlar",
+        "Birebir destekli iş İngilizcesi",
+        "8 hafta ve üzeri kayıtlarda kitap ücretsiz"
+      ],
+      "facilities": [
+        "Merkezi ofis binasında sınıflar",
+        "Ücretsiz Wi‑Fi",
+        "CELTA ve OET kursları",
+        "Sosyal etkinlikler"
+      ],
+      "idealFor": [
+        "Yetişkin ve profesyoneller",
+        "IELTS / OET hedefleyenler",
+        "Butik okul ortamı arayanlar"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce 15",
+          "nameEn": "General English 15",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 292
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 277
+            },
+            {
+              "weeks": "16+",
+              "perWeek": 263
+            }
+          ],
+          "notes": "2027 haftaları için £299."
+        },
+        {
+          "name": "Genel İngilizce 20",
+          "nameEn": "General English 20",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 20,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 359
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 341
+            },
+            {
+              "weeks": "16+",
+              "perWeek": 323
+            }
+          ],
+          "notes": "2027 haftaları için £368."
+        },
+        {
+          "name": "Genel İngilizce 25 (Yoğun)",
+          "nameEn": "General English 25",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 412
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 391
+            },
+            {
+              "weeks": "16+",
+              "perWeek": 371
+            }
+          ],
+          "notes": "2027 haftaları için £422."
+        },
+        {
+          "name": "IELTS Hazırlık 20",
+          "nameEn": "IELTS Preparation 20",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 20,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 405
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 385
+            },
+            {
+              "weeks": "16+",
+              "perWeek": 365
+            }
+          ],
+          "notes": "15 saatlik seçenek £313'ten; sınav ücreti dahil değil."
+        },
+        {
+          "name": "İş İngilizcesi (GE15 + 5 birebir)",
+          "nameEn": "Business English GE15 + 5 x 1:1",
+          "lessonsPerWeek": null,
+          "hoursPerWeek": 20,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 587
+            },
+            {
+              "weeks": "8-15",
+              "perWeek": 569
+            },
+            {
+              "weeks": "16+",
+              "perWeek": 555
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Standart aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Manchester banliyöleri",
+          "commute": "30–50 dk",
+          "perWeek": 200,
+          "minAge": 18,
+          "notes": "Hafta içi yarım pansiyon, hafta sonu tam pansiyon."
+        },
+        {
+          "type": "homestay",
+          "name": "Standart aile yanı – sadece kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Manchester banliyöleri",
+          "commute": "30–50 dk",
+          "perWeek": 175,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Executive aile yanı – özel banyolu",
+          "bathroom": "private",
+          "board": "half",
+          "location": "Manchester banliyöleri",
+          "commute": "20–40 dk",
+          "perWeek": 245,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Manchester Student Village – Gold en-suite",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi (Lower Chatham St)",
+          "commute": "10–15 dk",
+          "perWeek": 285,
+          "minAge": 18,
+          "notes": "£100 iade edilebilir depozito."
+        },
+        {
+          "type": "studio",
+          "name": "Manchester Student Village – Silver stüdyo",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–15 dk",
+          "perWeek": 325,
+          "minAge": 18,
+          "notes": ""
+        },
+        {
+          "type": "studio",
+          "name": "Williams Studio Apartments – tek kişi",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Şehir merkezi",
+          "commute": "10–20 dk",
+          "perWeek": 320,
+          "minAge": 18,
+          "notes": "Nevresim, havlu ve haftalık temizlik dahil; dahil olmayan seçenek £290."
+        }
+      ],
+      "fees": {
+        "registration": 50,
+        "accommodationPlacement": 50,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 80,
+        "transferLocalAirport": "Manchester Airport (MAN)",
+        "summerSupplementPerWeek": 30,
+        "summerPeriod": "Haziran – Ağustos (aile yanı)",
+        "materials": "1–7 hafta £40 (isteğe bağlı); 8 hafta ve üzeri ücretsiz",
+        "other": "Özel diyet haftalık £30; Noel farkı £100. 2027 fiyatları 2027 haftalarına uygulanır."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://ihmanchester.com/prices-and-special-offers/",
+        "https://ihmanchester.com/contact-us/",
+        "https://www.ialc.org/news/international-house-manchester-joins-ialc/"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "express-english-college-manchester",
+      "name": "Express English College",
+      "brand": "Express English College",
+      "area": "Hulme / Moss Side – Princess Road (merkezin yaklaşık 2 km güneyi)",
+      "address": "130 Princess Road, Manchester M16 7BY",
+      "nearestStation": "Princess Road otobüs hatları (şehir merkezine ~10 dk); en yakın tren: Manchester Oxford Road",
+      "website": "https://expressenglishcollege.co.uk/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 12,
+      "lessonMinutes": 45,
+      "founded": null,
+      "description": "Express English College, Manchester şehir merkezinin hemen güneyinde, Princess Road üzerinde yer alan British Council akrediteli bağımsız bir dil okuludur. Okul en son Nisan 2024'te denetlenmiş ve akreditasyonu yenilenmiştir; English UK üyesidir.\n\nSınıflar en fazla 12 kişiliktir ve dersler 45 dakikadır. Haftada 20 derslik Genel İngilizce, IELTS veya İş İngilizcesi sabah 09:00–12:15 arasında, 30 derslik yoğun seçenekler ise 14:00'e kadar sürer. Fiyat yapısı sade tutulmuştur: kayıt ücreti £100, kitap seviye başına £30'dur. Konaklamada yıl boyu yarım pansiyon aile yanı, yaz aylarında ise 18 yaş üstü için özel stüdyolu yurt seçeneği sunulur.",
+      "highlights": [
+        "En fazla 12 kişilik sınıflar",
+        "British Council akrediteli (2024 denetimi)",
+        "Genel İngilizce, IELTS ve İş İngilizcesi",
+        "Manchester Havalimanı transferi £60",
+        "Şeffaf ve sade fiyat listesi"
+      ],
+      "facilities": [
+        "Ücretsiz sosyal aktiviteler ve kulüpler",
+        "Seviye tespit sınavı",
+        "Düzenli birebir görüşmeler",
+        "Kur sonu sertifikası"
+      ],
+      "idealFor": [
+        "Küçük sınıf isteyenler",
+        "IELTS veya iş İngilizcesi hedefleyenler",
+        "16–17 yaş öğrenciler (aile yanında)"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 320
+            },
+            {
+              "weeks": "8-12",
+              "perWeek": 315
+            },
+            {
+              "weeks": "13-23",
+              "perWeek": 310
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 300
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "Intensive General English",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 22.5,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 420
+            },
+            {
+              "weeks": "8-12",
+              "perWeek": 415
+            },
+            {
+              "weeks": "13-23",
+              "perWeek": 410
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 400
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Preparation",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 320
+            },
+            {
+              "weeks": "8-12",
+              "perWeek": 315
+            },
+            {
+              "weeks": "13-23",
+              "perWeek": 310
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 300
+            }
+          ],
+          "notes": "30 derslik Genel İngilizce + IELTS: £420'den."
+        },
+        {
+          "name": "İş İngilizcesi",
+          "nameEn": "Business English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 15,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-7",
+              "perWeek": 320
+            },
+            {
+              "weeks": "8-12",
+              "perWeek": 310
+            },
+            {
+              "weeks": "13-23",
+              "perWeek": 305
+            },
+            {
+              "weeks": "24+",
+              "perWeek": 300
+            }
+          ],
+          "notes": "30 derslik Genel İngilizce + İş İngilizcesi: £420'den."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Güney Manchester",
+          "commute": "20–45 dk",
+          "perWeek": 280,
+          "minAge": 16,
+          "notes": "Her gün kahvaltı ve akşam yemeği."
+        },
+        {
+          "type": "studio",
+          "name": "Öğrenci yurdu – özel stüdyo (Temmuz–Ağustos)",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Manchester",
+          "commute": "15–30 dk",
+          "perWeek": 399,
+          "minAge": 18,
+          "notes": "Sadece yaz döneminde."
+        }
+      ],
+      "fees": {
+        "registration": 100,
+        "accommodationPlacement": 100,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 60,
+        "transferLocalAirport": "Manchester Airport (MAN)",
+        "summerSupplementPerWeek": null,
+        "summerPeriod": null,
+        "materials": "Kitap seviye başına £30",
+        "other": "Liverpool John Lennon Havalimanı transferi tek yön £90."
+      },
+      "priceYear": 2026,
+      "priceStatus": "official",
+      "sources": [
+        "https://expressenglishcollege.co.uk/wp-content/uploads/2026/10/EEC-Price-List-2026-27-b.pdf",
+        "https://www.englishuk.com/member-directory?id=6665"
+      ],
+      "lastChecked": "2026-10-28"
+    },
+    {
+      "slug": "bsc-manchester",
+      "name": "BSC Manchester (British Study Centres)",
+      "brand": "BSC Education",
+      "area": "Şehir merkezi – Piccadilly",
+      "address": "7 Chatham Street, Manchester M1 3AY",
+      "nearestStation": "Manchester Piccadilly (5 dk yürüme), Piccadilly Gardens (4 dk)",
+      "website": "https://www.bsceducation.com/destinations/manchester/",
+      "accreditations": [
+        "British Council",
+        "English UK"
+      ],
+      "minAge": 16,
+      "maxClassSize": 14,
+      "lessonMinutes": 50,
+      "founded": null,
+      "description": "BSC Manchester, Londra, Brighton, York ve Edinburgh'da da okulları bulunan British Study Centres (BSC Education) grubunun Manchester şubesidir. Chatham Street'teki okul Piccadilly istasyonuna beş, Northern Quarter'a ise yaklaşık beş dakikalık yürüme mesafesindedir.\n\nGenel İngilizce haftada 20, 25 veya 30 ders (50 dakikalık) olarak alınabilir ve sınıflar en fazla 14 kişidir. Konuşma ve dinleme derslerinde BM Sürdürülebilir Kalkınma Hedefleri gibi güncel konular işlenir. IELTS ve SELT sınav hazırlık kursları da sunulur. Konaklamada farklı pansiyon seçenekli aile yanı ve tramvayla 25 dakika mesafedeki en-suite odalı öğrenci yurdu bulunur.",
+      "highlights": [
+        "50 dakikalık dersler, en fazla 14 kişi",
+        "20 / 25 / 30 ders seçenekleri",
+        "IELTS ve SELT hazırlık",
+        "Piccadilly istasyonuna 5 dk",
+        "Esnek pansiyon seçenekli aile yanı"
+      ],
+      "facilities": [
+        "Öğrenci salonu",
+        "Ücretsiz Wi‑Fi",
+        "Sosyal program",
+        "Seviye tespit sınavı"
+      ],
+      "idealFor": [
+        "Merkezi konum isteyenler",
+        "Sınav hazırlığı yapanlar",
+        "Birden fazla şehirde okumak isteyenler"
+      ],
+      "courses": [
+        {
+          "name": "Genel İngilizce",
+          "nameEn": "General English",
+          "lessonsPerWeek": 20,
+          "hoursPerWeek": 16.6,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 290
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 265
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        },
+        {
+          "name": "Yarı Yoğun Genel İngilizce",
+          "nameEn": "General English 25",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 20.8,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 330
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 305
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        },
+        {
+          "name": "Yoğun Genel İngilizce",
+          "nameEn": "General English 30",
+          "lessonsPerWeek": 30,
+          "hoursPerWeek": 25,
+          "level": "A1–C1",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 370
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 345
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        },
+        {
+          "name": "IELTS Hazırlık",
+          "nameEn": "IELTS Exam Preparation",
+          "lessonsPerWeek": 25,
+          "hoursPerWeek": 20.8,
+          "level": "B1+",
+          "prices": [
+            {
+              "weeks": "1-11",
+              "perWeek": 330
+            },
+            {
+              "weeks": "12+",
+              "perWeek": 305
+            }
+          ],
+          "notes": "Tahmini fiyat: BSC haftalık ders ücretini yalnızca 'haftalık £175'ten başlayan' şeklinde yayımlıyor; kesin fiyat için okuldan teklif alınmalıdır."
+        }
+      ],
+      "accommodation": [
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik oda",
+          "bathroom": "shared",
+          "board": "half",
+          "location": "Manchester banliyöleri",
+          "commute": "30–60 dk",
+          "perWeek": 257,
+          "minAge": 16,
+          "notes": "Özel banyo için haftalık +£35."
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, kahvaltı",
+          "bathroom": "shared",
+          "board": "bb",
+          "location": "Manchester banliyöleri",
+          "commute": "30–60 dk",
+          "perWeek": 221,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "homestay",
+          "name": "Aile yanı – tek kişilik, tam pansiyon",
+          "bathroom": "shared",
+          "board": "full",
+          "location": "Manchester banliyöleri",
+          "commute": "30–60 dk",
+          "perWeek": 278,
+          "minAge": 16,
+          "notes": ""
+        },
+        {
+          "type": "residence",
+          "name": "Öğrenci yurdu – en-suite tek kişilik",
+          "bathroom": "private",
+          "board": "self",
+          "location": "Manchester",
+          "commute": "25 dk (otobüs/tramvay)",
+          "perWeek": 335,
+          "minAge": 18,
+          "notes": ""
+        }
+      ],
+      "fees": {
+        "registration": 80,
+        "accommodationPlacement": 60,
+        "transferHeathrow": null,
+        "transferGatwick": null,
+        "transferLocal": 90,
+        "transferLocalAirport": "Manchester Airport (MAN)",
+        "summerSupplementPerWeek": 20,
+        "summerPeriod": "13 Haziran – 4 Eylül (aile yanı)",
+        "materials": "Tahmini £40 (okula sorulmalı)",
+        "other": "Noel farkı (24 Aralık – 2 Ocak) haftalık £40; 18 yaş altı +£30; özel diyet +£25. Kayıt, yerleştirme ve transfer ücretleri tahminidir; konaklama fiyatları resmidir."
+      },
+      "priceYear": 2026,
+      "priceStatus": "estimated",
+      "sources": [
+        "https://www.bsceducation.com/destinations/manchester/",
+        "https://www.bsceducation.com/accommodation/manchester/",
+        "https://www.bsceducation.com/course/general-english/"
+      ],
+      "lastChecked": "2026-10-28"
+    }
+  ]
+}

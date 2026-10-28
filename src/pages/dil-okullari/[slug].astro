@@ -1,0 +1,297 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import SchoolCard from '../../components/SchoolCard.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Icon from '../../components/Icon.astro';
+import {
+  schools, schoolsInCity, cityBySlug, cityIn, cityPath, schoolPath, mainCourse, priceForWeeks,
+  minCoursePrice, minAccPrice, gbp, ACC_LABEL, BOARD_LABEL, BATH_LABEL,
+} from '../../data';
+import { SITE } from '../../config/site';
+import type { School } from '../../data/types';
+
+export function getStaticPaths() {
+  return schools.map((school) => ({ params: { slug: school.slug }, props: { school } }));
+}
+
+const { school: s } = Astro.props as { school: School };
+const city = cityBySlug(s.city)!;
+const inC = cityIn(city);
+const from = minCoursePrice(s);
+const home = minAccPrice(s.accommodation, 'homestay');
+const others = schoolsInCity(s.city).filter((o) => o.slug !== s.slug).slice(0, 6);
+const main = mainCourse(s);
+const fees = s.fees;
+const placement = fees.accommodationPlacement ?? 0;
+const registration = fees.registration ?? 0;
+const acc = s.accreditations;
+const accText = acc.length > 1 ? `${acc.slice(0, -1).join(', ')} ve ${acc[acc.length - 1]}` : (acc[0] ?? '');
+
+const samples = [4, 8, 12].map((w) => {
+  const course = main ? (priceForWeeks(main, w) ?? 0) * w : 0;
+  const acc = (home ?? minAccPrice(s.accommodation) ?? 0) * w;
+  return { w, course, acc, fees: registration + placement, total: course + acc + registration + placement };
+});
+
+const transferRows = [
+  fees.transferHeathrow ? ['Havalimanı transferi (Heathrow, tek yön)', gbp(fees.transferHeathrow)] : null,
+  fees.transferGatwick ? ['Havalimanı transferi (Gatwick, tek yön)', gbp(fees.transferGatwick)] : null,
+  fees.transferLocal ? [`Havalimanı transferi (${fees.transferLocalAirport ?? 'yerel havalimanı'}, tek yön)`, gbp(fees.transferLocal)] : null,
+].filter(Boolean) as string[][];
+
+const feeRows: string[][] = [
+  ['Kayıt ücreti', gbp(fees.registration)],
+  ['Konaklama yerleştirme ücreti', gbp(fees.accommodationPlacement)],
+  ...transferRows,
+  ...(fees.summerSupplementPerWeek ? [[`Yaz dönemi ek ücreti${fees.summerPeriod ? ` (${fees.summerPeriod})` : ''}`, `${gbp(fees.summerSupplementPerWeek)} / hafta`]] : []),
+  ...(fees.materials != null && fees.materials !== '' ? [['Ders materyalleri', typeof fees.materials === 'number' ? gbp(fees.materials) : String(fees.materials)]] : []),
+];
+
+const title = `${s.name} Fiyatları ${s.priceYear}: Kurslar ve Konaklama`;
+const description = `${s.name} (${city.name}) haftalık kurs ${from ? `${gbp(from)}’dan` : 'fiyatları'}${home ? `, aile yanı ${gbp(home)}/hafta` : ''}. Kurs türleri, konaklama seçenekleri, ek ücretler ve örnek toplam maliyet. Ücretsiz kayıt danışmanlığı.`;
+
+const faqs = [
+  {
+    q: `${s.name} fiyatları ne kadar?`,
+    a: `${s.name} okulunda ${main ? `${main.name} kursu` : 'kurslar'} haftalık ${from ? `${gbp(from)}’dan` : 'okulun güncel listesine göre'} başlayan fiyatlarla sunulur; süre uzadıkça haftalık ücret düşer. Örneğin 4 haftalık kurs + aile yanı konaklama + kayıt ücretleri yaklaşık ${gbp(samples[0].total)} tutar. Kesin ve güncel fiyatı yazılı teklifle iletiyoruz.`,
+  },
+  {
+    q: `${s.name} için konaklama seçenekleri nelerdir?`,
+    a: s.accommodation.length
+      ? `Okul ${[...new Set(s.accommodation.map((a) => ACC_LABEL[a.type].toLowerCase()))].join(', ')} seçenekleri sunar. ${home ? `Aile yanı konaklama haftalık ${gbp(home)}’dan başlar.` : ''} Konaklama türleri ve fiyatlar bu sayfadaki tabloda yer alıyor.`
+      : 'Okulun konaklama seçeneklerini ve güncel fiyatlarını size yazılı olarak iletiyoruz.',
+  },
+  {
+    q: `${s.name} okuluna kaç yaşında kayıt olunabilir?`,
+    a: `Yetişkin programlarına ${s.minAge ?? 16} yaş ve üzeri öğrenciler kabul edilir.${s.maxClassSize ? ` Sınıflar en fazla ${s.maxClassSize} kişiliktir.` : ''}`,
+  },
+  {
+    q: `${s.name} okuluna nasıl kayıt olurum?`,
+    a: `Formu doldurmanız veya WhatsApp’tan yazmanız yeterli. Danışmanımız seviye, tarih ve konaklama tercihinize göre okulun güncel teklifini hazırlar; kaydınızı, konaklamanızı ve vize dosyanızı sizin adınıza tamamlar. Danışmanlık hizmetimiz ücretsizdir.`,
+  },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOrganization',
+    name: s.name,
+    url: s.website ?? undefined,
+    address: s.address ? { '@type': 'PostalAddress', streetAddress: s.address, addressLocality: city.nameEn, addressCountry: 'GB' } : undefined,
+    ...(from
+      ? {
+          makesOffer: s.courses.slice(0, 5).map((c) => ({
+            '@type': 'Offer',
+            name: c.nameEn ?? c.name,
+            priceCurrency: 'GBP',
+            priceSpecification: { '@type': 'UnitPriceSpecification', price: Math.min(...c.prices.map((p) => p.perWeek ?? 1e9)), priceCurrency: 'GBP', unitText: 'WEEK' },
+          })),
+        }
+      : {}),
+  },
+];
+const wa = `Merhaba, ${s.name} (${city.name}) için fiyat teklifi almak istiyorum.`;
+---
+<Base title={title} description={description} jsonLd={jsonLd} waMessage={wa}>
+  <section class="phero phero--split">
+    <div class="wrap">
+      <div>
+        <Breadcrumbs items={[{ label: 'Dil okulları', href: '/dil-okullari/' }, { label: city.name, href: cityPath(city) }, { label: s.name }]} />
+        <span class="pass">IST <i></i> {city.code}</span>
+        <h1>{s.name}</h1>
+        <p class="lead">{inC}{s.area ? `, ${s.area} bölgesinde` : ''} bulunan {accText ? `${accText} onaylı ` : ''}dil okulu. Kurs türleri, haftalık fiyatlar, konaklama seçenekleri ve tüm ek ücretler aşağıda.</p>
+        <div class="tags" style="margin:1rem 0">
+          {s.accreditations.map((a) => <span class="tag tag--green"><Icon name="shield" size={13} /> {a}</span>)}
+          {s.minAge && <span class="tag">{s.minAge}+ yaş</span>}
+          {s.maxClassSize && <span class="tag">Sınıf en fazla {s.maxClassSize} kişi</span>}
+          {s.priceStatus === 'estimated' && <span class="tag tag--sand">Fiyatlar tahmini</span>}
+        </div>
+        <ul class="facts">
+          <li><b>Kurs</b><span>{from ? `${gbp(from)}/hafta’dan` : 'Teklif alın'}</span></li>
+          <li><b>Aile yanı</b><span>{home ? `${gbp(home)}/hafta’dan` : '—'}</span></li>
+          <li><b>Kayıt ücreti</b><span>{gbp(fees.registration)}</span></li>
+          {s.nearestStation && <li><b>En yakın istasyon</b><span>{s.nearestStation}</span></li>}
+          {s.lessonMinutes && <li><b>Ders süresi</b><span>{s.lessonMinutes} dakika</span></li>}
+          {s.founded && <li><b>Kuruluş</b><span>{s.founded}</span></li>}
+        </ul>
+      </div>
+      <LeadForm city={s.city} school={s.name} source={`okul-${s.slug}`} title="Bu okul için ücretsiz teklif" subtitle={`${s.name} için tarihinize ve süre tercihinize göre güncel fiyatı ve kampanyaları yazılı olarak iletelim.`} />
+    </div>
+  </section>
+
+  <nav class="toc" aria-label="Sayfa içeriği">
+    <div class="wrap"><ul>
+      <li><a href="#okul">Okul hakkında</a></li>
+      <li><a href="#kurslar">Kurslar ve fiyatlar</a></li>
+      <li><a href="#konaklama">Konaklama</a></li>
+      <li><a href="#ucretler">Ek ücretler</a></li>
+      <li><a href="#ornek">Örnek maliyet</a></li>
+      <li><a href="#sss">SSS</a></li>
+    </ul></div>
+  </nav>
+
+  <section class="section" id="okul">
+    <div class="wrap">
+      <div class="layout-aside">
+        <div class="prose">
+          <span class="eyebrow">Okul hakkında</span>
+          <h2 class="mt-0">{s.name} hakkında</h2>
+          {s.description.split(/\n\n+/).map((p) => <p>{p}</p>)}
+          {s.highlights.length > 0 && (
+            <>
+              <h3>Öne çıkanlar</h3>
+              <ul class="checks">{s.highlights.map((h) => <li>{h}</li>)}</ul>
+            </>
+          )}
+        </div>
+        <aside class="stack">
+          {s.idealFor.length > 0 && (
+            <div class="card">
+              <h3>Kimler için uygun?</h3>
+              <ul class="checks small">{s.idealFor.map((h) => <li>{h}</li>)}</ul>
+            </div>
+          )}
+          {s.facilities.length > 0 && (
+            <div class="card">
+              <h3>Olanaklar</h3>
+              <div class="tags">{s.facilities.map((f) => <span class="tag">{f}</span>)}</div>
+            </div>
+          )}
+          <div class="card">
+            <h3>Konum</h3>
+            {s.address && <p class="small mb-0"><Icon name="pin" size={15} class="inline-ic" /> {s.address}</p>}
+            {s.nearestStation && <p class="small muted" style="margin:.4rem 0 0"><Icon name="train" size={15} class="inline-ic" /> {s.nearestStation}</p>}
+            <p class="small" style="margin:.8rem 0 0"><a href={cityPath(city)}>{city.name} şehir rehberi: semtler, yaşam maliyeti →</a></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist" id="kurslar">
+    <div class="wrap">
+      <div class="shead">
+        <span class="eyebrow">Kurslar</span>
+        <h2>{s.name} kurs fiyatları ({s.priceYear})</h2>
+        <p class="lead">Haftalık kurs ücretleri süre kademesine göre listelenmiştir; uzun programlarda haftalık fiyat düşer. 1 ders genellikle {s.lessonMinutes ?? 45} dakikadır.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="table table--stack">
+          <thead><tr><th>Kurs</th><th>Haftalık ders</th><th>Seviye</th><th>Süre kademesi → haftalık ücret</th></tr></thead>
+          <tbody>
+            {s.courses.map((c) => (
+              <tr>
+                <td><b>{c.name}</b>{c.nameEn && c.nameEn !== c.name && <div class="xs muted">{c.nameEn}</div>}{c.notes && <div class="xs muted" style="margin-top:.25rem">{c.notes}</div>}</td>
+                <td>{c.lessonsPerWeek ? `${c.lessonsPerWeek} ders` : '—'}{c.hoursPerWeek && <div class="xs muted">{c.hoursPerWeek} saat</div>}</td>
+                <td>{c.level ?? '—'}</td>
+                <td class="wide">
+                  <div class="tiers">
+                    {c.prices.map((p) => <span><small>{p.weeks} hf</small><b>{gbp(p.perWeek)}</b></span>)}
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="konaklama">
+    <div class="wrap">
+      <div class="shead">
+        <span class="eyebrow">Konaklama</span>
+        <h2>{s.name} konaklama seçenekleri</h2>
+        <p class="lead">Fiyatlar kişi başı haftalıktır. Aile yanında yarım pansiyon (kahvaltı + akşam yemeği) standarttır; yurt ve stüdyolarda faturalar ve internet dahildir.</p>
+      </div>
+      {s.accommodation.length ? (
+        <div class="table-wrap">
+          <table class="table table--stack">
+            <thead><tr><th>Tür</th><th>Oda / banyo</th><th>Yemek</th><th>Konum / okula uzaklık</th><th class="num">Haftalık</th></tr></thead>
+            <tbody>
+              {s.accommodation.map((a) => (
+                <tr>
+                  <td><span class="tag">{ACC_LABEL[a.type]}</span><div style="margin-top:.35rem"><b>{a.name}</b></div>{a.minAge && <div class="xs muted">{a.minAge}+ yaş</div>}</td>
+                  <td>{a.bathroom ? BATH_LABEL[a.bathroom] : '—'}</td>
+                  <td>{a.board ? BOARD_LABEL[a.board] : '—'}</td>
+                  <td>{a.location ?? '—'}{a.commute && <div class="xs muted">Okula {a.commute}</div>}{a.notes && <div class="xs muted">{a.notes}</div>}</td>
+                  <td class="num"><b>{gbp(a.perWeek)}</b></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p class="note">Konaklama seçeneklerini ve güncel fiyatları teklifle birlikte iletiyoruz.</p>
+      )}
+      <p class="small" style="margin-top:1rem"><a href="/konaklama/">Aile yanı mı yurt mu? Konaklama rehberi →</a></p>
+    </div>
+  </section>
+
+  <section class="section section--sand" id="ucretler">
+    <div class="wrap">
+      <div class="grid grid--2" style="align-items:start">
+        <div>
+          <span class="eyebrow">Ek ücretler</span>
+          <h2>Kayıt, transfer ve diğer ücretler</h2>
+          <div class="table-wrap">
+            <table class="table" style="min-width:0">
+              <tbody>{feeRows.map(([k, v]) => <tr><td>{k}</td><td class="num"><b>{v}</b></td></tr>)}</tbody>
+            </table>
+          </div>
+          {fees.other && <p class="small muted" style="margin-top:.75rem">{fees.other}</p>}
+        </div>
+        <div id="ornek">
+          <span class="eyebrow">Örnek maliyet</span>
+          <h2>Toplam ne kadar tutar?</h2>
+          <div class="table-wrap">
+            <table class="table" style="min-width:0">
+              <thead><tr><th>Süre</th><th class="num">Kurs</th><th class="num">Konaklama</th><th class="num">Ücretler</th><th class="num">Toplam</th></tr></thead>
+              <tbody>
+                {samples.map((x) => (
+                  <tr><td>{x.w} hafta</td><td class="num">{gbp(x.course)}</td><td class="num">{gbp(x.acc)}</td><td class="num">{gbp(x.fees)}</td><td class="num"><b>{gbp(x.total)}</b></td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="xs muted" style="margin-top:.75rem">{main?.name ?? 'Ana kurs'} + en uygun {home ? 'aile yanı' : ''} konaklama + kayıt ve yerleştirme ücretleri. Uçak, vize, sigorta, transfer ve yaz ek ücreti dahil değildir.</p>
+          <a href="#teklif" class="btn btn--coral" style="margin-top:.5rem">Kesin fiyat teklifi al</a>
+        </div>
+      </div>
+      <p class="note note--teal" style="margin-top:2rem">
+        <Icon name="info" size={16} class="inline-ic" />
+        Fiyatlar {s.name} okulunun {s.priceYear} fiyat listesine {s.priceStatus === 'estimated' ? 've benzer okullara göre yapılmış tahmine ' : ''}dayanır; son kontrol: {new Date(s.lastChecked).toLocaleDateString('tr-TR')}. Okullar dönemsel kampanya ve indirim uygulayabilir; güncel ve kesin ücreti yazılı teklifte bildiriyoruz.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="sss">
+    <div class="wrap wrap--narrow">
+      <div class="shead shead--center"><span class="eyebrow">Sık sorulanlar</span><h2>{s.name} hakkında sorular</h2></div>
+      <Faq items={faqs} />
+    </div>
+  </section>
+
+  {others.length > 0 && (
+    <section class="section section--mist">
+      <div class="wrap">
+        <div class="shead"><span class="eyebrow">Karşılaştırın</span><h2>{inC} diğer dil okulları</h2></div>
+        <div class="grid grid--3">{others.map((o) => <SchoolCard school={o} />)}</div>
+        <p style="margin-top:1.25rem"><a href={cityPath(city)} class="btn btn--line">Tüm {city.name} okulları ve fiyat tablosu <Icon name="arrow" /></a></p>
+      </div>
+    </section>
+  )}
+
+  <CtaBand title={`${s.name} için kaydınızı birlikte yapalım`} wa={wa} />
+</Base>
+
+<style>
+  .tiers { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tiers span { display: inline-flex; flex-direction: column; padding: 0.35rem 0.6rem; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--paper); min-width: 78px; }
+  .tiers small { font-size: 0.7rem; color: var(--ink-3); }
+  .tiers b { font-family: var(--f-display); color: var(--teal-950); }
+  :global(.inline-ic) { display: inline-block; vertical-align: -2px; color: var(--coral); }
+</style>

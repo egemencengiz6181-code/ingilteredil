@@ -1,0 +1,43 @@
+---
+import Icon from './Icon.astro';
+import type { School } from '../data/types';
+import { cityBySlug, schoolPath, minCoursePrice, minAccPrice, gbp } from '../data';
+interface Props { school: School; showCity?: boolean }
+const { school: s, showCity = false } = Astro.props;
+const city = cityBySlug(s.city)!;
+const from = minCoursePrice(s);
+const home = minAccPrice(s.accommodation, 'homestay');
+const res = minAccPrice(s.accommodation, 'residence') ?? minAccPrice(s.accommodation, 'studio');
+const bc = s.accreditations.some((a) => /british council/i.test(a));
+---
+<article class="card card--hover sc" data-city={s.city} data-price={from ?? 9999}>
+  <div class="sc__top">
+    <span class="sc__code">{city.code}</span>
+    <div class="tags">
+      {bc && <span class="tag tag--green"><Icon name="shield" size={13} /> British Council</span>}
+      {s.minAge && <span class="tag">{s.minAge}+ yaş</span>}
+    </div>
+  </div>
+  <h3><a href={schoolPath(s)} class="stretched">{s.name}</a></h3>
+  <p class="sc__area"><Icon name="pin" size={15} /> {showCity ? `${city.name} · ` : ''}{s.area ?? city.name}</p>
+  <dl class="sc__prices">
+    <div><dt>Kurs</dt><dd>{from ? <><span class="price">{gbp(from)}</span><small>/hafta’dan</small></> : 'Teklif alın'}</dd></div>
+    <div><dt>Aile yanı</dt><dd>{home ? <><span class="price">{gbp(home)}</span><small>/hafta</small></> : '—'}</dd></div>
+    <div><dt>Yurt</dt><dd>{res ? <><span class="price">{gbp(res)}</span><small>/hafta</small></> : '—'}</dd></div>
+  </dl>
+  <span class="sc__more">Fiyatlar ve detaylar <Icon name="arrow" size={16} /></span>
+</article>
+<style>
+  .sc { display: flex; flex-direction: column; gap: 0.6rem; }
+  .sc__top { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+  .sc__code { font-family: var(--f-mono); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: var(--teal-700); }
+  .sc h3 { font-size: 1.12rem; margin: 0; }
+  .sc h3 a { color: var(--teal-950); text-decoration: none; }
+  .sc__area { display: flex; gap: 0.3rem; align-items: center; color: var(--ink-3); font-size: 0.88rem; margin: 0; }
+  .sc__prices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; margin: 0.3rem 0 0; padding: 0.75rem; background: var(--mist); border-radius: var(--r-md); }
+  .sc__prices dt { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); font-weight: 600; }
+  .sc__prices dd { margin: 0; font-size: 0.82rem; }
+  .sc__prices .price { font-size: 1.05rem; }
+  .sc__prices small { color: var(--ink-3); }
+  .sc__more { margin-top: auto; padding-top: 0.3rem; display: inline-flex; gap: 0.3rem; align-items: center; font-weight: 600; color: var(--coral); font-size: 0.9rem; }
+</style>

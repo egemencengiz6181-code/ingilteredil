@@ -1,0 +1,29 @@
+---
+interface Props { items: { q: string; a: string }[]; schema?: boolean }
+const { items, schema = true } = Astro.props;
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: items.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+<div class="faq">
+  {items.map((f, i) => (
+    <details open={i === 0}>
+      <summary><h3>{f.q}</h3></summary>
+      <div class="faq__a"><p set:html={f.a} /></div>
+    </details>
+  ))}
+</div>
+{schema && <script type="application/ld+json" set:html={JSON.stringify(ld)} />}
+<style>
+  .faq { display: grid; gap: 0.6rem; }
+  .faq details { border: 1px solid var(--line); border-radius: var(--r-md); background: var(--paper); }
+  .faq summary { list-style: none; cursor: pointer; padding: 1rem 3rem 1rem 1.2rem; position: relative; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; position: absolute; right: 1.2rem; top: 50%; transform: translateY(-50%); font-size: 1.4rem; color: var(--teal); font-weight: 400; }
+  .faq details[open] summary::after { content: '–'; }
+  .faq h3 { font-size: 1.04rem; margin: 0; font-family: var(--f-body); font-weight: 650; letter-spacing: 0; color: var(--teal-950); }
+  .faq__a { padding: 0 1.2rem 1.1rem; color: var(--ink-2); }
+  .faq__a p { margin: 0; }
+</style>

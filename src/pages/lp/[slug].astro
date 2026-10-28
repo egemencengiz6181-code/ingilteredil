@@ -1,0 +1,104 @@
+---
+// Google Ads açılış sayfaları: noindex, sade menü, form ilk ekranda. Tanımlar: src/data/landing.ts
+import Base from '../../layouts/Base.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import Photos from '../../components/Photos.astro';
+import Icon from '../../components/Icon.astro';
+import { cityBySlug, minCoursePrice, minAccPrice, sampleTotal, gbp } from '../../data';
+import { allInclusive, steps, testimonials, generalFaqs } from '../../data/content';
+import { lps, type Lp } from '../../data/landing';
+import { SITE, waLink } from '../../config/site';
+
+export function getStaticPaths() {
+  return lps.map((lp) => ({ params: { slug: lp.slug }, props: { lp } }));
+}
+
+const { lp } = Astro.props as { lp: Lp };
+const pool = lp.pool();
+const city = lp.city ? cityBySlug(lp.city) : undefined;
+---
+<Base title={lp.title} description={lp.sub} noindex minimal waMessage={lp.wa}>
+  <section class="lph">
+    <div class="wrap lph__in">
+      <div>
+        <span class="pass">IST <i></i> {city?.code ?? 'LHR'}</span>
+        <h1>{lp.h1}</h1>
+        <p class="lead">{lp.sub}</p>
+        <ul class="checks lph__b">{lp.bullets.map((b) => <li>{b}</li>)}</ul>
+        <div class="btns hide-sm">
+          <a href={waLink(lp.wa)} class="btn btn--wa btn--lg" target="_blank" rel="noopener" data-track={`lp-${lp.slug}`}><Icon name="whatsapp" /> WhatsApp’tan sor</a>
+          <a href={`tel:${SITE.phone}`} class="btn btn--line btn--lg" data-track={`lp-${lp.slug}`}><Icon name="phone" /> {SITE.phoneDisplay}</a>
+        </div>
+        <p class="small muted" style="margin-top:1rem"><Icon name="star" size={14} class="star" /> {SITE.stats.years} yıllık deneyim · {SITE.stats.students} öğrenci · Aynı gün dönüş</p>
+      </div>
+      <LeadForm id="teklif" city={lp.city} program={lp.program} source={`lp-${lp.slug}`} title="Ücretsiz teklifinizi alın" subtitle="2 dakikada doldurun, danışmanımız aynı gün sizi arasın." />
+    </div>
+  </section>
+
+  {pool.length > 0 && (
+    <section class="section section--mist">
+      <div class="wrap">
+        <div class="shead"><span class="eyebrow">Örnek fiyatlar</span><h2>4 haftalık örnek toplam maliyetler</h2><p class="lead">Kurs + en uygun konaklama + kayıt ücretleri. Kesin fiyat, tarihinize göre yazılı teklifte.</p></div>
+        <div class="table-wrap">
+          <table class="table table--stack">
+            <thead><tr><th>Okul</th><th>Şehir</th><th class="num">Kurs / hafta</th><th class="num">Konaklama / hafta</th><th class="num">4 hafta toplam</th></tr></thead>
+            <tbody>
+              {pool.map((s) => (
+                <tr><td><b>{s.name}</b></td><td>{cityBySlug(s.city)?.name}</td><td class="num">{gbp(minCoursePrice(s))}’dan</td><td class="num">{gbp(minAccPrice(s.accommodation, 'homestay') ?? minAccPrice(s.accommodation))}</td><td class="num"><b>{gbp(sampleTotal(s).total)}</b></td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <a href="#teklif" class="btn btn--coral" style="margin-top:1.25rem">Bu okullar için teklif al</a>
+      </div>
+    </section>
+  )}
+
+  {lp.slug === 'her-sey-dahil-londra' && (
+    <section class="section section--mist">
+      <div class="wrap grid grid--2" style="align-items:start">
+        <div>
+          <h2>Paket fiyatları</h2>
+          <div class="table-wrap"><table class="table" style="min-width:0"><tbody>{allInclusive.prices.map((p) => <tr><td>{p.weeks} hafta</td><td class="num"><b>£{p.price.toLocaleString('tr-TR')}</b></td></tr>)}</tbody></table></div>
+        </div>
+        <div><h2>Neler dahil?</h2><ul class="checks">{allInclusive.included.map((i) => <li>{i}</li>)}</ul></div>
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Süreç</span><h2>Formdan İngiltere’ye 6 adım</h2></div>
+      <ol class="grid grid--3" style="list-style:none;padding:0">
+        {steps.map((s, i) => <li class="card"><span class="eyebrow">{String(i + 1).padStart(2, '0')}</span><h3>{s.t}</h3><p class="small muted mb-0">{s.d}</p></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--sand">
+    <div class="wrap">
+      <div class="shead"><span class="eyebrow">Gidenler anlatıyor</span><h2>Öğrencilerimizden</h2></div>
+      <Photos />
+      <div class="grid grid--3" style="margin-top:1.5rem">
+        {testimonials.map((t) => <figure class="card" style="margin:0"><blockquote style="margin:0 0 .75rem;color:var(--ink-2)">“{t.text}”</blockquote><figcaption class="small"><b>{t.name}</b> · <span class="muted">{t.program}</span></figcaption></figure>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap layout-aside">
+      <div><h2>Sık sorulanlar</h2><Faq items={generalFaqs.slice(0, 6)} schema={false} /></div>
+      <aside><LeadForm id="teklif-2" city={lp.city} program={lp.program} source={`lp-${lp.slug}-alt`} title="Hemen teklif alın" subtitle="" /></aside>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .lph { background: radial-gradient(900px 500px at 100% 0%, var(--teal-100), transparent 60%), var(--teal-50); padding: clamp(1.5rem, 1rem + 3vw, 4rem) 0; }
+  .lph__in { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; align-items: start; }
+  @media (min-width: 1000px) { .lph__in { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 3rem; } }
+  .lph h1 { font-size: clamp(1.9rem, 1.3rem + 2.6vw, 3.3rem); margin: 0.8rem 0; }
+  .lph__b { margin: 1.25rem 0 1.5rem; font-weight: 550; }
+  :global(.star) { display: inline; color: var(--gold); vertical-align: -2px; }
+</style>

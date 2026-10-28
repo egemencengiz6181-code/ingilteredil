@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { cities, cityPath } from '../data';
+---
+<Base title="Sayfa bulunamadı" description="Aradığınız sayfa bulunamadı." noindex>
+  <section class="section center">
+    <div class="wrap wrap--narrow">
+      <span class="pass">IST <i></i> 404</span>
+      <h1 style="margin-top:1rem">Bu sayfa rotadan çıkmış</h1>
+      <p class="lead" style="margin-inline:auto">Aradığınız sayfa taşınmış veya kaldırılmış olabilir. Aşağıdan devam edebilirsiniz.</p>
+      <div class="btns" style="justify-content:center;margin:1.5rem 0"><a class="btn btn--teal" href="/">Ana sayfa</a><a class="btn btn--line" href="/dil-okullari/">Dil okulları</a></div>
+      <div class="tags" style="justify-content:center">{cities.map((c) => <a class="tag" href={cityPath(c)} style="text-decoration:none">{c.name}</a>)}</div>
+    </div>
+  </section>
+</Base>

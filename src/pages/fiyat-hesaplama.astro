@@ -1,0 +1,167 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import LeadForm from '../components/LeadForm.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { cities, schools, ACC_LABEL, BOARD_LABEL } from '../data';
+import { VISA } from '../config/site';
+
+// Hesaplayıcının ihtiyaç duyduğu sade veri (istemciye gömülür)
+const calc = schools.map((s) => ({
+  slug: s.slug,
+  name: s.name,
+  city: s.city,
+  est: s.priceStatus === 'estimated',
+  courses: s.courses
+    .filter((c) => c.prices.some((p) => p.perWeek))
+    .map((c) => ({ name: c.name + (c.lessonsPerWeek ? ` (${c.lessonsPerWeek} ders/hf)` : ''), prices: c.prices })),
+  acc: s.accommodation
+    .filter((a) => a.perWeek)
+    .map((a) => ({ label: `${ACC_LABEL[a.type]} · ${a.name}${a.board ? ` · ${BOARD_LABEL[a.board]}` : ''}`, perWeek: a.perWeek })),
+  reg: s.fees.registration ?? 0,
+  place: s.fees.accommodationPlacement ?? 0,
+  transfers: [
+    s.fees.transferHeathrow ? { label: 'Heathrow (tek yön)', v: s.fees.transferHeathrow } : null,
+    s.fees.transferGatwick ? { label: 'Gatwick (tek yön)', v: s.fees.transferGatwick } : null,
+    s.fees.transferLocal ? { label: `${s.fees.transferLocalAirport ?? 'Yerel havalimanı'} (tek yön)`, v: s.fees.transferLocal } : null,
+  ].filter(Boolean),
+  summer: s.fees.summerSupplementPerWeek ?? 0,
+}));
+const cityOpts = cities.filter((c) => calc.some((s) => s.city === c.slug)).map((c) => ({ slug: c.slug, name: c.name }));
+---
+<Base
+  title="İngiltere Dil Okulu Fiyat Hesaplama: Kurs + Konaklama Toplamı"
+  description="İngiltere dil okulu fiyat hesaplayıcı: şehir, okul, kurs, süre ve konaklama seçin; kurs, konaklama, kayıt, transfer ve vize dahil tahmini toplam maliyeti anında görün."
+  waMessage="Merhaba, fiyat hesaplayıcıda baktığım program için kesin teklif almak istiyorum."
+>
+  <section class="phero">
+    <div class="wrap">
+      <Breadcrumbs items={[{ label: 'Fiyat listesi', href: '/ingiltere-dil-okulu-fiyatlari/' }, { label: 'Fiyat hesaplama' }]} />
+      <span class="eyebrow">Hesaplayıcı</span>
+      <h1>Dil okulu fiyat hesaplama</h1>
+      <p class="lead">Şehir, okul, kurs ve konaklamayı seçin; okulların yayımladığı fiyatlara göre tahmini toplam maliyetinizi kalem kalem görün. Kesin fiyat ve güncel kampanyalar için teklif isteyin.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap calc" data-calc={JSON.stringify({ schools: calc, cities: cityOpts, visa: VISA })}>
+      <form class="card calc__form" onsubmit="return false">
+        <label class="fld"><span>Şehir</span><select name="city"></select></label>
+        <label class="fld"><span>Okul</span><select name="school"></select></label>
+        <label class="fld"><span>Kurs</span><select name="course"></select></label>
+        <label class="fld"><span>Süre: <b data-weeks-out>4</b> hafta</span><input type="range" name="weeks" min="1" max="48" value="4" /></label>
+        <label class="fld"><span>Konaklama</span><select name="acc"></select></label>
+        <label class="fld"><span>Havalimanı transferi</span><select name="transfer"></select></label>
+        <label class="fld"><span>Yaz döneminde kaç hafta? <em>(Haziran–Ağustos, ek ücret)</em></span><input type="number" name="summer" min="0" max="12" value="0" /></label>
+        <label class="calc__chk"><input type="checkbox" name="visa" checked /> Vize ücretini ekle</label>
+      </form>
+
+      <div class="calc__out">
+        <div class="card calc__res" aria-live="polite">
+          <p class="eyebrow mb-0">Tahmini toplam</p>
+          <p class="calc__total" data-total>£0</p>
+          <p class="small muted" data-sub></p>
+          <table class="table calc__tbl"><tbody data-rows></tbody></table>
+          <p class="xs muted" data-note style="margin:.75rem 0 0"></p>
+          <a href="#teklif" class="btn btn--coral btn--block" style="margin-top:1rem">Bu programa kesin teklif al</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap wrap--narrow">
+      <LeadForm source="fiyat-hesaplama" title="Hesapladığınız program için kesin teklif" subtitle="Okulun güncel kampanyaları, konaklama müsaitliği ve ödeme planıyla birlikte yazılı teklifinizi iletelim." />
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>
+
+<style>
+  .calc { display: grid; gap: 1.5rem; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 980px) { .calc { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; } .calc__out { position: sticky; top: 90px; } }
+  .calc__form { display: grid; gap: 1rem; }
+  .fld { display: grid; gap: 0.35rem; font-size: 0.88rem; font-weight: 600; color: var(--ink-2); }
+  .fld em { font-weight: 400; font-style: normal; color: var(--ink-3); }
+  .fld select, .fld input[type=number] { width: 100%; padding: 0.7rem 0.85rem; border: 1.5px solid var(--line); border-radius: var(--r-md); background: var(--paper); font-size: 0.98rem; font-weight: 400; }
+  .fld input[type=range] { accent-color: var(--coral); width: 100%; }
+  .calc__chk { display: flex; gap: 0.5rem; align-items: center; font-size: 0.92rem; }
+  .calc__res { background: var(--teal-950); color: #cfe6eb; border: 0; }
+  .calc__total { font-family: var(--f-display); font-size: clamp(2.4rem, 2rem + 2vw, 3.4rem); font-weight: 700; color: #fff; margin: 0.2rem 0; line-height: 1; }
+  .calc__res .muted { color: #9fc5ce; }
+  .calc__tbl { margin-top: 1rem; font-size: 0.9rem; min-width: 0; }
+  .calc__tbl td { padding: 0.5rem 0; border-bottom: 1px solid #ffffff1a; color: #e6f2f4; }
+  .calc__tbl td:last-child { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+</style>
+
+<script>
+  type Tier = { weeks: string; perWeek: number | null };
+  type S = { slug: string; name: string; city: string; est: boolean; courses: { name: string; prices: Tier[] }[]; acc: { label: string; perWeek: number }[]; reg: number; place: number; transfers: { label: string; v: number }[]; summer: number };
+  const root = document.querySelector<HTMLElement>('[data-calc]')!;
+  const D = JSON.parse(root.dataset.calc!) as { schools: S[]; cities: { slug: string; name: string }[]; visa: { standardVisitorFee: number; shortTermStudyFee: number; shortTermStudyIhs: number } };
+  const f = root.querySelector('form')!;
+  const el = (n: string) => f.elements.namedItem(n) as HTMLSelectElement & HTMLInputElement;
+  const gbp = (n: number) => '£' + Math.round(n).toLocaleString('tr-TR');
+  const opts = (sel: HTMLSelectElement, items: { v: string; t: string }[]) => { sel.innerHTML = items.map((i) => `<option value="${i.v}">${i.t}</option>`).join(''); };
+
+  const tierFor = (tiers: Tier[], w: number) => {
+    const p = tiers.map((t) => { const m = t.weeks.match(/(\d+)\s*(?:[-–]\s*(\d+)|\+)?/); if (!m || t.perWeek == null) return null; const lo = +m[1]; const hi = m[2] ? +m[2] : t.weeks.includes('+') ? 99 : lo; return { lo, hi, v: t.perWeek }; }).filter(Boolean) as { lo: number; hi: number; v: number }[];
+    const hit = p.find((x) => w >= x.lo && w <= x.hi);
+    if (hit) return hit.v;
+    p.sort((a, b) => a.lo - b.lo);
+    return p.length ? ([...p].reverse().find((x) => x.lo <= w)?.v ?? p[0].v) : 0;
+  };
+
+  const params = new URLSearchParams(location.search);
+  opts(el('city'), D.cities.map((c) => ({ v: c.slug, t: c.name })));
+  if (params.get('sehir')) el('city').value = params.get('sehir')!;
+
+  const school = () => D.schools.find((s) => s.slug === el('school').value)!;
+  function fillSchools() {
+    opts(el('school'), D.schools.filter((s) => s.city === el('city').value).map((s) => ({ v: s.slug, t: s.name })));
+    if (params.get('okul') && D.schools.some((s) => s.slug === params.get('okul') && s.city === el('city').value)) el('school').value = params.get('okul')!;
+    fillSchool();
+  }
+  function fillSchool() {
+    const s = school();
+    if (!s) return;
+    opts(el('course'), s.courses.map((c, i) => ({ v: String(i), t: c.name })));
+    opts(el('acc'), [{ v: '-1', t: 'Konaklama istemiyorum' }, ...s.acc.map((a, i) => ({ v: String(i), t: `${a.label} — ${gbp(a.perWeek)}/hf` }))]);
+    if (s.acc.length) el('acc').value = '0';
+    opts(el('transfer'), [{ v: '-1', t: 'Transfer istemiyorum' }, ...s.transfers.map((t, i) => ({ v: String(i), t: `${t.label} — ${gbp(t.v)}` }))]);
+    if (s.transfers.length) el('transfer').value = '0';
+    calc();
+  }
+  function calc() {
+    const s = school();
+    if (!s) return;
+    const w = +el('weeks').value;
+    root.querySelector('[data-weeks-out]')!.textContent = String(w);
+    const c = s.courses[+el('course').value];
+    const perWeek = c ? tierFor(c.prices, w) : 0;
+    const a = s.acc[+el('acc').value];
+    const t = s.transfers[+el('transfer').value];
+    const summerW = Math.min(+el('summer').value || 0, w);
+    const visaFee = el('visa').checked ? (w > 26 ? D.visa.shortTermStudyFee + D.visa.shortTermStudyIhs : D.visa.standardVisitorFee) : 0;
+    const rows: [string, number][] = [
+      [`Kurs: ${w} hf × ${gbp(perWeek)}`, perWeek * w],
+      ...(a ? [[`Konaklama: ${w} hf × ${gbp(a.perWeek)}`, a.perWeek * w] as [string, number]] : []),
+      ['Kayıt ücreti', s.reg],
+      ...(a && s.place ? [['Konaklama yerleştirme', s.place] as [string, number]] : []),
+      ...(t ? [[`Transfer: ${t.label}`, t.v] as [string, number]] : []),
+      ...(summerW && s.summer ? [[`Yaz ek ücreti: ${summerW} hf`, summerW * s.summer] as [string, number]] : []),
+      ...(visaFee ? [[w > 26 ? 'Short-term Study vizesi + IHS' : 'Standard Visitor vizesi', visaFee] as [string, number]] : []),
+    ];
+    const total = rows.reduce((x, r) => x + r[1], 0);
+    root.querySelector('[data-total]')!.textContent = gbp(total);
+    root.querySelector('[data-sub]')!.textContent = `${s.name} · haftalık ortalama ${gbp(total / w)}`;
+    root.querySelector('[data-rows]')!.innerHTML = rows.map(([k, v]) => `<tr><td>${k}</td><td>${gbp(v)}</td></tr>`).join('');
+    root.querySelector('[data-note]')!.textContent = (s.est ? 'Bu okulun fiyatları tahminidir. ' : '') + 'Uçak bileti, sigorta, yemek ve kişisel harcamalar dahil değildir. Kesin fiyat için teklif isteyin.';
+  }
+
+  el('city').addEventListener('change', fillSchools);
+  el('school').addEventListener('change', fillSchool);
+  f.addEventListener('input', (e) => { const n = (e.target as HTMLInputElement).name; if (n !== 'city' && n !== 'school') calc(); });
+  fillSchools();
+</script>

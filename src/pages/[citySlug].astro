@@ -1,0 +1,312 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import LeadForm from '../components/LeadForm.astro';
+import SchoolCard from '../components/SchoolCard.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { cities, cityIn, cityPath, schoolsInCity, schoolPath, cityMinPrice, cityMinAcc, shortCoursePrice, minAccPrice, sampleTotal, gbp } from '../data';
+import { residences } from '../data/content';
+import { SITE, VISA } from '../config/site';
+import type { City } from '../data/types';
+
+export function getStaticPaths() {
+  return cities.map((city) => ({ params: { citySlug: `${city.slug}-dil-okullari` }, props: { city } }));
+}
+
+const { city } = Astro.props as { city: City };
+const list = schoolsInCity(city.slug);
+const inC = cityIn(city);
+const from = cityMinPrice(city.slug);
+const accFrom = cityMinAcc(city.slug);
+const cityRes = residences.filter((r) => r.city === city.slug);
+const others = cities.filter((c) => c.slug !== city.slug);
+const year = 2027;
+
+const title = `${city.name} Dil Okulları ${year}: Fiyatlar, Konaklama ve Rehber`;
+const description = list.length
+  ? `${inC}ki ${list.length} akredite dil okulu: haftalık kurs ${from ? `${gbp(from)}’dan` : 'fiyatları'} başlayan ücretler, aile yanı ve yurt fiyatları, semtler, yaşam maliyeti ve vize. Ücretsiz teklif alın.`
+  : city.summary;
+
+const jsonLd = list.length
+  ? [{
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: `${city.name} dil okulları`,
+      numberOfItems: list.length,
+      itemListElement: list.map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(schoolPath(s), SITE.url).href, name: s.name })),
+    }]
+  : [];
+
+const toc = [
+  ['okullar', 'Okullar'],
+  ['fiyatlar', 'Fiyat karşılaştırma'],
+  ['konaklama', 'Konaklama'],
+  ['maliyet', 'Yaşam maliyeti'],
+  ['semtler', 'Semtler'],
+  ['vize', 'Vize'],
+  ['sss', 'SSS'],
+];
+const wa = `Merhaba, ${inC}ki dil okulları için fiyat teklifi almak istiyorum.`;
+---
+<Base title={title} description={description} jsonLd={jsonLd} waMessage={wa}>
+  <section class="phero phero--split">
+    <div class="wrap">
+      <div>
+        <Breadcrumbs items={[{ label: 'Şehirler', href: '/sehirler/' }, { label: `${city.name} dil okulları` }]} />
+        <span class="pass">IST <i></i> {city.code}</span>
+        <h1>{city.name} Dil Okulları {year}</h1>
+        <p class="lead">{city.tagline} Bu rehberde {inC}ki akredite dil okullarını, haftalık kurs ve konaklama ücretlerini, semtleri, yaşam maliyetini ve vize sürecini tek sayfada bulacaksınız.</p>
+        <div class="hero-prices">
+          <div><span>Kurs</span><b>{from ? <>{gbp(from)}<small>/hafta’dan</small></> : 'Teklif alın'}</b></div>
+          <div><span>Konaklama</span><b>{accFrom ? <>{gbp(accFrom)}<small>/hafta’dan</small></> : 'Teklif alın'}</b></div>
+          <div><span>Okul sayısı</span><b>{list.length || '—'}</b></div>
+        </div>
+        <ul class="facts">
+          <li><b>Ülke / bölge</b><span>{city.country} · {city.region}</span></li>
+          <li><b>Nüfus</b><span>{city.population}</span></li>
+          <li><b>Havalimanı</b><span>{city.airport}</span></li>
+          <li><b>Uçuş</b><span>{city.flight}</span></li>
+          {city.slug !== 'londra' && <li><b>Londra’ya</b><span>{city.fromLondon}</span></li>}
+          <li><b>İklim</b><span>{city.climate}</span></li>
+          <li><b>Ulaşım</b><span>{city.transport}</span></li>
+          <li><b>Sınıf profili</b><span>{city.studentProfile}</span></li>
+        </ul>
+      </div>
+      <LeadForm city={city.slug} source={`sehir-${city.slug}`} title={`${city.name} için ücretsiz teklif`} subtitle={`${inC}ki okulların güncel fiyatlarını toplam maliyetle birlikte yazılı olarak iletelim.`} />
+    </div>
+  </section>
+
+  <nav class="toc" aria-label="Sayfa içeriği">
+    <div class="wrap"><ul>{toc.map(([id, l]) => <li><a href={`#${id}`}>{l}</a></li>)}</ul></div>
+  </nav>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="layout-aside">
+        <div class="prose">
+          <span class="eyebrow">{inC} dil eğitimi</span>
+          <h2 class="mt-0">Neden {city.name}?</h2>
+          {city.intro.map((p) => <p>{p}</p>)}
+        </div>
+        <aside>
+          <div class="card">
+            <h3>{city.name} kimler için uygun?</h3>
+            <ul class="checks small">{city.idealFor.map((i) => <li>{i}</li>)}</ul>
+            <p class="small muted" style="margin:1rem 0 0">{city.alternatives}</p>
+          </div>
+        </aside>
+      </div>
+      <div class="grid grid--3" style="margin-top:2.5rem">
+        {city.why.map((w) => (
+          <div class="card">
+            <h3>{w.title}</h3>
+            <p class="small muted mb-0">{w.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist" id="okullar">
+    <div class="wrap">
+      <div class="shead">
+        <span class="eyebrow">Okul listesi</span>
+        <h2>{inC}ki dil okulları</h2>
+        <p class="lead">British Council akreditasyonlu ve English UK üyesi okullar. Her okulun sayfasında kurs türlerine göre haftalık fiyatları, konaklama seçeneklerini, ek ücretleri ve konumunu bulabilirsiniz.</p>
+      </div>
+      {list.length ? (
+        <div class="grid grid--3">{list.map((s) => <SchoolCard school={s} />)}</div>
+      ) : (
+        <div class="note note--teal">
+          <strong>{city.name} okul listesi güncelleniyor.</strong> Çalıştığımız okulların güncel fiyatlarını size yazılı olarak iletebiliriz. <a href="#teklif">Ücretsiz teklif isteyin</a>.
+        </div>
+      )}
+    </div>
+  </section>
+
+  {list.length > 0 && (
+    <section class="section" id="fiyatlar">
+      <div class="wrap">
+        <div class="shead">
+          <span class="eyebrow">Fiyat karşılaştırma</span>
+          <h2>{city.name} dil okulu fiyatları {year}</h2>
+          <p class="lead">Genel İngilizce (kısa dönem, 1–11 hafta) haftalık kurs ücreti, en uygun aile yanı ve yurt seçeneği, kayıt ücreti ve 4 haftalık örnek toplam. Uzun programlarda haftalık ücret düşer.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="table table--stack">
+            <thead>
+              <tr><th>Okul</th><th class="num">Kurs / hafta</th><th class="num">Aile yanı / hafta</th><th class="num">Yurt / hafta</th><th class="num">Kayıt</th><th class="num">4 hafta örnek*</th></tr>
+            </thead>
+            <tbody>
+              {list.map((s) => {
+                const t = sampleTotal(s, 4);
+                return (
+                  <tr>
+                    <td><a href={schoolPath(s)}>{s.name}</a>{s.priceStatus === 'estimated' && <span class="tag tag--sand" style="margin-left:.4rem">tahmini</span>}</td>
+                    <td class="num">{gbp(shortCoursePrice(s))}</td>
+                    <td class="num">{gbp(minAccPrice(s.accommodation, 'homestay'))}</td>
+                    <td class="num">{gbp(minAccPrice(s.accommodation, 'residence') ?? minAccPrice(s.accommodation, 'studio'))}</td>
+                    <td class="num">{gbp(s.fees.registration)}</td>
+                    <td class="num"><b>{t.total ? gbp(t.total) : '—'}</b></td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        <p class="xs muted" style="margin-top:.75rem">* 4 haftalık örnek: Genel İngilizce kurs + en uygun aile yanı konaklama + kayıt ve konaklama yerleştirme ücreti. Yaz ek ücretleri, transfer ve sigorta dahil değildir. Fiyatlar okulların {list[0].priceYear} listelerine dayanır; güncel ve kesin ücret yazılı teklifte bildirilir.</p>
+        <div class="btns" style="margin-top:1.25rem">
+          <a href="/fiyat-hesaplama/" class="btn btn--teal"><Icon name="calculator" /> Kendi programınızı hesaplayın</a>
+          <a href="#teklif" class="btn btn--line">Güncel fiyat teklifi alın</a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section section--sand" id="konaklama">
+    <div class="wrap">
+      <div class="layout-aside">
+        <div class="prose">
+          <span class="eyebrow">Konaklama</span>
+          <h2 class="mt-0">{inC} öğrenci konaklaması</h2>
+          {city.accommodation.map((p) => <p>{p}</p>)}
+          <p>Konaklama türlerinin ayrıntılı karşılaştırması için <a href="/konaklama/">konaklama rehberimize</a> bakabilirsiniz.</p>
+        </div>
+        <aside>
+          <div class="card">
+            <h3>Konaklama haftalık fiyatları</h3>
+            <ul class="kv">
+              {city.costs.filter((c) => /konaklama|yurt|aile/i.test(c.item)).map((c) => <li><span>{c.item}</span><b>{c.amount}</b></li>)}
+            </ul>
+            <a href="#teklif" class="btn btn--coral btn--block" style="margin-top:1rem">Konaklama teklifi al</a>
+          </div>
+        </aside>
+      </div>
+      {cityRes.length > 0 && (
+        <>
+          <h3 style="margin-top:2.5rem">{inC} önerdiğimiz öğrenci yurtları</h3>
+          <div class="grid grid--3">
+            {cityRes.slice(0, 6).map((r) => (
+              <div class="card">
+                <p class="xs muted mb-0">{r.area}</p>
+                <h3 style="font-size:1.05rem">{r.name}</h3>
+                <p class="small muted">{r.text}</p>
+                <p class="mb-0">{r.perWeek ? <><span class="price">{gbp(r.perWeek)}</span> <small class="muted">/hafta’dan</small></> : <span class="muted small">Fiyat için sorun</span>}</p>
+              </div>
+            ))}
+          </div>
+          {city.slug === 'londra' && <p style="margin-top:1rem"><a href="/konaklama/londra-ogrenci-yurtlari/">Tüm Londra öğrenci yurtları ve fiyatları →</a></p>}
+        </>
+      )}
+    </div>
+  </section>
+
+  <section class="section" id="maliyet">
+    <div class="wrap">
+      <div class="grid grid--2" style="align-items:start">
+        <div>
+          <span class="eyebrow">Bütçe</span>
+          <h2>{inC} yaşam maliyeti</h2>
+          <div class="table-wrap">
+            <table class="table" style="min-width:0">
+              <thead><tr><th>Kalem</th><th class="num">Yaklaşık tutar</th></tr></thead>
+              <tbody>
+                {city.costs.map((c) => <tr><td>{c.item}{c.note && <div class="xs muted">{c.note}</div>}</td><td class="num">{c.amount}</td></tr>)}
+              </tbody>
+            </table>
+          </div>
+          <p class="note" style="margin-top:1rem"><strong>Aylık bütçe:</strong> {city.monthlyBudget}</p>
+        </div>
+        <div>
+          <span class="eyebrow">Günlük hayat</span>
+          <h2>Ulaşım, iklim ve gündelik yaşam</h2>
+          {city.dailyLife.map((p) => <p>{p}</p>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist" id="semtler">
+    <div class="wrap">
+      <div class="shead">
+        <span class="eyebrow">Semtler</span>
+        <h2>{inC} okulların ve konaklamanın bulunduğu bölgeler</h2>
+      </div>
+      <div class="grid grid--2">
+        {city.areas.map((a) => (
+          <div class="card">
+            <h3><Icon name="pin" size={18} class="inline-ic" /> {a.name}</h3>
+            <p class="muted mb-0">{a.text}</p>
+          </div>
+        ))}
+      </div>
+      <h3 style="margin-top:3rem">Hafta sonu gezileri</h3>
+      <div class="grid grid--4">
+        {city.trips.map((t) => (
+          <div class="card">
+            <h3 style="font-size:1.02rem">{t.name}</h3>
+            <p class="small muted mb-0">{t.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="vize">
+    <div class="wrap">
+      <div class="grid grid--2" style="align-items:center">
+        <div>
+          <span class="eyebrow">Vize ve çalışma hakkı</span>
+          <h2>{inC} dil okulu için hangi vize gerekir?</h2>
+          <p>{city.country === 'İskoçya' ? 'Edinburgh Birleşik Krallık’ın parçasıdır; İngiltere ile aynı vize kuralları geçerlidir. ' : ''}6 aya kadar olan dil kursları <strong>Standard Visitor</strong> vizesiyle, 6 aydan uzun ve 11 aya kadar olan İngilizce kursları <strong>Short-term Study</strong> vizesiyle yapılır. Her iki vize de ücretli ya da ücretsiz çalışma hakkı vermez.</p>
+          <a href="/ingiltere-dil-okulu-vizesi/" class="btn btn--teal">Vize rehberini oku <Icon name="arrow" /></a>
+        </div>
+        <div class="grid" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+          <div class="card"><p class="xs muted mb-0">6 aya kadar</p><h3>Standard Visitor</h3><p class="price" style="font-size:1.5rem;margin:0">£{VISA.standardVisitorFee}</p><p class="xs muted mb-0">Vize ücreti · çalışma yok</p></div>
+          <div class="card"><p class="xs muted mb-0">6–11 ay</p><h3>Short-term Study</h3><p class="price" style="font-size:1.5rem;margin:0">£{VISA.shortTermStudyFee}</p><p class="xs muted mb-0">+ sağlık katkı payı (IHS)</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist" id="sss">
+    <div class="wrap wrap--narrow">
+      <div class="shead shead--center">
+        <span class="eyebrow">Sık sorulanlar</span>
+        <h2>{city.name} dil okulları hakkında sorular</h2>
+      </div>
+      <Faq items={city.faqs} />
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <h2 style="font-size:1.4rem">İngiltere’de diğer dil okulu şehirleri</h2>
+      <div class="chips">
+        {others.map((c) => <a href={cityPath(c)} class="chip">{c.name} dil okulları</a>)}
+        <a href="/sehirler/" class="chip chip--strong">Şehir karşılaştırması</a>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand title={`${inC} dil eğitimi planınızı birlikte kuralım`} wa={wa} />
+</Base>
+
+<style>
+  .hero-prices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; margin-top: 1.25rem; max-width: 560px; }
+  .hero-prices div { background: var(--teal-900); color: #cfe6eb; border-radius: var(--r-md); padding: 0.75rem 0.9rem; }
+  .hero-prices span { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  .hero-prices b { font-family: var(--f-display); font-size: 1.35rem; color: #fff; }
+  .hero-prices small { font-family: var(--f-body); font-weight: 400; font-size: 0.75rem; color: #a9d2dc; margin-left: 2px; }
+  @media (max-width: 520px) { .hero-prices { gap: 0.4rem; } .hero-prices div { padding: 0.65rem 0.6rem; } .hero-prices span { font-size: 0.62rem; letter-spacing: 0.03em; } .hero-prices b { font-size: 1.12rem; } .hero-prices small { display: block; margin: 0; } }
+  .kv { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; font-size: 0.92rem; }
+  .kv li { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 0.5rem; border-bottom: 1px dashed var(--line); }
+  .kv b { white-space: nowrap; color: var(--teal-950); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .chip { padding: 0.5rem 0.9rem; border: 1px solid var(--line); border-radius: var(--r-pill); text-decoration: none; color: var(--teal-900); font-size: 0.9rem; font-weight: 550; }
+  .chip:hover { border-color: var(--teal); background: var(--teal-50); }
+  .chip--strong { background: var(--teal-900); color: #fff; border-color: var(--teal-900); }
+  :global(.inline-ic) { display: inline-block; vertical-align: -2px; color: var(--coral); }
+</style>

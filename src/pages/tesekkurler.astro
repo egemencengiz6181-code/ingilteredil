@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { cities, cityPath } from '../data';
+import { SITE, waLink } from '../config/site';
+---
+<Base title="Talebiniz alındı" description="Talebiniz alındı, danışmanımız en kısa sürede size dönüş yapacak." noindex>
+  <section class="section" style="background:linear-gradient(180deg,var(--teal-50),var(--paper))">
+    <div class="wrap wrap--narrow center">
+      <div class="ok"><Icon name="check" size={40} /></div>
+      <h1 data-hello>Talebiniz alındı!</h1>
+      <p class="lead" style="margin-inline:auto">Danışmanımız <b data-when>çalışma saatleri içinde en geç 2 saat içinde</b> sizinle iletişime geçecek ve size özel teklifi yazılı olarak iletecek.</p>
+      <div class="btns" style="justify-content:center;margin:1.5rem 0">
+        <a href={waLink('Merhaba, web sitesinden teklif formu doldurdum.')} class="btn btn--wa btn--lg" target="_blank" rel="noopener" data-track="thanks"><Icon name="whatsapp" /> Beklemeden WhatsApp’tan yazın</a>
+        <a href={SITE.calendly} class="btn btn--line btn--lg" target="_blank" rel="noopener" data-track="thanks"><Icon name="calendar" /> Online görüşme planlayın</a>
+      </div>
+      <p class="muted">Bu sırada şehir rehberlerine göz atabilirsiniz:</p>
+      <div class="tags" style="justify-content:center">{cities.slice(0, 8).map((c) => <a class="tag" href={cityPath(c)} style="text-decoration:none">{c.name}</a>)}</div>
+    </div>
+  </section>
+</Base>
+<style>
+  .ok { width: 76px; height: 76px; border-radius: 50%; background: var(--green); color: #fff; display: grid; place-items: center; margin: 0 auto 1.25rem; }
+</style>
+<script>
+  try {
+    const s = JSON.parse(sessionStorage.getItem('lead_summary') || 'null');
+    if (s?.ad) document.querySelector('[data-hello]')!.textContent = `Teşekkürler ${s.ad}, talebiniz alındı!`;
+    if (s?.tercih === 'WhatsApp') document.querySelector('[data-when]')!.textContent = 'WhatsApp üzerinden en kısa sürede';
+  } catch {}
+</script>

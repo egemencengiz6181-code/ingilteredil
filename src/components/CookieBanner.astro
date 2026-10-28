@@ -1,0 +1,31 @@
+<div class="ck" id="cookie-banner" hidden role="dialog" aria-label="Çerez tercihi">
+  <p>Sitemizi geliştirmek ve reklamlarımızın etkisini ölçmek için çerezler kullanıyoruz. Ayrıntılar: <a href="/cerez-politikasi/">Çerez politikası</a>.</p>
+  <div class="btns">
+    <button class="btn btn--line" data-consent="denied">Yalnızca zorunlu</button>
+    <button class="btn btn--teal" data-consent="granted">Kabul et</button>
+  </div>
+</div>
+
+<style>
+  .ck { position: fixed; z-index: 60; left: 16px; right: 16px; bottom: 76px; max-width: 520px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow-2); padding: 1rem 1.2rem; font-size: 0.9rem; }
+  .ck p { margin-bottom: 0.8rem; color: var(--ink-2); }
+  .ck .btn { padding: 0.55rem 1rem; font-size: 0.9rem; }
+  @media (min-width: 721px) { .ck { bottom: 20px; left: 20px; right: auto; } }
+</style>
+
+<script is:inline>
+  (function () {
+    var el = document.getElementById('cookie-banner');
+    var saved = null;
+    try { saved = localStorage.getItem('cookie_consent'); } catch (e) {}
+    if (!saved) el.hidden = false;
+    el.addEventListener('click', function (e) {
+      var v = e.target.getAttribute && e.target.getAttribute('data-consent');
+      if (!v) return;
+      try { localStorage.setItem('cookie_consent', v); } catch (e) {}
+      gtag('consent', 'update', { ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v });
+      dataLayer.push({ event: 'consent_' + v });
+      el.hidden = true;
+    });
+  })();
+</script>
